@@ -1,0 +1,6 @@
+2025-07-11 12:46:33,951 - Adder - INFO - Added 10 and 5, result: 15
+2025-07-11 12:46:33,951 - Divider - INFO - Divided 10 by 2, result: 5.0
+2025-07-11 12:46:33,951 - Divider - WARNING - Tried dividing 10 by zero
+2025-07-11 12:47:31,726 - Adder - INFO - Added 10 and 5, result: 15
+2025-07-11 12:47:31,726 - Divider - INFO - Divided 10 by 2, result: 5.0
+2025-07-11 12:47:31,726 - Divider - WARNING - Tried dividing 10 by zero

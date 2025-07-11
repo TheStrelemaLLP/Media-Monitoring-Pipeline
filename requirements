@@ -1,1 +1,10 @@
 flask
+faiss-cpu
+langchain
+python-dotenv
+langchain-core
+langchain-openai
+langchain-ollama
+langchain-community
+langchain-anthropic
+langchain-google-genai

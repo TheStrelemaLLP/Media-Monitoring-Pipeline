@@ -1,5 +1,5 @@
 # modules/divider.py
-from logger import setup_logger
+from utils import setup_logger
 logger = setup_logger("Divider")
 
 class Divider:

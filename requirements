@@ -8,3 +8,9 @@ langchain-ollama
 langchain-community
 langchain-anthropic
 langchain-google-genai
+flask
+selenium
+pandas
+datetime
+logging
+os

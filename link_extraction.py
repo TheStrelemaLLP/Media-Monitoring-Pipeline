@@ -12,7 +12,7 @@ import time
 logger = setup_logger("Link_extraction")
 
 class Link_extraction:
-    def setup_driver():
+    def setup_driver(self):
         # Set up Chrome options
         options = Options()
         options.add_argument("--headless")
@@ -31,7 +31,7 @@ class Link_extraction:
 
     # ====================================
 
-    def keywords_extraction(file_path, sheet_name, pages):
+    def keywords_extraction(self, file_path, sheet_name, pages):
         # Read the specific sheet for leader
         df = pd.read_excel(file_path, sheet_name=sheet_name)
 
@@ -41,8 +41,8 @@ class Link_extraction:
     
     # ====================================
 
-    def fetch_links(driver, keywords_file_path, leader_name, start_date, end_date):
-        keywords_with_pages = Link_extraction.keywords_extraction(keywords_file_path, leader_name)
+    def fetch_links(self, driver, keywords_with_pages, start_date, end_date):
+        # keywords_with_pages = Link_extraction.keywords_extraction(keywords_file_path, leader_name)
 
         # Data storage
         data = []
@@ -87,18 +87,16 @@ class Link_extraction:
         driver.quit()
         return data
 
-# ==================================================
+    # ==================================================
 
-def Link_Filtering(data):
-    df = pd.DataFrame(data, columns=["Title", "Links"])
+    def link_filtering(self, data):
+        df = pd.DataFrame(data, columns=["Title", "Links"])
+        df_without_duplicates = df.drop_duplicates()
+        return df_without_duplicates
+    # ================================================
 
-    df_without_duplicates = df.drop_duplicates()
+    def save_links(self, df, output_filename):
+        df.to_excel(output_filename, index=False)
 
-    return df_without_duplicates
-# ================================================
-
-def save_links(df, output_filename):
-    df.to_excel(output_filename, index=False)
-
-    print(f"Total links extracted: {len(df)}")
-    print(f"Data saved to '{output_filename}'")
+        print(f"Total links extracted: {len(df)}")
+        print(f"Data saved to '{output_filename}'")

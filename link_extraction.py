@@ -12,6 +12,14 @@ import time
 logger = setup_logger("Link_extraction")
 
 class Link_extraction:
+    def __init__(self, leader_name, start_date, end_date, n_pages, keywords_file_path, output_filename):
+        self.leader_name = leader_name
+        self.start_date = start_date
+        self.end_date = end_date
+        self.n_pages = n_pages
+        self.keywords_file_path = keywords_file_path
+        self.output_filename = output_filename
+
     def setup_driver(self):
         # Set up Chrome options
         options = Options()
@@ -41,9 +49,29 @@ class Link_extraction:
     
     # ====================================
 
-    def fetch_links(self, driver, keywords_with_pages, start_date, end_date):
-        # keywords_with_pages = Link_extraction.keywords_extraction(keywords_file_path, leader_name)
+    # ==================================================
 
+    def link_filtering(self, data):
+        df = pd.DataFrame(data, columns=["Title", "Links"])
+        df_without_duplicates = df.drop_duplicates()
+        return df_without_duplicates
+    # ================================================
+
+    def save_links(self, df, output_filename):
+        df.to_excel(output_filename, index=False)
+
+        print(f"Total links extracted: {len(df)}")
+        print(f"Data saved to '{output_filename}'")
+    # =================================================
+
+    def fetch_links(self):
+        # keywords_with_pages = Link_extraction.keywords_extraction(self.keywords_file_path, self.leader_name)
+
+        keywords_with_pages = self.keywords_extraction(self.keywords_file_path, self.leader_name, self.n_pages)
+
+        # set up driver
+        driver = self.setup_driver()
+        
         # Data storage
         data = []
 
@@ -51,7 +79,7 @@ class Link_extraction:
         for search_query, num_pages in keywords_with_pages.items():
             print(f"Searching for: {search_query} ({num_pages} pages)")
 
-            news_url = f"https://www.google.co.in/search?q={search_query.replace(' ', '+')}&tbm=nws&tbs=cdr:1,cd_min:{start_date},cd_max:{end_date}"
+            news_url = f"https://www.google.co.in/search?q={search_query.replace(' ', '+')}&tbm=nws&tbs=cdr:1,cd_min:{self.start_date},cd_max:{self.end_date}"
             driver.get(news_url)
             time.sleep(5)
 
@@ -85,18 +113,23 @@ class Link_extraction:
                     break
 
         driver.quit()
-        return data
 
-    # ==================================================
+        df_without_duplicates = self.link_filtering(data)
 
-    def link_filtering(self, data):
-        df = pd.DataFrame(data, columns=["Title", "Links"])
-        df_without_duplicates = df.drop_duplicates()
-        return df_without_duplicates
-    # ================================================
+        self.save_links(df_without_duplicates, self.output_filename)
 
-    def save_links(self, df, output_filename):
-        df.to_excel(output_filename, index=False)
+        # return data
 
-        print(f"Total links extracted: {len(df)}")
-        print(f"Data saved to '{output_filename}'")
+    # # ==================================================
+
+    # def link_filtering(self, data):
+    #     df = pd.DataFrame(data, columns=["Title", "Links"])
+    #     df_without_duplicates = df.drop_duplicates()
+    #     return df_without_duplicates
+    # # ================================================
+
+    # def save_links(self, df, output_filename):
+    #     df.to_excel(output_filename, index=False)
+
+    #     print(f"Total links extracted: {len(df)}")
+    #     print(f"Data saved to '{output_filename}'")

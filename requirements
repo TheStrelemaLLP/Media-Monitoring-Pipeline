@@ -13,4 +13,11 @@ selenium
 pandas
 datetime
 logging
+webdriver_manager
+xlsxwriter
+python-docx
+requests
+bs4
+tqdm
 os
+pathlib

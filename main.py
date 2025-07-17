@@ -4,21 +4,32 @@ from modules.news_scraper import NewsScraper
 from modules.chunking import split_docx_by_article_chunks
 from modules.facebook_docs import create_facebook_doc
 import os
-
+from link_extraction import Link_extraction
 
 def main():
-    adder = Adder()
-    divider = Divider()
-
     try:
-        excel_file_path = "C:/Users/HP/Documents/Media Monitoring/Devendra Fadnavis/7 July to 14 July 2025/DF_14th_July.xlsx"  # Replace with your news Excel file path
-        facebook_excel_file_path = "C:/Users/HP/Documents/Media Monitoring/Chandrashekhar Bawankule/19th May to 26th May 2025/CB_FB.xlsx"  # Replace with your Facebook Excel file path, or set to None if not used
+        leader_name = "Prakash Abitkar"
+        start_date = "07/12/2025"
+        end_date ="07/17/2025"
+
+        n_pages = 30
+
+        keywords_file_path = "C:/Users/HP/Desktop/Media-Monitoring/search_query.xlsx"
+        output_filename = "C:/Users/HP/Desktop/Media-Monitoring/extracted_links.xlsx"
+
+        # excel_file_path = output_filename  # Replace with your news Excel file path
+        facebook_excel_file_path = "C:/Users/HP/Downloads/CB_FB.xlsx"  # Replace with your Facebook Excel file path, or set to None if not used
         output_folder_path = "C:/Users/HP/Downloads"  # Replace with your desired output folder
-        leader = "Devendra Fadnavis"  # Define leader name for chunking and Facebook doc
+        # leader = "Devendra Fadnavis"  # Define leader name for chunking and Facebook doc
         chunk_size_kb = 250  # Size limit for each chunk in KB
 
+        print("1. Link Extraction.....")
+        link_extraction = Link_extraction(leader_name, start_date, end_date, n_pages, keywords_file_path, output_filename)
+        link_extraction.fetch_links()
+
+        print("2. News Extraction.....")
         # Initialize and run the news scraper
-        scraper = NewsScraper(file_path=excel_file_path, output_folder=output_folder_path, leader=leader)
+        scraper = NewsScraper(file_path=output_filename, output_folder=output_folder_path, leader=leader_name)
         scraper.scrape()
 
         # Get the paths to the news output files
@@ -33,7 +44,7 @@ def main():
             input_path=docx_path,
             chunk_size_kb=chunk_size_kb,
             output_dir=output_folder_path,
-            leader=leader
+            leader=leader_name
         )
         print(f"Chunked news files saved at: {', '.join(chunk_paths)}")
 
@@ -43,7 +54,7 @@ def main():
             facebook_doc_path = create_facebook_doc(
                 excel_file_path=facebook_excel_file_path,
                 output_dir=output_folder_path,
-                leader=leader
+                leader=leader_name
             )
             print(f"Facebook Word document saved at: {facebook_doc_path}")
         else:

@@ -1,0 +1,235 @@
+2025-07-17 13:14:07,341 - NewsScraper - INFO - Initializing NewsScraper.
+2025-07-17 13:14:07,341 - NewsScraper - DEBUG - Output filenames set: extracted_links_Prakash Abitkar_News_Content.docx, extracted_links_Prakash Abitkar_failed_links.xlsx
+2025-07-17 13:14:07,341 - NewsScraper - DEBUG - NewsScraper initialized with leader: Prakash Abitkar
+2025-07-17 13:14:07,341 - NewsScraper - INFO - Starting news scraping process.
+2025-07-17 13:14:07,341 - NewsScraper - DEBUG - Reading input file: C:/Users/HP/Desktop/Media-Monitoring/extracted_links.xlsx
+2025-07-17 13:14:07,374 - NewsScraper - INFO - Loaded 36 links from C:/Users/HP/Desktop/Media-Monitoring/extracted_links.xlsx
+2025-07-17 13:14:07,375 - NewsScraper - DEBUG - Filtered to 36 valid URLs
+2025-07-17 13:14:07,375 - NewsScraper - INFO - Setting up Selenium WebDriver.
+2025-07-17 13:14:33,275 - NewsScraper - DEBUG - Selenium WebDriver setup successful.
+2025-07-17 13:14:33,339 - NewsScraper - INFO - Processing URL: https://www.mid-day.com/mumbai/mumbai-news/article/maharashtra-to-set-up-state-level-committee-for-effective-leprosy-eradication-says-maharashtra-health-minister-prakash-abitkar-23584820
+2025-07-17 13:14:33,339 - NewsScraper - DEBUG - Attempting static scrape for URL: https://www.mid-day.com/mumbai/mumbai-news/article/maharashtra-to-set-up-state-level-committee-for-effective-leprosy-eradication-says-maharashtra-health-minister-prakash-abitkar-23584820
+2025-07-17 13:14:34,735 - NewsScraper - DEBUG - Static scrape successful for https://www.mid-day.com/mumbai/mumbai-news/article/maharashtra-to-set-up-state-level-committee-for-effective-leprosy-eradication-says-maharashtra-health-minister-prakash-abitkar-23584820
+2025-07-17 13:14:34,735 - NewsScraper - DEBUG - Leader name check for Prakash Abitkar: Found
+2025-07-17 13:14:34,735 - NewsScraper - INFO - Article extracted successfully for https://www.mid-day.com/mumbai/mumbai-news/article/maharashtra-to-set-up-state-level-committee-for-effective-leprosy-eradication-says-maharashtra-health-minister-prakash-abitkar-23584820
+2025-07-17 13:14:34,735 - NewsScraper - INFO - Processing URL: https://www.lokmattimes.com/health/four-new-cancer-hospitals-to-be-set-up-in-maharashtra-minister-1/
+2025-07-17 13:14:34,735 - NewsScraper - DEBUG - Attempting static scrape for URL: https://www.lokmattimes.com/health/four-new-cancer-hospitals-to-be-set-up-in-maharashtra-minister-1/
+2025-07-17 13:14:36,367 - NewsScraper - DEBUG - Static scrape successful for https://www.lokmattimes.com/health/four-new-cancer-hospitals-to-be-set-up-in-maharashtra-minister-1/
+2025-07-17 13:14:36,367 - NewsScraper - DEBUG - Leader name check for Prakash Abitkar: Found
+2025-07-17 13:14:36,367 - NewsScraper - INFO - Article extracted successfully for https://www.lokmattimes.com/health/four-new-cancer-hospitals-to-be-set-up-in-maharashtra-minister-1/
+2025-07-17 13:14:36,367 - NewsScraper - INFO - Processing URL: https://inshorts.com/en/amp_news/reports-of-14-000-maha-women-with-cancer-symptoms-false--minister-1752313808066
+2025-07-17 13:14:36,367 - NewsScraper - DEBUG - Attempting static scrape for URL: https://inshorts.com/en/amp_news/reports-of-14-000-maha-women-with-cancer-symptoms-false--minister-1752313808066
+2025-07-17 13:14:37,458 - NewsScraper - DEBUG - Static scrape successful for https://inshorts.com/en/amp_news/reports-of-14-000-maha-women-with-cancer-symptoms-false--minister-1752313808066
+2025-07-17 13:14:37,458 - NewsScraper - DEBUG - Static scrape failed, attempting dynamic scrape for https://inshorts.com/en/amp_news/reports-of-14-000-maha-women-with-cancer-symptoms-false--minister-1752313808066
+2025-07-17 13:14:37,458 - NewsScraper - DEBUG - Attempting dynamic scrape for URL: https://inshorts.com/en/amp_news/reports-of-14-000-maha-women-with-cancer-symptoms-false--minister-1752313808066
+2025-07-17 13:14:39,448 - NewsScraper - DEBUG - Dynamic scrape successful for https://inshorts.com/en/amp_news/reports-of-14-000-maha-women-with-cancer-symptoms-false--minister-1752313808066
+2025-07-17 13:14:39,448 - NewsScraper - WARNING - Failed to extract content from https://inshorts.com/en/amp_news/reports-of-14-000-maha-women-with-cancer-symptoms-false--minister-1752313808066
+2025-07-17 13:14:39,449 - NewsScraper - INFO - Processing URL: https://www.mid-day.com/mumbai/mumbai-news/photo/in-photos-maharashtra-to-form-leprosy-eradication-committee--106388
+2025-07-17 13:14:39,449 - NewsScraper - DEBUG - Attempting static scrape for URL: https://www.mid-day.com/mumbai/mumbai-news/photo/in-photos-maharashtra-to-form-leprosy-eradication-committee--106388
+2025-07-17 13:14:41,250 - NewsScraper - WARNING - Static scrape failed for https://www.mid-day.com/mumbai/mumbai-news/photo/in-photos-maharashtra-to-form-leprosy-eradication-committee--106388: HTTPSConnectionPool(host='www.mid-day.com', port=443): Read timed out. (read timeout=1)
+2025-07-17 13:14:41,250 - NewsScraper - DEBUG - Static scrape failed, attempting dynamic scrape for https://www.mid-day.com/mumbai/mumbai-news/photo/in-photos-maharashtra-to-form-leprosy-eradication-committee--106388
+2025-07-17 13:14:41,250 - NewsScraper - DEBUG - Attempting dynamic scrape for URL: https://www.mid-day.com/mumbai/mumbai-news/photo/in-photos-maharashtra-to-form-leprosy-eradication-committee--106388
+2025-07-17 13:16:36,985 - NewsScraper - DEBUG - Dynamic scrape successful for https://www.mid-day.com/mumbai/mumbai-news/photo/in-photos-maharashtra-to-form-leprosy-eradication-committee--106388
+2025-07-17 13:16:36,985 - NewsScraper - DEBUG - Leader name check for Prakash Abitkar: Found
+2025-07-17 13:16:36,985 - NewsScraper - INFO - Article extracted successfully for https://www.mid-day.com/mumbai/mumbai-news/photo/in-photos-maharashtra-to-form-leprosy-eradication-committee--106388
+2025-07-17 13:16:36,985 - NewsScraper - INFO - Processing URL: https://www.loksatta.com/mumbai/health-minister-prakash-abitkar-says-102-ambulance-service-restored-mumbai-print-news-ocd-94-5228346/
+2025-07-17 13:16:36,985 - NewsScraper - DEBUG - Attempting static scrape for URL: https://www.loksatta.com/mumbai/health-minister-prakash-abitkar-says-102-ambulance-service-restored-mumbai-print-news-ocd-94-5228346/
+2025-07-17 13:16:39,208 - NewsScraper - DEBUG - Static scrape successful for https://www.loksatta.com/mumbai/health-minister-prakash-abitkar-says-102-ambulance-service-restored-mumbai-print-news-ocd-94-5228346/
+2025-07-17 13:16:39,208 - NewsScraper - DEBUG - Leader name check for Prakash Abitkar: Found
+2025-07-17 13:16:39,208 - NewsScraper - INFO - Article extracted successfully for https://www.loksatta.com/mumbai/health-minister-prakash-abitkar-says-102-ambulance-service-restored-mumbai-print-news-ocd-94-5228346/
+2025-07-17 13:16:39,208 - NewsScraper - INFO - Processing URL: https://sarkarnama.esakal.com/maharashtra/paschim-maharashtra/mahayuti-dispute-over-kolhapur-district-committee-bjp-ncp-vs-prakash-abitkar-dk88-rg93
+2025-07-17 13:16:39,208 - NewsScraper - DEBUG - Attempting static scrape for URL: https://sarkarnama.esakal.com/maharashtra/paschim-maharashtra/mahayuti-dispute-over-kolhapur-district-committee-bjp-ncp-vs-prakash-abitkar-dk88-rg93
+2025-07-17 13:16:39,970 - NewsScraper - WARNING - Static scrape failed for https://sarkarnama.esakal.com/maharashtra/paschim-maharashtra/mahayuti-dispute-over-kolhapur-district-committee-bjp-ncp-vs-prakash-abitkar-dk88-rg93: 403 Client Error: Forbidden for url: https://sarkarnama.esakal.com/maharashtra/paschim-maharashtra/mahayuti-dispute-over-kolhapur-district-committee-bjp-ncp-vs-prakash-abitkar-dk88-rg93
+2025-07-17 13:16:39,971 - NewsScraper - DEBUG - Static scrape failed, attempting dynamic scrape for https://sarkarnama.esakal.com/maharashtra/paschim-maharashtra/mahayuti-dispute-over-kolhapur-district-committee-bjp-ncp-vs-prakash-abitkar-dk88-rg93
+2025-07-17 13:16:39,971 - NewsScraper - DEBUG - Attempting dynamic scrape for URL: https://sarkarnama.esakal.com/maharashtra/paschim-maharashtra/mahayuti-dispute-over-kolhapur-district-committee-bjp-ncp-vs-prakash-abitkar-dk88-rg93
+2025-07-17 13:16:54,341 - NewsScraper - DEBUG - Dynamic scrape successful for https://sarkarnama.esakal.com/maharashtra/paschim-maharashtra/mahayuti-dispute-over-kolhapur-district-committee-bjp-ncp-vs-prakash-abitkar-dk88-rg93
+2025-07-17 13:16:54,341 - NewsScraper - DEBUG - Leader name check for Prakash Abitkar: Found
+2025-07-17 13:16:54,342 - NewsScraper - INFO - Article extracted successfully for https://sarkarnama.esakal.com/maharashtra/paschim-maharashtra/mahayuti-dispute-over-kolhapur-district-committee-bjp-ncp-vs-prakash-abitkar-dk88-rg93
+2025-07-17 13:16:54,342 - NewsScraper - INFO - Processing URL: https://marathi.oneindia.com/health/legislative-session-2025-action-will-be-taken-if-doctor-staff-is-not-present-in-phc-prakash-abitkar-032765.html?ref_source=OI-MR&ref_medium=Home-Page&ref_campaign=News-Cards
+2025-07-17 13:16:54,342 - NewsScraper - DEBUG - Attempting static scrape for URL: https://marathi.oneindia.com/health/legislative-session-2025-action-will-be-taken-if-doctor-staff-is-not-present-in-phc-prakash-abitkar-032765.html?ref_source=OI-MR&ref_medium=Home-Page&ref_campaign=News-Cards
+2025-07-17 13:16:55,194 - NewsScraper - WARNING - Static scrape failed for https://marathi.oneindia.com/health/legislative-session-2025-action-will-be-taken-if-doctor-staff-is-not-present-in-phc-prakash-abitkar-032765.html?ref_source=OI-MR&ref_medium=Home-Page&ref_campaign=News-Cards: 403 Client Error: Forbidden for url: https://marathi.oneindia.com/health/legislative-session-2025-action-will-be-taken-if-doctor-staff-is-not-present-in-phc-prakash-abitkar-032765.html?ref_source=OI-MR&ref_medium=Home-Page&ref_campaign=News-Cards
+2025-07-17 13:16:55,194 - NewsScraper - DEBUG - Static scrape failed, attempting dynamic scrape for https://marathi.oneindia.com/health/legislative-session-2025-action-will-be-taken-if-doctor-staff-is-not-present-in-phc-prakash-abitkar-032765.html?ref_source=OI-MR&ref_medium=Home-Page&ref_campaign=News-Cards
+2025-07-17 13:16:55,194 - NewsScraper - DEBUG - Attempting dynamic scrape for URL: https://marathi.oneindia.com/health/legislative-session-2025-action-will-be-taken-if-doctor-staff-is-not-present-in-phc-prakash-abitkar-032765.html?ref_source=OI-MR&ref_medium=Home-Page&ref_campaign=News-Cards
+2025-07-17 13:16:56,027 - NewsScraper - DEBUG - Dynamic scrape successful for https://marathi.oneindia.com/health/legislative-session-2025-action-will-be-taken-if-doctor-staff-is-not-present-in-phc-prakash-abitkar-032765.html?ref_source=OI-MR&ref_medium=Home-Page&ref_campaign=News-Cards
+2025-07-17 13:16:56,027 - NewsScraper - DEBUG - Leader name check for Prakash Abitkar: Not found
+2025-07-17 13:16:56,027 - NewsScraper - INFO - No mention of Prakash Abitkar in https://marathi.oneindia.com/health/legislative-session-2025-action-will-be-taken-if-doctor-staff-is-not-present-in-phc-prakash-abitkar-032765.html?ref_source=OI-MR&ref_medium=Home-Page&ref_campaign=News-Cards
+2025-07-17 13:16:56,027 - NewsScraper - INFO - Processing URL: https://www.marathiebatmya.com/political/prakash-abitkar-informed-102-number-ambulance-service-on-regular/
+2025-07-17 13:16:56,028 - NewsScraper - DEBUG - Attempting static scrape for URL: https://www.marathiebatmya.com/political/prakash-abitkar-informed-102-number-ambulance-service-on-regular/
+2025-07-17 13:16:57,174 - NewsScraper - WARNING - Static scrape failed for https://www.marathiebatmya.com/political/prakash-abitkar-informed-102-number-ambulance-service-on-regular/: 403 Client Error: Forbidden for url: https://www.marathiebatmya.com/political/prakash-abitkar-informed-102-number-ambulance-service-on-regular/
+2025-07-17 13:16:57,174 - NewsScraper - DEBUG - Static scrape failed, attempting dynamic scrape for https://www.marathiebatmya.com/political/prakash-abitkar-informed-102-number-ambulance-service-on-regular/
+2025-07-17 13:16:57,174 - NewsScraper - DEBUG - Attempting dynamic scrape for URL: https://www.marathiebatmya.com/political/prakash-abitkar-informed-102-number-ambulance-service-on-regular/
+2025-07-17 13:16:58,143 - NewsScraper - DEBUG - Dynamic scrape successful for https://www.marathiebatmya.com/political/prakash-abitkar-informed-102-number-ambulance-service-on-regular/
+2025-07-17 13:16:58,143 - NewsScraper - WARNING - Human verification detected for https://www.marathiebatmya.com/political/prakash-abitkar-informed-102-number-ambulance-service-on-regular/
+2025-07-17 13:16:58,144 - NewsScraper - INFO - Processing URL: https://www.mymahanagar.com/maharashtra/maharashtra-4-new-cancer-hospital-will-developed-by-governement-says-health-minister-prakash-abitkar/
+2025-07-17 13:16:58,144 - NewsScraper - DEBUG - Attempting static scrape for URL: https://www.mymahanagar.com/maharashtra/maharashtra-4-new-cancer-hospital-will-developed-by-governement-says-health-minister-prakash-abitkar/
+2025-07-17 13:16:59,116 - NewsScraper - WARNING - Static scrape failed for https://www.mymahanagar.com/maharashtra/maharashtra-4-new-cancer-hospital-will-developed-by-governement-says-health-minister-prakash-abitkar/: 403 Client Error: Forbidden for url: https://www.mymahanagar.com/maharashtra/maharashtra-4-new-cancer-hospital-will-developed-by-governement-says-health-minister-prakash-abitkar/
+2025-07-17 13:16:59,116 - NewsScraper - DEBUG - Static scrape failed, attempting dynamic scrape for https://www.mymahanagar.com/maharashtra/maharashtra-4-new-cancer-hospital-will-developed-by-governement-says-health-minister-prakash-abitkar/
+2025-07-17 13:16:59,116 - NewsScraper - DEBUG - Attempting dynamic scrape for URL: https://www.mymahanagar.com/maharashtra/maharashtra-4-new-cancer-hospital-will-developed-by-governement-says-health-minister-prakash-abitkar/
+2025-07-17 13:16:59,952 - NewsScraper - DEBUG - Dynamic scrape successful for https://www.mymahanagar.com/maharashtra/maharashtra-4-new-cancer-hospital-will-developed-by-governement-says-health-minister-prakash-abitkar/
+2025-07-17 13:16:59,953 - NewsScraper - WARNING - Human verification detected for https://www.mymahanagar.com/maharashtra/maharashtra-4-new-cancer-hospital-will-developed-by-governement-says-health-minister-prakash-abitkar/
+2025-07-17 13:16:59,953 - NewsScraper - INFO - Processing URL: https://www.lokmat.com/kolhapur/inclusion-of-panhalgad-in-world-heritage-site-is-a-proud-moment-says-guardian-minister-prakash-abitkar-a-a746/
+2025-07-17 13:16:59,953 - NewsScraper - DEBUG - Attempting static scrape for URL: https://www.lokmat.com/kolhapur/inclusion-of-panhalgad-in-world-heritage-site-is-a-proud-moment-says-guardian-minister-prakash-abitkar-a-a746/
+2025-07-17 13:17:00,797 - NewsScraper - DEBUG - Static scrape successful for https://www.lokmat.com/kolhapur/inclusion-of-panhalgad-in-world-heritage-site-is-a-proud-moment-says-guardian-minister-prakash-abitkar-a-a746/
+2025-07-17 13:17:00,798 - NewsScraper - DEBUG - Leader name check for Prakash Abitkar: Found
+2025-07-17 13:17:00,798 - NewsScraper - INFO - Article extracted successfully for https://www.lokmat.com/kolhapur/inclusion-of-panhalgad-in-world-heritage-site-is-a-proud-moment-says-guardian-minister-prakash-abitkar-a-a746/
+2025-07-17 13:17:00,799 - NewsScraper - INFO - Processing URL: https://deshdoot.com/new-facilities-soon-for-esi-hospital-health-minister-abitkar-assures-mla-seema-hire/
+2025-07-17 13:17:00,799 - NewsScraper - DEBUG - Attempting static scrape for URL: https://deshdoot.com/new-facilities-soon-for-esi-hospital-health-minister-abitkar-assures-mla-seema-hire/
+2025-07-17 13:17:01,937 - NewsScraper - DEBUG - Static scrape successful for https://deshdoot.com/new-facilities-soon-for-esi-hospital-health-minister-abitkar-assures-mla-seema-hire/
+2025-07-17 13:17:01,937 - NewsScraper - DEBUG - Leader name check for Prakash Abitkar: Found
+2025-07-17 13:17:01,938 - NewsScraper - INFO - Article extracted successfully for https://deshdoot.com/new-facilities-soon-for-esi-hospital-health-minister-abitkar-assures-mla-seema-hire/
+2025-07-17 13:17:01,939 - NewsScraper - INFO - Processing URL: https://www.khabarchhe.com/national/maharashtra-over-14000-women-detected-with-cancer-like-symptoms-in-hingoli-health-minister-prakash-abitkar-tell-in-assembly/article-172633
+2025-07-17 13:17:01,939 - NewsScraper - DEBUG - Attempting static scrape for URL: https://www.khabarchhe.com/national/maharashtra-over-14000-women-detected-with-cancer-like-symptoms-in-hingoli-health-minister-prakash-abitkar-tell-in-assembly/article-172633
+2025-07-17 13:17:03,922 - NewsScraper - DEBUG - Static scrape successful for https://www.khabarchhe.com/national/maharashtra-over-14000-women-detected-with-cancer-like-symptoms-in-hingoli-health-minister-prakash-abitkar-tell-in-assembly/article-172633
+2025-07-17 13:17:03,924 - NewsScraper - DEBUG - Leader name check for Prakash Abitkar: Not found
+2025-07-17 13:17:03,924 - NewsScraper - INFO - No mention of Prakash Abitkar in https://www.khabarchhe.com/national/maharashtra-over-14000-women-detected-with-cancer-like-symptoms-in-hingoli-health-minister-prakash-abitkar-tell-in-assembly/article-172633
+2025-07-17 13:17:03,925 - NewsScraper - INFO - Processing URL: https://www.loksatta.com/kolhapur/kolhapur-minister-prakash-abitkar-takes-senior-citizens-on-air-trip-unique-guru-purnima-initiative-vsd-99-5224693/
+2025-07-17 13:17:03,925 - NewsScraper - DEBUG - Attempting static scrape for URL: https://www.loksatta.com/kolhapur/kolhapur-minister-prakash-abitkar-takes-senior-citizens-on-air-trip-unique-guru-purnima-initiative-vsd-99-5224693/
+2025-07-17 13:17:05,997 - NewsScraper - WARNING - Static scrape failed for https://www.loksatta.com/kolhapur/kolhapur-minister-prakash-abitkar-takes-senior-citizens-on-air-trip-unique-guru-purnima-initiative-vsd-99-5224693/: HTTPSConnectionPool(host='www.loksatta.com', port=443): Read timed out. (read timeout=1)
+2025-07-17 13:17:05,997 - NewsScraper - DEBUG - Static scrape failed, attempting dynamic scrape for https://www.loksatta.com/kolhapur/kolhapur-minister-prakash-abitkar-takes-senior-citizens-on-air-trip-unique-guru-purnima-initiative-vsd-99-5224693/
+2025-07-17 13:17:05,997 - NewsScraper - DEBUG - Attempting dynamic scrape for URL: https://www.loksatta.com/kolhapur/kolhapur-minister-prakash-abitkar-takes-senior-citizens-on-air-trip-unique-guru-purnima-initiative-vsd-99-5224693/
+2025-07-17 13:17:09,291 - NewsScraper - DEBUG - Dynamic scrape successful for https://www.loksatta.com/kolhapur/kolhapur-minister-prakash-abitkar-takes-senior-citizens-on-air-trip-unique-guru-purnima-initiative-vsd-99-5224693/
+2025-07-17 13:17:09,292 - NewsScraper - DEBUG - Leader name check for Prakash Abitkar: Found
+2025-07-17 13:17:09,292 - NewsScraper - INFO - Article extracted successfully for https://www.loksatta.com/kolhapur/kolhapur-minister-prakash-abitkar-takes-senior-citizens-on-air-trip-unique-guru-purnima-initiative-vsd-99-5224693/
+2025-07-17 13:17:09,293 - NewsScraper - INFO - Processing URL: https://www.esakal.com/paschim-maharashtra/kolhapur/prakash-abitkar-kolhapur-guardian-minister-faced-dissent-from-bjp-especially-shinde-aligned-factions-during-a-district-planning-committee-meeting-srs92
+2025-07-17 13:17:09,293 - NewsScraper - DEBUG - Attempting static scrape for URL: https://www.esakal.com/paschim-maharashtra/kolhapur/prakash-abitkar-kolhapur-guardian-minister-faced-dissent-from-bjp-especially-shinde-aligned-factions-during-a-district-planning-committee-meeting-srs92
+2025-07-17 13:17:10,073 - NewsScraper - WARNING - Static scrape failed for https://www.esakal.com/paschim-maharashtra/kolhapur/prakash-abitkar-kolhapur-guardian-minister-faced-dissent-from-bjp-especially-shinde-aligned-factions-during-a-district-planning-committee-meeting-srs92: 403 Client Error: Forbidden for url: https://www.esakal.com/paschim-maharashtra/kolhapur/prakash-abitkar-kolhapur-guardian-minister-faced-dissent-from-bjp-especially-shinde-aligned-factions-during-a-district-planning-committee-meeting-srs92
+2025-07-17 13:17:10,074 - NewsScraper - DEBUG - Static scrape failed, attempting dynamic scrape for https://www.esakal.com/paschim-maharashtra/kolhapur/prakash-abitkar-kolhapur-guardian-minister-faced-dissent-from-bjp-especially-shinde-aligned-factions-during-a-district-planning-committee-meeting-srs92
+2025-07-17 13:17:10,074 - NewsScraper - DEBUG - Attempting dynamic scrape for URL: https://www.esakal.com/paschim-maharashtra/kolhapur/prakash-abitkar-kolhapur-guardian-minister-faced-dissent-from-bjp-especially-shinde-aligned-factions-during-a-district-planning-committee-meeting-srs92
+2025-07-17 13:18:59,124 - NewsScraper - DEBUG - Dynamic scrape successful for https://www.esakal.com/paschim-maharashtra/kolhapur/prakash-abitkar-kolhapur-guardian-minister-faced-dissent-from-bjp-especially-shinde-aligned-factions-during-a-district-planning-committee-meeting-srs92
+2025-07-17 13:18:59,125 - NewsScraper - DEBUG - Leader name check for Prakash Abitkar: Not found
+2025-07-17 13:18:59,125 - NewsScraper - INFO - No mention of Prakash Abitkar in https://www.esakal.com/paschim-maharashtra/kolhapur/prakash-abitkar-kolhapur-guardian-minister-faced-dissent-from-bjp-especially-shinde-aligned-factions-during-a-district-planning-committee-meeting-srs92
+2025-07-17 13:18:59,126 - NewsScraper - INFO - Processing URL: https://deshdoot.com/women-hospital-health-minister-prakash-abitkar-statement-sangamner/
+2025-07-17 13:18:59,126 - NewsScraper - DEBUG - Attempting static scrape for URL: https://deshdoot.com/women-hospital-health-minister-prakash-abitkar-statement-sangamner/
+2025-07-17 13:19:00,477 - NewsScraper - DEBUG - Static scrape successful for https://deshdoot.com/women-hospital-health-minister-prakash-abitkar-statement-sangamner/
+2025-07-17 13:19:00,478 - NewsScraper - DEBUG - Leader name check for Prakash Abitkar: Found
+2025-07-17 13:19:00,478 - NewsScraper - INFO - Article extracted successfully for https://deshdoot.com/women-hospital-health-minister-prakash-abitkar-statement-sangamner/
+2025-07-17 13:19:00,478 - NewsScraper - INFO - Processing URL: https://www.esakal.com/paschim-maharashtra/kolhapur/politics-kolhapur-headaches-of-prakash-abitkar-hasan-mushrif-vinay-kore-awade-yadravkar-will-increase-number-of-aspirants-what-is-the-role-of-satej-patil-srs92
+2025-07-17 13:19:00,479 - NewsScraper - DEBUG - Attempting static scrape for URL: https://www.esakal.com/paschim-maharashtra/kolhapur/politics-kolhapur-headaches-of-prakash-abitkar-hasan-mushrif-vinay-kore-awade-yadravkar-will-increase-number-of-aspirants-what-is-the-role-of-satej-patil-srs92
+2025-07-17 13:19:01,279 - NewsScraper - WARNING - Static scrape failed for https://www.esakal.com/paschim-maharashtra/kolhapur/politics-kolhapur-headaches-of-prakash-abitkar-hasan-mushrif-vinay-kore-awade-yadravkar-will-increase-number-of-aspirants-what-is-the-role-of-satej-patil-srs92: 403 Client Error: Forbidden for url: https://www.esakal.com/paschim-maharashtra/kolhapur/politics-kolhapur-headaches-of-prakash-abitkar-hasan-mushrif-vinay-kore-awade-yadravkar-will-increase-number-of-aspirants-what-is-the-role-of-satej-patil-srs92
+2025-07-17 13:19:01,279 - NewsScraper - DEBUG - Static scrape failed, attempting dynamic scrape for https://www.esakal.com/paschim-maharashtra/kolhapur/politics-kolhapur-headaches-of-prakash-abitkar-hasan-mushrif-vinay-kore-awade-yadravkar-will-increase-number-of-aspirants-what-is-the-role-of-satej-patil-srs92
+2025-07-17 13:19:01,279 - NewsScraper - DEBUG - Attempting dynamic scrape for URL: https://www.esakal.com/paschim-maharashtra/kolhapur/politics-kolhapur-headaches-of-prakash-abitkar-hasan-mushrif-vinay-kore-awade-yadravkar-will-increase-number-of-aspirants-what-is-the-role-of-satej-patil-srs92
+2025-07-17 13:19:04,479 - NewsScraper - DEBUG - Dynamic scrape successful for https://www.esakal.com/paschim-maharashtra/kolhapur/politics-kolhapur-headaches-of-prakash-abitkar-hasan-mushrif-vinay-kore-awade-yadravkar-will-increase-number-of-aspirants-what-is-the-role-of-satej-patil-srs92
+2025-07-17 13:19:04,479 - NewsScraper - DEBUG - Leader name check for Prakash Abitkar: Not found
+2025-07-17 13:19:04,480 - NewsScraper - INFO - No mention of Prakash Abitkar in https://www.esakal.com/paschim-maharashtra/kolhapur/politics-kolhapur-headaches-of-prakash-abitkar-hasan-mushrif-vinay-kore-awade-yadravkar-will-increase-number-of-aspirants-what-is-the-role-of-satej-patil-srs92
+2025-07-17 13:19:04,480 - NewsScraper - INFO - Processing URL: https://www.loksatta.com/mumbai/maharashtra-health-department-prakash-abitkar-limits-mega-blood-donation-camps-mumbai-print-news-rds-00-5227011/
+2025-07-17 13:19:04,481 - NewsScraper - DEBUG - Attempting static scrape for URL: https://www.loksatta.com/mumbai/maharashtra-health-department-prakash-abitkar-limits-mega-blood-donation-camps-mumbai-print-news-rds-00-5227011/
+2025-07-17 13:19:05,299 - NewsScraper - DEBUG - Static scrape successful for https://www.loksatta.com/mumbai/maharashtra-health-department-prakash-abitkar-limits-mega-blood-donation-camps-mumbai-print-news-rds-00-5227011/
+2025-07-17 13:19:05,300 - NewsScraper - DEBUG - Leader name check for Prakash Abitkar: Found
+2025-07-17 13:19:05,300 - NewsScraper - INFO - Article extracted successfully for https://www.loksatta.com/mumbai/maharashtra-health-department-prakash-abitkar-limits-mega-blood-donation-camps-mumbai-print-news-rds-00-5227011/
+2025-07-17 13:19:05,301 - NewsScraper - INFO - Processing URL: https://www.loksatta.com/kolhapur/inclusion-of-panhala-in-the-heritage-site-list-is-a-matter-of-pride-says-prakash-abitkar-ssb-93-5224775/
+2025-07-17 13:19:05,302 - NewsScraper - DEBUG - Attempting static scrape for URL: https://www.loksatta.com/kolhapur/inclusion-of-panhala-in-the-heritage-site-list-is-a-matter-of-pride-says-prakash-abitkar-ssb-93-5224775/
+2025-07-17 13:19:06,204 - NewsScraper - DEBUG - Static scrape successful for https://www.loksatta.com/kolhapur/inclusion-of-panhala-in-the-heritage-site-list-is-a-matter-of-pride-says-prakash-abitkar-ssb-93-5224775/
+2025-07-17 13:19:06,206 - NewsScraper - DEBUG - Leader name check for Prakash Abitkar: Found
+2025-07-17 13:19:06,206 - NewsScraper - INFO - Article extracted successfully for https://www.loksatta.com/kolhapur/inclusion-of-panhala-in-the-heritage-site-list-is-a-matter-of-pride-says-prakash-abitkar-ssb-93-5224775/
+2025-07-17 13:19:06,206 - NewsScraper - INFO - Processing URL: https://ahmednagarlive24.com/ahilyanagar-news/a-separate-hospital-for-women-will-be-opened-in-sangamner-public-health-minister-prakash-abitkar-informed-in-a-meeting/
+2025-07-17 13:19:06,207 - NewsScraper - DEBUG - Attempting static scrape for URL: https://ahmednagarlive24.com/ahilyanagar-news/a-separate-hospital-for-women-will-be-opened-in-sangamner-public-health-minister-prakash-abitkar-informed-in-a-meeting/
+2025-07-17 13:19:08,867 - NewsScraper - WARNING - Static scrape failed for https://ahmednagarlive24.com/ahilyanagar-news/a-separate-hospital-for-women-will-be-opened-in-sangamner-public-health-minister-prakash-abitkar-informed-in-a-meeting/: HTTPSConnectionPool(host='ahmednagarlive24.com', port=443): Read timed out. (read timeout=1)
+2025-07-17 13:19:08,867 - NewsScraper - DEBUG - Static scrape failed, attempting dynamic scrape for https://ahmednagarlive24.com/ahilyanagar-news/a-separate-hospital-for-women-will-be-opened-in-sangamner-public-health-minister-prakash-abitkar-informed-in-a-meeting/
+2025-07-17 13:19:08,868 - NewsScraper - DEBUG - Attempting dynamic scrape for URL: https://ahmednagarlive24.com/ahilyanagar-news/a-separate-hospital-for-women-will-be-opened-in-sangamner-public-health-minister-prakash-abitkar-informed-in-a-meeting/
+2025-07-17 13:19:12,144 - NewsScraper - DEBUG - Dynamic scrape successful for https://ahmednagarlive24.com/ahilyanagar-news/a-separate-hospital-for-women-will-be-opened-in-sangamner-public-health-minister-prakash-abitkar-informed-in-a-meeting/
+2025-07-17 13:19:12,144 - NewsScraper - DEBUG - Leader name check for Prakash Abitkar: Found
+2025-07-17 13:19:12,144 - NewsScraper - INFO - Article extracted successfully for https://ahmednagarlive24.com/ahilyanagar-news/a-separate-hospital-for-women-will-be-opened-in-sangamner-public-health-minister-prakash-abitkar-informed-in-a-meeting/
+2025-07-17 13:19:12,144 - NewsScraper - INFO - Processing URL: https://www.socialnews.xyz/?p=6753712
+2025-07-17 13:19:12,144 - NewsScraper - DEBUG - Attempting static scrape for URL: https://www.socialnews.xyz/?p=6753712
+2025-07-17 13:19:14,996 - NewsScraper - WARNING - Static scrape failed for https://www.socialnews.xyz/?p=6753712: HTTPSConnectionPool(host='www.socialnews.xyz', port=443): Read timed out. (read timeout=1)
+2025-07-17 13:19:14,996 - NewsScraper - DEBUG - Static scrape failed, attempting dynamic scrape for https://www.socialnews.xyz/?p=6753712
+2025-07-17 13:19:14,996 - NewsScraper - DEBUG - Attempting dynamic scrape for URL: https://www.socialnews.xyz/?p=6753712
+2025-07-17 13:19:48,780 - NewsScraper - DEBUG - Dynamic scrape successful for https://www.socialnews.xyz/?p=6753712
+2025-07-17 13:19:48,780 - NewsScraper - DEBUG - Leader name check for Prakash Abitkar: Found
+2025-07-17 13:19:48,780 - NewsScraper - INFO - Article extracted successfully for https://www.socialnews.xyz/?p=6753712
+2025-07-17 13:19:48,780 - NewsScraper - INFO - Processing URL: https://newschecker.in/mr/fact-check-mr/14-5k-women-detected-cancer-in-hingoli/
+2025-07-17 13:19:48,780 - NewsScraper - DEBUG - Attempting static scrape for URL: https://newschecker.in/mr/fact-check-mr/14-5k-women-detected-cancer-in-hingoli/
+2025-07-17 13:19:50,946 - NewsScraper - DEBUG - Static scrape successful for https://newschecker.in/mr/fact-check-mr/14-5k-women-detected-cancer-in-hingoli/
+2025-07-17 13:19:50,946 - NewsScraper - DEBUG - Leader name check for Prakash Abitkar: Found
+2025-07-17 13:19:50,946 - NewsScraper - INFO - Article extracted successfully for https://newschecker.in/mr/fact-check-mr/14-5k-women-detected-cancer-in-hingoli/
+2025-07-17 13:19:50,947 - NewsScraper - INFO - Processing URL: https://www.sakshipost.com/news/four-new-cancer-hospitals-be-set-maharashtra-minister-429363
+2025-07-17 13:19:50,948 - NewsScraper - DEBUG - Attempting static scrape for URL: https://www.sakshipost.com/news/four-new-cancer-hospitals-be-set-maharashtra-minister-429363
+2025-07-17 13:19:53,029 - NewsScraper - DEBUG - Static scrape successful for https://www.sakshipost.com/news/four-new-cancer-hospitals-be-set-maharashtra-minister-429363
+2025-07-17 13:19:53,030 - NewsScraper - DEBUG - Leader name check for Prakash Abitkar: Found
+2025-07-17 13:19:53,030 - NewsScraper - INFO - Article extracted successfully for https://www.sakshipost.com/news/four-new-cancer-hospitals-be-set-maharashtra-minister-429363
+2025-07-17 13:19:53,031 - NewsScraper - INFO - Processing URL: https://www.esakal.com/paschim-maharashtra/kolhapur/panhala-fort-unesco-world-heritage-site-shivaji-tourism-patrimony-prakash-abitkar-statement-bam92
+2025-07-17 13:19:53,031 - NewsScraper - DEBUG - Attempting static scrape for URL: https://www.esakal.com/paschim-maharashtra/kolhapur/panhala-fort-unesco-world-heritage-site-shivaji-tourism-patrimony-prakash-abitkar-statement-bam92
+2025-07-17 13:19:54,096 - NewsScraper - WARNING - Static scrape failed for https://www.esakal.com/paschim-maharashtra/kolhapur/panhala-fort-unesco-world-heritage-site-shivaji-tourism-patrimony-prakash-abitkar-statement-bam92: 403 Client Error: Forbidden for url: https://www.esakal.com/paschim-maharashtra/kolhapur/panhala-fort-unesco-world-heritage-site-shivaji-tourism-patrimony-prakash-abitkar-statement-bam92
+2025-07-17 13:19:54,097 - NewsScraper - DEBUG - Static scrape failed, attempting dynamic scrape for https://www.esakal.com/paschim-maharashtra/kolhapur/panhala-fort-unesco-world-heritage-site-shivaji-tourism-patrimony-prakash-abitkar-statement-bam92
+2025-07-17 13:19:54,097 - NewsScraper - DEBUG - Attempting dynamic scrape for URL: https://www.esakal.com/paschim-maharashtra/kolhapur/panhala-fort-unesco-world-heritage-site-shivaji-tourism-patrimony-prakash-abitkar-statement-bam92
+2025-07-17 13:19:58,535 - NewsScraper - DEBUG - Dynamic scrape successful for https://www.esakal.com/paschim-maharashtra/kolhapur/panhala-fort-unesco-world-heritage-site-shivaji-tourism-patrimony-prakash-abitkar-statement-bam92
+2025-07-17 13:19:58,535 - NewsScraper - DEBUG - Leader name check for Prakash Abitkar: Found
+2025-07-17 13:19:58,535 - NewsScraper - INFO - Article extracted successfully for https://www.esakal.com/paschim-maharashtra/kolhapur/panhala-fort-unesco-world-heritage-site-shivaji-tourism-patrimony-prakash-abitkar-statement-bam92
+2025-07-17 13:19:58,536 - NewsScraper - INFO - Processing URL: https://timesofindia.indiatimes.com/city/kolhapur/people-staying-within-100m-periphery-of-panhala-fort-fear-displacement/articleshow/122411210.cms
+2025-07-17 13:19:58,536 - NewsScraper - DEBUG - Attempting static scrape for URL: https://timesofindia.indiatimes.com/city/kolhapur/people-staying-within-100m-periphery-of-panhala-fort-fear-displacement/articleshow/122411210.cms
+2025-07-17 13:20:00,033 - NewsScraper - DEBUG - Static scrape successful for https://timesofindia.indiatimes.com/city/kolhapur/people-staying-within-100m-periphery-of-panhala-fort-fear-displacement/articleshow/122411210.cms
+2025-07-17 13:20:00,033 - NewsScraper - DEBUG - Leader name check for Prakash Abitkar: Not found
+2025-07-17 13:20:00,034 - NewsScraper - INFO - No mention of Prakash Abitkar in https://timesofindia.indiatimes.com/city/kolhapur/people-staying-within-100m-periphery-of-panhala-fort-fear-displacement/articleshow/122411210.cms
+2025-07-17 13:20:00,034 - NewsScraper - INFO - Processing URL: https://www.lokmattimes.com/national/maha-govt-to-set-up-committee-for-implementation-of-leprosy-eradication/
+2025-07-17 13:20:00,034 - NewsScraper - DEBUG - Attempting static scrape for URL: https://www.lokmattimes.com/national/maha-govt-to-set-up-committee-for-implementation-of-leprosy-eradication/
+2025-07-17 13:20:01,279 - NewsScraper - DEBUG - Static scrape successful for https://www.lokmattimes.com/national/maha-govt-to-set-up-committee-for-implementation-of-leprosy-eradication/
+2025-07-17 13:20:01,280 - NewsScraper - DEBUG - Leader name check for Prakash Abitkar: Found
+2025-07-17 13:20:01,280 - NewsScraper - INFO - Article extracted successfully for https://www.lokmattimes.com/national/maha-govt-to-set-up-committee-for-implementation-of-leprosy-eradication/
+2025-07-17 13:20:01,281 - NewsScraper - INFO - Processing URL: https://www.socialnews.xyz/2025/07/15/four-new-cancer-hospitals-to-be-set-up-in-maharashtra-minister/
+2025-07-17 13:20:01,281 - NewsScraper - DEBUG - Attempting static scrape for URL: https://www.socialnews.xyz/2025/07/15/four-new-cancer-hospitals-to-be-set-up-in-maharashtra-minister/
+2025-07-17 13:20:03,565 - NewsScraper - DEBUG - Static scrape successful for https://www.socialnews.xyz/2025/07/15/four-new-cancer-hospitals-to-be-set-up-in-maharashtra-minister/
+2025-07-17 13:20:03,566 - NewsScraper - DEBUG - Leader name check for Prakash Abitkar: Found
+2025-07-17 13:20:03,566 - NewsScraper - INFO - Article extracted successfully for https://www.socialnews.xyz/2025/07/15/four-new-cancer-hospitals-to-be-set-up-in-maharashtra-minister/
+2025-07-17 13:20:03,566 - NewsScraper - INFO - Processing URL: https://livemarathi.in/shiv-mohim-energizing-the-youth-of-pawankhind-guardian-minister-abitkar/
+2025-07-17 13:20:03,566 - NewsScraper - DEBUG - Attempting static scrape for URL: https://livemarathi.in/shiv-mohim-energizing-the-youth-of-pawankhind-guardian-minister-abitkar/
+2025-07-17 13:20:05,647 - NewsScraper - DEBUG - Static scrape successful for https://livemarathi.in/shiv-mohim-energizing-the-youth-of-pawankhind-guardian-minister-abitkar/
+2025-07-17 13:20:05,648 - NewsScraper - DEBUG - Leader name check for Prakash Abitkar: Found
+2025-07-17 13:20:05,648 - NewsScraper - INFO - Article extracted successfully for https://livemarathi.in/shiv-mohim-energizing-the-youth-of-pawankhind-guardian-minister-abitkar/
+2025-07-17 13:20:05,649 - NewsScraper - INFO - Processing URL: https://livemarathi.in/problem-and-solution-room-for-citizens-established/
+2025-07-17 13:20:05,649 - NewsScraper - DEBUG - Attempting static scrape for URL: https://livemarathi.in/problem-and-solution-room-for-citizens-established/
+2025-07-17 13:20:07,105 - NewsScraper - DEBUG - Static scrape successful for https://livemarathi.in/problem-and-solution-room-for-citizens-established/
+2025-07-17 13:20:07,106 - NewsScraper - DEBUG - Leader name check for Prakash Abitkar: Found
+2025-07-17 13:20:07,106 - NewsScraper - INFO - Article extracted successfully for https://livemarathi.in/problem-and-solution-room-for-citizens-established/
+2025-07-17 13:20:07,107 - NewsScraper - INFO - Processing URL: https://www.socialnews.xyz/2025/07/15/maha-govt-to-set-up-committee-for-implementation-of-leprosy-eradication/amp/
+2025-07-17 13:20:07,107 - NewsScraper - DEBUG - Attempting static scrape for URL: https://www.socialnews.xyz/2025/07/15/maha-govt-to-set-up-committee-for-implementation-of-leprosy-eradication/amp/
+2025-07-17 13:20:08,989 - NewsScraper - DEBUG - Static scrape successful for https://www.socialnews.xyz/2025/07/15/maha-govt-to-set-up-committee-for-implementation-of-leprosy-eradication/amp/
+2025-07-17 13:20:08,989 - NewsScraper - DEBUG - Leader name check for Prakash Abitkar: Found
+2025-07-17 13:20:08,989 - NewsScraper - INFO - Article extracted successfully for https://www.socialnews.xyz/2025/07/15/maha-govt-to-set-up-committee-for-implementation-of-leprosy-eradication/amp/
+2025-07-17 13:20:08,990 - NewsScraper - INFO - Processing URL: https://www.thehealthsite.com/news/maharashtra-faces-cancer-crisis-over-14500-women-in-hingoli-show-cancer-like-symptoms-during-govt-health-screening-1239129/
+2025-07-17 13:20:08,990 - NewsScraper - DEBUG - Attempting static scrape for URL: https://www.thehealthsite.com/news/maharashtra-faces-cancer-crisis-over-14500-women-in-hingoli-show-cancer-like-symptoms-during-govt-health-screening-1239129/
+2025-07-17 13:20:10,219 - NewsScraper - DEBUG - Static scrape successful for https://www.thehealthsite.com/news/maharashtra-faces-cancer-crisis-over-14500-women-in-hingoli-show-cancer-like-symptoms-during-govt-health-screening-1239129/
+2025-07-17 13:20:10,220 - NewsScraper - DEBUG - Leader name check for Prakash Abitkar: Found
+2025-07-17 13:20:10,220 - NewsScraper - INFO - Article extracted successfully for https://www.thehealthsite.com/news/maharashtra-faces-cancer-crisis-over-14500-women-in-hingoli-show-cancer-like-symptoms-during-govt-health-screening-1239129/
+2025-07-17 13:20:10,221 - NewsScraper - INFO - Processing URL: https://www.msn.com/en-in/health/other/over-14500-women-detected-with-cancer-like-symptoms-post-screening-in-maharashtras-hingoli/ar-AA1Iqx6N
+2025-07-17 13:20:10,221 - NewsScraper - DEBUG - Attempting static scrape for URL: https://www.msn.com/en-in/health/other/over-14500-women-detected-with-cancer-like-symptoms-post-screening-in-maharashtras-hingoli/ar-AA1Iqx6N
+2025-07-17 13:20:11,724 - NewsScraper - DEBUG - Static scrape successful for https://www.msn.com/en-in/health/other/over-14500-women-detected-with-cancer-like-symptoms-post-screening-in-maharashtras-hingoli/ar-AA1Iqx6N
+2025-07-17 13:20:11,725 - NewsScraper - DEBUG - Static scrape failed, attempting dynamic scrape for https://www.msn.com/en-in/health/other/over-14500-women-detected-with-cancer-like-symptoms-post-screening-in-maharashtras-hingoli/ar-AA1Iqx6N
+2025-07-17 13:20:11,725 - NewsScraper - DEBUG - Attempting dynamic scrape for URL: https://www.msn.com/en-in/health/other/over-14500-women-detected-with-cancer-like-symptoms-post-screening-in-maharashtras-hingoli/ar-AA1Iqx6N
+2025-07-17 13:20:45,507 - NewsScraper - DEBUG - Dynamic scrape successful for https://www.msn.com/en-in/health/other/over-14500-women-detected-with-cancer-like-symptoms-post-screening-in-maharashtras-hingoli/ar-AA1Iqx6N
+2025-07-17 13:20:45,508 - NewsScraper - WARNING - Failed to extract content from https://www.msn.com/en-in/health/other/over-14500-women-detected-with-cancer-like-symptoms-post-screening-in-maharashtras-hingoli/ar-AA1Iqx6N
+2025-07-17 13:20:45,508 - NewsScraper - INFO - Processing URL: https://www.thehindu.com/news/national/maharashtra/maharashtra-health-department-to-set-up-committee-for-effective-leprosy-eradication/article69815684.ece
+2025-07-17 13:20:45,509 - NewsScraper - DEBUG - Attempting static scrape for URL: https://www.thehindu.com/news/national/maharashtra/maharashtra-health-department-to-set-up-committee-for-effective-leprosy-eradication/article69815684.ece
+2025-07-17 13:20:46,414 - NewsScraper - DEBUG - Static scrape successful for https://www.thehindu.com/news/national/maharashtra/maharashtra-health-department-to-set-up-committee-for-effective-leprosy-eradication/article69815684.ece
+2025-07-17 13:20:46,414 - NewsScraper - DEBUG - Leader name check for Prakash Abitkar: Found
+2025-07-17 13:20:46,414 - NewsScraper - INFO - Article extracted successfully for https://www.thehindu.com/news/national/maharashtra/maharashtra-health-department-to-set-up-committee-for-effective-leprosy-eradication/article69815684.ece
+2025-07-17 13:20:46,415 - NewsScraper - INFO - Processing URL: https://mahasamvad.in/172391/
+2025-07-17 13:20:46,415 - NewsScraper - DEBUG - Attempting static scrape for URL: https://mahasamvad.in/172391/
+2025-07-17 13:20:47,534 - NewsScraper - DEBUG - Static scrape successful for https://mahasamvad.in/172391/
+2025-07-17 13:20:47,534 - NewsScraper - DEBUG - Leader name check for Prakash Abitkar: Found
+2025-07-17 13:20:47,534 - NewsScraper - INFO - Article extracted successfully for https://mahasamvad.in/172391/
+2025-07-17 13:20:47,534 - NewsScraper - INFO - Processing URL: https://www.marathi.hindusthanpost.com/social/monsoon-session-new-strength-for-leprosy-eradication-campaign-health-minister-announces-formation-of-state-level-committee/
+2025-07-17 13:20:47,534 - NewsScraper - DEBUG - Attempting static scrape for URL: https://www.marathi.hindusthanpost.com/social/monsoon-session-new-strength-for-leprosy-eradication-campaign-health-minister-announces-formation-of-state-level-committee/
+2025-07-17 13:20:49,868 - NewsScraper - DEBUG - Static scrape successful for https://www.marathi.hindusthanpost.com/social/monsoon-session-new-strength-for-leprosy-eradication-campaign-health-minister-announces-formation-of-state-level-committee/
+2025-07-17 13:20:49,868 - NewsScraper - DEBUG - Leader name check for Prakash Abitkar: Found
+2025-07-17 13:20:49,868 - NewsScraper - INFO - Article extracted successfully for https://www.marathi.hindusthanpost.com/social/monsoon-session-new-strength-for-leprosy-eradication-campaign-health-minister-announces-formation-of-state-level-committee/
+2025-07-17 13:20:49,868 - NewsScraper - INFO - Processing URL: https://mahasamvad.in/172498/
+2025-07-17 13:20:49,868 - NewsScraper - DEBUG - Attempting static scrape for URL: https://mahasamvad.in/172498/
+2025-07-17 13:20:50,923 - NewsScraper - DEBUG - Static scrape successful for https://mahasamvad.in/172498/
+2025-07-17 13:20:50,923 - NewsScraper - DEBUG - Leader name check for Prakash Abitkar: Found
+2025-07-17 13:20:50,923 - NewsScraper - INFO - Article extracted successfully for https://mahasamvad.in/172498/
+2025-07-17 13:20:50,923 - NewsScraper - INFO - Processing URL: https://dainikekmat.com/%E0%A4%95%E0%A5%81%E0%A4%B7%E0%A5%8D%E0%A4%A0%E0%A4%B0%E0%A5%8B%E0%A4%97-%E0%A4%A8%E0%A4%BF%E0%A4%B0%E0%A5%8D%E0%A4%AE%E0%A5%82%E0%A4%B2%E0%A4%A8%E0%A4%BE%E0%A4%9A%E0%A5%8D%E0%A4%AF%E0%A4%BE-%E0%A4%AA/109592/
+2025-07-17 13:20:50,923 - NewsScraper - DEBUG - Attempting static scrape for URL: https://dainikekmat.com/%E0%A4%95%E0%A5%81%E0%A4%B7%E0%A5%8D%E0%A4%A0%E0%A4%B0%E0%A5%8B%E0%A4%97-%E0%A4%A8%E0%A4%BF%E0%A4%B0%E0%A5%8D%E0%A4%AE%E0%A5%82%E0%A4%B2%E0%A4%A8%E0%A4%BE%E0%A4%9A%E0%A5%8D%E0%A4%AF%E0%A4%BE-%E0%A4%AA/109592/
+2025-07-17 13:20:53,250 - NewsScraper - WARNING - Static scrape failed for https://dainikekmat.com/%E0%A4%95%E0%A5%81%E0%A4%B7%E0%A5%8D%E0%A4%A0%E0%A4%B0%E0%A5%8B%E0%A4%97-%E0%A4%A8%E0%A4%BF%E0%A4%B0%E0%A5%8D%E0%A4%AE%E0%A5%82%E0%A4%B2%E0%A4%A8%E0%A4%BE%E0%A4%9A%E0%A5%8D%E0%A4%AF%E0%A4%BE-%E0%A4%AA/109592/: HTTPSConnectionPool(host='dainikekmat.com', port=443): Read timed out. (read timeout=1)
+2025-07-17 13:20:53,250 - NewsScraper - DEBUG - Static scrape failed, attempting dynamic scrape for https://dainikekmat.com/%E0%A4%95%E0%A5%81%E0%A4%B7%E0%A5%8D%E0%A4%A0%E0%A4%B0%E0%A5%8B%E0%A4%97-%E0%A4%A8%E0%A4%BF%E0%A4%B0%E0%A5%8D%E0%A4%AE%E0%A5%82%E0%A4%B2%E0%A4%A8%E0%A4%BE%E0%A4%9A%E0%A5%8D%E0%A4%AF%E0%A4%BE-%E0%A4%AA/109592/
+2025-07-17 13:20:53,250 - NewsScraper - DEBUG - Attempting dynamic scrape for URL: https://dainikekmat.com/%E0%A4%95%E0%A5%81%E0%A4%B7%E0%A5%8D%E0%A4%A0%E0%A4%B0%E0%A5%8B%E0%A4%97-%E0%A4%A8%E0%A4%BF%E0%A4%B0%E0%A5%8D%E0%A4%AE%E0%A5%82%E0%A4%B2%E0%A4%A8%E0%A4%BE%E0%A4%9A%E0%A5%8D%E0%A4%AF%E0%A4%BE-%E0%A4%AA/109592/
+2025-07-17 13:21:00,985 - NewsScraper - DEBUG - Dynamic scrape successful for https://dainikekmat.com/%E0%A4%95%E0%A5%81%E0%A4%B7%E0%A5%8D%E0%A4%A0%E0%A4%B0%E0%A5%8B%E0%A4%97-%E0%A4%A8%E0%A4%BF%E0%A4%B0%E0%A5%8D%E0%A4%AE%E0%A5%82%E0%A4%B2%E0%A4%A8%E0%A4%BE%E0%A4%9A%E0%A5%8D%E0%A4%AF%E0%A4%BE-%E0%A4%AA/109592/
+2025-07-17 13:21:00,985 - NewsScraper - DEBUG - Leader name check for Prakash Abitkar: Found
+2025-07-17 13:21:00,985 - NewsScraper - INFO - Article extracted successfully for https://dainikekmat.com/%E0%A4%95%E0%A5%81%E0%A4%B7%E0%A5%8D%E0%A4%A0%E0%A4%B0%E0%A5%8B%E0%A4%97-%E0%A4%A8%E0%A4%BF%E0%A4%B0%E0%A5%8D%E0%A4%AE%E0%A5%82%E0%A4%B2%E0%A4%A8%E0%A4%BE%E0%A4%9A%E0%A5%8D%E0%A4%AF%E0%A4%BE-%E0%A4%AA/109592/
+2025-07-17 13:21:00,985 - NewsScraper - INFO - Saving results.
+2025-07-17 13:21:00,985 - NewsScraper - INFO - Saving extracted data to Word document: extracted_links_Prakash Abitkar_News_Content.docx
+2025-07-17 13:21:01,110 - NewsScraper - DEBUG - Word document saved at: C:/Users/HP/Downloads\extracted_links_Prakash Abitkar_News_Content.docx
+2025-07-17 13:21:01,110 - NewsScraper - INFO - Saving 9 failed links to Excel: extracted_links_Prakash Abitkar_failed_links.xlsx
+2025-07-17 13:21:01,134 - NewsScraper - DEBUG - Failed links saved at: C:/Users/HP/Downloads\extracted_links_Prakash Abitkar_failed_links.xlsx
+2025-07-17 13:21:01,135 - NewsScraper - INFO - Scraping process completed successfully.
+2025-07-17 13:21:03,794 - NewsScraper - DEBUG - Selenium WebDriver closed.
+2025-07-17 13:21:03,794 - NewsScraper - DEBUG - Output paths: Word=C:/Users/HP/Downloads\extracted_links_Prakash Abitkar_News_Content.docx, Excel=C:/Users/HP/Downloads\extracted_links_Prakash Abitkar_failed_links.xlsx

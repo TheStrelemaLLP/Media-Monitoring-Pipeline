@@ -1,0 +1,4 @@
+2025-07-17 13:21:06,680 - FacebookDocs - INFO - Processing Facebook posts from C:/Users/HP/Downloads/CB_FB.xlsx
+2025-07-17 13:21:06,719 - FacebookDocs - DEBUG - Loaded Excel file with 41 rows.
+2025-07-17 13:21:06,723 - FacebookDocs - DEBUG - Removed 6 rows with null 'text' values.
+2025-07-17 13:21:06,827 - FacebookDocs - INFO - Formatted Word document saved as C:/Users/HP/Downloads\Prakash Abitkar_fb_output.docx

@@ -8,3 +8,13 @@ langchain-ollama
 langchain-community
 langchain-anthropic
 langchain-google-genai
+pandas
+selenium
+webdriver_manager
+xlsxwriter
+python-docx
+requests
+bs4
+tqdm
+os
+pathlib

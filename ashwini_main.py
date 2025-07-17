@@ -1,9 +1,9 @@
 from link_extraction import Link_extraction
 
 def main():
-    leader_name = "Siddharth Shirole"
-    start_date = "07/09/2025"
-    end_date ="07/10/2025"
+    leader_name = "Devendra Fadnavis"
+    start_date = "07/10/2025"
+    end_date ="07/17/2025"
 
     n_pages = 30
 

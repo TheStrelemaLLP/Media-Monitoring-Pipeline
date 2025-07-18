@@ -5,6 +5,7 @@ from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
+from selenium.common.exceptions import WebDriverException
 from webdriver_manager.chrome import ChromeDriverManager
 from docx import Document
 from docx.oxml.ns import qn
@@ -17,32 +18,32 @@ import pathlib
 import traceback
 from urllib.parse import urlparse
 from requests.exceptions import RequestException
-from selenium.common.exceptions import WebDriverException
+from utils import setup_logger
 
-# Setup logger
-def setup_logger(name: str, log_file: str = "news_scraper.log") -> logging.Logger:
-    """Configure logger with console and file handlers."""
-    logger = logging.getLogger(name)
-    logger.setLevel(logging.DEBUG)
+# # Setup logger
+# def setup_logger(name: str, log_file: str = "news_scraper.log") -> logging.Logger:
+#     """Configure logger with console and file handlers."""
+#     logger = logging.getLogger(name)
+#     logger.setLevel(logging.DEBUG)
     
-    # Avoid duplicate handlers
-    if not logger.handlers:
-        # Console handler
-        console_handler = logging.StreamHandler()
-        console_handler.setLevel(logging.INFO)
-        console_formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
-        console_handler.setFormatter(console_formatter)
+#     # Avoid duplicate handlers
+#     if not logger.handlers:
+#         # Console handler
+#         console_handler = logging.StreamHandler()
+#         console_handler.setLevel(logging.INFO)
+#         console_formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+#         console_handler.setFormatter(console_formatter)
         
-        # File handler
-        file_handler = logging.FileHandler(log_file)
-        file_handler.setLevel(logging.DEBUG)
-        file_formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-        file_handler.setFormatter(file_formatter)
+#         # File handler
+#         file_handler = logging.FileHandler(log_file)
+#         file_handler.setLevel(logging.DEBUG)
+#         file_formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+#         file_handler.setFormatter(file_formatter)
         
-        logger.addHandler(console_handler)
-        logger.addHandler(file_handler)
+#         logger.addHandler(console_handler)
+#         logger.addHandler(file_handler)
     
-    return logger
+#     return logger
 
 logger = setup_logger("NewsScraper")
 
@@ -99,7 +100,7 @@ class NewsScraper:
         },
         "Chandrakant Patil": {
             "English": ["Chandrakant", "Patil"],
-            "Marathi": ["चंद्रकांत", "चन्द्रकांत","चंद्रकान्त","पाटील","पाटिल",""]
+            "Marathi": ["चंद्रकांत", "चन्द्रकांत","चंद्रकान्त","पाटील","पाटिल"]
             # "Hindi": ["लीडर तीन", "एल. तीन"]
         },
         "Ashish Shelar": {

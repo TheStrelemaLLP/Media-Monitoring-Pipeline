@@ -1,26 +1,3 @@
-# flask
-# faiss-cpu
-# langchain
-# python-dotenv
-# langchain-core
-# langchain-openai
-# langchain-ollama
-# langchain-community
-# langchain-anthropic
-# langchain-google-genai
-# flask
-# selenium
-# pandas
-# datetime
-# webdriver_manager
-# xlsxwriter
-# python-docx
-# requests
-# bs4
-# tqdm
-# os
-# pathlib
-
 flask
 faiss-cpu
 langchain

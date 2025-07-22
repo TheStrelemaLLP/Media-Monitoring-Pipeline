@@ -1,4 +1,12 @@
-import logging
+import os
+import sys
+import pathlib
+import traceback
+from urllib.parse import urlparse
+
+# Add parent directory to path for local imports
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
 import pandas as pd
 import requests
 from bs4 import BeautifulSoup
@@ -8,42 +16,15 @@ from selenium.webdriver.chrome.service import Service
 from selenium.common.exceptions import WebDriverException
 from webdriver_manager.chrome import ChromeDriverManager
 from docx import Document
-from docx.oxml.ns import qn
 from docx.oxml import OxmlElement
+from docx.oxml.ns import qn
 from docx.opc.constants import RELATIONSHIP_TYPE
 from docx.shared import RGBColor
 from tqdm import tqdm
-import os
-import pathlib
-import traceback
-from urllib.parse import urlparse
 from requests.exceptions import RequestException
-from utils import setup_logger
 
-# # Setup logger
-# def setup_logger(name: str, log_file: str = "news_scraper.log") -> logging.Logger:
-#     """Configure logger with console and file handlers."""
-#     logger = logging.getLogger(name)
-#     logger.setLevel(logging.DEBUG)
-    
-#     # Avoid duplicate handlers
-#     if not logger.handlers:
-#         # Console handler
-#         console_handler = logging.StreamHandler()
-#         console_handler.setLevel(logging.INFO)
-#         console_formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
-#         console_handler.setFormatter(console_formatter)
-        
-#         # File handler
-#         file_handler = logging.FileHandler(log_file)
-#         file_handler.setLevel(logging.DEBUG)
-#         file_formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-#         file_handler.setFormatter(file_formatter)
-        
-#         logger.addHandler(console_handler)
-#         logger.addHandler(file_handler)
-    
-#     return logger
+from utils import setup_logger
+from modules.link_extraction import Link_extraction
 
 logger = setup_logger("NewsScraper")
 
@@ -86,55 +67,21 @@ def is_valid_url(url: str) -> bool:
         return False
 
 class NewsScraper:
-    # Define leaders with name variations in English, Marathi, and Hindi
-    LEADERS = {
-        "Devendra Fadnavis": {
-            "English": ["Devendra", "Fadnavis","Devandra","Fadanvis"],
-            "Marathi": ["देवेंद्र", "फडणवीस","फडणविस","देवा","फडनवीस","फडनविस","देवेन्द्र", "फडनवीस"]
-            
-        },
-        "Eknath Shinde": {
-            "English": ["Eknath", "Shinde","Shinday"],
-            "Marathi": ["एकनाथ", "शिंदे","शिन्दे","शिंडे","एक्नाथ","एकनात"]
-            # "Hindi": ["एकनाथ", "शिंदे","शिन्दे","शिंडे","एक्नाथ","एकनात",]
-        },
-        "Chandrakant Patil": {
-            "English": ["Chandrakant", "Patil"],
-            "Marathi": ["चंद्रकांत", "चन्द्रकांत","चंद्रकान्त","पाटील","पाटिल"]
-            # "Hindi": ["लीडर तीन", "एल. तीन"]
-        },
-        "Ashish Shelar": {
-            "English": ["Ashish", "Shelar","Sheelar","Shailar","Asheesh"],
-            "Marathi": ["आशिष", "आशीष","अशिष","शेलार","षेलार"]
-            
-        },
-        "Ravindra Chavan": {
-            "English": ["Ravindra", "Chavan","Chauhan","Chouhan","Raveendra"],
-            "Marathi": ["रविंद्र", "रवींद्र","रविन्द्र","रवीन्द्र","चौहान","चौहाण","चव्हाण","चव्हान","चवान","चवाण"]
-            
-        },
-        "Prakash Abitkar": {
-            "English": ["Prakash", "Abitkar","Abeetkar","Abitkaar"],
-            "Marathi": ["प्रकाश", "प्रकाष","अबितकार","अबिटकर","अबीटकर","अबित्कर","अबीत्त्कर"]
-        },
-        "Chandrashekhar Bawankule": {
-            "English": ["Chandrashekhar", "Bawankule"],
-            "Marathi": ["चंद्रशेखर", "बावनकुळे","बावनकुले"]
-            
-        },
-    }
-
-    def __init__(self, file_path: str, output_folder: str, leader: str):
+    def __init__(self, file_path: str, output_folder: str, leader: str, chunk_size_kb: int, i_file_path: str, link_extraction: object):
         """Initialize NewsScraper with input file, output folder, and leader."""
         logger.info("Initializing NewsScraper.")
+        self.link_extraction = link_extraction
+        self.i_file_path = i_file_path
         self.file_path = file_path
         self.output_folder = output_folder
         self.leader = leader
+        self.chunk_size_kb = chunk_size_kb
         self.news_links = []
         self.extracted_data = []
         self.failed_links = []
         self.driver = None
         self.docx_output, self.excel_output = self._get_output_filenames()
+        self.LEADERS = self.get_leaders_variations(i_file_path, leader) 
         
         # Validate inputs
         if not os.path.exists(file_path):
@@ -159,22 +106,61 @@ class NewsScraper:
             logger.error(f"Error generating output filenames: {str(e)}")
             raise NewsScraperError("Failed to generate output filenames.")
 
-    def _setup_driver(self):
-        """Initialize Selenium WebDriver."""
-        logger.info("Setting up Selenium WebDriver.")
+    def get_leaders_variations(self, file_path, sheet_name):
+        """
+        Extracts all non-empty values from 'English' and 'Marathi' columns in a given Excel sheet.
+
+        Parameters:
+        - file_path (str): Path to the Excel file.
+        - sheet_name (str): Name of the sheet to process.
+
+        Returns:
+        - dict: {
+            sheet_name: {
+                "English": [list of non-empty values from English column],
+                "Marathi": [list of non-empty values from Marathi column]
+            }
+        }
+
+        Raises:
+        - Logs and re-raises exceptions on failure.
+        """
         try:
-            chrome_options = Options()
-            chrome_options.add_argument("--headless")
-            chrome_options.add_argument("--no-sandbox")
-            chrome_options.add_argument("--disable-dev-shm-usage")
-            self.driver = webdriver.Chrome(
-                service=Service(ChromeDriverManager().install()),
-                options=chrome_options
-            )
-            logger.debug("Selenium WebDriver setup successful.")
-        except WebDriverException as e:
-            logger.error(f"Failed to setup WebDriver: {str(e)}\n{traceback.format_exc()}")
-            raise WebScrapingError("Failed to initialize Selenium WebDriver.")
+            logger.info(f"Reading Excel file: {file_path}, Sheet: {sheet_name}")
+            df = pd.read_excel(file_path, sheet_name=sheet_name)
+
+            if 'English' not in df.columns and 'Marathi' not in df.columns:
+                logger.error("Neither 'English' nor 'Marathi' columns found in the sheet.")
+                raise KeyError("Missing required columns: 'English' and/or 'Marathi'.")
+
+            english_list = df['English'].dropna().astype(str).tolist() if 'English' in df.columns else []
+            marathi_list = df['Marathi'].dropna().astype(str).tolist() if 'Marathi' in df.columns else []
+
+            LEADERS = {
+                sheet_name: {
+                    "English": english_list,
+                    "Marathi": marathi_list
+                }
+            }
+
+            logger.info(f"Extracted {len(english_list)} English and {len(marathi_list)} Marathi names from '{sheet_name}'")
+            return LEADERS
+
+        except FileNotFoundError:
+            logger.exception(f"File not found: {file_path}")
+            raise
+
+        except ValueError:
+            logger.exception(f"Sheet '{sheet_name}' not found in the Excel file.")
+            raise
+
+        except KeyError as ke:
+            logger.exception(f"Missing column in sheet: {ke}")
+            raise
+
+        except Exception as e:
+            logger.exception("Unexpected error while extracting leader variations.")
+            raise
 
     def _extract_static_page(self, url: str) -> tuple:
         """Extract content from a static webpage."""
@@ -194,7 +180,7 @@ class NewsScraper:
             return None, None
         except Exception as e:
             logger.error(f"Unexpected error in static scrape for {url}: {str(e)}\n{traceback.format_exc()}")
-            return None, None
+            return None, None    
 
     def _extract_dynamic_page(self, url: str) -> tuple:
         """Extract content from a dynamic webpage using Selenium."""
@@ -233,6 +219,7 @@ class NewsScraper:
 
     def _check_leader_in_article(self, article: str) -> bool:
         """Check if the selected leader's name or its variations appear in the article."""
+        # LEADERS = self.get_leaders_variations(self.i_file_path, self.leader)
         if not article:
             logger.debug("Article is empty, leader check skipped.")
             return False
@@ -263,7 +250,7 @@ class NewsScraper:
             logger.debug(f"Filtered to {len(self.news_links)} valid URLs")
 
             # Setup Selenium driver
-            self._setup_driver()
+            self.link_extraction.setup_driver()
 
             # Scrape articles
             for link in tqdm(self.news_links, desc="Scraping articles", unit="article"):

@@ -4,3 +4,134 @@
 2025-07-11 12:47:31,726 - Adder - INFO - Added 10 and 5, result: 15
 2025-07-11 12:47:31,726 - Divider - INFO - Divided 10 by 2, result: 5.0
 2025-07-11 12:47:31,726 - Divider - WARNING - Tried dividing 10 by zero
+2025-07-19 12:18:40,237 - Link_extraction - INFO - Initialized Link_extraction for leader: Devendra Fadnavis, from 07/15/2025 to 07/17/2025
+2025-07-19 12:18:40,237 - NewsScraper - INFO - Initializing NewsScraper.
+2025-07-19 12:18:40,237 - Link_extraction - INFO - Starting fetch_links() process
+2025-07-19 12:18:40,632 - Link_extraction - INFO - Extracted 104 keywords from sheet 'Devendra Fadnavis'
+2025-07-19 12:19:15,791 - Link_extraction - INFO - WebDriver initialized successfully
+2025-07-19 12:19:15,791 - Link_extraction - INFO - Searching for: devendra fadnavis (30 pages)
+2025-07-19 12:21:21,033 - Link_extraction - WARNING - No 'Next' button found for 'devendra fadnavis' after 30 pages.
+2025-07-19 12:23:09,959 - Link_extraction - INFO - Searching for: Devendra Fadnavis news (30 pages)
+2025-07-19 12:25:17,233 - Link_extraction - WARNING - No 'Next' button found for 'Devendra Fadnavis news' after 30 pages.
+2025-07-19 12:27:29,790 - Link_extraction - INFO - Searching for: Devendra Fadnavis latest news (30 pages)
+2025-07-19 12:28:44,475 - Link_extraction - WARNING - No 'Next' button found for 'Devendra Fadnavis latest news' after 18 pages.
+2025-07-19 12:29:01,901 - Link_extraction - INFO - Searching for: Devendra Fadnavis Chief Minister news (30 pages)
+2025-07-19 12:29:10,697 - Link_extraction - WARNING - No 'Next' button found for 'Devendra Fadnavis Chief Minister news' after 1 pages.
+2025-07-19 12:29:28,271 - Link_extraction - INFO - Searching for: Devendra Fadnavis BJP news (30 pages)
+2025-07-19 12:29:37,007 - Link_extraction - WARNING - No 'Next' button found for 'Devendra Fadnavis BJP news' after 1 pages.
+2025-07-19 12:29:54,606 - Link_extraction - INFO - Searching for: Devendra Fadnavis politics news (30 pages)
+2025-07-19 12:30:03,443 - Link_extraction - WARNING - No 'Next' button found for 'Devendra Fadnavis politics news' after 1 pages.
+2025-07-19 12:30:21,112 - Link_extraction - INFO - Searching for: Devendra Fadnavis Nagpur news (30 pages)
+2025-07-19 12:30:29,974 - Link_extraction - WARNING - No 'Next' button found for 'Devendra Fadnavis Nagpur news' after 1 pages.
+2025-07-19 12:30:47,584 - Link_extraction - INFO - Searching for: Devendra Fadnavis speech (30 pages)
+2025-07-19 12:30:56,667 - Link_extraction - WARNING - No 'Next' button found for 'Devendra Fadnavis speech' after 1 pages.
+2025-07-19 12:31:05,521 - Link_extraction - INFO - Searching for: Devendra Fadnavis reaction (30 pages)
+2025-07-19 12:31:14,219 - Link_extraction - WARNING - No 'Next' button found for 'Devendra Fadnavis reaction' after 1 pages.
+2025-07-19 12:31:23,167 - Link_extraction - INFO - Searching for: Devendra Fadnavis opposition (30 pages)
+2025-07-19 12:31:32,165 - Link_extraction - WARNING - No 'Next' button found for 'Devendra Fadnavis opposition' after 1 pages.
+2025-07-19 12:31:50,141 - Link_extraction - INFO - Searching for: Devendra Fadnavis election (30 pages)
+2025-07-19 12:31:58,932 - Link_extraction - WARNING - No 'Next' button found for 'Devendra Fadnavis election' after 1 pages.
+2025-07-19 12:32:16,472 - Link_extraction - INFO - Searching for: Devendra Fadnavis campaign (30 pages)
+2025-07-19 12:32:25,389 - Link_extraction - WARNING - No 'Next' button found for 'Devendra Fadnavis campaign' after 1 pages.
+2025-07-19 12:32:34,164 - Link_extraction - INFO - Searching for: Devendra Fadnavis rally (30 pages)
+2025-07-19 12:32:42,934 - Link_extraction - WARNING - No 'Next' button found for 'Devendra Fadnavis rally' after 1 pages.
+2025-07-19 12:32:51,900 - Link_extraction - INFO - Searching for: Devendra Fadnavis political decision (30 pages)
+2025-07-19 12:33:00,811 - Link_extraction - WARNING - No 'Next' button found for 'Devendra Fadnavis political decision' after 1 pages.
+2025-07-19 12:33:18,435 - Link_extraction - INFO - Searching for: Devendra Fadnavis Shinde faction (30 pages)
+2025-07-19 12:33:27,186 - Link_extraction - WARNING - No 'Next' button found for 'Devendra Fadnavis Shinde faction' after 1 pages.
+2025-07-19 12:33:44,704 - Link_extraction - INFO - Searching for: Devendra Fadnavis Uddhav Thackeray (30 pages)
+2025-07-19 12:33:53,720 - Link_extraction - WARNING - No 'Next' button found for 'Devendra Fadnavis Uddhav Thackeray' after 1 pages.
+2025-07-19 12:34:02,564 - Link_extraction - INFO - Searching for: Devendra Fadnavis Legislative Council (30 pages)
+2025-07-19 12:34:11,234 - Link_extraction - WARNING - No 'Next' button found for 'Devendra Fadnavis Legislative Council' after 1 pages.
+2025-07-19 12:34:20,147 - Link_extraction - INFO - Searching for: Devendra Fadnavis press conference (30 pages)
+2025-07-19 12:34:28,935 - Link_extraction - WARNING - No 'Next' button found for 'Devendra Fadnavis press conference' after 1 pages.
+2025-07-19 12:34:37,786 - Link_extraction - INFO - Searching for: Devendra Fadnavis government (30 pages)
+2025-07-19 12:34:46,696 - Link_extraction - WARNING - No 'Next' button found for 'Devendra Fadnavis government' after 1 pages.
+2025-07-19 12:34:55,343 - Link_extraction - INFO - Searching for: Devendra Fadnavis statement (30 pages)
+2025-07-19 12:35:04,177 - Link_extraction - WARNING - No 'Next' button found for 'Devendra Fadnavis statement' after 1 pages.
+2025-07-19 12:35:21,635 - Link_extraction - INFO - Searching for: Devendra Fadnavis politics (30 pages)
+2025-07-19 12:35:30,524 - Link_extraction - WARNING - No 'Next' button found for 'Devendra Fadnavis politics' after 1 pages.
+2025-07-19 12:35:48,182 - Link_extraction - INFO - Searching for: Devendra Fadnavis Maharashtra election (30 pages)
+2025-07-19 12:35:56,990 - Link_extraction - WARNING - No 'Next' button found for 'Devendra Fadnavis Maharashtra election' after 1 pages.
+2025-07-19 12:36:14,788 - Link_extraction - INFO - Searching for: Devendra Fadnavis opposition statement (30 pages)
+2025-07-19 12:36:23,456 - Link_extraction - WARNING - No 'Next' button found for 'Devendra Fadnavis opposition statement' after 1 pages.
+2025-07-19 12:36:41,199 - Link_extraction - INFO - Searching for: Devendra Fadnavis new scheme (30 pages)
+2025-07-19 12:36:49,925 - Link_extraction - WARNING - No 'Next' button found for 'Devendra Fadnavis new scheme' after 1 pages.
+2025-07-19 12:37:07,530 - Link_extraction - INFO - Searching for: Devendra Fadnavis government scheme (30 pages)
+2025-07-19 12:37:16,281 - Link_extraction - WARNING - No 'Next' button found for 'Devendra Fadnavis government scheme' after 1 pages.
+2025-07-19 12:37:24,932 - Link_extraction - INFO - Searching for: Devendra Fadnavis Shinde government (30 pages)
+2025-07-19 12:37:33,675 - Link_extraction - WARNING - No 'Next' button found for 'Devendra Fadnavis Shinde government' after 1 pages.
+2025-07-19 12:37:42,553 - Link_extraction - INFO - Searching for: Devendra Fadnavis Maharashtra BJP (30 pages)
+2025-07-19 12:37:51,233 - Link_extraction - WARNING - No 'Next' button found for 'Devendra Fadnavis Maharashtra BJP' after 1 pages.
+2025-07-19 12:38:08,933 - Link_extraction - INFO - Searching for: Devendra Fadnavis vs Uddhav Thackeray (30 pages)
+2025-07-19 12:38:17,749 - Link_extraction - WARNING - No 'Next' button found for 'Devendra Fadnavis vs Uddhav Thackeray' after 1 pages.
+2025-07-19 12:38:35,233 - Link_extraction - INFO - Searching for: Devendra Fadnavis alliance with Shinde (30 pages)
+2025-07-19 12:38:44,085 - Link_extraction - WARNING - No 'Next' button found for 'Devendra Fadnavis alliance with Shinde' after 1 pages.
+2025-07-19 12:39:01,746 - Link_extraction - INFO - Searching for: Devendra Fadnavis speech highlights (30 pages)
+2025-07-19 12:39:10,602 - Link_extraction - WARNING - No 'Next' button found for 'Devendra Fadnavis speech highlights' after 1 pages.
+2025-07-19 12:39:28,098 - Link_extraction - INFO - Searching for: Devendra Fadnavis development project (30 pages)
+2025-07-19 12:39:37,046 - Link_extraction - WARNING - No 'Next' button found for 'Devendra Fadnavis development project' after 1 pages.
+2025-07-19 12:39:46,047 - Link_extraction - INFO - Searching for: Devendra Fadnavis infrastructure policy (30 pages)
+2025-07-19 12:39:54,840 - Link_extraction - WARNING - No 'Next' button found for 'Devendra Fadnavis infrastructure policy' after 1 pages.
+2025-07-19 12:40:12,545 - Link_extraction - INFO - Searching for: Devendra Fadnavis central government coordination (30 pages)
+2025-07-19 12:40:21,331 - Link_extraction - WARNING - No 'Next' button found for 'Devendra Fadnavis central government coordination' after 1 pages.
+2025-07-19 12:40:30,394 - Link_extraction - INFO - Searching for: Devendra Fadnavis Modi government (30 pages)
+2025-07-19 12:40:39,481 - Link_extraction - WARNING - No 'Next' button found for 'Devendra Fadnavis Modi government' after 1 pages.
+2025-07-19 12:40:48,468 - Link_extraction - INFO - Searching for: Devendra Fadnavis controversy (30 pages)
+2025-07-19 12:40:57,255 - Link_extraction - WARNING - No 'Next' button found for 'Devendra Fadnavis controversy' after 1 pages.
+2025-07-19 12:41:25,846 - Link_extraction - INFO - Initialized Link_extraction for leader: Devendra Fadnavis, from 07/15/2025 to 07/17/2025
+2025-07-19 12:41:25,846 - NewsScraper - INFO - Initializing NewsScraper.
+2025-07-19 12:41:25,846 - Link_extraction - INFO - Starting fetch_links() process
+2025-07-19 12:41:26,090 - Link_extraction - INFO - Extracted 104 keywords from sheet 'Devendra Fadnavis'
+2025-07-19 12:42:01,465 - Link_extraction - INFO - WebDriver initialized successfully
+2025-07-19 12:42:01,465 - Link_extraction - INFO - Searching for: devendra fadnavis (30 pages)
+2025-07-19 12:44:05,265 - Link_extraction - WARNING - No 'Next' button found for 'devendra fadnavis' after 30 pages.
+2025-07-19 12:45:50,343 - Link_extraction - INFO - Searching for: Devendra Fadnavis news (30 pages)
+2025-07-19 12:47:12,299 - Link_extraction - WARNING - No 'Next' button found for 'Devendra Fadnavis news' after 20 pages.
+2025-07-19 12:47:55,912 - Link_extraction - INFO - Searching for: Devendra Fadnavis latest news (30 pages)
+2025-07-19 12:50:04,140 - Link_extraction - WARNING - No 'Next' button found for 'Devendra Fadnavis latest news' after 30 pages.
+2025-07-19 12:51:51,866 - Link_extraction - INFO - Searching for: Devendra Fadnavis Chief Minister news (30 pages)
+2025-07-19 12:52:00,690 - Link_extraction - WARNING - No 'Next' button found for 'Devendra Fadnavis Chief Minister news' after 1 pages.
+2025-07-19 12:52:18,058 - Link_extraction - INFO - Searching for: Devendra Fadnavis BJP news (30 pages)
+2025-07-19 12:52:26,886 - Link_extraction - WARNING - No 'Next' button found for 'Devendra Fadnavis BJP news' after 1 pages.
+2025-07-19 12:52:44,281 - Link_extraction - INFO - Searching for: Devendra Fadnavis politics news (30 pages)
+2025-07-19 12:52:53,061 - Link_extraction - WARNING - No 'Next' button found for 'Devendra Fadnavis politics news' after 1 pages.
+2025-07-19 12:53:10,601 - Link_extraction - INFO - Searching for: Devendra Fadnavis Nagpur news (30 pages)
+2025-07-19 12:53:19,482 - Link_extraction - WARNING - No 'Next' button found for 'Devendra Fadnavis Nagpur news' after 1 pages.
+2025-07-19 12:53:37,137 - Link_extraction - INFO - Searching for: Devendra Fadnavis speech (30 pages)
+2025-07-19 12:53:45,797 - Link_extraction - WARNING - No 'Next' button found for 'Devendra Fadnavis speech' after 1 pages.
+2025-07-19 12:53:54,511 - Link_extraction - INFO - Searching for: Devendra Fadnavis reaction (30 pages)
+2025-07-19 12:54:03,248 - Link_extraction - WARNING - No 'Next' button found for 'Devendra Fadnavis reaction' after 1 pages.
+2025-07-19 12:54:12,039 - Link_extraction - INFO - Searching for: Devendra Fadnavis opposition (30 pages)
+2025-07-19 12:54:20,831 - Link_extraction - WARNING - No 'Next' button found for 'Devendra Fadnavis opposition' after 1 pages.
+2025-07-19 12:54:38,344 - Link_extraction - INFO - Searching for: Devendra Fadnavis election (30 pages)
+2025-07-19 12:54:46,953 - Link_extraction - WARNING - No 'Next' button found for 'Devendra Fadnavis election' after 1 pages.
+2025-07-19 12:55:04,500 - Link_extraction - INFO - Searching for: Devendra Fadnavis campaign (30 pages)
+2025-07-19 12:55:13,432 - Link_extraction - WARNING - No 'Next' button found for 'Devendra Fadnavis campaign' after 1 pages.
+2025-07-19 12:55:22,186 - Link_extraction - INFO - Searching for: Devendra Fadnavis rally (30 pages)
+2025-07-19 12:55:31,066 - Link_extraction - WARNING - No 'Next' button found for 'Devendra Fadnavis rally' after 1 pages.
+2025-07-19 12:55:39,990 - Link_extraction - INFO - Searching for: Devendra Fadnavis political decision (30 pages)
+2025-07-19 12:55:48,606 - Link_extraction - WARNING - No 'Next' button found for 'Devendra Fadnavis political decision' after 1 pages.
+2025-07-19 12:56:06,097 - Link_extraction - INFO - Searching for: Devendra Fadnavis Shinde faction (30 pages)
+2025-07-19 12:56:14,808 - Link_extraction - WARNING - No 'Next' button found for 'Devendra Fadnavis Shinde faction' after 1 pages.
+2025-07-19 12:56:32,333 - Link_extraction - INFO - Searching for: Devendra Fadnavis Uddhav Thackeray (30 pages)
+2025-07-19 12:56:41,007 - Link_extraction - WARNING - No 'Next' button found for 'Devendra Fadnavis Uddhav Thackeray' after 1 pages.
+2025-07-19 12:56:49,753 - Link_extraction - INFO - Searching for: Devendra Fadnavis Legislative Council (30 pages)
+2025-07-19 12:56:58,639 - Link_extraction - WARNING - No 'Next' button found for 'Devendra Fadnavis Legislative Council' after 1 pages.
+2025-07-19 12:57:07,581 - Link_extraction - INFO - Searching for: Devendra Fadnavis press conference (30 pages)
+2025-07-19 12:57:16,321 - Link_extraction - WARNING - No 'Next' button found for 'Devendra Fadnavis press conference' after 1 pages.
+2025-07-19 12:57:25,340 - Link_extraction - INFO - Searching for: Devendra Fadnavis government (30 pages)
+2025-07-19 12:57:34,058 - Link_extraction - WARNING - No 'Next' button found for 'Devendra Fadnavis government' after 1 pages.
+2025-07-19 12:57:42,778 - Link_extraction - INFO - Searching for: Devendra Fadnavis statement (30 pages)
+2025-07-19 12:57:51,672 - Link_extraction - WARNING - No 'Next' button found for 'Devendra Fadnavis statement' after 1 pages.
+2025-07-19 12:58:09,159 - Link_extraction - INFO - Searching for: Devendra Fadnavis politics (30 pages)
+2025-07-19 13:04:06,941 - Link_extraction - INFO - Initialized Link_extraction for leader: Devendra Fadnavis, from 07/15/2025 to 07/17/2025
+2025-07-19 13:04:06,941 - NewsScraper - INFO - Initializing NewsScraper.
+2025-07-19 13:04:06,941 - Link_extraction - INFO - Starting fetch_links() process
+2025-07-19 13:04:07,502 - Link_extraction - INFO - Extracted 104 keywords from sheet 'Devendra Fadnavis'
+2025-07-19 13:04:58,260 - Link_extraction - INFO - WebDriver initialized successfully
+2025-07-19 13:04:58,260 - Link_extraction - INFO - Searching for: devendra fadnavis (30 pages)
+2025-07-19 13:05:56,560 - Link_extraction - WARNING - No 'Next' button found for 'devendra fadnavis' after 11 pages.
+2025-07-19 13:07:55,132 - Link_extraction - INFO - Searching for: Devendra Fadnavis news (30 pages)
+2025-07-19 13:08:14,131 - Link_extraction - WARNING - No 'Next' button found for 'Devendra Fadnavis news' after 3 pages.
+2025-07-19 13:09:00,365 - Link_extraction - INFO - Searching for: Devendra Fadnavis latest news (30 pages)

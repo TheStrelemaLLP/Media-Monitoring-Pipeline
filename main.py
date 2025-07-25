@@ -9,8 +9,11 @@ if __name__ == "__main__":
     logger.info("Media monitoring script started.")
 
     leader_list = [
-        {"leader_name": "Devendra Fadnavis", "start_date": "07/16/2025", "end_date": "07/17/2025","facebook_excel_file_path":"C:/Users/HP/Downloads/CB_FB.xlsx"},
-        {"leader_name": "Prakash Abitkar", "start_date": "07/16/2025", "end_date": "07/17/2025","facebook_excel_file_path":"C:/Users/HP/Downloads/CB_FB.xlsx"},
+        # {"leader_name": "Devendra Fadnavis", "start_date": "07/16/2025", "end_date": "07/17/2025","facebook_excel_file_path":"C:/Users/HP/Downloads/CB_FB.xlsx"},
+        # {"leader_name": "Prakash Abitkar", "start_date": "07/16/2025", "end_date": "07/17/2025","facebook_excel_file_path":"C:/Users/HP/Downloads/CB_FB.xlsx"},
+        # {"leader_name": "Dhankar Resignation", "start_date": "07/21/2025", "end_date": "07/23/2025","facebook_excel_file_path":"C:/Users/HP/Downloads/CB_FB.xlsx"},
+        {"leader_name": "DF Birthday", "start_date": "07/22/2025", "end_date": "07/23/2025","facebook_excel_file_path":"C:/Users/HP/Downloads/CB_FB.xlsx"},
+    
     ]
 
     n_pages = 30

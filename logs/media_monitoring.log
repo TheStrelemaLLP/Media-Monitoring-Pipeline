@@ -10,3 +10,67 @@
 2025-07-22 11:03:01,144 - INFO - Processing started for leader: Prakash Abitkar | From: 07/16/2025 To: 07/17/2025
 2025-07-22 11:10:54,114 - INFO - Successfully processed news for Prakash Abitkar.
 2025-07-22 11:10:54,114 - INFO - Media monitoring script finished.
+2025-07-23 22:26:36,567 - INFO - Media monitoring script started.
+2025-07-23 22:26:36,567 - INFO - Processing started for leader: DF Birthday | From: 07/21/2025 To: 07/23/2025
+2025-07-23 22:26:37,205 - ERROR - Error while processing DF Birthday: Worksheet named 'DF Birthday' not found
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\Media-Monitoring\main.py", line 35, in <module>
+    router = CoreRouter(
+  File "C:\Users\HP\Desktop\Media-Monitoring\core_router.py", line 69, in __init__
+    self.scraper = NewsScraper(file_path=output_filename, output_folder=output_folder_path, leader=leader_name, chunk_size_kb = chunk_size_kb, i_file_path = i_file_path, link_extraction = self.link_extraction)
+  File "C:\Users\HP\Desktop\Media-Monitoring\modules\news_scraper.py", line 84, in __init__
+    self.LEADERS = self.get_leaders_variations(i_file_path, leader)
+  File "C:\Users\HP\Desktop\Media-Monitoring\modules\news_scraper.py", line 130, in get_leaders_variations
+    df = pd.read_excel(file_path, sheet_name=sheet_name)
+  File "C:\Users\HP\mambaforge\lib\site-packages\pandas\io\excel\_base.py", line 508, in read_excel
+    data = io.parse(
+  File "C:\Users\HP\mambaforge\lib\site-packages\pandas\io\excel\_base.py", line 1616, in parse
+    return self._reader.parse(
+  File "C:\Users\HP\mambaforge\lib\site-packages\pandas\io\excel\_base.py", line 773, in parse
+    sheet = self.get_sheet_by_name(asheetname)
+  File "C:\Users\HP\mambaforge\lib\site-packages\pandas\io\excel\_openpyxl.py", line 582, in get_sheet_by_name
+    self.raise_if_bad_sheet_by_name(name)
+  File "C:\Users\HP\mambaforge\lib\site-packages\pandas\io\excel\_base.py", line 624, in raise_if_bad_sheet_by_name
+    raise ValueError(f"Worksheet named '{name}' not found")
+ValueError: Worksheet named 'DF Birthday' not found
+2025-07-23 22:26:37,210 - INFO - Processing started for leader: Dhankar Resignation | From: 07/21/2025 To: 07/23/2025
+2025-07-23 22:26:37,229 - ERROR - Error while processing Dhankar Resignation: Worksheet named 'Dhankar Resignation' not found
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\Media-Monitoring\main.py", line 35, in <module>
+    router = CoreRouter(
+  File "C:\Users\HP\Desktop\Media-Monitoring\core_router.py", line 69, in __init__
+    self.scraper = NewsScraper(file_path=output_filename, output_folder=output_folder_path, leader=leader_name, chunk_size_kb = chunk_size_kb, i_file_path = i_file_path, link_extraction = self.link_extraction)
+  File "C:\Users\HP\Desktop\Media-Monitoring\modules\news_scraper.py", line 84, in __init__
+    self.LEADERS = self.get_leaders_variations(i_file_path, leader)
+  File "C:\Users\HP\Desktop\Media-Monitoring\modules\news_scraper.py", line 130, in get_leaders_variations
+    df = pd.read_excel(file_path, sheet_name=sheet_name)
+  File "C:\Users\HP\mambaforge\lib\site-packages\pandas\io\excel\_base.py", line 508, in read_excel
+    data = io.parse(
+  File "C:\Users\HP\mambaforge\lib\site-packages\pandas\io\excel\_base.py", line 1616, in parse
+    return self._reader.parse(
+  File "C:\Users\HP\mambaforge\lib\site-packages\pandas\io\excel\_base.py", line 773, in parse
+    sheet = self.get_sheet_by_name(asheetname)
+  File "C:\Users\HP\mambaforge\lib\site-packages\pandas\io\excel\_openpyxl.py", line 582, in get_sheet_by_name
+    self.raise_if_bad_sheet_by_name(name)
+  File "C:\Users\HP\mambaforge\lib\site-packages\pandas\io\excel\_base.py", line 624, in raise_if_bad_sheet_by_name
+    raise ValueError(f"Worksheet named '{name}' not found")
+ValueError: Worksheet named 'Dhankar Resignation' not found
+2025-07-23 22:26:37,232 - INFO - Media monitoring script finished.
+2025-07-23 22:28:25,425 - INFO - Media monitoring script started.
+2025-07-23 22:28:25,425 - INFO - Processing started for leader: DF Birthday | From: 07/21/2025 To: 07/23/2025
+2025-07-23 22:31:36,036 - INFO - Media monitoring script started.
+2025-07-23 22:31:36,036 - INFO - Processing started for leader: DF Birthday | From: 07/22/2025 To: 07/23/2025
+2025-07-23 22:58:44,513 - INFO - Successfully processed news for DF Birthday.
+2025-07-23 22:58:44,513 - INFO - Processing started for leader: Dhankar Resignation | From: 07/21/2025 To: 07/23/2025
+2025-07-23 23:57:16,367 - INFO - Successfully processed news for Dhankar Resignation.
+2025-07-23 23:57:16,367 - INFO - Media monitoring script finished.
+2025-07-24 08:56:43,922 - INFO - Media monitoring script started.
+2025-07-24 08:56:43,922 - INFO - Processing started for leader: Dhankar Resignation | From: 07/21/2025 To: 07/23/2025
+2025-07-24 09:26:58,232 - INFO - Successfully processed news for Dhankar Resignation.
+2025-07-24 09:26:58,232 - INFO - Processing started for leader: DF Birthday | From: 07/22/2025 To: 07/23/2025
+2025-07-24 09:44:09,954 - INFO - Media monitoring script started.
+2025-07-24 09:44:09,955 - INFO - Processing started for leader: Dhankar Resignation | From: 07/21/2025 To: 07/23/2025
+2025-07-24 09:45:27,238 - INFO - Media monitoring script started.
+2025-07-24 09:45:27,238 - INFO - Processing started for leader: DF Birthday | From: 07/22/2025 To: 07/23/2025
+2025-07-24 09:58:27,664 - INFO - Successfully processed news for DF Birthday.
+2025-07-24 09:58:27,664 - INFO - Media monitoring script finished.

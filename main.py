@@ -9,18 +9,22 @@ if __name__ == "__main__":
     logger.info("Media monitoring script started.")
 
     leader_list = [
-        {"leader_name": "Devendra Fadnavis", "start_date": "07/16/2025", "end_date": "07/17/2025","facebook_excel_file_path":"C:/Users/HP/Downloads/CB_FB.xlsx"},
-        {"leader_name": "Prakash Abitkar", "start_date": "07/16/2025", "end_date": "07/17/2025","facebook_excel_file_path":"C:/Users/HP/Downloads/CB_FB.xlsx"},
+        {"leader_name": "Devendra Fadnavis", "start_date": "07/16/2025", "end_date": "07/17/2025","facebook_excel_file_path":"https://github.com/danish-strelema/Media-Monitoring/tree/main/Input/CB_FB.xlsx"},
+        # {"leader_name": "Prakash Abitkar", "start_date": "07/16/2025", "end_date": "07/17/2025","facebook_excel_file_path":"C:/Users/HP/Downloads/CB_FB.xlsx"},
         # {"leader_name": "Dhankar Resignation", "start_date": "07/21/2025", "end_date": "07/23/2025","facebook_excel_file_path":"C:/Users/HP/Downloads/CB_FB.xlsx"},
         # {"leader_name": "DF Birthday", "start_date": "07/22/2025", "end_date": "07/23/2025","facebook_excel_file_path":"C:/Users/HP/Downloads/CB_FB.xlsx"},
     
     ]
 
     n_pages = 30
-    keywords_file_path = "C:/Users/HP/Desktop/Media-Monitoring/Input/search_query.xlsx"
-    output_filename = "C:/Users/HP/Desktop/Media-Monitoring/Output/extracted_links.xlsx"
-    i_file_path = "C:/Users/HP/Desktop/Media-Monitoring/Input/Names_variations.xlsx"
-    output_folder_path = "C:/Users/HP/Downloads"
+    keywords_file_path = "https://github.com/danish-strelema/Media-Monitoring/blob/main/Input/search_query.xlsx"
+    # "C:/Users/HP/Desktop/Media-Monitoring/Input/search_query.xlsx"
+    output_filename = "https://github.com/danish-strelema/Media-Monitoring/blob/main/Output/extracted_links.xlsx"
+    # "C:/Users/HP/Desktop/Media-Monitoring/Output/extracted_links.xlsx"
+    i_file_path = "https://github.com/danish-strelema/Media-Monitoring/blob/main/Input/Names_variations.xlsx"
+    # "C:/Users/HP/Desktop/Media-Monitoring/Input/Names_variations.xlsx"
+    output_folder_path = "https://github.com/danish-strelema/Media-Monitoring/tree/main/Output"
+    # "C:/Users/HP/Downloads"
     chunk_size_kb = 250
 
     for leader_info in leader_list:

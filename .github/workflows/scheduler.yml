@@ -3,7 +3,7 @@ name: Run main.py at 6 AM IST
 on:
   schedule:
     # - cron: '30 0 * * *'  # 6:00 AM IST daily
-  - cron: '0 10 * * *'
+  - cron: '20 10 * * *'
   workflow_dispatch:
 
 jobs:

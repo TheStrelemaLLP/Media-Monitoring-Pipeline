@@ -71,8 +71,8 @@ class CoreRouter:
         self.chunking = Chunking()
     
     def process_news(self):
-        # print("1. Link Extraction.....")
-        # self.link_extraction.fetch_links()
+        print("1. Link Extraction.....")
+        self.link_extraction.fetch_links()
 
         print("2. News Extraction.....")
         self.scraper.scrape()

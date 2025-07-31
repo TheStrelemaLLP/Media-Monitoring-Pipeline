@@ -74,3 +74,17 @@ ValueError: Worksheet named 'Dhankar Resignation' not found
 2025-07-24 09:45:27,238 - INFO - Processing started for leader: DF Birthday | From: 07/22/2025 To: 07/23/2025
 2025-07-24 09:58:27,664 - INFO - Successfully processed news for DF Birthday.
 2025-07-24 09:58:27,664 - INFO - Media monitoring script finished.
+2025-07-28 08:11:56,169 - INFO - Media monitoring script started.
+2025-07-28 08:11:56,169 - INFO - Processing started for leader: Devendra Fadnavis | From: 07/28/2025 To: 07/17/2025
+2025-07-28 08:12:26,975 - INFO - Media monitoring script started.
+2025-07-28 08:12:26,975 - INFO - Processing started for leader: Devendra Fadnavis | From: 07/28/2025 To: 07/17/2025
+2025-07-28 08:33:08,327 - INFO - Media monitoring script started.
+2025-07-28 08:33:08,327 - INFO - Processing started for leader: Devendra Fadnavis | From: 07/21/2025 To: 07/28/2025
+2025-07-28 09:23:13,217 - INFO - Successfully processed news for Devendra Fadnavis.
+2025-07-28 09:23:13,217 - INFO - Processing started for leader: Prakash Abitkar | From: 07/21/2025 To: 07/28/2025
+2025-07-28 09:34:50,540 - INFO - Successfully processed news for Prakash Abitkar.
+2025-07-28 09:34:50,540 - INFO - Processing started for leader: Ashish Shelar | From: 07/21/2025 To: 07/28/2025
+2025-07-28 09:43:50,483 - INFO - Successfully processed news for Ashish Shelar.
+2025-07-28 09:43:50,488 - INFO - Processing started for leader: Ravindra Chavan | From: 07/21/2025 To: 07/28/2025
+2025-07-28 09:55:15,679 - INFO - Successfully processed news for Ravindra Chavan.
+2025-07-28 09:55:15,679 - INFO - Processing started for leader: Eknath Shinde | From: 07/21/2025 To: 07/28/2025

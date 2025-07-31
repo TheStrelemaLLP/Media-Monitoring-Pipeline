@@ -1,6 +1,7 @@
 
 from core_router import CoreRouter
 from utils import setup_logger
+import os
 
 # Initialize logger
 logger = setup_logger("Main", log_file="logs/media_monitoring.log")
@@ -24,17 +25,28 @@ if __name__ == "__main__":
     ]
 
     n_pages = 30
-    keywords_file_path = "C:/Users/HP/Desktop/Media-Monitoring/Input/search_query.xlsx"
-    # "https://github.com/danish-strelema/Media-Monitoring/blob/main/Input/search_query.xlsx"
-    output_filename = "C:/Users/HP/Desktop/Media-Monitoring/Output/extracted_links.xlsx"
-    # "https://github.com/danish-strelema/Media-Monitoring/blob/main/Output/extracted_links.xlsx"
-    #
-    i_file_path = "C:/Users/HP/Desktop/Media-Monitoring/Input/Names_variations.xlsx"
-    # "https://github.com/danish-strelema/Media-Monitoring/blob/main/Input/Names_variations.xlsx"
-    # 
-    output_folder_path = "C:/Users/HP/Downloads"
-    # "https://github.com/danish-strelema/Media-Monitoring/tree/main/Output"
-    # "C:/Users/HP/Downloads"
+    # keywords_file_path = "C:/Users/HP/Desktop/Media-Monitoring/Input/search_query.xlsx"
+    # output_filename = "C:/Users/HP/Desktop/Media-Monitoring/Output/extracted_links.xlsx"
+    # i_file_path = "C:/Users/HP/Desktop/Media-Monitoring/Input/Names_variations.xlsx"
+    # output_folder_path = "C:/Users/HP/Downloads"
+
+    # Base directory of project (where main.py is)
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+    # Input folder path
+    INPUT_DIR = os.path.join(BASE_DIR, "input")
+
+    # Output folder path
+    OUTPUT_DIR = os.path.join(BASE_DIR, "output")
+
+    # Example file paths
+    # input_file = os.path.join(INPUT_DIR, "file1.xlsx")
+    # output_file = os.path.join(OUTPUT_DIR, "final_report.xlsx")
+    keywords_file_path = os.path.join(INPUT_DIR, "search_query.xlsx")
+    output_filename = os.path.join(OUTPUT_DIR, "extracted_links.xlsx")
+    i_file_path = os.path.join(INPUT_DIR, "Names_variations.xlsx")
+    output_folder_path = OUTPUT_DIR
+
     chunk_size_kb = 250
 
     for leader_info in leader_list:

@@ -170,3 +170,17 @@ Traceback (most recent call last):
     return codecs.charmap_encode(input,self.errors,encoding_table)[0]
 UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4c4' in position 0: character maps to <undefined>
 2025-08-20 10:04:03,730 - INFO - Media monitoring script finished.
+2025-08-20 11:09:35,146 - INFO - Media monitoring script started.
+2025-08-20 11:09:35,162 - INFO - Processing started for leader: Devendra Fadnavis | From: 08/11/2025 To: 08/18/2025
+2025-08-20 12:10:40,520 - ERROR - Error while processing Devendra Fadnavis: 'charmap' codec can't encode character '\U0001f4c4' in position 0: character maps to <undefined>
+Traceback (most recent call last):
+  File "D:\a\Media-Monitoring\Media-Monitoring\main.py", line 66, in <module>
+    router.process_news()
+  File "D:\a\Media-Monitoring\Media-Monitoring\core_router.py", line 97, in process_news
+    chunk_paths = self.chunking.split_docx_by_article_chunks(
+  File "D:\a\Media-Monitoring\Media-Monitoring\modules\chunking.py", line 88, in split_docx_by_article_chunks
+    print(f"📄 Saved: {chunk_path} ({self.get_docx_size_kb(current_doc):.2f} KB)")
+  File "C:\hostedtoolcache\windows\Python\3.10.11\x64\lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4c4' in position 0: character maps to <undefined>
+2025-08-20 12:10:40,520 - INFO - Media monitoring script finished.

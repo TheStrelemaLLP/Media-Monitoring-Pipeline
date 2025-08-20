@@ -184,3 +184,7 @@ Traceback (most recent call last):
     return codecs.charmap_encode(input,self.errors,encoding_table)[0]
 UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4c4' in position 0: character maps to <undefined>
 2025-08-20 12:10:40,520 - INFO - Media monitoring script finished.
+2025-08-20 12:53:18,705 - INFO - Media monitoring script started.
+2025-08-20 12:53:18,705 - INFO - Processing started for leader: Devendra Fadnavis | From: 08/11/2025 To: 08/18/2025
+2025-08-20 13:56:40,284 - INFO - Successfully processed news for Devendra Fadnavis.
+2025-08-20 13:56:40,284 - INFO - Media monitoring script finished.

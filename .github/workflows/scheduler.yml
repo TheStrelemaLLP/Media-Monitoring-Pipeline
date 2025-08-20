@@ -5,6 +5,9 @@ on:
     - cron: '30 0 * * *'  # 6:00 AM IST daily
   workflow_dispatch:
 
+permissions:
+  contents: write   # allow committing back to repo
+
 jobs:
   run-script:
     runs-on: windows-latest
@@ -13,13 +16,13 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
       with:
-        persist-credentials: true   # needed to push back
-        fetch-depth: 0              # get full history
+        persist-credentials: true
+        fetch-depth: 0
 
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.10'  # Adjust if needed
+        python-version: '3.10'
 
     - name: Install Chrome and WebDriver
       uses: browser-actions/setup-chrome@v1
@@ -41,6 +44,7 @@ jobs:
         git config user.name "github-actions[bot]"
         git config user.email "github-actions[bot]@users.noreply.github.com"
 
-        git add output/  # only commit output folder (change if needed)
-        git commit -m "Auto-update output on $(date)" || echo "No changes to commit"
-        git push origin HEAD:${{ github.ref }}
+        git add -A
+        git commit -m "Auto-update on $(date)" || echo "No changes to commit"
+        git pull --rebase origin main
+        git push origin HEAD:main

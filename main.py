@@ -23,8 +23,8 @@ if __name__ == "__main__":
     leader_list = [
         {
             "leader_name": "Devendra Fadnavis",
-            "start_date": "07/21/2025",
-            "end_date": "07/28/2025",
+            "start_date": "08/11/2025",
+            "end_date": "08/18/2025",
             "facebook_excel_file_path": os.path.join(INPUT_DIR, "CB_FB.xlsx"),  # <- moved into input/
         },
         # Add more leaders here if needed

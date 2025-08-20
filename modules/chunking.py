@@ -1,18 +1,39 @@
 import os
 import sys
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__),"..")))
-
 import io
 import re
+import logging
 from docx import Document
 import docx
+
+# Add project root to path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
+# ---------------------------
+# Logging Configuration
+# ---------------------------
+LOGS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "logs")
+os.makedirs(LOGS_DIR, exist_ok=True)
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s | %(levelname)s | %(name)s | %(message)s",
+    handlers=[
+        logging.StreamHandler(sys.stdout),  # Console logs
+        logging.FileHandler(os.path.join(LOGS_DIR, "chunking.log"), mode="a", encoding="utf-8")  # File logs
+    ]
+)
+logger = logging.getLogger("Chunking")
+
 
 class Chunking:
     def get_docx_size_kb(self, doc):
         """Return the in-memory size of the Document in KB."""
         buffer = io.BytesIO()
         doc.save(buffer)
-        return len(buffer.getvalue()) / 1024
+        size = len(buffer.getvalue()) / 1024
+        logger.debug(f"Calculated DOCX size: {size:.2f} KB")
+        return size
 
     def copy_paragraph(self, src_para, dest_doc):
         """Copy paragraph from source to destination doc, preserving formatting and embedded hyperlinks."""
@@ -37,16 +58,23 @@ class Chunking:
             if r_id:
                 rel = src_para.part.rels[r_id]
                 new_para.add_run(f" {rel.target_ref}")  # Add the URL at the end
+                logger.debug(f"Copied hyperlink: {rel.target_ref}")
 
     def is_article_start(self, paragraph):
         """Detect start of a new article (case insensitive)."""
-        return bool(re.match(r"(?i)^article\s+\d+", paragraph.text.strip()))
+        result = bool(re.match(r"(?i)^article\s+\d+", paragraph.text.strip()))
+        if result:
+            logger.debug(f"Detected article start: '{paragraph.text.strip()}'")
+        return result
 
-    def split_docx_by_article_chunks(self, input_path, chunk_size_kb, output_dir="/content", leader=""):
+    def split_docx_by_article_chunks(self, input_path, chunk_size_kb, output_dir="output", leader=""):
         """Split DOCX into chunks at article boundaries, each under a size limit, named with leader."""
         os.makedirs(output_dir, exist_ok=True)
+        logger.info(f"Loading document: {input_path}")
+
         original_doc = Document(input_path)
         paragraphs = [p for p in original_doc.paragraphs if p.text.strip()]
+        logger.info(f"Found {len(paragraphs)} non-empty paragraphs")
 
         # Group paragraphs into article blocks
         articles = []
@@ -59,6 +87,8 @@ class Chunking:
             current_article.append(para)
         if current_article:
             articles.append(current_article)
+
+        logger.info(f"Grouped into {len(articles)} article(s)")
 
         chunks = []
         chunk_index = 1
@@ -77,7 +107,6 @@ class Chunking:
             size_kb = self.get_docx_size_kb(test_doc)
 
             if size_kb <= chunk_size_kb:
-                # Add article safely
                 for p in article:
                     self.copy_paragraph(p, current_doc)
             else:
@@ -85,7 +114,7 @@ class Chunking:
                 chunk_filename = f"{leader}_chunk_{chunk_index}.docx" if leader else f"chunk_{chunk_index}.docx"
                 chunk_path = os.path.join(output_dir, chunk_filename)
                 current_doc.save(chunk_path)
-                print(f"📄 Saved: {chunk_path} ({self.get_docx_size_kb(current_doc):.2f} KB)")
+                logger.info(f"Saved chunk: {chunk_path} ({self.get_docx_size_kb(current_doc):.2f} KB)")
                 chunks.append(chunk_path)
                 chunk_index += 1
 
@@ -100,8 +129,8 @@ class Chunking:
             chunk_filename = f"{leader}_chunk_{chunk_index}.docx" if leader else f"chunk_{chunk_index}.docx"
             chunk_path = os.path.join(output_dir, chunk_filename)
             current_doc.save(chunk_path)
-            print(f"📄 Saved: {chunk_path} ({self.get_docx_size_kb(current_doc):.2f} KB)")
+            logger.info(f"Saved chunk: {chunk_path} ({self.get_docx_size_kb(current_doc):.2f} KB)")
             chunks.append(chunk_path)
 
-        print(f"✅ Done. {len(chunks)} chunk(s) created at '{output_dir}'.")
+        logger.info(f"Done. {len(chunks)} chunk(s) created at '{output_dir}'.")
         return chunks

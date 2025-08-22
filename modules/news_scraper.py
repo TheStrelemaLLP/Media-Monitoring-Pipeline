@@ -83,15 +83,15 @@ class NewsScraper:
         self.docx_output, self.excel_output = self._get_output_filenames()
         self.LEADERS = self.get_leaders_variations(i_file_path, leader) 
         
-        # Validate inputs
-        if not os.path.exists(file_path):
-            logger.error(f"Input file '{file_path}' does not exist.")
-            raise FileAccessError(f"Input file '{file_path}' does not exist.")
-        if not self.leader in self.LEADERS:
-            logger.error(f"Invalid leader '{leader}'. Available: {', '.join(self.LEADERS.keys())}")
-            raise InvalidLeaderError(
-                f"Invalid leader '{leader}'. Choose from: {', '.join(self.LEADERS.keys())}"
-            )
+        # # Validate inputs
+        # if not os.path.exists(file_path):
+        #     logger.error(f"Input file '{file_path}' does not exist.")
+        #     raise FileAccessError(f"Input file '{file_path}' does not exist.")
+        # if not self.leader in self.LEADERS:
+        #     logger.error(f"Invalid leader '{leader}'. Available: {', '.join(self.LEADERS.keys())}")
+        #     raise InvalidLeaderError(
+        #         f"Invalid leader '{leader}'. Choose from: {', '.join(self.LEADERS.keys())}"
+        #     )
         logger.debug(f"NewsScraper initialized with leader: {leader}")
 
     def _get_output_filenames(self) -> tuple:

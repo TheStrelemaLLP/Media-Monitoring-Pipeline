@@ -65,53 +65,58 @@ def is_valid_url(url: str) -> bool:
 
 class CoreRouter:
     def __init__(self, leader_name, start_date, end_date, n_pages, keywords_file_path, output_filename, output_folder_path, facebook_excel_file_path, chunk_size_kb, i_file_path):
-        self.link_extraction = Link_extraction(leader_name, start_date, end_date, n_pages, keywords_file_path, output_filename, facebook_excel_file_path)
-        self.scraper = NewsScraper(file_path=output_filename, output_folder=output_folder_path, leader=leader_name, chunk_size_kb = chunk_size_kb, i_file_path = i_file_path, link_extraction = self.link_extraction)
+        self.link_extraction = Link_extraction(
+            leader_name, start_date, end_date, n_pages, keywords_file_path, output_filename, facebook_excel_file_path
+        )
+        self.scraper = NewsScraper(
+            file_path=output_filename,
+            output_folder=output_folder_path,
+            leader=leader_name,
+            chunk_size_kb=chunk_size_kb,
+            i_file_path=i_file_path,
+            link_extraction=self.link_extraction
+        )
         self.facebook_doc = Facebook_doc()
         self.chunking = Chunking()
     
     def process_news(self):
-        print("1. Link Extraction.....")
+        logger.info("1. Link Extraction started...")
         self.link_extraction.fetch_links()
 
-        print("2. News Extraction.....")
+        logger.info("2. News Extraction started...")
         self.scraper.scrape()
 
         # Get the paths to the news output files
         docx_path, excel_path = self.scraper.get_output_paths()
-        print(f"News Word document saved at: {docx_path}")
+        logger.info(f"News Word document saved at: {docx_path}")
         if excel_path:
-            print(f"Failed news links saved at: {excel_path}")
+            logger.warning(f"Failed news links saved at: {excel_path}")
 
         # Get the file size in bytes
         size_bytes = os.path.getsize(docx_path)
-
-        # Convert to kilobytes (1 KB = 1024 bytes)
         size_kb = size_bytes / 1024
-
-        print(f"File size: {size_kb:.2f} KB")
+        logger.info(f"File size: {size_kb:.2f} KB")
 
         if size_kb >= 350:
-            # Split the news Word document into chunks
-            print(f"\nSplitting news Word document into chunks of {self.scraper.chunk_size_kb} KB...")
+            logger.info(f"Splitting news Word document into chunks of {self.scraper.chunk_size_kb} KB...")
             chunk_paths = self.chunking.split_docx_by_article_chunks(
                 input_path=docx_path,
                 chunk_size_kb=self.scraper.chunk_size_kb,
                 output_dir=self.scraper.output_folder,
                 leader=self.link_extraction.leader_name
             )
-            print(f"Chunked news files saved at: {', '.join(chunk_paths)}")
+            logger.info(f"Chunked news files saved at: {', '.join(chunk_paths)}")
         else:
-            print(f"\nNo chunking required.")
+            logger.info("No chunking required.")
 
         # Process Facebook posts if an Excel file is provided
         if self.link_extraction.facebook_excel_file_path and os.path.exists(self.link_extraction.facebook_excel_file_path):
-            print(f"\nProcessing Facebook posts from {self.link_extraction.facebook_excel_file_path}...")
+            logger.info(f"Processing Facebook posts from {self.link_extraction.facebook_excel_file_path}...")
             facebook_doc_path = self.facebook_doc.create_facebook_doc(
                 excel_file_path=self.link_extraction.facebook_excel_file_path,
                 output_dir=self.scraper.output_folder,
                 leader=self.link_extraction.leader_name
             )
-            print(f"Facebook Word document saved at: {facebook_doc_path}")
+            logger.info(f"Facebook Word document saved at: {facebook_doc_path}")
         else:
-            print("\nNo Facebook Excel file provided or file does not exist. Skipping Facebook processing.")
+            logger.warning("No Facebook Excel file provided or file does not exist. Skipping Facebook processing.")

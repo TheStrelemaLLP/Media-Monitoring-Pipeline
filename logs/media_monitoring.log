@@ -232,3 +232,7 @@ UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4c4' in posit
 2025-08-30 02:04:07,287 - INFO - Processing started for leader: Devendra Fadnavis | From: 08-18-2025 To: 08-18-2025 with 
 2025-08-30 02:45:51,815 - INFO - Successfully processed news for Devendra Fadnavis.
 2025-08-30 02:45:51,815 - INFO - Media monitoring script finished.
+2025-08-31 02:20:02,346 - INFO - Media monitoring script started.
+2025-08-31 02:20:02,565 - INFO - Processing started for leader: Devendra Fadnavis | From: 08-18-2025 To: 08-18-2025 with 
+2025-08-31 03:00:44,125 - INFO - Successfully processed news for Devendra Fadnavis.
+2025-08-31 03:00:44,125 - INFO - Media monitoring script finished.

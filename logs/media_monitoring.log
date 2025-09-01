@@ -236,3 +236,115 @@ UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4c4' in posit
 2025-08-31 02:20:02,565 - INFO - Processing started for leader: Devendra Fadnavis | From: 08-18-2025 To: 08-18-2025 with 
 2025-08-31 03:00:44,125 - INFO - Successfully processed news for Devendra Fadnavis.
 2025-08-31 03:00:44,125 - INFO - Media monitoring script finished.
+2025-09-01 02:02:35,327 - INFO - Media monitoring script started.
+2025-09-01 02:02:35,515 - INFO - Processing started for leader: Prakash Abitkar | From: 08-25-2025 To: 2025-01-09 00:00:00 with 
+2025-09-01 02:44:02,770 - INFO - Successfully processed news for Prakash Abitkar.
+2025-09-01 02:44:02,770 - INFO - Processing started for leader: Devendra Fadnavis | From: 08-25-2025 To: 2025-01-09 00:00:00 with 
+2025-09-01 04:17:11,608 - ERROR - Error while processing Devendra Fadnavis: Scraping process failed: Failed to save Word document: All strings must be XML compatible: Unicode or ASCII, no NULL bytes or control characters
+Traceback (most recent call last):
+  File "D:\a\Media-Monitoring\Media-Monitoring\modules\news_scraper.py", line 326, in _save_to_word
+    doc.add_paragraph(f"Content: {item['Article']}")
+  File "C:\hostedtoolcache\windows\Python\3.10.11\x64\lib\site-packages\docx\document.py", line 119, in add_paragraph
+    return self._body.add_paragraph(text, style)
+  File "C:\hostedtoolcache\windows\Python\3.10.11\x64\lib\site-packages\docx\blkcntnr.py", line 56, in add_paragraph
+    paragraph.add_run(text)
+  File "C:\hostedtoolcache\windows\Python\3.10.11\x64\lib\site-packages\docx\text\paragraph.py", line 41, in add_run
+    run.text = text
+  File "C:\hostedtoolcache\windows\Python\3.10.11\x64\lib\site-packages\docx\text\run.py", line 225, in text
+    self._r.text = text
+  File "C:\hostedtoolcache\windows\Python\3.10.11\x64\lib\site-packages\docx\oxml\text\run.py", line 143, in text
+    _RunContentAppender.append_to_run_from_text(self, text)
+  File "C:\hostedtoolcache\windows\Python\3.10.11\x64\lib\site-packages\docx\oxml\text\run.py", line 279, in append_to_run_from_text
+    appender.add_text(text)
+  File "C:\hostedtoolcache\windows\Python\3.10.11\x64\lib\site-packages\docx\oxml\text\run.py", line 285, in add_text
+    self.flush()
+  File "C:\hostedtoolcache\windows\Python\3.10.11\x64\lib\site-packages\docx\oxml\text\run.py", line 306, in flush
+    self._r.add_t(text)
+  File "C:\hostedtoolcache\windows\Python\3.10.11\x64\lib\site-packages\docx\oxml\text\run.py", line 42, in add_t
+    t = self._add_t(text=text)
+  File "C:\hostedtoolcache\windows\Python\3.10.11\x64\lib\site-packages\docx\oxml\xmlchemy.py", line 288, in _add_child
+    setattr(child, key, value)
+  File "src/lxml/etree.pyx", line 1163, in lxml.etree._Element.text.__set__
+  File "src/lxml/apihelpers.pxi", line 749, in lxml.etree._setNodeText
+  File "src/lxml/apihelpers.pxi", line 737, in lxml.etree._createTextNode
+  File "src/lxml/apihelpers.pxi", line 1538, in lxml.etree._utf8
+ValueError: All strings must be XML compatible: Unicode or ASCII, no NULL bytes or control characters
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\a\Media-Monitoring\Media-Monitoring\modules\news_scraper.py", line 291, in scrape
+    self._save_to_word()
+  File "D:\a\Media-Monitoring\Media-Monitoring\modules\news_scraper.py", line 335, in _save_to_word
+    raise FileAccessError(f"Failed to save Word document: {str(e)}")
+modules.news_scraper.FileAccessError: Failed to save Word document: All strings must be XML compatible: Unicode or ASCII, no NULL bytes or control characters
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\a\Media-Monitoring\Media-Monitoring\main.py", line 78, in <module>
+    router.process_news()
+  File "D:\a\Media-Monitoring\Media-Monitoring\core_router.py", line 87, in process_news
+    self.scraper.scrape()
+  File "D:\a\Media-Monitoring\Media-Monitoring\modules\news_scraper.py", line 297, in scrape
+    raise NewsScraperError(f"Scraping process failed: {str(e)}")
+modules.news_scraper.NewsScraperError: Scraping process failed: Failed to save Word document: All strings must be XML compatible: Unicode or ASCII, no NULL bytes or control characters
+2025-09-01 04:17:11,624 - INFO - Processing started for leader: Ravindra Chavan | From: 08-25-2025 To: 2025-01-09 00:00:00 with 
+2025-09-01 04:43:27,854 - INFO - Successfully processed news for Ravindra Chavan.
+2025-09-01 04:43:27,854 - INFO - Processing started for leader: Ashish Shelar | From: 08-25-2025 To: 2025-01-09 00:00:00 with 
+2025-09-01 05:03:05,075 - INFO - Successfully processed news for Ashish Shelar.
+2025-09-01 05:03:05,075 - INFO - Processing started for leader: Chandrakant Patil | From: 08-25-2025 To: 2025-01-09 00:00:00 with 
+2025-09-01 05:28:43,777 - INFO - Successfully processed news for Chandrakant Patil.
+2025-09-01 05:28:43,777 - INFO - Processing started for leader: Chandrashekhar Bawankule | From: 08-25-2025 To: 2025-01-09 00:00:00 with 
+2025-09-01 05:56:24,875 - INFO - Successfully processed news for Chandrashekhar Bawankule.
+2025-09-01 05:56:24,875 - INFO - Processing started for leader: Eknath Shinde | From: 08-25-2025 To: 2025-01-09 00:00:00 with 
+2025-09-01 07:06:12,587 - ERROR - Error while processing Eknath Shinde: Scraping process failed: Failed to save Word document: All strings must be XML compatible: Unicode or ASCII, no NULL bytes or control characters
+Traceback (most recent call last):
+  File "D:\a\Media-Monitoring\Media-Monitoring\modules\news_scraper.py", line 326, in _save_to_word
+    doc.add_paragraph(f"Content: {item['Article']}")
+  File "C:\hostedtoolcache\windows\Python\3.10.11\x64\lib\site-packages\docx\document.py", line 119, in add_paragraph
+    return self._body.add_paragraph(text, style)
+  File "C:\hostedtoolcache\windows\Python\3.10.11\x64\lib\site-packages\docx\blkcntnr.py", line 56, in add_paragraph
+    paragraph.add_run(text)
+  File "C:\hostedtoolcache\windows\Python\3.10.11\x64\lib\site-packages\docx\text\paragraph.py", line 41, in add_run
+    run.text = text
+  File "C:\hostedtoolcache\windows\Python\3.10.11\x64\lib\site-packages\docx\text\run.py", line 225, in text
+    self._r.text = text
+  File "C:\hostedtoolcache\windows\Python\3.10.11\x64\lib\site-packages\docx\oxml\text\run.py", line 143, in text
+    _RunContentAppender.append_to_run_from_text(self, text)
+  File "C:\hostedtoolcache\windows\Python\3.10.11\x64\lib\site-packages\docx\oxml\text\run.py", line 279, in append_to_run_from_text
+    appender.add_text(text)
+  File "C:\hostedtoolcache\windows\Python\3.10.11\x64\lib\site-packages\docx\oxml\text\run.py", line 285, in add_text
+    self.flush()
+  File "C:\hostedtoolcache\windows\Python\3.10.11\x64\lib\site-packages\docx\oxml\text\run.py", line 306, in flush
+    self._r.add_t(text)
+  File "C:\hostedtoolcache\windows\Python\3.10.11\x64\lib\site-packages\docx\oxml\text\run.py", line 42, in add_t
+    t = self._add_t(text=text)
+  File "C:\hostedtoolcache\windows\Python\3.10.11\x64\lib\site-packages\docx\oxml\xmlchemy.py", line 288, in _add_child
+    setattr(child, key, value)
+  File "src/lxml/etree.pyx", line 1163, in lxml.etree._Element.text.__set__
+  File "src/lxml/apihelpers.pxi", line 749, in lxml.etree._setNodeText
+  File "src/lxml/apihelpers.pxi", line 737, in lxml.etree._createTextNode
+  File "src/lxml/apihelpers.pxi", line 1538, in lxml.etree._utf8
+ValueError: All strings must be XML compatible: Unicode or ASCII, no NULL bytes or control characters
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\a\Media-Monitoring\Media-Monitoring\modules\news_scraper.py", line 291, in scrape
+    self._save_to_word()
+  File "D:\a\Media-Monitoring\Media-Monitoring\modules\news_scraper.py", line 335, in _save_to_word
+    raise FileAccessError(f"Failed to save Word document: {str(e)}")
+modules.news_scraper.FileAccessError: Failed to save Word document: All strings must be XML compatible: Unicode or ASCII, no NULL bytes or control characters
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\a\Media-Monitoring\Media-Monitoring\main.py", line 78, in <module>
+    router.process_news()
+  File "D:\a\Media-Monitoring\Media-Monitoring\core_router.py", line 87, in process_news
+    self.scraper.scrape()
+  File "D:\a\Media-Monitoring\Media-Monitoring\modules\news_scraper.py", line 297, in scrape
+    raise NewsScraperError(f"Scraping process failed: {str(e)}")
+modules.news_scraper.NewsScraperError: Scraping process failed: Failed to save Word document: All strings must be XML compatible: Unicode or ASCII, no NULL bytes or control characters
+2025-09-01 07:06:12,587 - INFO - Media monitoring script finished.

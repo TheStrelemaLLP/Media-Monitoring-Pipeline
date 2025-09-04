@@ -17,3 +17,4 @@ tqdm
 python-docx
 webdriver_manager
 openpyxl
+apify_client

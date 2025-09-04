@@ -110,13 +110,15 @@ class CoreRouter:
             logger.info("No chunking required.")
 
         # Process Facebook posts if an Excel file is provided
-        if self.link_extraction.facebook_excel_file_path and os.path.exists(self.link_extraction.facebook_excel_file_path):
+        if self.link_extraction.facebook_excel_file_path:
+        # and os.path.exists(self.link_extraction.facebook_excel_file_path):
             logger.info(f"Processing Facebook posts from {self.link_extraction.facebook_excel_file_path}...")
-            facebook_doc_path = self.facebook_doc.create_facebook_doc(
-                excel_file_path=self.link_extraction.facebook_excel_file_path,
-                output_dir=self.scraper.output_folder,
-                leader=self.link_extraction.leader_name
-            )
-            logger.info(f"Facebook Word document saved at: {facebook_doc_path}")
+            fb_posts = self.facebook_doc.collect_fb_posts(self.link_extraction.facebook_excel_file_path,self.link_extraction.start_date,self.link_extraction.end_date)
+            logger.info(f"Facebook Word document saved at: {fb_posts}")
+
+            logger.info("Saving facebook posts in docx file..")
+            fb_out = self.facebook_doc.save_fb_docx(fb_posts, self.scraper.output_folder, self.link_extraction.leader_name, self.link_extraction.start_date, self.link_extraction.end_date)
+            logger.info(f"Successfully saved facebook output  in {fb_out}")
+
         else:
             logger.warning("No Facebook Excel file provided or file does not exist. Skipping Facebook processing.")

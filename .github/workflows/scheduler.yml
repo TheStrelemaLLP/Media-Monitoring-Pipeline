@@ -2,7 +2,7 @@ name: Run main.py at 6 AM IST
 
 on:
   schedule:
-    - cron: '30 0 * * *'  # 6:00 AM IST daily
+    - cron: '30 22 * * 0'  # Every Sunday 10:30 PM UTC = Monday 4:00 AM IST
   workflow_dispatch:
 
 permissions:

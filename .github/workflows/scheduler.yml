@@ -1,4 +1,4 @@
-name: Run main.py at 6 AM IST
+name: Run main.py at 4 AM IST
 
 on:
   schedule:

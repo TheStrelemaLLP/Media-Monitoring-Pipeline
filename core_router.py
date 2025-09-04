@@ -92,12 +92,13 @@ class CoreRouter:
         if excel_path:
             logger.warning(f"Failed news links saved at: {excel_path}")
 
+        logger.info("3. Chunking started...")
         # Get the file size in bytes
         size_bytes = os.path.getsize(docx_path)
         size_kb = size_bytes / 1024
         logger.info(f"File size: {size_kb:.2f} KB")
 
-        if size_kb >= 350:
+        if size_kb >= 500:
             logger.info(f"Splitting news Word document into chunks of {self.scraper.chunk_size_kb} KB...")
             chunk_paths = self.chunking.split_docx_by_article_chunks(
                 input_path=docx_path,
@@ -109,6 +110,7 @@ class CoreRouter:
         else:
             logger.info("No chunking required.")
 
+        logger.info("4. Facebook posts scraping started...")
         # Process Facebook posts if an Excel file is provided
         if self.link_extraction.facebook_excel_file_path:
         # and os.path.exists(self.link_extraction.facebook_excel_file_path):

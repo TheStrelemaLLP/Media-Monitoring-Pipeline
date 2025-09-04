@@ -1,14 +1,15 @@
 import os
 import sys
-import logging
+from datetime import datetime
 
 # Add parent directory to path for local imports
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 import pandas as pd
 from docx import Document
-from docx.enum.style import WD_STYLE_TYPE
+from apify_client import ApifyClient
 
+from config import Config
 from utils import setup_logger
 
 logger = setup_logger("FacebookDocs")
@@ -18,69 +19,105 @@ class FacebookDocsError(Exception):
     pass
 
 class Facebook_doc:
-    def create_facebook_doc(self, excel_file_path: str, output_dir: str, leader: str) -> str:
-        """Convert Excel file with Facebook posts to a formatted Word document."""
-        logger.info(f"Processing Facebook posts from {excel_file_path}")
+    """
+    A class to collect Facebook posts using Apify and save them to a DOCX file.
+    """
+    def __init__(self):
+        """Initializes the Apify client."""
+        self.client = ApifyClient(Config.apify_key)
+
+    def collect_fb_posts(self, facebook_profile_url, start_date=None, end_date=None):
+        """
+        Runs the Apify actor to collect posts from a Facebook URL.
+        """
+        logger.info(f"Processing Facebook posts from {facebook_profile_url} | From: {start_date} To: {end_date}")
+
+        run_input = {
+            "startUrls": [{"url": facebook_profile_url}],
+            "resultsType": "posts",
+            "resultsLimit": 150,  # Number of posts
+            "proxyConfig": {"useApifyProxy": True},
+        }
+
+        # Run the actor and wait for it to finish
+        run = self.client.actor("KoJrdxJCTtpon81KY").call(run_input=run_input)
+
+        # Fetch posts from the actor's dataset
+        dataset_items = list(self.client.dataset(run["defaultDatasetId"]).iterate_items())
+        logger.info(f"Fetched {len(dataset_items)} posts for {facebook_profile_url}")
         
-        # Validate input file
-        if not os.path.exists(excel_file_path):
-            logger.error(f"Input file '{excel_file_path}' does not exist.")
-            raise FacebookDocsError(f"Input file '{excel_file_path}' does not exist.")
+        return dataset_items
+
+    def filter_posts_datewise(self, df, start_date, end_date):
+        """
+        Filters a DataFrame based on a date range using pandas datetime.
+        """
+        # Ensure 'time' column exists before proceeding
+        if 'time' not in df.columns:
+            logger.error("DataFrame is missing the 'time' column.")
+            return pd.DataFrame() # Return an empty DataFrame
+
+        df['time'] = pd.to_datetime(df['time'], errors='coerce')
+        # df.dropna(subset=['time'], inplace=True)
+
+        start_date_obj = pd.to_datetime(start_date).date()
+        end_date_obj = pd.to_datetime(end_date).date()
+
+        filtered_df = df[
+            (df['time'].dt.date >= start_date_obj) & (df['time'].dt.date <= end_date_obj)
+        ]
+        return filtered_df
+
+    def save_fb_docx(self, fb_posts, output_dir, leader, start_date, end_date):
+        """
+        Filters posts by date and saves them to a .docx file.
+        """
+        if not fb_posts:
+            logger.warning(f"No posts found for {leader} to save.")
+            return None
+
+        fb_posts_df = pd.DataFrame(fb_posts)
+        fb_posts_df.to_excel(output_dir+"/fb_excel.xlsx", index= False)
+
+        if fb_posts_df.empty:
+            logger.info(f"No data for {leader} to process after creating DataFrame.")
+            return None
+
+        filtered_posts_df = self.filter_posts_datewise(fb_posts_df, start_date, end_date)
+
+        if filtered_posts_df.empty:
+            logger.info(f"No posts found for {leader} within the date range {start_date} to {end_date}.")
+            return None
+
+        doc = Document()
         
-        try:
-            # Read the Excel file
-            df = pd.read_excel(excel_file_path)
-            logger.debug(f"Loaded Excel file with {len(df)} rows.")
-            
-            # Check for required columns
-            required_columns = ['text']
-            if not all(col in df.columns for col in required_columns):
-                missing_cols = [col for col in required_columns if col not in df.columns]
-                logger.error(f"Missing required columns: {', '.join(missing_cols)}")
-                raise FacebookDocsError(f"Missing required columns: {', '.join(missing_cols)}")
-            
-            # Remove rows with null values in 'text' column
-            initial_rows = len(df)
-            df = df.dropna(subset=['text']).reset_index(drop=True)
-            logger.debug(f"Removed {initial_rows - len(df)} rows with null 'text' values.")
-            
-            # Initialize Word document
-            doc = Document()
-            
-            # Ensure Heading 3 style exists
-            try:
-                doc.styles['Heading 3']
-            except KeyError:
-                logger.error("Style 'Heading 3' not found in document.")
-                raise FacebookDocsError("Style 'Heading 3' not found in document.")
-            
-            # Format each row and add to the Word document
-            for index, row in df.iterrows():
-                article_number = index + 1
-                # Add heading
-                heading_text = f"Facebook Post {article_number}"
-                doc.add_heading(heading_text, level=3)
-                
-                # Add URL
-                # doc.add_paragraph(row['url'])
-                
-                # Add content
-                content_text = f"Content:\n{leader} posted:\n\"{row['text']}\""
-                doc.add_paragraph(content_text)
-                
-                # Add blank paragraph for spacing
-                doc.add_paragraph()
-            
-            # Generate output filename
-            output_filename = f"{leader}_fb_output.docx"
-            os.makedirs(output_dir, exist_ok=True)
-            output_path = os.path.join(output_dir, output_filename)
-            
-            # Save the document
-            doc.save(output_path)
-            logger.info(f"Formatted Word document saved as {output_path}")
-            return output_path
+        article_n = 0
+        for item in filtered_posts_df.to_dict('records'):
+            article_n = article_n + 1
+            post_time = item['time'].strftime('%Y-%m-%d %H:%M')
+            heading_text = f"Facebook Post {article_n} ({post_time}):\n"
+            content_text = f"Content:\n{leader} posted:\n\"{item.get('text', 'No text content.')}\""
+
+            doc.add_paragraph(heading_text + content_text)
+            doc.add_paragraph()
+
+        # --- START OF FIX ---
+        # Convert dates to datetime objects to handle them consistently
+        start_date_obj = pd.to_datetime(start_date)
+        end_date_obj = pd.to_datetime(end_date)
         
-        except Exception as e:
-            logger.error(f"Failed to process Facebook posts: {str(e)}")
-            raise FacebookDocsError(f"Failed to process Facebook posts: {str(e)}")
+        # Format the dates into a clean, file-safe string (YYYY-MM-DD)
+        start_date_safe_str = start_date_obj.strftime('%Y-%m-%d')
+        end_date_safe_str = end_date_obj.strftime('%Y-%m-%d')
+
+        # Use the safe strings to create the filename
+        output_filename = f"{leader}_fb_output_{start_date_safe_str}_to_{end_date_safe_str}.docx"
+        # --- END OF FIX ---
+
+        os.makedirs(output_dir, exist_ok=True)
+        output_path = os.path.join(output_dir, output_filename)
+
+        doc.save(output_path)
+        logger.info(f"Formatted Word document with {len(filtered_posts_df)} posts saved as {output_path}")
+        return output_path
+        

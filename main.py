@@ -43,12 +43,12 @@ if __name__ == "__main__":
     output_folder_path = OUTPUT_DIR
     clear_folder(output_folder_path)
 
-    chunk_size_kb = 250
+    chunk_size_kb = 500
 
     leader_list = pd.read_excel(input_leaders_file)
     
     
-    for leader_name, start_date, end_date, fb_file in zip(leader_list["leader_name"],leader_list["start_date"],leader_list["end_date"],leader_list["facebook_excel_file_path"]):
+    for leader_name, start_date, end_date, fb_file in zip(leader_list["leader_name"],leader_list["start_date"],leader_list["end_date"],leader_list["facebook_profile_url"]):
 
         leader_folder_path = os.path.join(OUTPUT_DIR, leader_name)
         os.makedirs(leader_folder_path, exist_ok=True)
@@ -56,7 +56,8 @@ if __name__ == "__main__":
 
         output_filename = os.path.join(leader_folder_path, "extracted_links.xlsx")
 
-        facebook_excel_file_path = os.path.join(INPUT_DIR, str(fb_file))
+        facebook_excel_file_path = str(fb_file)
+        # os.path.join(INPUT_DIR, str(fb_file))
 
         logger.info(
             f"Processing started for leader: {leader_name} | From: {start_date} To: {end_date} with "

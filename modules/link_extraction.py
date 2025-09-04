@@ -113,7 +113,7 @@ class Link_extraction:
         """
         try:
             # Convert the input list of dictionaries into a DataFrame
-            df = pd.DataFrame(data, columns=["Title", "Links"])
+            df = pd.DataFrame(data, columns=["Links"])
 
             # Remove exact duplicate rows (based on both Title and Links)
             df_without_duplicates = df.drop_duplicates()

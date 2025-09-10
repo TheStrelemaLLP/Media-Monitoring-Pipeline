@@ -1244,3 +1244,31 @@ Traceback (most recent call last):
     raise ApifyApiError(response, attempt, method=method)
 apify_client.errors.ApifyApiError: Input is not valid: Items in input.startUrls at positions [0] do not contain valid URLs
 2025-09-10 10:17:09,412 - INFO - Media monitoring script finished.
+2025-09-10 11:48:47,233 - INFO - Media monitoring script started.
+2025-09-10 11:48:47,427 - INFO - Processing started for leader: OBC Andolan | From: 2025-09-03 00:00:00 To: 2025-09-05 00:00:00 with 
+2025-09-10 11:51:14,831 - ERROR - Error while processing OBC Andolan: Input is not valid: Items in input.startUrls at positions [0] do not contain valid URLs
+Traceback (most recent call last):
+  File "D:\a\Media-Monitoring\Media-Monitoring\main.py", line 79, in <module>
+    router.process_news()
+  File "D:\a\Media-Monitoring\Media-Monitoring\core_router.py", line 118, in process_news
+    fb_posts = self.facebook_doc.collect_fb_posts(self.link_extraction.facebook_excel_file_path,self.link_extraction.start_date,self.link_extraction.end_date)
+  File "D:\a\Media-Monitoring\Media-Monitoring\modules\facebook_docs.py", line 43, in collect_fb_posts
+    run = self.client.actor("KoJrdxJCTtpon81KY").call(run_input=run_input)
+  File "C:\hostedtoolcache\windows\Python\3.10.11\x64\lib\site-packages\apify_client\_logging.py", line 86, in wrapper
+    return fun(resource_client, *args, **kwargs)
+  File "C:\hostedtoolcache\windows\Python\3.10.11\x64\lib\site-packages\apify_client\clients\resource_clients\actor.py", line 326, in call
+    started_run = self.start(
+  File "C:\hostedtoolcache\windows\Python\3.10.11\x64\lib\site-packages\apify_client\_logging.py", line 86, in wrapper
+    return fun(resource_client, *args, **kwargs)
+  File "C:\hostedtoolcache\windows\Python\3.10.11\x64\lib\site-packages\apify_client\clients\resource_clients\actor.py", line 271, in start
+    response = self.http_client.call(
+  File "C:\hostedtoolcache\windows\Python\3.10.11\x64\lib\site-packages\apify_client\_http_client.py", line 200, in call
+    return retry_with_exp_backoff(
+  File "C:\hostedtoolcache\windows\Python\3.10.11\x64\lib\site-packages\apify_client\_utils.py", line 168, in retry_with_exp_backoff
+    return func(stop_retrying, attempt)
+  File "C:\hostedtoolcache\windows\Python\3.10.11\x64\lib\site-packages\apify_client\_http_client.py", line 198, in _make_request
+    raise ApifyApiError(response, attempt, method=method)
+apify_client.errors.ApifyApiError: Input is not valid: Items in input.startUrls at positions [0] do not contain valid URLs
+2025-09-10 11:51:16,048 - INFO - Processing started for leader: Prakash Abitkar | From: 2025-09-01 00:00:00 To: 2025-09-08 00:00:00 with 
+2025-09-10 12:23:38,231 - INFO - Successfully processed news for Prakash Abitkar.
+2025-09-10 12:23:38,231 - INFO - Media monitoring script finished.

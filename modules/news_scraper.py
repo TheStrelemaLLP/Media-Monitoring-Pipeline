@@ -152,7 +152,8 @@ class NewsScraper:
 
         except ValueError:
             logger.exception(f"Sheet '{sheet_name}' not found in the Excel file.")
-            raise
+            # raise
+            pass
 
         except KeyError as ke:
             logger.exception(f"Missing column in sheet: {ke}")
@@ -223,6 +224,7 @@ class NewsScraper:
         if not article:
             logger.debug("Article is empty, leader check skipped.")
             return False
+
         leader_names = []
         for lang in ["English", "Marathi"]:
             leader_names.extend(self.LEADERS[self.leader][lang])
@@ -252,6 +254,14 @@ class NewsScraper:
             # Setup Selenium driver
             self.link_extraction.setup_driver()
 
+            flag = 0
+            if not self.LEADERS:
+                logger.info("Leader Name Not available in Name Variations, Cosidering it as Issue Specific Report....")
+                flag = 1
+            else:
+                logger.info("Leader available in Name Variations, Cosidering it as Leader Specific Report....")
+                flag = 0
+
             # Scrape articles
             for link in tqdm(self.news_links, desc="Scraping articles", unit="article"):
                 logger.info(f"Processing URL: {link}")
@@ -272,16 +282,24 @@ class NewsScraper:
                         self.failed_links.append(link)
                         continue
                     # Check if leader's name is in the article
-                    if self._check_leader_in_article(article_cleaned):
+                    if flag == 0: # for leader specific
+                        if self._check_leader_in_article(article_cleaned):
+                            self.extracted_data.append({
+                                "Link": link,
+                                "Headline": headline,
+                                "Article": article_cleaned
+                            })
+                            logger.info(f"Article extracted successfully for {link}")
+                        else:
+                            logger.info(f"No mention of {self.leader} in {link}")
+                            self.failed_links.append(link)
+                    else:  # for issue specific
                         self.extracted_data.append({
-                            "Link": link,
-                            "Headline": headline,
-                            "Article": article_cleaned
-                        })
+                                "Link": link,
+                                "Headline": headline,
+                                "Article": article_cleaned
+                            })
                         logger.info(f"Article extracted successfully for {link}")
-                    else:
-                        logger.info(f"No mention of {self.leader} in {link}")
-                        self.failed_links.append(link)
                 else:
                     logger.warning(f"Failed to extract content from {link}")
                     self.failed_links.append(link)

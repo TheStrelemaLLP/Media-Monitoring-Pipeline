@@ -13,4 +13,4 @@ class Config:
     # LLM_MODEL="gpt-4o-mini"
     LLM_MODEL="gemini-2.5-flash"
     TEMPERATURE = 0.7
-    apify_key = "apify_api_3y3jaGABoemuwJkmEft4gnIA6LUCcT1C4QNu"
+    apify_key = "apify_api_sfjzJTB6vPU3xlP8wjJjQj78peeXlV1rzxmC"

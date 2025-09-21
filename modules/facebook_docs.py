@@ -35,7 +35,7 @@ class Facebook_doc:
         run_input = {
             "startUrls": [{"url": facebook_profile_url}],
             "resultsType": "posts",
-            "resultsLimit": 150,  # Number of posts
+            "resultsLimit": 250,  # Number of posts
             "proxyConfig": {"useApifyProxy": True},
         }
 

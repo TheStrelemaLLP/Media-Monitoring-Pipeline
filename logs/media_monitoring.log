@@ -2182,3 +2182,197 @@ Traceback (most recent call last):
     raise ApifyApiError(response, attempt, method=method)
 apify_client.errors.ApifyApiError: By launching this job you will exceed your remaining usage of $0.002643.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
 2025-10-13 03:23:26,523 - INFO - Media monitoring script finished.
+2025-10-19 22:41:30,526 - INFO - Media monitoring script started.
+2025-10-19 22:41:30,716 - INFO - Processing started for leader: Devendra Fadnavis | From: 2025-09-15 00:00:00 To: 2025-09-22 00:00:00 with 
+2025-10-19 23:48:52,275 - ERROR - Error while processing Devendra Fadnavis: By launching this job you will exceed your remaining usage of $0.002643.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring/Media-Monitoring/main.py", line 79, in <module>
+    router.process_news()
+  File "/home/runner/work/Media-Monitoring/Media-Monitoring/core_router.py", line 118, in process_news
+    fb_posts = self.facebook_doc.collect_fb_posts(self.link_extraction.facebook_excel_file_path,self.link_extraction.start_date,self.link_extraction.end_date)
+  File "/home/runner/work/Media-Monitoring/Media-Monitoring/modules/facebook_docs.py", line 43, in collect_fb_posts
+    run = self.client.actor("KoJrdxJCTtpon81KY").call(run_input=run_input)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_logging.py", line 86, in wrapper
+    return fun(resource_client, *args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/clients/resource_clients/actor.py", line 335, in call
+    started_run = self.start(
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_logging.py", line 86, in wrapper
+    return fun(resource_client, *args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/clients/resource_clients/actor.py", line 277, in start
+    response = self.http_client.call(
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_http_client.py", line 210, in call
+    return retry_with_exp_backoff(
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_utils.py", line 168, in retry_with_exp_backoff
+    return func(stop_retrying, attempt)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_http_client.py", line 208, in _make_request
+    raise ApifyApiError(response, attempt, method=method)
+apify_client.errors.ApifyApiError: By launching this job you will exceed your remaining usage of $0.002643.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+2025-10-19 23:48:52,276 - INFO - Processing started for leader: Ravindra Chavan | From: 2025-09-15 00:00:00 To: 2025-09-22 00:00:00 with 
+2025-10-20 00:07:53,914 - ERROR - Error while processing Ravindra Chavan: By launching this job you will exceed your remaining usage of $0.002643.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring/Media-Monitoring/main.py", line 79, in <module>
+    router.process_news()
+  File "/home/runner/work/Media-Monitoring/Media-Monitoring/core_router.py", line 118, in process_news
+    fb_posts = self.facebook_doc.collect_fb_posts(self.link_extraction.facebook_excel_file_path,self.link_extraction.start_date,self.link_extraction.end_date)
+  File "/home/runner/work/Media-Monitoring/Media-Monitoring/modules/facebook_docs.py", line 43, in collect_fb_posts
+    run = self.client.actor("KoJrdxJCTtpon81KY").call(run_input=run_input)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_logging.py", line 86, in wrapper
+    return fun(resource_client, *args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/clients/resource_clients/actor.py", line 335, in call
+    started_run = self.start(
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_logging.py", line 86, in wrapper
+    return fun(resource_client, *args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/clients/resource_clients/actor.py", line 277, in start
+    response = self.http_client.call(
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_http_client.py", line 210, in call
+    return retry_with_exp_backoff(
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_utils.py", line 168, in retry_with_exp_backoff
+    return func(stop_retrying, attempt)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_http_client.py", line 208, in _make_request
+    raise ApifyApiError(response, attempt, method=method)
+apify_client.errors.ApifyApiError: By launching this job you will exceed your remaining usage of $0.002643.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+2025-10-20 00:07:53,914 - INFO - Processing started for leader: Prakash Abitkar | From: 2025-09-15 00:00:00 To: 2025-09-22 00:00:00 with 
+2025-10-20 00:40:44,934 - ERROR - Error while processing Prakash Abitkar: By launching this job you will exceed your remaining usage of $0.002643.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring/Media-Monitoring/main.py", line 79, in <module>
+    router.process_news()
+  File "/home/runner/work/Media-Monitoring/Media-Monitoring/core_router.py", line 118, in process_news
+    fb_posts = self.facebook_doc.collect_fb_posts(self.link_extraction.facebook_excel_file_path,self.link_extraction.start_date,self.link_extraction.end_date)
+  File "/home/runner/work/Media-Monitoring/Media-Monitoring/modules/facebook_docs.py", line 43, in collect_fb_posts
+    run = self.client.actor("KoJrdxJCTtpon81KY").call(run_input=run_input)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_logging.py", line 86, in wrapper
+    return fun(resource_client, *args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/clients/resource_clients/actor.py", line 335, in call
+    started_run = self.start(
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_logging.py", line 86, in wrapper
+    return fun(resource_client, *args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/clients/resource_clients/actor.py", line 277, in start
+    response = self.http_client.call(
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_http_client.py", line 210, in call
+    return retry_with_exp_backoff(
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_utils.py", line 168, in retry_with_exp_backoff
+    return func(stop_retrying, attempt)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_http_client.py", line 208, in _make_request
+    raise ApifyApiError(response, attempt, method=method)
+apify_client.errors.ApifyApiError: By launching this job you will exceed your remaining usage of $0.002643.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+2025-10-20 00:40:44,935 - INFO - Processing started for leader: Ashish Shelar | From: 2025-09-15 00:00:00 To: 2025-09-22 00:00:00 with 
+2025-10-20 01:03:03,703 - ERROR - Error while processing Ashish Shelar: By launching this job you will exceed your remaining usage of $0.002643.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring/Media-Monitoring/main.py", line 79, in <module>
+    router.process_news()
+  File "/home/runner/work/Media-Monitoring/Media-Monitoring/core_router.py", line 118, in process_news
+    fb_posts = self.facebook_doc.collect_fb_posts(self.link_extraction.facebook_excel_file_path,self.link_extraction.start_date,self.link_extraction.end_date)
+  File "/home/runner/work/Media-Monitoring/Media-Monitoring/modules/facebook_docs.py", line 43, in collect_fb_posts
+    run = self.client.actor("KoJrdxJCTtpon81KY").call(run_input=run_input)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_logging.py", line 86, in wrapper
+    return fun(resource_client, *args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/clients/resource_clients/actor.py", line 335, in call
+    started_run = self.start(
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_logging.py", line 86, in wrapper
+    return fun(resource_client, *args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/clients/resource_clients/actor.py", line 277, in start
+    response = self.http_client.call(
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_http_client.py", line 210, in call
+    return retry_with_exp_backoff(
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_utils.py", line 168, in retry_with_exp_backoff
+    return func(stop_retrying, attempt)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_http_client.py", line 208, in _make_request
+    raise ApifyApiError(response, attempt, method=method)
+apify_client.errors.ApifyApiError: By launching this job you will exceed your remaining usage of $0.002643.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+2025-10-20 01:03:03,703 - INFO - Processing started for leader: Eknath Shinde | From: 2025-09-15 00:00:00 To: 2025-09-22 00:00:00 with 
+2025-10-20 01:59:57,000 - ERROR - Error while processing Eknath Shinde: By launching this job you will exceed your remaining usage of $0.002643.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring/Media-Monitoring/main.py", line 79, in <module>
+    router.process_news()
+  File "/home/runner/work/Media-Monitoring/Media-Monitoring/core_router.py", line 118, in process_news
+    fb_posts = self.facebook_doc.collect_fb_posts(self.link_extraction.facebook_excel_file_path,self.link_extraction.start_date,self.link_extraction.end_date)
+  File "/home/runner/work/Media-Monitoring/Media-Monitoring/modules/facebook_docs.py", line 43, in collect_fb_posts
+    run = self.client.actor("KoJrdxJCTtpon81KY").call(run_input=run_input)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_logging.py", line 86, in wrapper
+    return fun(resource_client, *args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/clients/resource_clients/actor.py", line 335, in call
+    started_run = self.start(
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_logging.py", line 86, in wrapper
+    return fun(resource_client, *args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/clients/resource_clients/actor.py", line 277, in start
+    response = self.http_client.call(
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_http_client.py", line 210, in call
+    return retry_with_exp_backoff(
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_utils.py", line 168, in retry_with_exp_backoff
+    return func(stop_retrying, attempt)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_http_client.py", line 208, in _make_request
+    raise ApifyApiError(response, attempt, method=method)
+apify_client.errors.ApifyApiError: By launching this job you will exceed your remaining usage of $0.002643.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+2025-10-20 01:59:57,001 - INFO - Processing started for leader: Chandrakant Patil | From: 2025-09-15 00:00:00 To: 2025-09-22 00:00:00 with 
+2025-10-20 02:20:00,861 - ERROR - Error while processing Chandrakant Patil: By launching this job you will exceed your remaining usage of $0.002643.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring/Media-Monitoring/main.py", line 79, in <module>
+    router.process_news()
+  File "/home/runner/work/Media-Monitoring/Media-Monitoring/core_router.py", line 118, in process_news
+    fb_posts = self.facebook_doc.collect_fb_posts(self.link_extraction.facebook_excel_file_path,self.link_extraction.start_date,self.link_extraction.end_date)
+  File "/home/runner/work/Media-Monitoring/Media-Monitoring/modules/facebook_docs.py", line 43, in collect_fb_posts
+    run = self.client.actor("KoJrdxJCTtpon81KY").call(run_input=run_input)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_logging.py", line 86, in wrapper
+    return fun(resource_client, *args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/clients/resource_clients/actor.py", line 335, in call
+    started_run = self.start(
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_logging.py", line 86, in wrapper
+    return fun(resource_client, *args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/clients/resource_clients/actor.py", line 277, in start
+    response = self.http_client.call(
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_http_client.py", line 210, in call
+    return retry_with_exp_backoff(
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_utils.py", line 168, in retry_with_exp_backoff
+    return func(stop_retrying, attempt)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_http_client.py", line 208, in _make_request
+    raise ApifyApiError(response, attempt, method=method)
+apify_client.errors.ApifyApiError: By launching this job you will exceed your remaining usage of $0.002643.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+2025-10-20 02:20:00,861 - INFO - Processing started for leader: Shivraj Singh Chauhan | From: 2025-09-15 00:00:00 To: 2025-09-22 00:00:00 with 
+2025-10-20 03:07:23,628 - ERROR - Error while processing Shivraj Singh Chauhan: By launching this job you will exceed your remaining usage of $0.002643.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring/Media-Monitoring/main.py", line 79, in <module>
+    router.process_news()
+  File "/home/runner/work/Media-Monitoring/Media-Monitoring/core_router.py", line 118, in process_news
+    fb_posts = self.facebook_doc.collect_fb_posts(self.link_extraction.facebook_excel_file_path,self.link_extraction.start_date,self.link_extraction.end_date)
+  File "/home/runner/work/Media-Monitoring/Media-Monitoring/modules/facebook_docs.py", line 43, in collect_fb_posts
+    run = self.client.actor("KoJrdxJCTtpon81KY").call(run_input=run_input)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_logging.py", line 86, in wrapper
+    return fun(resource_client, *args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/clients/resource_clients/actor.py", line 335, in call
+    started_run = self.start(
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_logging.py", line 86, in wrapper
+    return fun(resource_client, *args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/clients/resource_clients/actor.py", line 277, in start
+    response = self.http_client.call(
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_http_client.py", line 210, in call
+    return retry_with_exp_backoff(
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_utils.py", line 168, in retry_with_exp_backoff
+    return func(stop_retrying, attempt)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_http_client.py", line 208, in _make_request
+    raise ApifyApiError(response, attempt, method=method)
+apify_client.errors.ApifyApiError: By launching this job you will exceed your remaining usage of $0.002643.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+2025-10-20 03:07:23,628 - INFO - Processing started for leader: Chandrashekhar Bawankule | From: 2025-09-15 00:00:00 To: 2025-09-22 00:00:00 with 
+2025-10-20 03:26:09,233 - ERROR - Error while processing Chandrashekhar Bawankule: By launching this job you will exceed your remaining usage of $0.002643.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring/Media-Monitoring/main.py", line 79, in <module>
+    router.process_news()
+  File "/home/runner/work/Media-Monitoring/Media-Monitoring/core_router.py", line 118, in process_news
+    fb_posts = self.facebook_doc.collect_fb_posts(self.link_extraction.facebook_excel_file_path,self.link_extraction.start_date,self.link_extraction.end_date)
+  File "/home/runner/work/Media-Monitoring/Media-Monitoring/modules/facebook_docs.py", line 43, in collect_fb_posts
+    run = self.client.actor("KoJrdxJCTtpon81KY").call(run_input=run_input)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_logging.py", line 86, in wrapper
+    return fun(resource_client, *args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/clients/resource_clients/actor.py", line 335, in call
+    started_run = self.start(
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_logging.py", line 86, in wrapper
+    return fun(resource_client, *args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/clients/resource_clients/actor.py", line 277, in start
+    response = self.http_client.call(
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_http_client.py", line 210, in call
+    return retry_with_exp_backoff(
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_utils.py", line 168, in retry_with_exp_backoff
+    return func(stop_retrying, attempt)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_http_client.py", line 208, in _make_request
+    raise ApifyApiError(response, attempt, method=method)
+apify_client.errors.ApifyApiError: By launching this job you will exceed your remaining usage of $0.002643.  Please consider upgrading to a paid plan at https://console.apify.com/billing/subscription
+2025-10-20 03:26:09,234 - INFO - Media monitoring script finished.

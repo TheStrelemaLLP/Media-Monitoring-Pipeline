@@ -2482,3 +2482,173 @@ Traceback (most recent call last):
     raise ApifyApiError(response, attempt, method=method)
 apify_client.errors.ApifyApiError: Monthly usage hard limit exceeded
 2025-10-27 03:45:18,546 - INFO - Media monitoring script finished.
+2025-11-16 22:42:08,176 - INFO - Media monitoring script started.
+2025-11-16 22:42:08,336 - INFO - Processing started for leader: Ravindra Chavan | From: 2025-11-03 00:00:00 To: 2025-11-10 00:00:00 with 
+2025-11-16 23:02:06,776 - ERROR - Error while processing Ravindra Chavan: User was not found or authentication token is not valid
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring/Media-Monitoring/main.py", line 79, in <module>
+    router.process_news()
+  File "/home/runner/work/Media-Monitoring/Media-Monitoring/core_router.py", line 118, in process_news
+    fb_posts = self.facebook_doc.collect_fb_posts(self.link_extraction.facebook_excel_file_path,self.link_extraction.start_date,self.link_extraction.end_date)
+  File "/home/runner/work/Media-Monitoring/Media-Monitoring/modules/facebook_docs.py", line 43, in collect_fb_posts
+    run = self.client.actor("KoJrdxJCTtpon81KY").call(run_input=run_input)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_logging.py", line 86, in wrapper
+    return fun(resource_client, *args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/clients/resource_clients/actor.py", line 341, in call
+    started_run = self.start(
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_logging.py", line 86, in wrapper
+    return fun(resource_client, *args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/clients/resource_clients/actor.py", line 280, in start
+    response = self.http_client.call(
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_http_client.py", line 210, in call
+    return retry_with_exp_backoff(
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_utils.py", line 168, in retry_with_exp_backoff
+    return func(stop_retrying, attempt)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_http_client.py", line 208, in _make_request
+    raise ApifyApiError(response, attempt, method=method)
+apify_client.errors.ApifyApiError: User was not found or authentication token is not valid
+2025-11-16 23:02:06,778 - INFO - Processing started for leader: Prakash Abitkar | From: 2025-11-03 00:00:00 To: 2025-11-10 00:00:00 with 
+2025-11-16 23:37:21,440 - ERROR - Error while processing Prakash Abitkar: User was not found or authentication token is not valid
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring/Media-Monitoring/main.py", line 79, in <module>
+    router.process_news()
+  File "/home/runner/work/Media-Monitoring/Media-Monitoring/core_router.py", line 118, in process_news
+    fb_posts = self.facebook_doc.collect_fb_posts(self.link_extraction.facebook_excel_file_path,self.link_extraction.start_date,self.link_extraction.end_date)
+  File "/home/runner/work/Media-Monitoring/Media-Monitoring/modules/facebook_docs.py", line 43, in collect_fb_posts
+    run = self.client.actor("KoJrdxJCTtpon81KY").call(run_input=run_input)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_logging.py", line 86, in wrapper
+    return fun(resource_client, *args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/clients/resource_clients/actor.py", line 341, in call
+    started_run = self.start(
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_logging.py", line 86, in wrapper
+    return fun(resource_client, *args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/clients/resource_clients/actor.py", line 280, in start
+    response = self.http_client.call(
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_http_client.py", line 210, in call
+    return retry_with_exp_backoff(
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_utils.py", line 168, in retry_with_exp_backoff
+    return func(stop_retrying, attempt)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_http_client.py", line 208, in _make_request
+    raise ApifyApiError(response, attempt, method=method)
+apify_client.errors.ApifyApiError: User was not found or authentication token is not valid
+2025-11-16 23:37:21,440 - INFO - Processing started for leader: Ashish Shelar | From: 2025-11-03 00:00:00 To: 2025-11-10 00:00:00 with 
+2025-11-17 00:09:04,738 - ERROR - Error while processing Ashish Shelar: User was not found or authentication token is not valid
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring/Media-Monitoring/main.py", line 79, in <module>
+    router.process_news()
+  File "/home/runner/work/Media-Monitoring/Media-Monitoring/core_router.py", line 118, in process_news
+    fb_posts = self.facebook_doc.collect_fb_posts(self.link_extraction.facebook_excel_file_path,self.link_extraction.start_date,self.link_extraction.end_date)
+  File "/home/runner/work/Media-Monitoring/Media-Monitoring/modules/facebook_docs.py", line 43, in collect_fb_posts
+    run = self.client.actor("KoJrdxJCTtpon81KY").call(run_input=run_input)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_logging.py", line 86, in wrapper
+    return fun(resource_client, *args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/clients/resource_clients/actor.py", line 341, in call
+    started_run = self.start(
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_logging.py", line 86, in wrapper
+    return fun(resource_client, *args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/clients/resource_clients/actor.py", line 280, in start
+    response = self.http_client.call(
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_http_client.py", line 210, in call
+    return retry_with_exp_backoff(
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_utils.py", line 168, in retry_with_exp_backoff
+    return func(stop_retrying, attempt)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_http_client.py", line 208, in _make_request
+    raise ApifyApiError(response, attempt, method=method)
+apify_client.errors.ApifyApiError: User was not found or authentication token is not valid
+2025-11-17 00:09:04,739 - INFO - Processing started for leader: Chandrakant Patil | From: 2025-11-03 00:00:00 To: 2025-11-10 00:00:00 with 
+2025-11-17 00:26:12,404 - ERROR - Error while processing Chandrakant Patil: User was not found or authentication token is not valid
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring/Media-Monitoring/main.py", line 79, in <module>
+    router.process_news()
+  File "/home/runner/work/Media-Monitoring/Media-Monitoring/core_router.py", line 118, in process_news
+    fb_posts = self.facebook_doc.collect_fb_posts(self.link_extraction.facebook_excel_file_path,self.link_extraction.start_date,self.link_extraction.end_date)
+  File "/home/runner/work/Media-Monitoring/Media-Monitoring/modules/facebook_docs.py", line 43, in collect_fb_posts
+    run = self.client.actor("KoJrdxJCTtpon81KY").call(run_input=run_input)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_logging.py", line 86, in wrapper
+    return fun(resource_client, *args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/clients/resource_clients/actor.py", line 341, in call
+    started_run = self.start(
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_logging.py", line 86, in wrapper
+    return fun(resource_client, *args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/clients/resource_clients/actor.py", line 280, in start
+    response = self.http_client.call(
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_http_client.py", line 210, in call
+    return retry_with_exp_backoff(
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_utils.py", line 168, in retry_with_exp_backoff
+    return func(stop_retrying, attempt)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_http_client.py", line 208, in _make_request
+    raise ApifyApiError(response, attempt, method=method)
+apify_client.errors.ApifyApiError: User was not found or authentication token is not valid
+2025-11-17 00:26:12,405 - INFO - Processing started for leader: Shivraj Singh Chauhan | From: 2025-11-03 00:00:00 To: 2025-11-10 00:00:00 with 
+2025-11-17 01:07:53,012 - ERROR - Error while processing Shivraj Singh Chauhan: User was not found or authentication token is not valid
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring/Media-Monitoring/main.py", line 79, in <module>
+    router.process_news()
+  File "/home/runner/work/Media-Monitoring/Media-Monitoring/core_router.py", line 118, in process_news
+    fb_posts = self.facebook_doc.collect_fb_posts(self.link_extraction.facebook_excel_file_path,self.link_extraction.start_date,self.link_extraction.end_date)
+  File "/home/runner/work/Media-Monitoring/Media-Monitoring/modules/facebook_docs.py", line 43, in collect_fb_posts
+    run = self.client.actor("KoJrdxJCTtpon81KY").call(run_input=run_input)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_logging.py", line 86, in wrapper
+    return fun(resource_client, *args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/clients/resource_clients/actor.py", line 341, in call
+    started_run = self.start(
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_logging.py", line 86, in wrapper
+    return fun(resource_client, *args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/clients/resource_clients/actor.py", line 280, in start
+    response = self.http_client.call(
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_http_client.py", line 210, in call
+    return retry_with_exp_backoff(
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_utils.py", line 168, in retry_with_exp_backoff
+    return func(stop_retrying, attempt)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_http_client.py", line 208, in _make_request
+    raise ApifyApiError(response, attempt, method=method)
+apify_client.errors.ApifyApiError: User was not found or authentication token is not valid
+2025-11-17 01:07:53,013 - INFO - Processing started for leader: Jaykumar Gore | From: 2025-11-03 00:00:00 To: 2025-11-10 00:00:00 with 
+2025-11-17 01:15:41,538 - ERROR - Error while processing Jaykumar Gore: User was not found or authentication token is not valid
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring/Media-Monitoring/main.py", line 79, in <module>
+    router.process_news()
+  File "/home/runner/work/Media-Monitoring/Media-Monitoring/core_router.py", line 118, in process_news
+    fb_posts = self.facebook_doc.collect_fb_posts(self.link_extraction.facebook_excel_file_path,self.link_extraction.start_date,self.link_extraction.end_date)
+  File "/home/runner/work/Media-Monitoring/Media-Monitoring/modules/facebook_docs.py", line 43, in collect_fb_posts
+    run = self.client.actor("KoJrdxJCTtpon81KY").call(run_input=run_input)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_logging.py", line 86, in wrapper
+    return fun(resource_client, *args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/clients/resource_clients/actor.py", line 341, in call
+    started_run = self.start(
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_logging.py", line 86, in wrapper
+    return fun(resource_client, *args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/clients/resource_clients/actor.py", line 280, in start
+    response = self.http_client.call(
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_http_client.py", line 210, in call
+    return retry_with_exp_backoff(
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_utils.py", line 168, in retry_with_exp_backoff
+    return func(stop_retrying, attempt)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_http_client.py", line 208, in _make_request
+    raise ApifyApiError(response, attempt, method=method)
+apify_client.errors.ApifyApiError: User was not found or authentication token is not valid
+2025-11-17 01:15:41,539 - INFO - Processing started for leader: Devendra Fadnavis | From: 2025-11-03 00:00:00 To: 2025-11-10 00:00:00 with 
+2025-11-17 01:50:25,311 - ERROR - Error while processing Devendra Fadnavis: User was not found or authentication token is not valid
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring/Media-Monitoring/main.py", line 79, in <module>
+    router.process_news()
+  File "/home/runner/work/Media-Monitoring/Media-Monitoring/core_router.py", line 118, in process_news
+    fb_posts = self.facebook_doc.collect_fb_posts(self.link_extraction.facebook_excel_file_path,self.link_extraction.start_date,self.link_extraction.end_date)
+  File "/home/runner/work/Media-Monitoring/Media-Monitoring/modules/facebook_docs.py", line 43, in collect_fb_posts
+    run = self.client.actor("KoJrdxJCTtpon81KY").call(run_input=run_input)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_logging.py", line 86, in wrapper
+    return fun(resource_client, *args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/clients/resource_clients/actor.py", line 341, in call
+    started_run = self.start(
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_logging.py", line 86, in wrapper
+    return fun(resource_client, *args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/clients/resource_clients/actor.py", line 280, in start
+    response = self.http_client.call(
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_http_client.py", line 210, in call
+    return retry_with_exp_backoff(
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_utils.py", line 168, in retry_with_exp_backoff
+    return func(stop_retrying, attempt)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_http_client.py", line 208, in _make_request
+    raise ApifyApiError(response, attempt, method=method)
+apify_client.errors.ApifyApiError: User was not found or authentication token is not valid
+2025-11-17 01:50:25,312 - INFO - Media monitoring script finished.

@@ -63,14 +63,15 @@ class Link_extraction:
         Returns:
         - driver (webdriver.Chrome): A configured Selenium Chrome WebDriver instance.
         """
-        options = Options()
         # Uncomment next line if you want fully headless:
-        # options.add_argument("--headless")
+        options = Options()
+        options.add_argument("--headless=new")   # use new headless mode
         options.add_argument("--disable-blink-features=AutomationControlled")
         options.add_argument("--disable-gpu")
         options.add_argument("--no-sandbox")
         options.add_argument("--disable-dev-shm-usage")
         options.add_argument("start-maximized")
+        # user-agent...
         options.add_argument(
             "user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
             "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
@@ -147,14 +148,21 @@ class Link_extraction:
     def save_links(self, df, output_filename):
         """
         Saves the given DataFrame of links to an Excel file and logs summary information.
+        Ensures parent directory exists before writing.
         """
         try:
+            parent_dir = os.path.dirname(os.path.abspath(output_filename))
+            if parent_dir and not os.path.exists(parent_dir):
+                os.makedirs(parent_dir, exist_ok=True)
+                logger.info(f"Created parent directory: {parent_dir}")
+
             df.to_excel(output_filename, index=False)
             logger.info(f"Total links extracted: {len(df)}")
             logger.info(f"Data saved to '{output_filename}'")
         except Exception:
             logger.exception(f"Failed to save DataFrame to file '{output_filename}'")
             raise
+
 
 
 

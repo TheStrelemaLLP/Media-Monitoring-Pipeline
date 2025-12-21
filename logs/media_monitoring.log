@@ -3222,3 +3222,29 @@ Traceback (most recent call last):
     raise ApifyApiError(response, attempt, method=method)
 apify_client.errors.ApifyApiError: User was not found or authentication token is not valid
 2025-12-15 00:02:50,249 - INFO - Media monitoring script finished.
+2025-12-21 22:44:28,208 - INFO - Media monitoring script started.
+2025-12-21 22:44:28,365 - INFO - Processing started for leader: Devendra Fadnavis | From: 2025-12-08 00:00:00 To: 2025-12-09 00:00:00 with 
+2025-12-21 23:49:07,008 - ERROR - Error while processing Devendra Fadnavis: User was not found or authentication token is not valid
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring/Media-Monitoring/main.py", line 79, in <module>
+    router.process_news()
+  File "/home/runner/work/Media-Monitoring/Media-Monitoring/core_router.py", line 118, in process_news
+    fb_posts = self.facebook_doc.collect_fb_posts(self.link_extraction.facebook_excel_file_path,self.link_extraction.start_date,self.link_extraction.end_date)
+  File "/home/runner/work/Media-Monitoring/Media-Monitoring/modules/facebook_docs.py", line 43, in collect_fb_posts
+    run = self.client.actor("KoJrdxJCTtpon81KY").call(run_input=run_input)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_logging.py", line 86, in wrapper
+    return fun(resource_client, *args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/clients/resource_clients/actor.py", line 341, in call
+    started_run = self.start(
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_logging.py", line 86, in wrapper
+    return fun(resource_client, *args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/clients/resource_clients/actor.py", line 280, in start
+    response = self.http_client.call(
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_http_client.py", line 210, in call
+    return retry_with_exp_backoff(
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_utils.py", line 168, in retry_with_exp_backoff
+    return func(stop_retrying, attempt)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/apify_client/_http_client.py", line 208, in _make_request
+    raise ApifyApiError(response, attempt, method=method)
+apify_client.errors.ApifyApiError: User was not found or authentication token is not valid
+2025-12-21 23:49:07,009 - INFO - Media monitoring script finished.

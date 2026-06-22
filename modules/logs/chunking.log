@@ -21824,3 +21824,1308 @@ Traceback (most recent call last):
     raise ApifyApiError(response, attempt, method=method)
 apify_client.errors.ApifyApiError: User was not found or authentication token is not valid
 2026-06-15 00:20:56,772 | INFO | Main | Media monitoring script finished.
+2026-06-21 23:52:20,356 | INFO | Main | Media monitoring script started.
+2026-06-21 23:52:20,481 | INFO | Main | Processing started for leader: Devendra Fadnavis | From: 2025-12-08 00:00:00 To: 2025-12-09 00:00:00 with 
+2026-06-21 23:52:20,481 | INFO | Link_extraction | Initialized Link_extraction for leader: Devendra Fadnavis, from 2025-12-08 00:00:00 to 2025-12-09 00:00:00
+2026-06-21 23:52:20,481 | INFO | NewsScraper | Initializing NewsScraper.
+2026-06-21 23:52:20,481 | INFO | NewsScraper | Reading Excel file: /home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/Input/Names_variations.xlsx, Sheet: Devendra Fadnavis
+2026-06-21 23:52:20,491 | INFO | NewsScraper | Extracted 12 English and 12 Marathi names from 'Devendra Fadnavis'
+2026-06-21 23:52:20,536 | INFO | CoreRouter | 1. Link Extraction started...
+2026-06-21 23:52:20,536 | INFO | Link_extraction | Starting fetch_links() process
+2026-06-21 23:52:20,596 | INFO | Link_extraction | Extracted 240 keywords from sheet 'Devendra Fadnavis'
+2026-06-21 23:52:20,693 | INFO | WDM | ====== WebDriver manager ======
+2026-06-21 23:52:20,758 | INFO | WDM | Get LATEST chromedriver version for google-chrome
+2026-06-21 23:52:20,815 | INFO | WDM | There is no [linux64] chromedriver "149.0.7827.155" for browser google-chrome "149.0.7827" in cache
+2026-06-21 23:52:20,847 | INFO | WDM | There is no [linux64] chromedriver "149.0.7827.155" for browser google-chrome "149.0.7827" in cache
+2026-06-21 23:52:20,847 | INFO | WDM | Get LATEST chromedriver version for google-chrome
+2026-06-21 23:52:20,995 | INFO | WDM | WebDriver version 149.0.7827.155 selected
+2026-06-21 23:52:21,000 | INFO | WDM | Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/149.0.7827.155/linux64/chromedriver-linux64.zip
+2026-06-21 23:52:21,000 | INFO | WDM | About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/149.0.7827.155/linux64/chromedriver-linux64.zip
+2026-06-21 23:52:21,061 | INFO | WDM | Driver downloading response is 200
+2026-06-21 23:52:21,309 | INFO | WDM | Driver has been saved in cache [/home/runner/.wdm/drivers/chromedriver/linux64/149.0.7827.155]
+2026-06-21 23:52:26,416 | INFO | Link_extraction | WebDriver initialized successfully
+2026-06-21 23:52:26,416 | INFO | Link_extraction | Searching for: Devendra Fadnavis (30 pages)
+2026-06-21 23:53:00,739 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis' after page 5.
+2026-06-21 23:53:00,739 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस (30 pages)
+2026-06-21 23:53:14,931 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस' after page 2.
+2026-06-21 23:53:14,931 | INFO | Link_extraction | Searching for: Devendra Fadnavis news (30 pages)
+2026-06-21 23:53:48,247 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis news' after page 5.
+2026-06-21 23:53:48,248 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस समाचार (30 pages)
+2026-06-21 23:54:02,469 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस समाचार' after page 2.
+2026-06-21 23:54:02,469 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस बातम्या (30 pages)
+2026-06-21 23:54:23,184 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस बातम्या' after page 3.
+2026-06-21 23:54:23,184 | INFO | Link_extraction | Searching for: Devendra Fadnavis latest news (30 pages)
+2026-06-21 23:54:56,566 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis latest news' after page 5.
+2026-06-21 23:54:56,566 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस ताजा समाचार (30 pages)
+2026-06-21 23:55:04,143 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस ताजा समाचार' after page 1.
+2026-06-21 23:55:04,144 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस नवीन बातम्या (30 pages)
+2026-06-21 23:55:18,284 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस नवीन बातम्या' after page 2.
+2026-06-21 23:55:18,284 | INFO | Link_extraction | Searching for: Devendra Fadnavis Chief Minister news (30 pages)
+2026-06-21 23:55:32,219 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis Chief Minister news' after page 2.
+2026-06-21 23:55:32,219 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस मुख्यमंत्री समाचार (30 pages)
+2026-06-21 23:55:39,764 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस मुख्यमंत्री समाचार' after page 1.
+2026-06-21 23:55:39,764 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस मुख्यमंत्री बातम्या (30 pages)
+2026-06-21 23:55:47,240 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस मुख्यमंत्री बातम्या' after page 1.
+2026-06-21 23:55:47,240 | INFO | Link_extraction | Searching for: Devendra Fadnavis BJP news (30 pages)
+2026-06-21 23:55:54,778 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis BJP news' after page 1.
+2026-06-21 23:55:54,778 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस भाजपा समाचार (30 pages)
+2026-06-21 23:56:02,329 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस भाजपा समाचार' after page 1.
+2026-06-21 23:56:02,330 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस भाजप बातम्या (30 pages)
+2026-06-21 23:56:09,867 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस भाजप बातम्या' after page 1.
+2026-06-21 23:56:09,867 | INFO | Link_extraction | Searching for: Devendra Fadnavis politics news (30 pages)
+2026-06-21 23:56:17,355 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis politics news' after page 1.
+2026-06-21 23:56:17,355 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस राजनीति समाचार (30 pages)
+2026-06-21 23:56:24,958 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस राजनीति समाचार' after page 1.
+2026-06-21 23:56:24,958 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस राजकीय बातम्या (30 pages)
+2026-06-21 23:56:32,453 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस राजकीय बातम्या' after page 1.
+2026-06-21 23:56:32,453 | INFO | Link_extraction | Searching for: Devendra Fadnavis Nagpur news (30 pages)
+2026-06-21 23:56:39,987 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis Nagpur news' after page 1.
+2026-06-21 23:56:39,987 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस नागपुर समाचार (30 pages)
+2026-06-21 23:56:47,386 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस नागपुर समाचार' after page 1.
+2026-06-21 23:56:47,386 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस नागपूर बातम्या (30 pages)
+2026-06-21 23:56:54,856 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस नागपूर बातम्या' after page 1.
+2026-06-21 23:56:54,857 | INFO | Link_extraction | Searching for: Devendra Fadnavis speech (30 pages)
+2026-06-21 23:57:02,313 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis speech' after page 1.
+2026-06-21 23:57:02,313 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस भाषण (30 pages)
+2026-06-21 23:57:09,707 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस भाषण' after page 1.
+2026-06-21 23:57:09,707 | INFO | Link_extraction | Searching for: Devendra Fadnavis reaction (30 pages)
+2026-06-21 23:57:17,069 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis reaction' after page 1.
+2026-06-21 23:57:17,069 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस प्रतिक्रिया (30 pages)
+2026-06-21 23:57:24,445 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस प्रतिक्रिया' after page 1.
+2026-06-21 23:57:24,445 | INFO | Link_extraction | Searching for: Devendra Fadnavis opposition (30 pages)
+2026-06-21 23:57:31,966 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis opposition' after page 1.
+2026-06-21 23:57:31,966 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस विपक्ष (30 pages)
+2026-06-21 23:57:39,438 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस विपक्ष' after page 1.
+2026-06-21 23:57:39,439 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस विरोधक (30 pages)
+2026-06-21 23:57:46,956 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस विरोधक' after page 1.
+2026-06-21 23:57:46,956 | INFO | Link_extraction | Searching for: Devendra Fadnavis election (30 pages)
+2026-06-21 23:57:54,473 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis election' after page 1.
+2026-06-21 23:57:54,473 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस चुनाव (30 pages)
+2026-06-21 23:58:01,994 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस चुनाव' after page 1.
+2026-06-21 23:58:01,994 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस निवडणूक (30 pages)
+2026-06-21 23:58:09,596 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस निवडणूक' after page 1.
+2026-06-21 23:58:09,597 | INFO | Link_extraction | Searching for: Devendra Fadnavis campaign (30 pages)
+2026-06-21 23:58:17,053 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis campaign' after page 1.
+2026-06-21 23:58:17,053 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस प्रचार (30 pages)
+2026-06-21 23:58:24,418 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस प्रचार' after page 1.
+2026-06-21 23:58:24,418 | INFO | Link_extraction | Searching for: Devendra Fadnavis rally (30 pages)
+2026-06-21 23:58:31,780 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis rally' after page 1.
+2026-06-21 23:58:31,780 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस सभा (30 pages)
+2026-06-21 23:58:39,296 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस सभा' after page 1.
+2026-06-21 23:58:39,296 | INFO | Link_extraction | Searching for: Devendra Fadnavis political decision (30 pages)
+2026-06-21 23:58:46,809 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis political decision' after page 1.
+2026-06-21 23:58:46,810 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस राजनीतिक निर्णय (30 pages)
+2026-06-21 23:58:54,245 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस राजनीतिक निर्णय' after page 1.
+2026-06-21 23:58:54,245 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस राजकीय निर्णय (30 pages)
+2026-06-21 23:59:01,745 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस राजकीय निर्णय' after page 1.
+2026-06-21 23:59:01,745 | INFO | Link_extraction | Searching for: Devendra Fadnavis Shinde faction (30 pages)
+2026-06-21 23:59:09,172 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis Shinde faction' after page 1.
+2026-06-21 23:59:09,172 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस शिंदे गट (30 pages)
+2026-06-21 23:59:16,701 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस शिंदे गट' after page 1.
+2026-06-21 23:59:16,701 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस शिंदे समूह (30 pages)
+2026-06-21 23:59:24,147 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस शिंदे समूह' after page 1.
+2026-06-21 23:59:24,147 | INFO | Link_extraction | Searching for: Devendra Fadnavis Uddhav Thackeray (30 pages)
+2026-06-21 23:59:31,778 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis Uddhav Thackeray' after page 1.
+2026-06-21 23:59:31,778 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस उद्धव ठाकरे (30 pages)
+2026-06-21 23:59:45,797 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस उद्धव ठाकरे' after page 2.
+2026-06-21 23:59:45,797 | INFO | Link_extraction | Searching for: Devendra Fadnavis Legislative Council (30 pages)
+2026-06-21 23:59:53,263 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis Legislative Council' after page 1.
+2026-06-21 23:59:53,263 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस विधानपरिषद (30 pages)
+2026-06-22 00:00:00,729 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस विधानपरिषद' after page 1.
+2026-06-22 00:00:00,729 | INFO | Link_extraction | Searching for: Devendra Fadnavis press conference (30 pages)
+2026-06-22 00:00:08,186 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis press conference' after page 1.
+2026-06-22 00:00:08,186 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस पत्रकार परिषद (30 pages)
+2026-06-22 00:00:15,543 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस पत्रकार परिषद' after page 1.
+2026-06-22 00:00:15,543 | INFO | Link_extraction | Searching for: Devendra Fadnavis government (30 pages)
+2026-06-22 00:00:29,443 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis government' after page 2.
+2026-06-22 00:00:29,444 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस सरकार (30 pages)
+2026-06-22 00:00:43,419 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस सरकार' after page 2.
+2026-06-22 00:00:43,419 | INFO | Link_extraction | Searching for: Devendra Fadnavis new project (30 pages)
+2026-06-22 00:00:51,031 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis new project' after page 1.
+2026-06-22 00:00:51,031 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस नवा प्रकल्प (30 pages)
+2026-06-22 00:00:58,411 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस नवा प्रकल्प' after page 1.
+2026-06-22 00:00:58,412 | INFO | Link_extraction | Searching for: Devendra Fadnavis statement (30 pages)
+2026-06-22 00:01:05,931 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis statement' after page 1.
+2026-06-22 00:01:05,931 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस बयान (30 pages)
+2026-06-22 00:01:13,403 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस बयान' after page 1.
+2026-06-22 00:01:13,403 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस विधान (30 pages)
+2026-06-22 00:01:20,898 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस विधान' after page 1.
+2026-06-22 00:01:20,898 | INFO | Link_extraction | Searching for: Devendra Fadnavis politics (30 pages)
+2026-06-22 00:01:41,389 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis politics' after page 3.
+2026-06-22 00:01:41,389 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस राजनीति (30 pages)
+2026-06-22 00:01:55,293 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस राजनीति' after page 2.
+2026-06-22 00:01:55,293 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस राजकारण (30 pages)
+2026-06-22 00:02:02,865 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस राजकारण' after page 1.
+2026-06-22 00:02:02,865 | INFO | Link_extraction | Searching for: Devendra Fadnavis Maharashtra election (30 pages)
+2026-06-22 00:02:10,453 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis Maharashtra election' after page 1.
+2026-06-22 00:02:10,454 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस महाराष्ट्र चुनाव (30 pages)
+2026-06-22 00:02:17,975 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस महाराष्ट्र चुनाव' after page 1.
+2026-06-22 00:02:17,975 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस महाराष्ट्र निवडणूक (30 pages)
+2026-06-22 00:02:25,515 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस महाराष्ट्र निवडणूक' after page 1.
+2026-06-22 00:02:25,515 | INFO | Link_extraction | Searching for: Devendra Fadnavis opposition statement (30 pages)
+2026-06-22 00:02:32,974 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis opposition statement' after page 1.
+2026-06-22 00:02:32,974 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस विपक्ष पर बयान (30 pages)
+2026-06-22 00:02:40,467 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस विपक्ष पर बयान' after page 1.
+2026-06-22 00:02:40,467 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस विरोधकांवरील विधान (30 pages)
+2026-06-22 00:02:47,812 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस विरोधकांवरील विधान' after page 1.
+2026-06-22 00:02:47,813 | INFO | Link_extraction | Searching for: Devendra Fadnavis new scheme (30 pages)
+2026-06-22 00:02:55,354 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis new scheme' after page 1.
+2026-06-22 00:02:55,354 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस नई योजना (30 pages)
+2026-06-22 00:03:02,941 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस नई योजना' after page 1.
+2026-06-22 00:03:02,941 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस नवीन योजना (30 pages)
+2026-06-22 00:03:10,581 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस नवीन योजना' after page 1.
+2026-06-22 00:03:10,582 | INFO | Link_extraction | Searching for: Devendra Fadnavis government scheme (30 pages)
+2026-06-22 00:03:18,170 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis government scheme' after page 1.
+2026-06-22 00:03:18,171 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस सरकारी योजना (30 pages)
+2026-06-22 00:03:25,795 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस सरकारी योजना' after page 1.
+2026-06-22 00:03:25,795 | INFO | Link_extraction | Searching for: Devendra Fadnavis Shinde government (30 pages)
+2026-06-22 00:03:39,705 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis Shinde government' after page 2.
+2026-06-22 00:03:39,705 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस शिंदे सरकार (30 pages)
+2026-06-22 00:03:53,617 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस शिंदे सरकार' after page 2.
+2026-06-22 00:03:53,617 | INFO | Link_extraction | Searching for: Devendra Fadnavis public rally (30 pages)
+2026-06-22 00:04:00,932 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis public rally' after page 1.
+2026-06-22 00:04:00,932 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस सार्वजनिक सभा (30 pages)
+2026-06-22 00:04:08,285 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस सार्वजनिक सभा' after page 1.
+2026-06-22 00:04:08,286 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस जाहीर सभा (30 pages)
+2026-06-22 00:04:15,631 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस जाहीर सभा' after page 1.
+2026-06-22 00:04:15,631 | INFO | Link_extraction | Searching for: Devendra Fadnavis Maharashtra BJP (30 pages)
+2026-06-22 00:04:23,181 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis Maharashtra BJP' after page 1.
+2026-06-22 00:04:23,181 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस महाराष्ट्र भाजपा (30 pages)
+2026-06-22 00:04:30,789 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस महाराष्ट्र भाजपा' after page 1.
+2026-06-22 00:04:30,789 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस महाराष्ट्र भाजप (30 pages)
+2026-06-22 00:04:38,343 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस महाराष्ट्र भाजप' after page 1.
+2026-06-22 00:04:38,343 | INFO | Link_extraction | Searching for: Devendra Fadnavis vs Uddhav Thackeray (30 pages)
+2026-06-22 00:04:45,813 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis vs Uddhav Thackeray' after page 1.
+2026-06-22 00:04:45,813 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस बनाम उद्धव ठाकरे (30 pages)
+2026-06-22 00:04:53,201 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस बनाम उद्धव ठाकरे' after page 1.
+2026-06-22 00:04:53,202 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस विरुद्ध उद्धव ठाकरे (30 pages)
+2026-06-22 00:05:00,550 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस विरुद्ध उद्धव ठाकरे' after page 1.
+2026-06-22 00:05:00,550 | INFO | Link_extraction | Searching for: Devendra Fadnavis alliance with Shinde (30 pages)
+2026-06-22 00:05:08,031 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis alliance with Shinde' after page 1.
+2026-06-22 00:05:08,031 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस का शिंदे के साथ गठबंधन (30 pages)
+2026-06-22 00:05:15,488 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस का शिंदे के साथ गठबंधन' after page 1.
+2026-06-22 00:05:15,488 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस शिंदे युती (30 pages)
+2026-06-22 00:05:22,881 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस शिंदे युती' after page 1.
+2026-06-22 00:05:22,881 | INFO | Link_extraction | Searching for: Devendra Fadnavis speech highlights (30 pages)
+2026-06-22 00:05:30,245 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis speech highlights' after page 1.
+2026-06-22 00:05:30,246 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस भाषण की मुख्य बातें (30 pages)
+2026-06-22 00:05:37,576 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस भाषण की मुख्य बातें' after page 1.
+2026-06-22 00:05:37,576 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस भाषणातील ठळक मुद्दे (30 pages)
+2026-06-22 00:05:44,922 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस भाषणातील ठळक मुद्दे' after page 1.
+2026-06-22 00:05:44,922 | INFO | Link_extraction | Searching for: Devendra Fadnavis development project (30 pages)
+2026-06-22 00:05:52,511 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis development project' after page 1.
+2026-06-22 00:05:52,512 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस विकास प्रकल्प (30 pages)
+2026-06-22 00:05:59,877 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस विकास प्रकल्प' after page 1.
+2026-06-22 00:05:59,878 | INFO | Link_extraction | Searching for: Devendra Fadnavis infrastructure policy (30 pages)
+2026-06-22 00:06:06,992 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis infrastructure policy' after page 1.
+2026-06-22 00:06:06,993 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस बुनियादी ढांचा नीति (30 pages)
+2026-06-22 00:06:14,313 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस बुनियादी ढांचा नीति' after page 1.
+2026-06-22 00:06:14,313 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस पायाभूत सुविधा धोरण (30 pages)
+2026-06-22 00:06:21,676 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस पायाभूत सुविधा धोरण' after page 1.
+2026-06-22 00:06:21,676 | INFO | Link_extraction | Searching for: Devendra Fadnavis central government coordination (30 pages)
+2026-06-22 00:06:29,011 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis central government coordination' after page 1.
+2026-06-22 00:06:29,011 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस केंद्र सरकार समन्वय (30 pages)
+2026-06-22 00:06:36,382 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस केंद्र सरकार समन्वय' after page 1.
+2026-06-22 00:06:36,382 | INFO | Link_extraction | Searching for: Devendra Fadnavis Modi government (30 pages)
+2026-06-22 00:06:44,066 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis Modi government' after page 1.
+2026-06-22 00:06:44,066 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस मोदी सरकार (30 pages)
+2026-06-22 00:06:51,542 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस मोदी सरकार' after page 1.
+2026-06-22 00:06:51,542 | INFO | Link_extraction | Searching for: Devendra Fadnavis controversy (30 pages)
+2026-06-22 00:06:59,092 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis controversy' after page 1.
+2026-06-22 00:06:59,092 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस विवाद (30 pages)
+2026-06-22 00:07:06,588 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस विवाद' after page 1.
+2026-06-22 00:07:06,588 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस वाद (30 pages)
+2026-06-22 00:07:14,080 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस वाद' after page 1.
+2026-06-22 00:07:14,080 | INFO | Link_extraction | Searching for: Devendra Fadnavis Nagpur Pune Vande Bharat 2025 (30 pages)
+2026-06-22 00:07:21,528 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis Nagpur Pune Vande Bharat 2025' after page 1.
+2026-06-22 00:07:21,528 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस नागपुर पुणे वंदे भारत 2025 (30 pages)
+2026-06-22 00:07:28,915 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस नागपुर पुणे वंदे भारत 2025' after page 1.
+2026-06-22 00:07:28,915 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस नागपूर पुणे वंदे भारत 2025 (30 pages)
+2026-06-22 00:07:36,310 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस नागपूर पुणे वंदे भारत 2025' after page 1.
+2026-06-22 00:07:36,310 | INFO | Link_extraction | Searching for: Devendra Fadnavis Dharavi redevelopment 2025 (30 pages)
+2026-06-22 00:07:43,689 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis Dharavi redevelopment 2025' after page 1.
+2026-06-22 00:07:43,689 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस धारावी पुनर्विकास 2025 (30 pages)
+2026-06-22 00:07:50,995 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस धारावी पुनर्विकास 2025' after page 1.
+2026-06-22 00:07:50,995 | INFO | Link_extraction | Searching for: Devendra Fadnavis solar power push 2025 (30 pages)
+2026-06-22 00:07:58,532 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis solar power push 2025' after page 1.
+2026-06-22 00:07:58,532 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस सोलर पावर प्रोत्साहन 2025 (30 pages)
+2026-06-22 00:08:05,893 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस सोलर पावर प्रोत्साहन 2025' after page 1.
+2026-06-22 00:08:05,893 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस सौर ऊर्जा प्रोत्साहन 2025 (30 pages)
+2026-06-22 00:08:13,200 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस सौर ऊर्जा प्रोत्साहन 2025' after page 1.
+2026-06-22 00:08:13,200 | INFO | Link_extraction | Searching for: Devendra Fadnavis Garud Drishti project 2025 (30 pages)
+2026-06-22 00:08:20,609 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis Garud Drishti project 2025' after page 1.
+2026-06-22 00:08:20,609 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस गरुड दृष्टी प्रकल्प 2025 (30 pages)
+2026-06-22 00:08:27,941 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस गरुड दृष्टी प्रकल्प 2025' after page 1.
+2026-06-22 00:08:27,941 | INFO | Link_extraction | Searching for: Devendra Fadnavis Raksha Bandhan Ladki Bahin 2025 (30 pages)
+2026-06-22 00:08:35,256 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis Raksha Bandhan Ladki Bahin 2025' after page 1.
+2026-06-22 00:08:35,256 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस रक्षाबंधन लाडकी बहिण 2025 (30 pages)
+2026-06-22 00:08:42,590 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस रक्षाबंधन लाडकी बहिण 2025' after page 1.
+2026-06-22 00:08:42,590 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस रक्षाबंधन लाडकी बहीण 2025 (30 pages)
+2026-06-22 00:08:49,943 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस रक्षाबंधन लाडकी बहीण 2025' after page 1.
+2026-06-22 00:08:49,943 | INFO | Link_extraction | Searching for: Devendra Fadnavis vote rigging controversy 2025 (30 pages)
+2026-06-22 00:08:57,319 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis vote rigging controversy 2025' after page 1.
+2026-06-22 00:08:57,320 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस मतदान खरेदी विवाद 2025 (30 pages)
+2026-06-22 00:09:04,646 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस मतदान खरेदी विवाद 2025' after page 1.
+2026-06-22 00:09:04,646 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस मतदान खरेदी वाद 2025 (30 pages)
+2026-06-22 00:09:11,978 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस मतदान खरेदी वाद 2025' after page 1.
+2026-06-22 00:09:11,978 | INFO | Link_extraction | Searching for: Devendra Fadnavis Sharad Pawar remarks (30 pages)
+2026-06-22 00:09:19,288 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis Sharad Pawar remarks' after page 1.
+2026-06-22 00:09:19,288 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस शरद पवार टिप्पणी (30 pages)
+2026-06-22 00:09:26,619 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस शरद पवार टिप्पणी' after page 1.
+2026-06-22 00:09:26,619 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस शरद पवार टीका (30 pages)
+2026-06-22 00:09:33,994 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस शरद पवार टीका' after page 1.
+2026-06-22 00:09:33,994 | INFO | Link_extraction | Searching for: Devendra Fadnavis OBC speech 2025 (30 pages)
+2026-06-22 00:09:41,322 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis OBC speech 2025' after page 1.
+2026-06-22 00:09:41,322 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस ओबीसी भाषण 2025 (30 pages)
+2026-06-22 00:09:48,672 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस ओबीसी भाषण 2025' after page 1.
+2026-06-22 00:09:48,672 | INFO | Link_extraction | Searching for: Devendra Fadnavis cyber security initiative (30 pages)
+2026-06-22 00:09:56,168 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis cyber security initiative' after page 1.
+2026-06-22 00:09:56,169 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस सायबर सुरक्षा पहल (30 pages)
+2026-06-22 00:10:03,483 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस सायबर सुरक्षा पहल' after page 1.
+2026-06-22 00:10:03,483 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस सायबर सुरक्षा उपक्रम (30 pages)
+2026-06-22 00:10:10,848 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस सायबर सुरक्षा उपक्रम' after page 1.
+2026-06-22 00:10:10,848 | INFO | Link_extraction | Searching for: Devendra Fadnavis Nitin Gadkari meeting (30 pages)
+2026-06-22 00:10:18,203 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis Nitin Gadkari meeting' after page 1.
+2026-06-22 00:10:18,204 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस नितिन गडकरी मुलाकात (30 pages)
+2026-06-22 00:10:25,520 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस नितिन गडकरी मुलाकात' after page 1.
+2026-06-22 00:10:25,521 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस नितिन गडकरी भेट (30 pages)
+2026-06-22 00:10:32,833 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस नितिन गडकरी भेट' after page 1.
+2026-06-22 00:10:32,833 | INFO | Link_extraction | Searching for: Devendra Fadnavis Chief Minister tenure 2022-present (30 pages)
+2026-06-22 00:10:40,279 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis Chief Minister tenure 2022-present' after page 1.
+2026-06-22 00:10:40,279 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस मुख्यमंत्री कार्यकाल 2022-वर्तमान (30 pages)
+2026-06-22 00:10:47,638 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस मुख्यमंत्री कार्यकाल 2022-वर्तमान' after page 1.
+2026-06-22 00:10:47,638 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस मुख्यमंत्री कार्यकाळ 2022-वर्तमान (30 pages)
+2026-06-22 00:10:54,955 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस मुख्यमंत्री कार्यकाळ 2022-वर्तमान' after page 1.
+2026-06-22 00:10:54,955 | INFO | Link_extraction | Searching for: Devendra Fadnavis role in Mahayuti alliance (30 pages)
+2026-06-22 00:11:02,398 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis role in Mahayuti alliance' after page 1.
+2026-06-22 00:11:02,398 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस महायुति गठबंधन भूमिका (30 pages)
+2026-06-22 00:11:09,759 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस महायुति गठबंधन भूमिका' after page 1.
+2026-06-22 00:11:09,759 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस महायुति आघाडी भूमिका (30 pages)
+2026-06-22 00:11:17,093 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस महायुति आघाडी भूमिका' after page 1.
+2026-06-22 00:11:17,093 | INFO | Link_extraction | Searching for: Devendra Fadnavis Nagpur South West constituency (30 pages)
+2026-06-22 00:11:24,436 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis Nagpur South West constituency' after page 1.
+2026-06-22 00:11:24,437 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस नागपुर साउथ वेस्ट निर्वाचन क्षेत्र (30 pages)
+2026-06-22 00:11:31,822 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस नागपुर साउथ वेस्ट निर्वाचन क्षेत्र' after page 1.
+2026-06-22 00:11:31,822 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस नागपूर साउथ वेस्ट मतदारसंघ (30 pages)
+2026-06-22 00:11:39,247 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस नागपूर साउथ वेस्ट मतदारसंघ' after page 1.
+2026-06-22 00:11:39,247 | INFO | Link_extraction | Searching for: Devendra Fadnavis BJP Maharashtra leadership (30 pages)
+2026-06-22 00:11:46,790 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis BJP Maharashtra leadership' after page 1.
+2026-06-22 00:11:46,790 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस भाजपा महाराष्ट्र नेतृत्व (30 pages)
+2026-06-22 00:11:54,198 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस भाजपा महाराष्ट्र नेतृत्व' after page 1.
+2026-06-22 00:11:54,198 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस भाजप महाराष्ट्र नेतृत्व (30 pages)
+2026-06-22 00:12:01,600 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस भाजप महाराष्ट्र नेतृत्व' after page 1.
+2026-06-22 00:12:01,600 | INFO | Link_extraction | Searching for: Devendra Fadnavis infrastructure policies Maharashtra (30 pages)
+2026-06-22 00:12:09,034 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis infrastructure policies Maharashtra' after page 1.
+2026-06-22 00:12:09,035 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस महाराष्ट्र बुनियादी ढांचा नीतियां (30 pages)
+2026-06-22 00:12:16,409 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस महाराष्ट्र बुनियादी ढांचा नीतियां' after page 1.
+2026-06-22 00:12:16,409 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस महाराष्ट्र पायाभूत सुविधा धोरणे (30 pages)
+2026-06-22 00:12:23,801 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस महाराष्ट्र पायाभूत सुविधा धोरणे' after page 1.
+2026-06-22 00:12:23,801 | INFO | Link_extraction | Searching for: Devendra Fadnavis vote rigging allegations 2025 (30 pages)
+2026-06-22 00:12:31,198 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis vote rigging allegations 2025' after page 1.
+2026-06-22 00:12:31,198 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस मतदान खरेदी आरोप 2025 (30 pages)
+2026-06-22 00:12:38,524 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस मतदान खरेदी आरोप 2025' after page 1.
+2026-06-22 00:12:38,524 | INFO | Link_extraction | Searching for: Devendra Fadnavis Mahayuti alliance strategy (30 pages)
+2026-06-22 00:12:45,907 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis Mahayuti alliance strategy' after page 1.
+2026-06-22 00:12:45,907 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस महायुति गठबंधन रणनीति (30 pages)
+2026-06-22 00:12:53,354 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस महायुति गठबंधन रणनीति' after page 1.
+2026-06-22 00:12:53,354 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस महायुति आघाडी रणनीती (30 pages)
+2026-06-22 00:13:00,682 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस महायुति आघाडी रणनीती' after page 1.
+2026-06-22 00:13:00,682 | INFO | Link_extraction | Searching for: Devendra Fadnavis drought management Maharashtra (30 pages)
+2026-06-22 00:13:08,029 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis drought management Maharashtra' after page 1.
+2026-06-22 00:13:08,029 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस महाराष्ट्र सूखा प्रबंधन (30 pages)
+2026-06-22 00:13:15,381 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस महाराष्ट्र सूखा प्रबंधन' after page 1.
+2026-06-22 00:13:15,381 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस महाराष्ट्र दुष्काळ व्यवस्थापन (30 pages)
+2026-06-22 00:13:22,719 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस महाराष्ट्र दुष्काळ व्यवस्थापन' after page 1.
+2026-06-22 00:13:22,719 | INFO | Link_extraction | Searching for: Devendra Fadnavis RSS and ABVP background (30 pages)
+2026-06-22 00:13:30,076 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis RSS and ABVP background' after page 1.
+2026-06-22 00:13:30,077 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस आरएसएस और एबीवीपी पृष्ठभूमि (30 pages)
+2026-06-22 00:13:37,436 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस आरएसएस और एबीवीपी पृष्ठभूमि' after page 1.
+2026-06-22 00:13:37,436 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस आरएसएस आणि एबीव्हीपी पार्श्वभूमी (30 pages)
+2026-06-22 00:13:44,765 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस आरएसएस आणि एबीव्हीपी पार्श्वभूमी' after page 1.
+2026-06-22 00:13:44,765 | INFO | Link_extraction | Searching for: Devendra Fadnavis Home Ministry portfolio 2025 (30 pages)
+2026-06-22 00:13:52,102 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis Home Ministry portfolio 2025' after page 1.
+2026-06-22 00:13:52,102 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस गृह मंत्रालय पोर्टफोलियो 2025 (30 pages)
+2026-06-22 00:13:59,446 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस गृह मंत्रालय पोर्टफोलियो 2025' after page 1.
+2026-06-22 00:13:59,446 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस गृह खाते पोर्टफोलियो 2025 (30 pages)
+2026-06-22 00:14:06,826 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस गृह खाते पोर्टफोलियो 2025' after page 1.
+2026-06-22 00:14:06,826 | INFO | Link_extraction | Searching for: Devendra Fadnavis Mumbai (30 pages)
+2026-06-22 00:14:20,774 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis Mumbai' after page 2.
+2026-06-22 00:14:20,775 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस मुंबई (30 pages)
+2026-06-22 00:14:34,654 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस मुंबई' after page 2.
+2026-06-22 00:14:34,654 | INFO | Link_extraction | Searching for: Devendra Fadnavis this week events 2025 (30 pages)
+2026-06-22 00:14:42,065 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis this week events 2025' after page 1.
+2026-06-22 00:14:42,065 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस इस सप्ताह की घटनाएं 2025 (30 pages)
+2026-06-22 00:14:49,474 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस इस सप्ताह की घटनाएं 2025' after page 1.
+2026-06-22 00:14:49,475 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस या आठवड्याचे कार्यक्रम 2025 (30 pages)
+2026-06-22 00:14:56,829 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस या आठवड्याचे कार्यक्रम 2025' after page 1.
+2026-06-22 00:14:56,829 | INFO | Link_extraction | Searching for: Devendra Fadnavis Latur visit 2025 (30 pages)
+2026-06-22 00:15:04,197 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis Latur visit 2025' after page 1.
+2026-06-22 00:15:04,197 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस लातूर दौरा 2025 (30 pages)
+2026-06-22 00:15:11,590 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस लातूर दौरा 2025' after page 1.
+2026-06-22 00:15:11,591 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस लातूर भेट 2025 (30 pages)
+2026-06-22 00:15:18,929 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस लातूर भेट 2025' after page 1.
+2026-06-22 00:15:18,929 | INFO | Link_extraction | Searching for: Devendra Fadnavis environmental initiative 2025 (30 pages)
+2026-06-22 00:15:26,409 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis environmental initiative 2025' after page 1.
+2026-06-22 00:15:26,410 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस पर्यावरण पहल 2025 (30 pages)
+2026-06-22 00:15:33,798 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस पर्यावरण पहल 2025' after page 1.
+2026-06-22 00:15:33,798 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस पर्यावरण उपक्रम 2025 (30 pages)
+2026-06-22 00:15:41,276 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस पर्यावरण उपक्रम 2025' after page 1.
+2026-06-22 00:15:41,276 | INFO | Link_extraction | Searching for: Devendra Fadnavis Ladki Bahin scheme 2025 (30 pages)
+2026-06-22 00:15:48,884 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis Ladki Bahin scheme 2025' after page 1.
+2026-06-22 00:15:48,884 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस लाडकी बहिण योजना 2025 (30 pages)
+2026-06-22 00:15:56,522 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस लाडकी बहिण योजना 2025' after page 1.
+2026-06-22 00:15:56,522 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस लाडकी बहीण योजना 2025 (30 pages)
+2026-06-22 00:16:04,154 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस लाडकी बहीण योजना 2025' after page 1.
+2026-06-22 00:16:04,155 | INFO | Link_extraction | Searching for: Devendra Fadnavis Sharad Pawar controversy 2025 (30 pages)
+2026-06-22 00:16:11,512 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis Sharad Pawar controversy 2025' after page 1.
+2026-06-22 00:16:11,512 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस शरद पवार विवाद 2025 (30 pages)
+2026-06-22 00:16:18,908 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस शरद पवार विवाद 2025' after page 1.
+2026-06-22 00:16:18,908 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस शरद पवार वाद 2025 (30 pages)
+2026-06-22 00:16:26,332 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस शरद पवार वाद 2025' after page 1.
+2026-06-22 00:16:26,332 | INFO | Link_extraction | Searching for: Devendra Fadnavis political activities August 2025 (30 pages)
+2026-06-22 00:16:33,728 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis political activities August 2025' after page 1.
+2026-06-22 00:16:33,728 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस अगस्त 2025 राजनीतिक गतिविधियां (30 pages)
+2026-06-22 00:16:41,056 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस अगस्त 2025 राजनीतिक गतिविधियां' after page 1.
+2026-06-22 00:16:41,056 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस ऑगस्ट 2025 राजकीय हालचाली (30 pages)
+2026-06-22 00:16:48,398 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस ऑगस्ट 2025 राजकीय हालचाली' after page 1.
+2026-06-22 00:16:48,398 | INFO | Link_extraction | Searching for: Devendra Fadnavis public engagements 2025 (30 pages)
+2026-06-22 00:16:55,764 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis public engagements 2025' after page 1.
+2026-06-22 00:16:55,764 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस सार्वजनिक सहभाग 2025 (30 pages)
+2026-06-22 00:17:03,167 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस सार्वजनिक सहभाग 2025' after page 1.
+2026-06-22 00:17:03,167 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस जनसंपर्क 2025 (30 pages)
+2026-06-22 00:17:10,566 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस जनसंपर्क 2025' after page 1.
+2026-06-22 00:17:10,566 | INFO | Link_extraction | Searching for: Devendra Fadnavis Maharashtra governance 2025 (30 pages)
+2026-06-22 00:17:18,142 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis Maharashtra governance 2025' after page 1.
+2026-06-22 00:17:18,142 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस महाराष्ट्र शासन 2025 (30 pages)
+2026-06-22 00:17:25,656 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस महाराष्ट्र शासन 2025' after page 1.
+2026-06-22 00:17:25,656 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस महाराष्ट्र प्रशासन 2025 (30 pages)
+2026-06-22 00:17:33,070 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस महाराष्ट्र प्रशासन 2025' after page 1.
+2026-06-22 00:17:33,070 | INFO | Link_extraction | Searching for: Devendra Fadnavis policy decisions 2025 (30 pages)
+2026-06-22 00:17:40,484 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis policy decisions 2025' after page 1.
+2026-06-22 00:17:40,484 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस नीति निर्णय 2025 (30 pages)
+2026-06-22 00:17:47,855 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस नीति निर्णय 2025' after page 1.
+2026-06-22 00:17:47,855 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस धोरण निर्णय 2025 (30 pages)
+2026-06-22 00:17:55,315 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस धोरण निर्णय 2025' after page 1.
+2026-06-22 00:17:55,315 | INFO | Link_extraction | Searching for: Devendra Fadnavis rural development initiatives (30 pages)
+2026-06-22 00:18:02,700 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis rural development initiatives' after page 1.
+2026-06-22 00:18:02,700 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस ग्रामीण विकास पहल (30 pages)
+2026-06-22 00:18:10,041 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस ग्रामीण विकास पहल' after page 1.
+2026-06-22 00:18:10,041 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस ग्रामीण विकास उपक्रम (30 pages)
+2026-06-22 00:18:17,426 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस ग्रामीण विकास उपक्रम' after page 1.
+2026-06-22 00:18:17,426 | INFO | Link_extraction | Searching for: Devendra Fadnavis urban infrastructure projects (30 pages)
+2026-06-22 00:18:24,956 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis urban infrastructure projects' after page 1.
+2026-06-22 00:18:24,957 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस शहरी बुनियादी ढांचा परियोजनाएं (30 pages)
+2026-06-22 00:18:32,304 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस शहरी बुनियादी ढांचा परियोजनाएं' after page 1.
+2026-06-22 00:18:32,304 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस शहरी पायाभूत प्रकल्प (30 pages)
+2026-06-22 00:18:39,611 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस शहरी पायाभूत प्रकल्प' after page 1.
+2026-06-22 00:18:39,612 | INFO | Link_extraction | Searching for: Devendra Fadnavis economic policies Maharashtra (30 pages)
+2026-06-22 00:18:47,164 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis economic policies Maharashtra' after page 1.
+2026-06-22 00:18:47,164 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस महाराष्ट्र आर्थिक नीतियां (30 pages)
+2026-06-22 00:18:54,507 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस महाराष्ट्र आर्थिक नीतियां' after page 1.
+2026-06-22 00:18:54,508 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस महाराष्ट्र आर्थिक धोरणे (30 pages)
+2026-06-22 00:19:01,859 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस महाराष्ट्र आर्थिक धोरणे' after page 1.
+2026-06-22 00:19:01,859 | INFO | Link_extraction | Searching for: Devendra Fadnavis social welfare schemes 2025 (30 pages)
+2026-06-22 00:19:09,495 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis social welfare schemes 2025' after page 1.
+2026-06-22 00:19:09,495 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस सामाजिक कल्याण योजनाएं 2025 (30 pages)
+2026-06-22 00:19:16,917 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस सामाजिक कल्याण योजनाएं 2025' after page 1.
+2026-06-22 00:19:16,917 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस सामाजिक कल्याण योजना 2025 (30 pages)
+2026-06-22 00:19:24,277 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस सामाजिक कल्याण योजना 2025' after page 1.
+2026-06-22 00:19:24,277 | INFO | Link_extraction | Searching for: Devendra Fadnavis Yavatmal visit September 2025   (30 pages)
+2026-06-22 00:19:31,691 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis Yavatmal visit September 2025  ' after page 1.
+2026-06-22 00:19:31,692 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस यवतमाळ भेट सप्टेंबर २०२५   (30 pages)
+2026-06-22 00:19:39,022 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस यवतमाळ भेट सप्टेंबर २०२५  ' after page 1.
+2026-06-22 00:19:39,023 | INFO | Link_extraction | Searching for: Devendra Fadnavis Aadi Karmayogi Abhiyan news   (30 pages)
+2026-06-22 00:19:46,396 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis Aadi Karmayogi Abhiyan news  ' after page 1.
+2026-06-22 00:19:46,396 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस आदि कर्मयोगी अभियान समाचार   (30 pages)
+2026-06-22 00:19:53,734 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस आदि कर्मयोगी अभियान समाचार  ' after page 1.
+2026-06-22 00:19:53,734 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस आदि कर्मयोगी अभियान बातम्या   (30 pages)
+2026-06-22 00:20:01,100 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस आदि कर्मयोगी अभियान बातम्या  ' after page 1.
+2026-06-22 00:20:01,100 | INFO | Link_extraction | Searching for: Devendra Fadnavis Iowa MoU latest   (30 pages)
+2026-06-22 00:20:08,411 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis Iowa MoU latest  ' after page 1.
+2026-06-22 00:20:08,411 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस आयोवा एमओयू ताजा समाचार   (30 pages)
+2026-06-22 00:20:15,779 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस आयोवा एमओयू ताजा समाचार  ' after page 1.
+2026-06-22 00:20:15,780 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस आयोवा एमओयू नवीन बातम्या   (30 pages)
+2026-06-22 00:20:23,122 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस आयोवा एमओयू नवीन बातम्या  ' after page 1.
+2026-06-22 00:20:23,123 | INFO | Link_extraction | Searching for: Devendra Fadnavis Tata Technologies agreement   (30 pages)
+2026-06-22 00:20:30,489 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis Tata Technologies agreement  ' after page 1.
+2026-06-22 00:20:30,489 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस टाटा टेक्नॉलॉजीज करार   (30 pages)
+2026-06-22 00:20:37,902 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस टाटा टेक्नॉलॉजीज करार  ' after page 1.
+2026-06-22 00:20:37,902 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस टाटा टेक्नॉलॉजीज करार बातम्या   (30 pages)
+2026-06-22 00:20:45,266 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस टाटा टेक्नॉलॉजीज करार बातम्या  ' after page 1.
+2026-06-22 00:20:45,266 | INFO | Link_extraction | Searching for: Devendra Fadnavis tribal welfare schemes September 2025   (30 pages)
+2026-06-22 00:20:52,590 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis tribal welfare schemes September 2025  ' after page 1.
+2026-06-22 00:20:52,590 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस आदिवासी कल्याण योजना सप्टेंबर २०२५   (30 pages)
+2026-06-22 00:20:59,972 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस आदिवासी कल्याण योजना सप्टेंबर २०२५  ' after page 1.
+2026-06-22 00:20:59,972 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस आदिवासी कल्याण योजना बातम्या   (30 pages)
+2026-06-22 00:21:07,295 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस आदिवासी कल्याण योजना बातम्या  ' after page 1.
+2026-06-22 00:21:07,296 | INFO | Link_extraction | Searching for: Devendra Fadnavis solar projects Vidarbha   (30 pages)
+2026-06-22 00:21:14,660 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis solar projects Vidarbha  ' after page 1.
+2026-06-22 00:21:14,660 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस सौर प्रकल्प विदर्भ   (30 pages)
+2026-06-22 00:21:22,100 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस सौर प्रकल्प विदर्भ  ' after page 1.
+2026-06-22 00:21:22,100 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस सौर प्रकल्प विदर्भ बातम्या   (30 pages)
+2026-06-22 00:21:29,468 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस सौर प्रकल्प विदर्भ बातम्या  ' after page 1.
+2026-06-22 00:21:29,468 | INFO | Link_extraction | Searching for: Devendra Fadnavis farmer relief heavy rainfall   (30 pages)
+2026-06-22 00:21:36,955 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis farmer relief heavy rainfall  ' after page 1.
+2026-06-22 00:21:36,955 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस शेतकरी मदत अतिवृष्टी   (30 pages)
+2026-06-22 00:21:44,301 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस शेतकरी मदत अतिवृष्टी  ' after page 1.
+2026-06-22 00:21:44,301 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस शेतकरी मदत अतिवृष्टी बातम्या   (30 pages)
+2026-06-22 00:21:51,609 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस शेतकरी मदत अतिवृष्टी बातम्या  ' after page 1.
+2026-06-22 00:21:51,609 | INFO | Link_extraction | Searching for: Devendra Fadnavis STRIDE 2025 speech   (30 pages)
+2026-06-22 00:21:58,934 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis STRIDE 2025 speech  ' after page 1.
+2026-06-22 00:21:58,934 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस स्ट्राईड २०२५ भाषण   (30 pages)
+2026-06-22 00:22:06,254 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस स्ट्राईड २०२५ भाषण  ' after page 1.
+2026-06-22 00:22:06,254 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस स्ट्राईड २०२५ भाषण बातम्या   (30 pages)
+2026-06-22 00:22:13,563 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस स्ट्राईड २०२५ भाषण बातम्या  ' after page 1.
+2026-06-22 00:22:13,563 | INFO | Link_extraction | Searching for: Devendra Fadnavis Sanjay Raut comments September 2025   (30 pages)
+2026-06-22 00:22:20,881 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis Sanjay Raut comments September 2025  ' after page 1.
+2026-06-22 00:22:20,881 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस संजय राऊत टिप्पण्या सप्टेंबर २०२५   (30 pages)
+2026-06-22 00:22:28,219 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस संजय राऊत टिप्पण्या सप्टेंबर २०२५  ' after page 1.
+2026-06-22 00:22:28,219 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस संजय राऊत टिप्पण्या बातम्या   (30 pages)
+2026-06-22 00:22:35,587 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस संजय राऊत टिप्पण्या बातम्या  ' after page 1.
+2026-06-22 00:22:35,587 | INFO | Link_extraction | Searching for: Devendra Fadnavis book release Jawaharlal Darda   (30 pages)
+2026-06-22 00:22:42,944 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis book release Jawaharlal Darda  ' after page 1.
+2026-06-22 00:22:42,944 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस पुस्तक प्रकाशन जवाहरलाल दर्डा   (30 pages)
+2026-06-22 00:22:50,263 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस पुस्तक प्रकाशन जवाहरलाल दर्डा  ' after page 1.
+2026-06-22 00:22:50,263 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस पुस्तक प्रकाशन जवाहरलाल दर्डा बातम्या   (30 pages)
+2026-06-22 00:22:57,605 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस पुस्तक प्रकाशन जवाहरलाल दर्डा बातम्या  ' after page 1.
+2026-06-22 00:22:57,605 | INFO | Link_extraction | Searching for: Devendra Fadnavis development works inauguration Yavatmal   (30 pages)
+2026-06-22 00:23:04,938 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis development works inauguration Yavatmal  ' after page 1.
+2026-06-22 00:23:04,938 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस विकास कामे उद्घाटन यवतमाळ   (30 pages)
+2026-06-22 00:23:12,271 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस विकास कामे उद्घाटन यवतमाळ  ' after page 1.
+2026-06-22 00:23:12,272 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस विकास कामे उद्घाटन यवतमाळ बातम्या   (30 pages)
+2026-06-22 00:23:19,623 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस विकास कामे उद्घाटन यवतमाळ बातम्या  ' after page 1.
+2026-06-22 00:23:19,624 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस बातम्या मागील आठवडा  (30 pages)
+2026-06-22 00:23:26,954 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस बातम्या मागील आठवडा ' after page 1.
+2026-06-22 00:23:26,954 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस महाराष्ट्र अपडेट्स मागील आठवडा (30 pages)
+2026-06-22 00:23:34,254 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस महाराष्ट्र अपडेट्स मागील आठवडा' after page 1.
+2026-06-22 00:23:34,254 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस ताज्या अपडेट्स ७ दिवस (30 pages)
+2026-06-22 00:23:41,607 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस ताज्या अपडेट्स ७ दिवस' after page 1.
+2026-06-22 00:23:41,607 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस राजकीय बातम्या मागील आठवडा (30 pages)
+2026-06-22 00:23:48,911 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस राजकीय बातम्या मागील आठवडा' after page 1.
+2026-06-22 00:23:48,911 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस सध्याच्या बातम्या (30 pages)
+2026-06-22 00:23:56,421 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस सध्याच्या बातम्या' after page 1.
+2026-06-22 00:23:56,421 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस सरकारच्या बातम्या गेल्या ७ दिवस (30 pages)
+2026-06-22 00:24:03,806 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस सरकारच्या बातम्या गेल्या ७ दिवस' after page 1.
+2026-06-22 00:24:03,806 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस news (30 pages)
+2026-06-22 00:24:17,697 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस news' after page 2.
+2026-06-22 00:24:17,697 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस latest news (30 pages)
+2026-06-22 00:24:31,593 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस latest news' after page 2.
+2026-06-22 00:24:31,594 | INFO | Link_extraction | Searching for: Devendra Fadnavis news past week (30 pages)
+2026-06-22 00:24:39,271 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis news past week' after page 1.
+2026-06-22 00:24:39,271 | INFO | Link_extraction | Searching for: Devendra Fadnavis recent news (30 pages)
+2026-06-22 00:25:12,560 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis recent news' after page 5.
+2026-06-22 00:25:12,560 | INFO | Link_extraction | Searching for: Devendra Fadnavis Maharashtra updates last week (30 pages)
+2026-06-22 00:25:20,088 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis Maharashtra updates last week' after page 1.
+2026-06-22 00:25:20,088 | INFO | Link_extraction | Searching for: Devendra Fadnavis latest updates 7 days (30 pages)
+2026-06-22 00:25:27,584 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis latest updates 7 days' after page 1.
+2026-06-22 00:25:27,584 | INFO | Link_extraction | Searching for: Devendra Fadnavis political news last week (30 pages)
+2026-06-22 00:25:35,084 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis political news last week' after page 1.
+2026-06-22 00:25:35,084 | INFO | Link_extraction | Searching for: Devendra Fadnavis current news (30 pages)
+2026-06-22 00:25:49,022 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis current news' after page 2.
+2026-06-22 00:25:49,023 | INFO | Link_extraction | Searching for: Devendra Fadnavis government news past 7 days (30 pages)
+2026-06-22 00:25:56,507 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis government news past 7 days' after page 1.
+2026-06-22 00:25:56,605 | INFO | Link_extraction | Browser session closed
+2026-06-22 00:25:56,608 | INFO | Link_extraction | Filtered 1061 rows down to 167 unique entries
+2026-06-22 00:25:56,630 | INFO | Link_extraction | Total links extracted: 167
+2026-06-22 00:25:56,630 | INFO | Link_extraction | Data saved to '/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/Output/Devendra Fadnavis/extracted_links.xlsx'
+2026-06-22 00:25:56,630 | INFO | Link_extraction | Link extraction completed and saved successfully
+2026-06-22 00:25:56,630 | INFO | CoreRouter | 2. News Extraction started...
+2026-06-22 00:25:56,630 | INFO | NewsScraper | Starting news scraping process.
+2026-06-22 00:25:56,648 | INFO | NewsScraper | Loaded 167 links from /home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/Output/Devendra Fadnavis/extracted_links.xlsx
+2026-06-22 00:25:56,649 | INFO | WDM | ====== WebDriver manager ======
+2026-06-22 00:25:56,714 | INFO | WDM | Get LATEST chromedriver version for google-chrome
+2026-06-22 00:25:56,810 | INFO | WDM | Get LATEST chromedriver version for google-chrome
+2026-06-22 00:25:56,979 | INFO | WDM | WebDriver version 149.0.7827.155 selected
+2026-06-22 00:25:56,985 | INFO | WDM | Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/149.0.7827.155/linux64/chromedriver-linux64.zip
+2026-06-22 00:25:56,985 | INFO | WDM | About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/149.0.7827.155/linux64/chromedriver-linux64.zip
+2026-06-22 00:25:57,048 | INFO | WDM | Driver downloading response is 200
+2026-06-22 00:25:57,300 | INFO | WDM | Driver has been saved in cache [/home/runner/.wdm/drivers/chromedriver/linux64/149.0.7827.155]
+2026-06-22 00:25:57,533 | INFO | Link_extraction | WebDriver initialized successfully
+2026-06-22 00:25:57,533 | INFO | NewsScraper | Leader available in Name Variations, Cosidering it as Leader Specific Report....
+2026-06-22 00:25:57,644 | INFO | NewsScraper | Processing URL: https://www.thehindu.com/news/national/maharashtra/maharashtra-doctors-death-handwriting-on-note-verified-policeman-techie-involved-in-harassment-says-cm-fadnavis/article70375344.ece
+2026-06-22 00:25:58,572 | INFO | NewsScraper | Article extracted successfully for https://www.thehindu.com/news/national/maharashtra/maharashtra-doctors-death-handwriting-on-note-verified-policeman-techie-involved-in-harassment-says-cm-fadnavis/article70375344.ece
+2026-06-22 00:25:58,572 | INFO | NewsScraper | Processing URL: https://indianexpress.com/article/cities/mumbai/civic-body-polls-bjp-shiv-sena-reach-meeting-fadnavis-shinde-10410266/
+2026-06-22 00:25:59,492 | INFO | NewsScraper | Article extracted successfully for https://indianexpress.com/article/cities/mumbai/civic-body-polls-bjp-shiv-sena-reach-meeting-fadnavis-shinde-10410266/
+2026-06-22 00:25:59,492 | INFO | NewsScraper | Processing URL: https://www.deccanherald.com/india/maharashtra/cm-devendra-fadnavis-fumes-over-unnecessary-mentions-of-ladki-bahin-yojana-in-maharashtra-assembly-3825440
+2026-06-22 00:25:59,947 | ERROR | NewsScraper | Unexpected error in dynamic scrape for https://www.deccanherald.com/india/maharashtra/cm-devendra-fadnavis-fumes-over-unnecessary-mentions-of-ladki-bahin-yojana-in-maharashtra-assembly-3825440: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/modules/news_scraper.py", line 190, in _extract_dynamic_page
+    self.driver.get(url)
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2026-06-22 00:25:59,948 | WARNING | NewsScraper | Failed to extract content from https://www.deccanherald.com/india/maharashtra/cm-devendra-fadnavis-fumes-over-unnecessary-mentions-of-ladki-bahin-yojana-in-maharashtra-assembly-3825440
+2026-06-22 00:25:59,948 | INFO | NewsScraper | Processing URL: https://organiser.org/2025/12/08/329368/bharat/we-will-take-guru-tegh-bahadur-jis-legacy-to-every-village-in-maharashtra-chief-minister-devendra-fadnavis/
+2026-06-22 00:26:00,034 | WARNING | NewsScraper | Static scrape failed for https://organiser.org/2025/12/08/329368/bharat/we-will-take-guru-tegh-bahadur-jis-legacy-to-every-village-in-maharashtra-chief-minister-devendra-fadnavis/: 403 Client Error: Forbidden for url: https://organiser.org/2025/12/08/329368/bharat/we-will-take-guru-tegh-bahadur-jis-legacy-to-every-village-in-maharashtra-chief-minister-devendra-fadnavis/
+2026-06-22 00:26:00,035 | ERROR | NewsScraper | Unexpected error in dynamic scrape for https://organiser.org/2025/12/08/329368/bharat/we-will-take-guru-tegh-bahadur-jis-legacy-to-every-village-in-maharashtra-chief-minister-devendra-fadnavis/: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/modules/news_scraper.py", line 190, in _extract_dynamic_page
+    self.driver.get(url)
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2026-06-22 00:26:00,036 | WARNING | NewsScraper | Failed to extract content from https://organiser.org/2025/12/08/329368/bharat/we-will-take-guru-tegh-bahadur-jis-legacy-to-every-village-in-maharashtra-chief-minister-devendra-fadnavis/
+2026-06-22 00:26:00,036 | INFO | NewsScraper | Processing URL: https://www.ndtv.com/india-news/mcoca-devendra-fadnavis-maharashtras-organised-crime-solution-to-sale-of-gutkha-around-schools-9779497
+2026-06-22 00:26:00,101 | WARNING | NewsScraper | Static scrape failed for https://www.ndtv.com/india-news/mcoca-devendra-fadnavis-maharashtras-organised-crime-solution-to-sale-of-gutkha-around-schools-9779497: 403 Client Error: Forbidden for url: https://www.ndtv.com/india-news/mcoca-devendra-fadnavis-maharashtras-organised-crime-solution-to-sale-of-gutkha-around-schools-9779497
+2026-06-22 00:26:00,102 | ERROR | NewsScraper | Unexpected error in dynamic scrape for https://www.ndtv.com/india-news/mcoca-devendra-fadnavis-maharashtras-organised-crime-solution-to-sale-of-gutkha-around-schools-9779497: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/modules/news_scraper.py", line 190, in _extract_dynamic_page
+    self.driver.get(url)
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2026-06-22 00:26:00,102 | WARNING | NewsScraper | Failed to extract content from https://www.ndtv.com/india-news/mcoca-devendra-fadnavis-maharashtras-organised-crime-solution-to-sale-of-gutkha-around-schools-9779497
+2026-06-22 00:26:00,102 | INFO | NewsScraper | Processing URL: https://www.thestatesman.com/india/fadnavis-rejects-aaditya-thackerays-claim-of-22-shinde-sena-mlas-joining-bjp-1503523609.html
+2026-06-22 00:26:01,194 | WARNING | NewsScraper | Static scrape failed for https://www.thestatesman.com/india/fadnavis-rejects-aaditya-thackerays-claim-of-22-shinde-sena-mlas-joining-bjp-1503523609.html: HTTPSConnectionPool(host='www.thestatesman.com', port=443): Read timed out. (read timeout=1)
+2026-06-22 00:26:01,194 | ERROR | NewsScraper | Unexpected error in dynamic scrape for https://www.thestatesman.com/india/fadnavis-rejects-aaditya-thackerays-claim-of-22-shinde-sena-mlas-joining-bjp-1503523609.html: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/modules/news_scraper.py", line 190, in _extract_dynamic_page
+    self.driver.get(url)
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2026-06-22 00:26:01,194 | WARNING | NewsScraper | Failed to extract content from https://www.thestatesman.com/india/fadnavis-rejects-aaditya-thackerays-claim-of-22-shinde-sena-mlas-joining-bjp-1503523609.html
+2026-06-22 00:26:01,194 | INFO | NewsScraper | Processing URL: https://timesofindia.indiatimes.com/city/nagpur/if-this-continues-you-will-have-to-sit-at-home-maharashtra-cm-devendra-fadnavis-chides-mlas-for-citing-ladki-bahini-scheme/articleshow/125866363.cms
+2026-06-22 00:26:01,575 | INFO | NewsScraper | No mention of Devendra Fadnavis in https://timesofindia.indiatimes.com/city/nagpur/if-this-continues-you-will-have-to-sit-at-home-maharashtra-cm-devendra-fadnavis-chides-mlas-for-citing-ladki-bahini-scheme/articleshow/125866363.cms
+2026-06-22 00:26:01,576 | INFO | NewsScraper | Processing URL: https://www.hindustantimes.com/cities/mumbai-news/pune-land-deal-probe-on-none-will-be-spared-cm-101765135501278.html
+2026-06-22 00:26:01,667 | WARNING | NewsScraper | Static scrape failed for https://www.hindustantimes.com/cities/mumbai-news/pune-land-deal-probe-on-none-will-be-spared-cm-101765135501278.html: 401 Client Error: Unauthorized for url: https://www.hindustantimes.com/cities/mumbai-news/pune-land-deal-probe-on-none-will-be-spared-cm-101765135501278.html
+2026-06-22 00:26:01,668 | ERROR | NewsScraper | Unexpected error in dynamic scrape for https://www.hindustantimes.com/cities/mumbai-news/pune-land-deal-probe-on-none-will-be-spared-cm-101765135501278.html: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/modules/news_scraper.py", line 190, in _extract_dynamic_page
+    self.driver.get(url)
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2026-06-22 00:26:01,668 | WARNING | NewsScraper | Failed to extract content from https://www.hindustantimes.com/cities/mumbai-news/pune-land-deal-probe-on-none-will-be-spared-cm-101765135501278.html
+2026-06-22 00:26:01,668 | INFO | NewsScraper | Processing URL: https://rajbhavan-maharashtra.gov.in/en/09-12-2025-governor-releases-the-book-bhartiya-samvidhan-gauravshali-amrut-mahotsavi-watchal-at-lok-bhavan-in-nagpur/
+2026-06-22 00:26:03,969 | WARNING | NewsScraper | Static scrape failed for https://rajbhavan-maharashtra.gov.in/en/09-12-2025-governor-releases-the-book-bhartiya-samvidhan-gauravshali-amrut-mahotsavi-watchal-at-lok-bhavan-in-nagpur/: HTTPSConnectionPool(host='rajbhavan-maharashtra.gov.in', port=443): Read timed out. (read timeout=1)
+2026-06-22 00:26:03,970 | ERROR | NewsScraper | Unexpected error in dynamic scrape for https://rajbhavan-maharashtra.gov.in/en/09-12-2025-governor-releases-the-book-bhartiya-samvidhan-gauravshali-amrut-mahotsavi-watchal-at-lok-bhavan-in-nagpur/: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/modules/news_scraper.py", line 190, in _extract_dynamic_page
+    self.driver.get(url)
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2026-06-22 00:26:03,970 | WARNING | NewsScraper | Failed to extract content from https://rajbhavan-maharashtra.gov.in/en/09-12-2025-governor-releases-the-book-bhartiya-samvidhan-gauravshali-amrut-mahotsavi-watchal-at-lok-bhavan-in-nagpur/
+2026-06-22 00:26:03,970 | INFO | NewsScraper | Processing URL: https://www.indiatoday.in/india/story/no-defection-says-fadnavis-dismissing-aditya-thackerays-22-mlas-crossover-claim-2832901-2025-12-08
+2026-06-22 00:26:05,457 | INFO | NewsScraper | Article extracted successfully for https://www.indiatoday.in/india/story/no-defection-says-fadnavis-dismissing-aditya-thackerays-22-mlas-crossover-claim-2832901-2025-12-08
+2026-06-22 00:26:05,457 | INFO | NewsScraper | Processing URL: https://www.aninews.in/news/national/general-news/satara-doctor-suicide-case-sit-appointed-to-probe-death-as-forensic-report-confirms-handwritten-note-says-maharashtra-cm-fadnavis20251209115052
+2026-06-22 00:26:05,781 | WARNING | NewsScraper | Static scrape failed for https://www.aninews.in/news/national/general-news/satara-doctor-suicide-case-sit-appointed-to-probe-death-as-forensic-report-confirms-handwritten-note-says-maharashtra-cm-fadnavis20251209115052: 403 Client Error: Forbidden for url: https://www.aninews.in/news/national/general-news/satara-doctor-suicide-case-sit-appointed-to-probe-death-as-forensic-report-confirms-handwritten-note-says-maharashtra-cm-fadnavis20251209115052
+2026-06-22 00:26:05,782 | ERROR | NewsScraper | Unexpected error in dynamic scrape for https://www.aninews.in/news/national/general-news/satara-doctor-suicide-case-sit-appointed-to-probe-death-as-forensic-report-confirms-handwritten-note-says-maharashtra-cm-fadnavis20251209115052: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/modules/news_scraper.py", line 190, in _extract_dynamic_page
+    self.driver.get(url)
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2026-06-22 00:26:05,782 | WARNING | NewsScraper | Failed to extract content from https://www.aninews.in/news/national/general-news/satara-doctor-suicide-case-sit-appointed-to-probe-death-as-forensic-report-confirms-handwritten-note-says-maharashtra-cm-fadnavis20251209115052
+2026-06-22 00:26:05,782 | INFO | NewsScraper | Processing URL: https://www.news18.com/cities/mumbai-news/grand-statue-of-chhatrapati-shivaji-maharaj-to-come-up-at-csmt-devendra-fadnavis-ws-l-9760068.html
+2026-06-22 00:26:06,269 | INFO | NewsScraper | Article extracted successfully for https://www.news18.com/cities/mumbai-news/grand-statue-of-chhatrapati-shivaji-maharaj-to-come-up-at-csmt-devendra-fadnavis-ws-l-9760068.html
+2026-06-22 00:26:06,269 | INFO | NewsScraper | Processing URL: https://indianexpress.com/article/cities/mumbai/fadnavis-loses-his-cool-after-repeated-mention-ladki-bahin-scheme-10410666/
+2026-06-22 00:26:07,097 | INFO | NewsScraper | Article extracted successfully for https://indianexpress.com/article/cities/mumbai/fadnavis-loses-his-cool-after-repeated-mention-ladki-bahin-scheme-10410666/
+2026-06-22 00:26:07,097 | INFO | NewsScraper | Processing URL: https://timesofindia.indiatimes.com/city/nagpur/shakti-law-to-return-in-tougher-form-soon-says-cm-fadnavis-after-president-sends-back-bill/articleshow/125863619.cms
+2026-06-22 00:26:07,397 | INFO | NewsScraper | No mention of Devendra Fadnavis in https://timesofindia.indiatimes.com/city/nagpur/shakti-law-to-return-in-tougher-form-soon-says-cm-fadnavis-after-president-sends-back-bill/articleshow/125863619.cms
+2026-06-22 00:26:07,397 | INFO | NewsScraper | Processing URL: https://www.thehindu.com/news/national/maharashtra/22-mlas-from-ruling-ally-close-to-fadnavis-ready-to-cross-over-claims-aaditya/article70372048.ece
+2026-06-22 00:26:08,316 | INFO | NewsScraper | Article extracted successfully for https://www.thehindu.com/news/national/maharashtra/22-mlas-from-ruling-ally-close-to-fadnavis-ready-to-cross-over-claims-aaditya/article70372048.ece
+2026-06-22 00:26:08,317 | INFO | NewsScraper | Processing URL: https://www.thestatesman.com/india/fadnavis-faces-heat-as-maha-assembly-session-begins-without-oppn-leader-1503523224.html
+2026-06-22 00:26:09,209 | INFO | NewsScraper | Article extracted successfully for https://www.thestatesman.com/india/fadnavis-faces-heat-as-maha-assembly-session-begins-without-oppn-leader-1503523224.html
+2026-06-22 00:26:09,209 | INFO | NewsScraper | Processing URL: https://www.hindustantimes.com/cities/mumbai-news/centre-rejects-shakti-bill-report-on-love-jihad-law-soon-101765135621530.html
+2026-06-22 00:26:09,253 | WARNING | NewsScraper | Static scrape failed for https://www.hindustantimes.com/cities/mumbai-news/centre-rejects-shakti-bill-report-on-love-jihad-law-soon-101765135621530.html: 401 Client Error: Unauthorized for url: https://www.hindustantimes.com/cities/mumbai-news/centre-rejects-shakti-bill-report-on-love-jihad-law-soon-101765135621530.html
+2026-06-22 00:26:09,254 | ERROR | NewsScraper | Unexpected error in dynamic scrape for https://www.hindustantimes.com/cities/mumbai-news/centre-rejects-shakti-bill-report-on-love-jihad-law-soon-101765135621530.html: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/modules/news_scraper.py", line 190, in _extract_dynamic_page
+    self.driver.get(url)
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2026-06-22 00:26:09,254 | WARNING | NewsScraper | Failed to extract content from https://www.hindustantimes.com/cities/mumbai-news/centre-rejects-shakti-bill-report-on-love-jihad-law-soon-101765135621530.html
+2026-06-22 00:26:09,254 | INFO | NewsScraper | Processing URL: https://indianexpress.com/article/cities/mumbai/handwriting-in-note-left-by-deceased-satara-doctor-matches-her-own-says-cm-devendra-fadnavis-in-maharashtra-assembly-10410505/
+2026-06-22 00:26:10,780 | INFO | NewsScraper | Article extracted successfully for https://indianexpress.com/article/cities/mumbai/handwriting-in-note-left-by-deceased-satara-doctor-matches-her-own-says-cm-devendra-fadnavis-in-maharashtra-assembly-10410505/
+2026-06-22 00:26:10,780 | INFO | NewsScraper | Processing URL: https://www.hindustantimes.com/cities/mumbai-news/mahayuti-shows-unity-on-stage-but-strains-surface-behind-smiles-101765136161173.html
+2026-06-22 00:26:10,830 | WARNING | NewsScraper | Static scrape failed for https://www.hindustantimes.com/cities/mumbai-news/mahayuti-shows-unity-on-stage-but-strains-surface-behind-smiles-101765136161173.html: 401 Client Error: Unauthorized for url: https://www.hindustantimes.com/cities/mumbai-news/mahayuti-shows-unity-on-stage-but-strains-surface-behind-smiles-101765136161173.html
+2026-06-22 00:26:10,830 | ERROR | NewsScraper | Unexpected error in dynamic scrape for https://www.hindustantimes.com/cities/mumbai-news/mahayuti-shows-unity-on-stage-but-strains-surface-behind-smiles-101765136161173.html: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/modules/news_scraper.py", line 190, in _extract_dynamic_page
+    self.driver.get(url)
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2026-06-22 00:26:10,831 | WARNING | NewsScraper | Failed to extract content from https://www.hindustantimes.com/cities/mumbai-news/mahayuti-shows-unity-on-stage-but-strains-surface-behind-smiles-101765136161173.html
+2026-06-22 00:26:10,831 | INFO | NewsScraper | Processing URL: https://indianexpress.com/article/cities/mumbai/opposition-directionless-lop-decision-rests-with-presiding-officers-fadnavis-10408476/
+2026-06-22 00:26:11,693 | INFO | NewsScraper | Article extracted successfully for https://indianexpress.com/article/cities/mumbai/opposition-directionless-lop-decision-rests-with-presiding-officers-fadnavis-10408476/
+2026-06-22 00:26:11,693 | INFO | NewsScraper | Processing URL: https://www.moneycontrol.com/news/india/bjp-shiv-sena-ties-back-on-track-fadnavis-shinde-call-truce-ahead-of-crucial-urban-polls-13717334.html
+2026-06-22 00:26:12,780 | INFO | NewsScraper | Article extracted successfully for https://www.moneycontrol.com/news/india/bjp-shiv-sena-ties-back-on-track-fadnavis-shinde-call-truce-ahead-of-crucial-urban-polls-13717334.html
+2026-06-22 00:26:12,780 | INFO | NewsScraper | Processing URL: https://timesofindia.indiatimes.com/city/nagpur/oppn-leaders-demand-separate-vidarbha-slam-govt-neglect/articleshow/125821473.cms
+2026-06-22 00:26:13,122 | ERROR | NewsScraper | Unexpected error in dynamic scrape for https://timesofindia.indiatimes.com/city/nagpur/oppn-leaders-demand-separate-vidarbha-slam-govt-neglect/articleshow/125821473.cms: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/modules/news_scraper.py", line 190, in _extract_dynamic_page
+    self.driver.get(url)
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2026-06-22 00:26:13,122 | WARNING | NewsScraper | Failed to extract content from https://timesofindia.indiatimes.com/city/nagpur/oppn-leaders-demand-separate-vidarbha-slam-govt-neglect/articleshow/125821473.cms
+2026-06-22 00:26:13,122 | INFO | NewsScraper | Processing URL: https://b2b.economictimes.indiatimes.com/news/maharashtra/maharashtra-govt-allots-8000-square-feet-land-for-new-pune-press-club-building/125831486
+2026-06-22 00:26:14,154 | INFO | NewsScraper | No mention of Devendra Fadnavis in https://b2b.economictimes.indiatimes.com/news/maharashtra/maharashtra-govt-allots-8000-square-feet-land-for-new-pune-press-club-building/125831486
+2026-06-22 00:26:14,154 | INFO | NewsScraper | Processing URL: https://www.business-standard.com/india-news/maharashtra-approves-new-scheme-to-build-motorable-farm-to-field-roads-125120800284_1.html
+2026-06-22 00:26:14,454 | WARNING | NewsScraper | Static scrape failed for https://www.business-standard.com/india-news/maharashtra-approves-new-scheme-to-build-motorable-farm-to-field-roads-125120800284_1.html: 403 Client Error: Forbidden for url: https://www.business-standard.com/india-news/maharashtra-approves-new-scheme-to-build-motorable-farm-to-field-roads-125120800284_1.html
+2026-06-22 00:26:14,455 | ERROR | NewsScraper | Unexpected error in dynamic scrape for https://www.business-standard.com/india-news/maharashtra-approves-new-scheme-to-build-motorable-farm-to-field-roads-125120800284_1.html: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/modules/news_scraper.py", line 190, in _extract_dynamic_page
+    self.driver.get(url)
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2026-06-22 00:26:14,455 | WARNING | NewsScraper | Failed to extract content from https://www.business-standard.com/india-news/maharashtra-approves-new-scheme-to-build-motorable-farm-to-field-roads-125120800284_1.html
+2026-06-22 00:26:14,456 | INFO | NewsScraper | Processing URL: https://swarajyamag.com/news-brief/maharashtra-mulls-monetising-metro-depot-land-in-major-push-to-raise-non-fare-revenue
+2026-06-22 00:26:14,749 | INFO | NewsScraper | Article extracted successfully for https://swarajyamag.com/news-brief/maharashtra-mulls-monetising-metro-depot-land-in-major-push-to-raise-non-fare-revenue
+2026-06-22 00:26:14,750 | INFO | NewsScraper | Processing URL: https://www.aninews.in/news/national/politics/pune-senior-socialist-leader-baba-adhav-passes-away-cm-fadnavis-sharad-pawar-pay-tributes20251208225611
+2026-06-22 00:26:15,033 | WARNING | NewsScraper | Static scrape failed for https://www.aninews.in/news/national/politics/pune-senior-socialist-leader-baba-adhav-passes-away-cm-fadnavis-sharad-pawar-pay-tributes20251208225611: 403 Client Error: Forbidden for url: https://www.aninews.in/news/national/politics/pune-senior-socialist-leader-baba-adhav-passes-away-cm-fadnavis-sharad-pawar-pay-tributes20251208225611
+2026-06-22 00:26:15,034 | ERROR | NewsScraper | Unexpected error in dynamic scrape for https://www.aninews.in/news/national/politics/pune-senior-socialist-leader-baba-adhav-passes-away-cm-fadnavis-sharad-pawar-pay-tributes20251208225611: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/modules/news_scraper.py", line 190, in _extract_dynamic_page
+    self.driver.get(url)
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2026-06-22 00:26:15,034 | WARNING | NewsScraper | Failed to extract content from https://www.aninews.in/news/national/politics/pune-senior-socialist-leader-baba-adhav-passes-away-cm-fadnavis-sharad-pawar-pay-tributes20251208225611
+2026-06-22 00:26:15,035 | INFO | NewsScraper | Processing URL: https://timesofindia.indiatimes.com/city/mumbai/shinde-revolt-brought-bjp-back-to-power-says-sena-minister/articleshow/125819269.cms
+2026-06-22 00:26:15,391 | INFO | NewsScraper | No mention of Devendra Fadnavis in https://timesofindia.indiatimes.com/city/mumbai/shinde-revolt-brought-bjp-back-to-power-says-sena-minister/articleshow/125819269.cms
+2026-06-22 00:26:15,391 | INFO | NewsScraper | Processing URL: https://www.cnbctv18.com/india/politics/shiv-sena-bjp-to-have-tie-up-for-maharashtra-municipal-elections-devendra-fadnavis-eknath-shinde-19785875.htm
+2026-06-22 00:26:16,271 | INFO | NewsScraper | No mention of Devendra Fadnavis in https://www.cnbctv18.com/india/politics/shiv-sena-bjp-to-have-tie-up-for-maharashtra-municipal-elections-devendra-fadnavis-eknath-shinde-19785875.htm
+2026-06-22 00:26:16,272 | INFO | NewsScraper | Processing URL: https://www.hindustantimes.com/cities/mumbai-news/maharashtra-legislature-s-winter-session-begins-with-vande-mataram-recital-101765221561488.html
+2026-06-22 00:26:16,322 | WARNING | NewsScraper | Static scrape failed for https://www.hindustantimes.com/cities/mumbai-news/maharashtra-legislature-s-winter-session-begins-with-vande-mataram-recital-101765221561488.html: 401 Client Error: Unauthorized for url: https://www.hindustantimes.com/cities/mumbai-news/maharashtra-legislature-s-winter-session-begins-with-vande-mataram-recital-101765221561488.html
+2026-06-22 00:26:16,323 | ERROR | NewsScraper | Unexpected error in dynamic scrape for https://www.hindustantimes.com/cities/mumbai-news/maharashtra-legislature-s-winter-session-begins-with-vande-mataram-recital-101765221561488.html: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/modules/news_scraper.py", line 190, in _extract_dynamic_page
+    self.driver.get(url)
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2026-06-22 00:26:16,323 | WARNING | NewsScraper | Failed to extract content from https://www.hindustantimes.com/cities/mumbai-news/maharashtra-legislature-s-winter-session-begins-with-vande-mataram-recital-101765221561488.html
+2026-06-22 00:26:16,323 | INFO | NewsScraper | Processing URL: https://www.mid-day.com/news/india-news/article/veteran-social-activist-baba-adhav-passes-away-maharashtra-cm-devendra-fadnavis-expresses-grief-23606837
+2026-06-22 00:26:17,491 | WARNING | NewsScraper | Static scrape failed for https://www.mid-day.com/news/india-news/article/veteran-social-activist-baba-adhav-passes-away-maharashtra-cm-devendra-fadnavis-expresses-grief-23606837: HTTPSConnectionPool(host='www.mid-day.com', port=443): Read timed out. (read timeout=1)
+2026-06-22 00:26:17,491 | ERROR | NewsScraper | Unexpected error in dynamic scrape for https://www.mid-day.com/news/india-news/article/veteran-social-activist-baba-adhav-passes-away-maharashtra-cm-devendra-fadnavis-expresses-grief-23606837: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/modules/news_scraper.py", line 190, in _extract_dynamic_page
+    self.driver.get(url)
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2026-06-22 00:26:17,491 | WARNING | NewsScraper | Failed to extract content from https://www.mid-day.com/news/india-news/article/veteran-social-activist-baba-adhav-passes-away-maharashtra-cm-devendra-fadnavis-expresses-grief-23606837
+2026-06-22 00:26:17,492 | INFO | NewsScraper | Processing URL: https://www.mid-day.com/news/india-news/article/mumbai-s-dahisar-east-skywalk-left-in-darkness-for-two-months-residents-forced-to-use-phone-torches-23606974
+2026-06-22 00:26:18,530 | WARNING | NewsScraper | Static scrape failed for https://www.mid-day.com/news/india-news/article/mumbai-s-dahisar-east-skywalk-left-in-darkness-for-two-months-residents-forced-to-use-phone-torches-23606974: HTTPSConnectionPool(host='www.mid-day.com', port=443): Read timed out. (read timeout=1)
+2026-06-22 00:26:18,530 | ERROR | NewsScraper | Unexpected error in dynamic scrape for https://www.mid-day.com/news/india-news/article/mumbai-s-dahisar-east-skywalk-left-in-darkness-for-two-months-residents-forced-to-use-phone-torches-23606974: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/modules/news_scraper.py", line 190, in _extract_dynamic_page
+    self.driver.get(url)
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2026-06-22 00:26:18,530 | WARNING | NewsScraper | Failed to extract content from https://www.mid-day.com/news/india-news/article/mumbai-s-dahisar-east-skywalk-left-in-darkness-for-two-months-residents-forced-to-use-phone-torches-23606974
+2026-06-22 00:26:18,531 | INFO | NewsScraper | Processing URL: https://www.mid-day.com/mumbai/mumbai-news/article/mahayuti-to-fight-maharashtra-local-body-elections-together-after-fadnavis-shinde-hold-key-meeting-23606910
+2026-06-22 00:26:19,568 | WARNING | NewsScraper | Static scrape failed for https://www.mid-day.com/mumbai/mumbai-news/article/mahayuti-to-fight-maharashtra-local-body-elections-together-after-fadnavis-shinde-hold-key-meeting-23606910: HTTPSConnectionPool(host='www.mid-day.com', port=443): Read timed out. (read timeout=1)
+2026-06-22 00:26:19,568 | ERROR | NewsScraper | Unexpected error in dynamic scrape for https://www.mid-day.com/mumbai/mumbai-news/article/mahayuti-to-fight-maharashtra-local-body-elections-together-after-fadnavis-shinde-hold-key-meeting-23606910: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/modules/news_scraper.py", line 190, in _extract_dynamic_page
+    self.driver.get(url)
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2026-06-22 00:26:19,568 | WARNING | NewsScraper | Failed to extract content from https://www.mid-day.com/mumbai/mumbai-news/article/mahayuti-to-fight-maharashtra-local-body-elections-together-after-fadnavis-shinde-hold-key-meeting-23606910
+2026-06-22 00:26:19,568 | INFO | NewsScraper | Processing URL: https://www.freepressjournal.in/mumbai/maharashtra-cm-devendra-fadnavis-warns-mlas-against-misusing-ladki-bahini-scheme-references-in-state-assembly
+2026-06-22 00:26:20,067 | INFO | NewsScraper | Article extracted successfully for https://www.freepressjournal.in/mumbai/maharashtra-cm-devendra-fadnavis-warns-mlas-against-misusing-ladki-bahini-scheme-references-in-state-assembly
+2026-06-22 00:26:20,067 | INFO | NewsScraper | Processing URL: https://www.freepressjournal.in/mumbai/maharashtra-politics-cm-fadnavis-says-opposition-rudderless-and-negative-govt-poised-to-table-18-bills-in-winter-session
+2026-06-22 00:26:20,422 | INFO | NewsScraper | Article extracted successfully for https://www.freepressjournal.in/mumbai/maharashtra-politics-cm-fadnavis-says-opposition-rudderless-and-negative-govt-poised-to-table-18-bills-in-winter-session
+2026-06-22 00:26:20,422 | INFO | NewsScraper | Processing URL: https://www.freepressjournal.in/mumbai/nashik-tragedy-pm-modi-offers-condolences-cm-devendra-fadnavis-announces-5-lakh-aid-after-devotee-deaths
+2026-06-22 00:26:20,735 | INFO | NewsScraper | Article extracted successfully for https://www.freepressjournal.in/mumbai/nashik-tragedy-pm-modi-offers-condolences-cm-devendra-fadnavis-announces-5-lakh-aid-after-devotee-deaths
+2026-06-22 00:26:20,735 | INFO | NewsScraper | Processing URL: https://www.freepressjournal.in/mumbai/maharashtra-news-cm-devendra-fadnavis-confirms-centres-nod-for-grand-chhatrapati-shivaji-maharaj-statue-at-csmt-redevelopment-plan-video
+2026-06-22 00:26:21,094 | INFO | NewsScraper | Article extracted successfully for https://www.freepressjournal.in/mumbai/maharashtra-news-cm-devendra-fadnavis-confirms-centres-nod-for-grand-chhatrapati-shivaji-maharaj-statue-at-csmt-redevelopment-plan-video
+2026-06-22 00:26:21,094 | INFO | NewsScraper | Processing URL: https://www.indiatvnews.com/maharashtra/maharashtra-govt-to-crack-down-on-sale-of-gutkha-near-schools-and-colleges-mcoca-to-be-amended-cm-devendra-fadnavis-statement-on-it-2025-12-09-1020930
+2026-06-22 00:26:22,007 | WARNING | NewsScraper | Static scrape failed for https://www.indiatvnews.com/maharashtra/maharashtra-govt-to-crack-down-on-sale-of-gutkha-near-schools-and-colleges-mcoca-to-be-amended-cm-devendra-fadnavis-statement-on-it-2025-12-09-1020930: 403 Client Error: Forbidden for url: https://www.indiatvnews.com/maharashtra/maharashtra-govt-to-crack-down-on-sale-of-gutkha-near-schools-and-colleges-mcoca-to-be-amended-cm-devendra-fadnavis-statement-on-it-2025-12-09-1020930
+2026-06-22 00:26:22,008 | ERROR | NewsScraper | Unexpected error in dynamic scrape for https://www.indiatvnews.com/maharashtra/maharashtra-govt-to-crack-down-on-sale-of-gutkha-near-schools-and-colleges-mcoca-to-be-amended-cm-devendra-fadnavis-statement-on-it-2025-12-09-1020930: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/modules/news_scraper.py", line 190, in _extract_dynamic_page
+    self.driver.get(url)
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2026-06-22 00:26:22,009 | WARNING | NewsScraper | Failed to extract content from https://www.indiatvnews.com/maharashtra/maharashtra-govt-to-crack-down-on-sale-of-gutkha-near-schools-and-colleges-mcoca-to-be-amended-cm-devendra-fadnavis-statement-on-it-2025-12-09-1020930
+2026-06-22 00:26:22,009 | INFO | NewsScraper | Processing URL: https://www.freepressjournal.in/mumbai/maharashtra-assembly-adjourned-for-10-minutes-amid-bjp-allegations-against-ias-officer-tukaram-munde
+2026-06-22 00:26:22,342 | INFO | NewsScraper | Article extracted successfully for https://www.freepressjournal.in/mumbai/maharashtra-assembly-adjourned-for-10-minutes-amid-bjp-allegations-against-ias-officer-tukaram-munde
+2026-06-22 00:26:22,342 | INFO | NewsScraper | Processing URL: https://www.mid-day.com/mumbai/mumbai-news/article/maharashtra-winter-session-government-tables-bill-to-amend-maharashtra-public-trusts-act-to-standardise-administration-23606794
+2026-06-22 00:26:23,380 | WARNING | NewsScraper | Static scrape failed for https://www.mid-day.com/mumbai/mumbai-news/article/maharashtra-winter-session-government-tables-bill-to-amend-maharashtra-public-trusts-act-to-standardise-administration-23606794: HTTPSConnectionPool(host='www.mid-day.com', port=443): Read timed out. (read timeout=1)
+2026-06-22 00:26:23,381 | ERROR | NewsScraper | Unexpected error in dynamic scrape for https://www.mid-day.com/mumbai/mumbai-news/article/maharashtra-winter-session-government-tables-bill-to-amend-maharashtra-public-trusts-act-to-standardise-administration-23606794: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/modules/news_scraper.py", line 190, in _extract_dynamic_page
+    self.driver.get(url)
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2026-06-22 00:26:23,381 | WARNING | NewsScraper | Failed to extract content from https://www.mid-day.com/mumbai/mumbai-news/article/maharashtra-winter-session-government-tables-bill-to-amend-maharashtra-public-trusts-act-to-standardise-administration-23606794
+2026-06-22 00:26:23,381 | INFO | NewsScraper | Processing URL: https://www.freepressjournal.in/mumbai/grand-statue-of-chhatrapati-shivaji-maharaj-to-be-erected-at-mumbais-csmt-video
+2026-06-22 00:26:23,801 | INFO | NewsScraper | Article extracted successfully for https://www.freepressjournal.in/mumbai/grand-statue-of-chhatrapati-shivaji-maharaj-to-be-erected-at-mumbais-csmt-video
+2026-06-22 00:26:23,802 | INFO | NewsScraper | Processing URL: https://thelivenagpur.com/2025/12/09/maharashtras-innovative-initiative-for-road-safetyunveiling-of-zebru-mascot-in-nagpur-by-honble-chief-minister-shri-devendra-fadnavis/
+2026-06-22 00:26:24,452 | INFO | NewsScraper | Article extracted successfully for https://thelivenagpur.com/2025/12/09/maharashtras-innovative-initiative-for-road-safetyunveiling-of-zebru-mascot-in-nagpur-by-honble-chief-minister-shri-devendra-fadnavis/
+2026-06-22 00:26:24,453 | INFO | NewsScraper | Processing URL: https://www.zeebiz.com/economy-infra/news-maharashtra-clears-revised-nagpur-chandrapur-expressway-plan-major-route-changes-approved-key-updates-385271
+2026-06-22 00:26:25,187 | INFO | NewsScraper | Article extracted successfully for https://www.zeebiz.com/economy-infra/news-maharashtra-clears-revised-nagpur-chandrapur-expressway-plan-major-route-changes-approved-key-updates-385271
+2026-06-22 00:26:25,187 | INFO | NewsScraper | Processing URL: https://www.abplive.com/states/maharashtra/devendra-fadnavis-eknath-shinde-meeting-to-contest-maharashtra-nagar-palika-chunav-in-mahayuti-unity-shiv-sena-bjp-3055479
+2026-06-22 00:26:26,348 | WARNING | NewsScraper | Static scrape failed for https://www.abplive.com/states/maharashtra/devendra-fadnavis-eknath-shinde-meeting-to-contest-maharashtra-nagar-palika-chunav-in-mahayuti-unity-shiv-sena-bjp-3055479: HTTPSConnectionPool(host='www.abplive.com', port=443): Read timed out. (read timeout=1)
+2026-06-22 00:26:26,349 | ERROR | NewsScraper | Unexpected error in dynamic scrape for https://www.abplive.com/states/maharashtra/devendra-fadnavis-eknath-shinde-meeting-to-contest-maharashtra-nagar-palika-chunav-in-mahayuti-unity-shiv-sena-bjp-3055479: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/modules/news_scraper.py", line 190, in _extract_dynamic_page
+    self.driver.get(url)
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2026-06-22 00:26:26,349 | WARNING | NewsScraper | Failed to extract content from https://www.abplive.com/states/maharashtra/devendra-fadnavis-eknath-shinde-meeting-to-contest-maharashtra-nagar-palika-chunav-in-mahayuti-unity-shiv-sena-bjp-3055479
+2026-06-22 00:26:26,349 | INFO | NewsScraper | Processing URL: https://www.aajtak.in/india/maharashtra/story/nagpur-devendra-fadnavis-warns-over-ladki-bahini-scheme-ntc-rpti-2408111-2025-12-09
+2026-06-22 00:26:27,675 | INFO | NewsScraper | Article extracted successfully for https://www.aajtak.in/india/maharashtra/story/nagpur-devendra-fadnavis-warns-over-ladki-bahini-scheme-ntc-rpti-2408111-2025-12-09
+2026-06-22 00:26:27,675 | INFO | NewsScraper | Processing URL: https://navbharattimes.indiatimes.com/state/maharashtra/nagpur/aaditya-thackeray-claim-eknath-shinde-22-mla-touch-with-maharashtra-cm-devendra-fadnavis/articleshow/125857116.cms
+2026-06-22 00:26:28,793 | INFO | NewsScraper | No mention of Devendra Fadnavis in https://navbharattimes.indiatimes.com/state/maharashtra/nagpur/aaditya-thackeray-claim-eknath-shinde-22-mla-touch-with-maharashtra-cm-devendra-fadnavis/articleshow/125857116.cms
+2026-06-22 00:26:28,793 | INFO | NewsScraper | Processing URL: https://www.livehindustan.com/national/aditya-thackeray-claims-22-of-eknath-shinde-mlas-will-switch-sides-what-did-devendra-fadnavis-say-201765246253504.html
+2026-06-22 00:26:28,883 | WARNING | NewsScraper | Static scrape failed for https://www.livehindustan.com/national/aditya-thackeray-claims-22-of-eknath-shinde-mlas-will-switch-sides-what-did-devendra-fadnavis-say-201765246253504.html: 403 Client Error: Forbidden for url: https://www.livehindustan.com/national/aditya-thackeray-claims-22-of-eknath-shinde-mlas-will-switch-sides-what-did-devendra-fadnavis-say-201765246253504.html
+2026-06-22 00:26:28,883 | ERROR | NewsScraper | Unexpected error in dynamic scrape for https://www.livehindustan.com/national/aditya-thackeray-claims-22-of-eknath-shinde-mlas-will-switch-sides-what-did-devendra-fadnavis-say-201765246253504.html: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/modules/news_scraper.py", line 190, in _extract_dynamic_page
+    self.driver.get(url)
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2026-06-22 00:26:28,884 | WARNING | NewsScraper | Failed to extract content from https://www.livehindustan.com/national/aditya-thackeray-claims-22-of-eknath-shinde-mlas-will-switch-sides-what-did-devendra-fadnavis-say-201765246253504.html
+2026-06-22 00:26:28,884 | INFO | NewsScraper | Processing URL: https://www.amarujala.com/india-news/mahayuti-to-fight-maharashtra-civic-polls-together-after-fadnavis-shinde-hold-key-meeting-2025-12-09
+2026-06-22 00:26:29,459 | INFO | NewsScraper | No mention of Devendra Fadnavis in https://www.amarujala.com/india-news/mahayuti-to-fight-maharashtra-civic-polls-together-after-fadnavis-shinde-hold-key-meeting-2025-12-09
+2026-06-22 00:26:29,459 | INFO | NewsScraper | Processing URL: https://www.india.com/hindi-news/india-hindi/maharashtra-winter-session-cm-fadnavis-statement-on-ladki-bahin-scheme-increased-amount-8219427/
+2026-06-22 00:26:29,913 | INFO | NewsScraper | Article extracted successfully for https://www.india.com/hindi-news/india-hindi/maharashtra-winter-session-cm-fadnavis-statement-on-ladki-bahin-scheme-increased-amount-8219427/
+2026-06-22 00:26:29,913 | INFO | NewsScraper | Processing URL: https://hindi.news18.com/news/maharashtra/mumbai-aaditya-thackeray-claims-22-shinde-mlas-close-to-cm-fadnavis-ready-to-switch-sides-ws-n-9942001.html
+2026-06-22 00:26:30,384 | ERROR | NewsScraper | Unexpected error in dynamic scrape for https://hindi.news18.com/news/maharashtra/mumbai-aaditya-thackeray-claims-22-shinde-mlas-close-to-cm-fadnavis-ready-to-switch-sides-ws-n-9942001.html: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/modules/news_scraper.py", line 190, in _extract_dynamic_page
+    self.driver.get(url)
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2026-06-22 00:26:30,384 | WARNING | NewsScraper | Failed to extract content from https://hindi.news18.com/news/maharashtra/mumbai-aaditya-thackeray-claims-22-shinde-mlas-close-to-cm-fadnavis-ready-to-switch-sides-ws-n-9942001.html
+2026-06-22 00:26:30,385 | INFO | NewsScraper | Processing URL: https://www.abplive.com/states/maharashtra/cm-evendra-fadnavis-warning-on-ladki-bahin-yojana-to-mla-in-assembly-3055745
+2026-06-22 00:26:31,420 | WARNING | NewsScraper | Static scrape failed for https://www.abplive.com/states/maharashtra/cm-evendra-fadnavis-warning-on-ladki-bahin-yojana-to-mla-in-assembly-3055745: HTTPSConnectionPool(host='www.abplive.com', port=443): Read timed out. (read timeout=1)
+2026-06-22 00:26:31,421 | ERROR | NewsScraper | Unexpected error in dynamic scrape for https://www.abplive.com/states/maharashtra/cm-evendra-fadnavis-warning-on-ladki-bahin-yojana-to-mla-in-assembly-3055745: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/modules/news_scraper.py", line 190, in _extract_dynamic_page
+    self.driver.get(url)
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2026-06-22 00:26:31,421 | WARNING | NewsScraper | Failed to extract content from https://www.abplive.com/states/maharashtra/cm-evendra-fadnavis-warning-on-ladki-bahin-yojana-to-mla-in-assembly-3055745
+2026-06-22 00:26:31,421 | INFO | NewsScraper | Processing URL: https://ndtv.in/maharashtra-news/maharashtra-shinde-group-35-mlas-will-join-bjp-big-claim-by-thackeray-shiv-sena-leader-chandrakant-khaire-9781322
+2026-06-22 00:26:31,513 | WARNING | NewsScraper | Static scrape failed for https://ndtv.in/maharashtra-news/maharashtra-shinde-group-35-mlas-will-join-bjp-big-claim-by-thackeray-shiv-sena-leader-chandrakant-khaire-9781322: 403 Client Error: Forbidden for url: https://ndtv.in/maharashtra-news/maharashtra-shinde-group-35-mlas-will-join-bjp-big-claim-by-thackeray-shiv-sena-leader-chandrakant-khaire-9781322
+2026-06-22 00:26:31,514 | ERROR | NewsScraper | Unexpected error in dynamic scrape for https://ndtv.in/maharashtra-news/maharashtra-shinde-group-35-mlas-will-join-bjp-big-claim-by-thackeray-shiv-sena-leader-chandrakant-khaire-9781322: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/modules/news_scraper.py", line 190, in _extract_dynamic_page
+    self.driver.get(url)
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2026-06-22 00:26:31,514 | WARNING | NewsScraper | Failed to extract content from https://ndtv.in/maharashtra-news/maharashtra-shinde-group-35-mlas-will-join-bjp-big-claim-by-thackeray-shiv-sena-leader-chandrakant-khaire-9781322
+2026-06-22 00:26:31,514 | INFO | NewsScraper | Processing URL: https://www.aajtak.in/india/maharashtra/story/fadnavis-denies-defection-aditya-thackeray-22-mla-claim-ntc-rptc-2407585-2025-12-09
+2026-06-22 00:26:32,810 | INFO | NewsScraper | Article extracted successfully for https://www.aajtak.in/india/maharashtra/story/fadnavis-denies-defection-aditya-thackeray-22-mla-claim-ntc-rptc-2407585-2025-12-09
+2026-06-22 00:26:32,810 | INFO | NewsScraper | Processing URL: https://navbharattimes.indiatimes.com/state/maharashtra/nagpur/bjp-mlas-create-ruckus-maharashtra-assembly-winter-session-demanding-action-against-ias-tukaram-mundhe-know-all/articleshow/125871467.cms
+2026-06-22 00:26:33,311 | ERROR | NewsScraper | Unexpected error in dynamic scrape for https://navbharattimes.indiatimes.com/state/maharashtra/nagpur/bjp-mlas-create-ruckus-maharashtra-assembly-winter-session-demanding-action-against-ias-tukaram-mundhe-know-all/articleshow/125871467.cms: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/modules/news_scraper.py", line 190, in _extract_dynamic_page
+    self.driver.get(url)
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2026-06-22 00:26:33,311 | WARNING | NewsScraper | Failed to extract content from https://navbharattimes.indiatimes.com/state/maharashtra/nagpur/bjp-mlas-create-ruckus-maharashtra-assembly-winter-session-demanding-action-against-ias-tukaram-mundhe-know-all/articleshow/125871467.cms
+2026-06-22 00:26:33,312 | INFO | NewsScraper | Processing URL: https://www.abplive.com/states/maharashtra/aaditya-thackeray-shiv-sena-ubt-claimed-22-mlas-from-mahauti-ally-eknath-shinde-close-to-maharashtra-cm-devendra-fadnavis-3055277
+2026-06-22 00:26:34,346 | WARNING | NewsScraper | Static scrape failed for https://www.abplive.com/states/maharashtra/aaditya-thackeray-shiv-sena-ubt-claimed-22-mlas-from-mahauti-ally-eknath-shinde-close-to-maharashtra-cm-devendra-fadnavis-3055277: HTTPSConnectionPool(host='www.abplive.com', port=443): Read timed out. (read timeout=1)
+2026-06-22 00:26:34,347 | ERROR | NewsScraper | Unexpected error in dynamic scrape for https://www.abplive.com/states/maharashtra/aaditya-thackeray-shiv-sena-ubt-claimed-22-mlas-from-mahauti-ally-eknath-shinde-close-to-maharashtra-cm-devendra-fadnavis-3055277: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/modules/news_scraper.py", line 190, in _extract_dynamic_page
+    self.driver.get(url)
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2026-06-22 00:26:34,347 | WARNING | NewsScraper | Failed to extract content from https://www.abplive.com/states/maharashtra/aaditya-thackeray-shiv-sena-ubt-claimed-22-mlas-from-mahauti-ally-eknath-shinde-close-to-maharashtra-cm-devendra-fadnavis-3055277
+2026-06-22 00:26:34,347 | INFO | NewsScraper | Processing URL: https://www.aajtak.in/india/maharashtra/video/devendra-fadnavis-and-private-jet-controversy-in-maharashtra-assembly-session-ytvd-2407651-2025-12-09
+2026-06-22 00:26:35,670 | INFO | NewsScraper | Article extracted successfully for https://www.aajtak.in/india/maharashtra/video/devendra-fadnavis-and-private-jet-controversy-in-maharashtra-assembly-session-ytvd-2407651-2025-12-09
+2026-06-22 00:26:35,670 | INFO | NewsScraper | Processing URL: https://navbharattimes.indiatimes.com/metro/mumbai/politics/bmc-election-2025-bandra-seat-fight-between-uddhav-thackeray-shiv-sena-bjp-and-congress/articleshow/125824225.cms
+2026-06-22 00:26:36,697 | INFO | NewsScraper | No mention of Devendra Fadnavis in https://navbharattimes.indiatimes.com/metro/mumbai/politics/bmc-election-2025-bandra-seat-fight-between-uddhav-thackeray-shiv-sena-bjp-and-congress/articleshow/125824225.cms
+2026-06-22 00:26:36,697 | INFO | NewsScraper | Processing URL: https://hindi.oneindia.com/news/maharashtra/ladki-bahin-yojana-when-will-women-get-rs-1500-when-will-november-installment-be-transferred-in-acop-1446795.html
+2026-06-22 00:26:37,776 | WARNING | NewsScraper | Static scrape failed for https://hindi.oneindia.com/news/maharashtra/ladki-bahin-yojana-when-will-women-get-rs-1500-when-will-november-installment-be-transferred-in-acop-1446795.html: HTTPSConnectionPool(host='hindi.oneindia.com', port=443): Read timed out. (read timeout=1)
+2026-06-22 00:26:37,777 | ERROR | NewsScraper | Unexpected error in dynamic scrape for https://hindi.oneindia.com/news/maharashtra/ladki-bahin-yojana-when-will-women-get-rs-1500-when-will-november-installment-be-transferred-in-acop-1446795.html: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/modules/news_scraper.py", line 190, in _extract_dynamic_page
+    self.driver.get(url)
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2026-06-22 00:26:37,777 | WARNING | NewsScraper | Failed to extract content from https://hindi.oneindia.com/news/maharashtra/ladki-bahin-yojana-when-will-women-get-rs-1500-when-will-november-installment-be-transferred-in-acop-1446795.html
+2026-06-22 00:26:37,777 | INFO | NewsScraper | Processing URL: https://timesofindia.indiatimes.com/city/nagpur/sparks-set-to-fly-in-short-maha-winter-session/articleshow/125821462.cms
+2026-06-22 00:26:38,172 | ERROR | NewsScraper | Unexpected error in dynamic scrape for https://timesofindia.indiatimes.com/city/nagpur/sparks-set-to-fly-in-short-maha-winter-session/articleshow/125821462.cms: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/modules/news_scraper.py", line 190, in _extract_dynamic_page
+    self.driver.get(url)
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2026-06-22 00:26:38,172 | WARNING | NewsScraper | Failed to extract content from https://timesofindia.indiatimes.com/city/nagpur/sparks-set-to-fly-in-short-maha-winter-session/articleshow/125821462.cms
+2026-06-22 00:26:38,172 | INFO | NewsScraper | Processing URL: https://www.loksatta.com/maharashtra/maharashtra-winter-session-nagpur-2025-no-opposition-leader-for-session-what-cm-devendra-fadnavis-said-scj-81-5557698/
+2026-06-22 00:26:38,742 | INFO | NewsScraper | Article extracted successfully for https://www.loksatta.com/maharashtra/maharashtra-winter-session-nagpur-2025-no-opposition-leader-for-session-what-cm-devendra-fadnavis-said-scj-81-5557698/
+2026-06-22 00:26:38,743 | INFO | NewsScraper | Processing URL: https://www.tv9marathi.com/maharashtra/cm-devendra-fadnavis-dcm-eknath-shinde-mahayuti-mahapalika-election-seat-sharing-formula-1554530.html
+2026-06-22 00:26:40,563 | INFO | NewsScraper | Article extracted successfully for https://www.tv9marathi.com/maharashtra/cm-devendra-fadnavis-dcm-eknath-shinde-mahayuti-mahapalika-election-seat-sharing-formula-1554530.html
+2026-06-22 00:26:40,564 | INFO | NewsScraper | Processing URL: https://marathi.abplive.com/news/politics/devendra-fadnavis-slams-bjp-mla-abhimanyu-pawar-in-vidhansabha-winter-session-over-ladki-bahin-yojana-1403536
+2026-06-22 00:26:41,677 | WARNING | NewsScraper | Static scrape failed for https://marathi.abplive.com/news/politics/devendra-fadnavis-slams-bjp-mla-abhimanyu-pawar-in-vidhansabha-winter-session-over-ladki-bahin-yojana-1403536: HTTPSConnectionPool(host='marathi.abplive.com', port=443): Read timed out. (read timeout=1)
+2026-06-22 00:26:41,677 | ERROR | NewsScraper | Unexpected error in dynamic scrape for https://marathi.abplive.com/news/politics/devendra-fadnavis-slams-bjp-mla-abhimanyu-pawar-in-vidhansabha-winter-session-over-ladki-bahin-yojana-1403536: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/modules/news_scraper.py", line 190, in _extract_dynamic_page
+    self.driver.get(url)
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2026-06-22 00:26:41,678 | WARNING | NewsScraper | Failed to extract content from https://marathi.abplive.com/news/politics/devendra-fadnavis-slams-bjp-mla-abhimanyu-pawar-in-vidhansabha-winter-session-over-ladki-bahin-yojana-1403536
+2026-06-22 00:26:41,678 | INFO | NewsScraper | Processing URL: https://www.lokmat.com/nagpur/winter-session-maharashtra-whatever-happens-the-government-will-waive-off-farmers-loans-chief-minister-devendra-fadnavis-a-a941/
+2026-06-22 00:26:42,572 | INFO | NewsScraper | Article extracted successfully for https://www.lokmat.com/nagpur/winter-session-maharashtra-whatever-happens-the-government-will-waive-off-farmers-loans-chief-minister-devendra-fadnavis-a-a941/
+2026-06-22 00:26:42,572 | INFO | NewsScraper | Processing URL: https://sarkarnama.esakal.com/maharashtra/dhananjay-munde-meet-cm-devendra-fadnavis-dgp-rashmi-shukla-ajit-pawar-present-rm89
+2026-06-22 00:26:43,124 | INFO | NewsScraper | Article extracted successfully for https://sarkarnama.esakal.com/maharashtra/dhananjay-munde-meet-cm-devendra-fadnavis-dgp-rashmi-shukla-ajit-pawar-present-rm89
+2026-06-22 00:26:43,124 | INFO | NewsScraper | Processing URL: https://newsonair.gov.in/mr/%E0%A4%AE%E0%A4%B9%E0%A4%BE%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%9A%E0%A5%8D%E0%A4%AF%E0%A4%BE-%E0%A4%AE%E0%A4%B9%E0%A4%BE%E0%A4%A7%E0%A4%BF%E0%A4%B5%E0%A4%95/
+2026-06-22 00:26:44,619 | INFO | NewsScraper | Article extracted successfully for https://newsonair.gov.in/mr/%E0%A4%AE%E0%A4%B9%E0%A4%BE%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%9A%E0%A5%8D%E0%A4%AF%E0%A4%BE-%E0%A4%AE%E0%A4%B9%E0%A4%BE%E0%A4%A7%E0%A4%BF%E0%A4%B5%E0%A4%95/
+2026-06-22 00:26:44,619 | INFO | NewsScraper | Processing URL: https://divyamarathi.bhaskar.com/local/maharashtra/news/mumbai-dhananjay-munde-meets-cm-ajit-pawar-rashmi-shukla-santosh-deshmukh-murder-case-talks-update-136614735.html
+2026-06-22 00:26:45,426 | WARNING | NewsScraper | Static scrape failed for https://divyamarathi.bhaskar.com/local/maharashtra/news/mumbai-dhananjay-munde-meets-cm-ajit-pawar-rashmi-shukla-santosh-deshmukh-murder-case-talks-update-136614735.html: 403 Client Error: Forbidden for url: https://divyamarathi.bhaskar.com/local/maharashtra/news/mumbai-dhananjay-munde-meets-cm-ajit-pawar-rashmi-shukla-santosh-deshmukh-murder-case-talks-update-136614735.html
+2026-06-22 00:26:45,427 | ERROR | NewsScraper | Unexpected error in dynamic scrape for https://divyamarathi.bhaskar.com/local/maharashtra/news/mumbai-dhananjay-munde-meets-cm-ajit-pawar-rashmi-shukla-santosh-deshmukh-murder-case-talks-update-136614735.html: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/modules/news_scraper.py", line 190, in _extract_dynamic_page
+    self.driver.get(url)
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2026-06-22 00:26:45,427 | WARNING | NewsScraper | Failed to extract content from https://divyamarathi.bhaskar.com/local/maharashtra/news/mumbai-dhananjay-munde-meets-cm-ajit-pawar-rashmi-shukla-santosh-deshmukh-murder-case-talks-update-136614735.html
+2026-06-22 00:26:45,428 | INFO | NewsScraper | Processing URL: https://www.loksatta.com/maharashtra/devendra-fadnavis-on-baba-adhav-passes-away-and-who-was-baba-adhav-in-marathi-news-gkt-96-5559651/
+2026-06-22 00:26:46,491 | WARNING | NewsScraper | Static scrape failed for https://www.loksatta.com/maharashtra/devendra-fadnavis-on-baba-adhav-passes-away-and-who-was-baba-adhav-in-marathi-news-gkt-96-5559651/: HTTPSConnectionPool(host='www.loksatta.com', port=443): Read timed out. (read timeout=1)
+2026-06-22 00:26:46,491 | ERROR | NewsScraper | Unexpected error in dynamic scrape for https://www.loksatta.com/maharashtra/devendra-fadnavis-on-baba-adhav-passes-away-and-who-was-baba-adhav-in-marathi-news-gkt-96-5559651/: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/modules/news_scraper.py", line 190, in _extract_dynamic_page
+    self.driver.get(url)
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2026-06-22 00:26:46,491 | WARNING | NewsScraper | Failed to extract content from https://www.loksatta.com/maharashtra/devendra-fadnavis-on-baba-adhav-passes-away-and-who-was-baba-adhav-in-marathi-news-gkt-96-5559651/
+2026-06-22 00:26:46,491 | INFO | NewsScraper | Processing URL: https://www.tv9marathi.com/maharashtra/manoj-jarange-patil-praises-chief-minister-devendra-fadnavis-what-exactly-did-he-say-1554044.html
+2026-06-22 00:26:48,549 | INFO | NewsScraper | Article extracted successfully for https://www.tv9marathi.com/maharashtra/manoj-jarange-patil-praises-chief-minister-devendra-fadnavis-what-exactly-did-he-say-1554044.html
+2026-06-22 00:26:48,549 | INFO | NewsScraper | Processing URL: https://maharashtratimes.com/maharashtra/nagpur/ias-tukaram-munde-set-back-bjp-mlas-demand-suspension-in-maharashtra-assembly-winter-session-2025/articleshow/125866976.cms
+2026-06-22 00:26:49,257 | INFO | NewsScraper | No mention of Devendra Fadnavis in https://maharashtratimes.com/maharashtra/nagpur/ias-tukaram-munde-set-back-bjp-mlas-demand-suspension-in-maharashtra-assembly-winter-session-2025/articleshow/125866976.cms
+2026-06-22 00:26:49,257 | INFO | NewsScraper | Processing URL: https://marathi.abplive.com/news/politics/devendra-fadnavis-on-phaltan-doctor-girl-important-facts-maharashtra-vidhansabha-winter-session-1403531
+2026-06-22 00:26:49,674 | INFO | NewsScraper | Article extracted successfully for https://marathi.abplive.com/news/politics/devendra-fadnavis-on-phaltan-doctor-girl-important-facts-maharashtra-vidhansabha-winter-session-1403531
+2026-06-22 00:26:49,674 | INFO | NewsScraper | Processing URL: https://www.esakal.com/vidarbha/nagpur/bjp-mla-seeks-dismissal-of-ias-tukaram-mundhe-after-24-transfers-ssy93
+2026-06-22 00:26:50,288 | INFO | NewsScraper | Article extracted successfully for https://www.esakal.com/vidarbha/nagpur/bjp-mla-seeks-dismissal-of-ias-tukaram-mundhe-after-24-transfers-ssy93
+2026-06-22 00:26:50,288 | INFO | NewsScraper | Processing URL: https://www.loksatta.com/maharashtra/cm-devendra-fadnavis-big-statement-to-eknath-shinde-shiv-sena-mlas-in-bjp-in-mahayuti-politics-gkt-96-5558830/
+2026-06-22 00:26:51,272 | INFO | NewsScraper | Article extracted successfully for https://www.loksatta.com/maharashtra/cm-devendra-fadnavis-big-statement-to-eknath-shinde-shiv-sena-mlas-in-bjp-in-mahayuti-politics-gkt-96-5558830/
+2026-06-22 00:26:51,273 | INFO | NewsScraper | Processing URL: https://www.tv9marathi.com/videos/cm-fadnavis-reprimands-own-bjp-mla-abhimanyu-pawar-in-assembly-over-ladki-bahin-yojana-remarks-1555210.html
+2026-06-22 00:26:51,490 | INFO | NewsScraper | Article extracted successfully for https://www.tv9marathi.com/videos/cm-fadnavis-reprimands-own-bjp-mla-abhimanyu-pawar-in-assembly-over-ladki-bahin-yojana-remarks-1555210.html
+2026-06-22 00:26:51,490 | INFO | NewsScraper | Processing URL: https://www.loksatta.com/maharashtra/eknath-shinde-is-not-happy-in-mahayuti-cm-devendra-fadnavis-answer-on-it-main-video-scj-81-5559919/
+2026-06-22 00:26:52,555 | WARNING | NewsScraper | Static scrape failed for https://www.loksatta.com/maharashtra/eknath-shinde-is-not-happy-in-mahayuti-cm-devendra-fadnavis-answer-on-it-main-video-scj-81-5559919/: HTTPSConnectionPool(host='www.loksatta.com', port=443): Read timed out. (read timeout=1)
+2026-06-22 00:26:52,556 | ERROR | NewsScraper | Unexpected error in dynamic scrape for https://www.loksatta.com/maharashtra/eknath-shinde-is-not-happy-in-mahayuti-cm-devendra-fadnavis-answer-on-it-main-video-scj-81-5559919/: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/modules/news_scraper.py", line 190, in _extract_dynamic_page
+    self.driver.get(url)
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2026-06-22 00:26:52,556 | WARNING | NewsScraper | Failed to extract content from https://www.loksatta.com/maharashtra/eknath-shinde-is-not-happy-in-mahayuti-cm-devendra-fadnavis-answer-on-it-main-video-scj-81-5559919/
+2026-06-22 00:26:52,556 | INFO | NewsScraper | Processing URL: https://www.loksatta.com/maharashtra/cm-devendra-fadnavis-on-mns-raj-thackeray-alliance-wit-uddhav-thackeray-shivsena-mva-maharashtra-politics-rak-94-5559473/
+2026-06-22 00:26:53,608 | WARNING | NewsScraper | Static scrape failed for https://www.loksatta.com/maharashtra/cm-devendra-fadnavis-on-mns-raj-thackeray-alliance-wit-uddhav-thackeray-shivsena-mva-maharashtra-politics-rak-94-5559473/: HTTPSConnectionPool(host='www.loksatta.com', port=443): Read timed out. (read timeout=1)
+2026-06-22 00:26:53,608 | ERROR | NewsScraper | Unexpected error in dynamic scrape for https://www.loksatta.com/maharashtra/cm-devendra-fadnavis-on-mns-raj-thackeray-alliance-wit-uddhav-thackeray-shivsena-mva-maharashtra-politics-rak-94-5559473/: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/modules/news_scraper.py", line 190, in _extract_dynamic_page
+    self.driver.get(url)
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2026-06-22 00:26:53,608 | WARNING | NewsScraper | Failed to extract content from https://www.loksatta.com/maharashtra/cm-devendra-fadnavis-on-mns-raj-thackeray-alliance-wit-uddhav-thackeray-shivsena-mva-maharashtra-politics-rak-94-5559473/
+2026-06-22 00:26:53,609 | INFO | NewsScraper | Processing URL: https://zeenews.india.com/marathi/nagpur/chief-minister-devendra-fadnavis-reprimanded-bjp-mla-abhimanyu-pawar-over-mentioning-laadki-bahin/965124
+2026-06-22 00:26:54,029 | INFO | NewsScraper | Article extracted successfully for https://zeenews.india.com/marathi/nagpur/chief-minister-devendra-fadnavis-reprimanded-bjp-mla-abhimanyu-pawar-over-mentioning-laadki-bahin/965124
+2026-06-22 00:26:54,030 | INFO | NewsScraper | Processing URL: https://maharashtratimes.com/photogallery/news/eknath-shinde-appreciate-devendra-fadnavis-in-nagpur-program/photoshow/125874698.cms
+2026-06-22 00:26:54,308 | INFO | NewsScraper | Article extracted successfully for https://maharashtratimes.com/photogallery/news/eknath-shinde-appreciate-devendra-fadnavis-in-nagpur-program/photoshow/125874698.cms
+2026-06-22 00:26:54,308 | INFO | NewsScraper | Processing URL: https://www.tendernama.com/mahatender/vidarbha/devendra-fadnavis-funds-for-those-schemes-will-not-be-allowed-to-run-short
+2026-06-22 00:26:54,849 | INFO | NewsScraper | Article extracted successfully for https://www.tendernama.com/mahatender/vidarbha/devendra-fadnavis-funds-for-those-schemes-will-not-be-allowed-to-run-short
+2026-06-22 00:26:54,849 | INFO | NewsScraper | Processing URL: https://www.lokmat.com/maharashtra/maharashtra-winter-session-2025-cm-devendra-fadnavis-and-eknath-shinde-get-together-again-and-setback-to-oppositions-a-a719/
+2026-06-22 00:26:55,890 | WARNING | NewsScraper | Static scrape failed for https://www.lokmat.com/maharashtra/maharashtra-winter-session-2025-cm-devendra-fadnavis-and-eknath-shinde-get-together-again-and-setback-to-oppositions-a-a719/: HTTPSConnectionPool(host='www.lokmat.com', port=443): Read timed out. (read timeout=1)
+2026-06-22 00:26:55,890 | ERROR | NewsScraper | Unexpected error in dynamic scrape for https://www.lokmat.com/maharashtra/maharashtra-winter-session-2025-cm-devendra-fadnavis-and-eknath-shinde-get-together-again-and-setback-to-oppositions-a-a719/: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/modules/news_scraper.py", line 190, in _extract_dynamic_page
+    self.driver.get(url)
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2026-06-22 00:26:55,890 | WARNING | NewsScraper | Failed to extract content from https://www.lokmat.com/maharashtra/maharashtra-winter-session-2025-cm-devendra-fadnavis-and-eknath-shinde-get-together-again-and-setback-to-oppositions-a-a719/
+2026-06-22 00:26:55,891 | INFO | NewsScraper | Processing URL: https://www.lokmat.com/maharashtra/maharashtra-assembly-winter-session-2025-cm-fadnavis-announces-in-the-assembly-that-mcoca-will-be-imposed-in-the-case-of-gutkha-sale-a-a876-c301/
+2026-06-22 00:26:56,472 | INFO | NewsScraper | Article extracted successfully for https://www.lokmat.com/maharashtra/maharashtra-assembly-winter-session-2025-cm-fadnavis-announces-in-the-assembly-that-mcoca-will-be-imposed-in-the-case-of-gutkha-sale-a-a876-c301/
+2026-06-22 00:26:56,473 | INFO | NewsScraper | Processing URL: https://www.loksatta.com/sampadkiya/columns/mahayuti-government-one-year-review-maharashtra-development-under-fadnavis-article-by-keshav-upadhye-vsd-99-5559890/
+2026-06-22 00:26:56,919 | INFO | NewsScraper | Article extracted successfully for https://www.loksatta.com/sampadkiya/columns/mahayuti-government-one-year-review-maharashtra-development-under-fadnavis-article-by-keshav-upadhye-vsd-99-5559890/
+2026-06-22 00:26:56,919 | INFO | NewsScraper | Processing URL: https://www.lokmat.com/maharashtra/cm-devendra-fadnavis-said-uddhav-thackeray-using-raj-thackeray-for-self-gain-balasaheb-thackeray-mumbai-bmc-elections-a-a747/
+2026-06-22 00:26:57,762 | INFO | NewsScraper | Article extracted successfully for https://www.lokmat.com/maharashtra/cm-devendra-fadnavis-said-uddhav-thackeray-using-raj-thackeray-for-self-gain-balasaheb-thackeray-mumbai-bmc-elections-a-a747/
+2026-06-22 00:26:57,763 | INFO | NewsScraper | Processing URL: https://www.loksatta.com/nagpur/cm-devendra-fadnavis-expresses-anger-at-bjp-mla-abhimanyu-pawar-raising-illegal-liquor-issues-affecting-ladki-bahin-scheme-during-assembly-session-rds-00-5560952/
+2026-06-22 00:26:58,822 | WARNING | NewsScraper | Static scrape failed for https://www.loksatta.com/nagpur/cm-devendra-fadnavis-expresses-anger-at-bjp-mla-abhimanyu-pawar-raising-illegal-liquor-issues-affecting-ladki-bahin-scheme-during-assembly-session-rds-00-5560952/: HTTPSConnectionPool(host='www.loksatta.com', port=443): Read timed out. (read timeout=1)
+2026-06-22 00:26:58,822 | ERROR | NewsScraper | Unexpected error in dynamic scrape for https://www.loksatta.com/nagpur/cm-devendra-fadnavis-expresses-anger-at-bjp-mla-abhimanyu-pawar-raising-illegal-liquor-issues-affecting-ladki-bahin-scheme-during-assembly-session-rds-00-5560952/: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/modules/news_scraper.py", line 190, in _extract_dynamic_page
+    self.driver.get(url)
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2026-06-22 00:26:58,822 | WARNING | NewsScraper | Failed to extract content from https://www.loksatta.com/nagpur/cm-devendra-fadnavis-expresses-anger-at-bjp-mla-abhimanyu-pawar-raising-illegal-liquor-issues-affecting-ladki-bahin-scheme-during-assembly-session-rds-00-5560952/
+2026-06-22 00:26:58,822 | INFO | NewsScraper | Processing URL: https://www.lokmat.com/maharashtra/road-safety-awareness-campaign-effective-due-to-zebru-mascot-chief-minister-devendra-fadnavis-confident-a-a747/
+2026-06-22 00:26:59,863 | WARNING | NewsScraper | Static scrape failed for https://www.lokmat.com/maharashtra/road-safety-awareness-campaign-effective-due-to-zebru-mascot-chief-minister-devendra-fadnavis-confident-a-a747/: HTTPSConnectionPool(host='www.lokmat.com', port=443): Read timed out. (read timeout=1)
+2026-06-22 00:26:59,864 | ERROR | NewsScraper | Unexpected error in dynamic scrape for https://www.lokmat.com/maharashtra/road-safety-awareness-campaign-effective-due-to-zebru-mascot-chief-minister-devendra-fadnavis-confident-a-a747/: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/modules/news_scraper.py", line 190, in _extract_dynamic_page
+    self.driver.get(url)
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2026-06-22 00:26:59,864 | WARNING | NewsScraper | Failed to extract content from https://www.lokmat.com/maharashtra/road-safety-awareness-campaign-effective-due-to-zebru-mascot-chief-minister-devendra-fadnavis-confident-a-a747/
+2026-06-22 00:26:59,864 | INFO | NewsScraper | Processing URL: https://www.lokmat.com/maharashtra/the-central-government-rejected-the-shakti-bill-brought-by-the-thackeray-government-against-violence-against-women-because-a-a629/
+2026-06-22 00:27:00,670 | INFO | NewsScraper | Article extracted successfully for https://www.lokmat.com/maharashtra/the-central-government-rejected-the-shakti-bill-brought-by-the-thackeray-government-against-violence-against-women-because-a-a629/
+2026-06-22 00:27:00,670 | INFO | NewsScraper | Processing URL: https://www.esakal.com/maharashtra/what-is-kusum-yojana-that-has-been-recorded-in-guinness-book-of-world-records-how-can-apply-mvk02
+2026-06-22 00:27:01,105 | INFO | NewsScraper | Article extracted successfully for https://www.esakal.com/maharashtra/what-is-kusum-yojana-that-has-been-recorded-in-guinness-book-of-world-records-how-can-apply-mvk02
+2026-06-22 00:27:01,106 | INFO | NewsScraper | Processing URL: https://sahkarnama.in/the-supporter-of-social-movements-the-father-of-workers-has-been-lost-cm-devendra-fadnavis/
+2026-06-22 00:27:02,173 | WARNING | NewsScraper | Static scrape failed for https://sahkarnama.in/the-supporter-of-social-movements-the-father-of-workers-has-been-lost-cm-devendra-fadnavis/: HTTPSConnectionPool(host='sahkarnama.in', port=443): Read timed out. (read timeout=1)
+2026-06-22 00:27:02,173 | ERROR | NewsScraper | Unexpected error in dynamic scrape for https://sahkarnama.in/the-supporter-of-social-movements-the-father-of-workers-has-been-lost-cm-devendra-fadnavis/: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/modules/news_scraper.py", line 190, in _extract_dynamic_page
+    self.driver.get(url)
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2026-06-22 00:27:02,173 | WARNING | NewsScraper | Failed to extract content from https://sahkarnama.in/the-supporter-of-social-movements-the-father-of-workers-has-been-lost-cm-devendra-fadnavis/
+2026-06-22 00:27:02,174 | INFO | NewsScraper | Processing URL: https://www.lokmat.com/nagpur/bjp-mla-krishna-khopde-abused-and-threatened-over-phone-questioning-why-he-is-demanding-suspension-of-tukaram-mundhe-a-a382-c1001/
+2026-06-22 00:27:03,062 | INFO | NewsScraper | Article extracted successfully for https://www.lokmat.com/nagpur/bjp-mla-krishna-khopde-abused-and-threatened-over-phone-questioning-why-he-is-demanding-suspension-of-tukaram-mundhe-a-a382-c1001/
+2026-06-22 00:27:03,062 | INFO | NewsScraper | Processing URL: https://marathi.abplive.com/news/maharashtra/baba-adhav-passes-away-in-pune-political-leaders-pay-emotional-tribute-to-baba-adhav-from-chief-minister-devendra-fadnavis-sharad-pawar-ajit-pawar-supriya-sule-1403469
+2026-06-22 00:27:03,613 | INFO | NewsScraper | Article extracted successfully for https://marathi.abplive.com/news/maharashtra/baba-adhav-passes-away-in-pune-political-leaders-pay-emotional-tribute-to-baba-adhav-from-chief-minister-devendra-fadnavis-sharad-pawar-ajit-pawar-supriya-sule-1403469
+2026-06-22 00:27:03,613 | INFO | NewsScraper | Processing URL: https://marathi.ndtv.com/cities/purandar-airport-farmers-demand-district-collector-jitendra-dudi-compensation-and-other-facilities-pune-news-9771947
+2026-06-22 00:27:03,732 | WARNING | NewsScraper | Static scrape failed for https://marathi.ndtv.com/cities/purandar-airport-farmers-demand-district-collector-jitendra-dudi-compensation-and-other-facilities-pune-news-9771947: 403 Client Error: Forbidden for url: https://marathi.ndtv.com/cities/purandar-airport-farmers-demand-district-collector-jitendra-dudi-compensation-and-other-facilities-pune-news-9771947
+2026-06-22 00:27:03,732 | ERROR | NewsScraper | Unexpected error in dynamic scrape for https://marathi.ndtv.com/cities/purandar-airport-farmers-demand-district-collector-jitendra-dudi-compensation-and-other-facilities-pune-news-9771947: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/modules/news_scraper.py", line 190, in _extract_dynamic_page
+    self.driver.get(url)
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2026-06-22 00:27:03,733 | WARNING | NewsScraper | Failed to extract content from https://marathi.ndtv.com/cities/purandar-airport-farmers-demand-district-collector-jitendra-dudi-compensation-and-other-facilities-pune-news-9771947
+2026-06-22 00:27:03,733 | INFO | NewsScraper | Processing URL: https://www.bbc.com/marathi/articles/cr7l0em3ljmo
+2026-06-22 00:27:04,315 | INFO | NewsScraper | Article extracted successfully for https://www.bbc.com/marathi/articles/cr7l0em3ljmo
+2026-06-22 00:27:04,315 | INFO | NewsScraper | Processing URL: https://www.loksatta.com/politics/tukaram-mundhe-suspension-demand-eknath-shinde-group-bjp-clash-devendra-fadnavis-warning-sdp-92-5561578/
+2026-06-22 00:27:04,800 | INFO | NewsScraper | Article extracted successfully for https://www.loksatta.com/politics/tukaram-mundhe-suspension-demand-eknath-shinde-group-bjp-clash-devendra-fadnavis-warning-sdp-92-5561578/
+2026-06-22 00:27:04,801 | INFO | NewsScraper | Processing URL: https://sarkarnama.esakal.com/maharashtra/fadnavis-government-appointed-milind-sathe-as-advocate-general-maharashtra-hn97
+2026-06-22 00:27:05,072 | INFO | NewsScraper | Article extracted successfully for https://sarkarnama.esakal.com/maharashtra/fadnavis-government-appointed-milind-sathe-as-advocate-general-maharashtra-hn97
+2026-06-22 00:27:05,072 | INFO | NewsScraper | Processing URL: https://pudhari.news/maharashtra/satara/satara-gets-115-crore-it-center-approval-sk95
+2026-06-22 00:27:05,742 | INFO | NewsScraper | Article extracted successfully for https://pudhari.news/maharashtra/satara/satara-gets-115-crore-it-center-approval-sk95
+2026-06-22 00:27:05,742 | INFO | NewsScraper | Processing URL: https://www.loksatta.com/nashik/railways-approve-new-manmad-kasara-double-line-boosting-nashik-mumbai-local-train-possibility-rds-00-5560279/
+2026-06-22 00:27:06,137 | INFO | NewsScraper | No mention of Devendra Fadnavis in https://www.loksatta.com/nashik/railways-approve-new-manmad-kasara-double-line-boosting-nashik-mumbai-local-train-possibility-rds-00-5560279/
+2026-06-22 00:27:06,137 | INFO | NewsScraper | Processing URL: https://rajbhavan-maharashtra.gov.in/09-12-2025-%E0%A4%B8%E0%A4%B9%E0%A4%9C-%E0%A4%B5-%E0%A4%B8%E0%A5%8B%E0%A4%AA%E0%A5%8D%E0%A4%AF%E0%A4%BE-%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A5%87%E0%A4%A4-%E0%A4%B8%E0%A4%82%E0%A4%B5%E0%A4%BF%E0%A4%A7/
+2026-06-22 00:27:08,188 | WARNING | NewsScraper | Static scrape failed for https://rajbhavan-maharashtra.gov.in/09-12-2025-%E0%A4%B8%E0%A4%B9%E0%A4%9C-%E0%A4%B5-%E0%A4%B8%E0%A5%8B%E0%A4%AA%E0%A5%8D%E0%A4%AF%E0%A4%BE-%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A5%87%E0%A4%A4-%E0%A4%B8%E0%A4%82%E0%A4%B5%E0%A4%BF%E0%A4%A7/: HTTPSConnectionPool(host='rajbhavan-maharashtra.gov.in', port=443): Read timed out. (read timeout=1)
+2026-06-22 00:27:08,189 | ERROR | NewsScraper | Unexpected error in dynamic scrape for https://rajbhavan-maharashtra.gov.in/09-12-2025-%E0%A4%B8%E0%A4%B9%E0%A4%9C-%E0%A4%B5-%E0%A4%B8%E0%A5%8B%E0%A4%AA%E0%A5%8D%E0%A4%AF%E0%A4%BE-%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A5%87%E0%A4%A4-%E0%A4%B8%E0%A4%82%E0%A4%B5%E0%A4%BF%E0%A4%A7/: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/modules/news_scraper.py", line 190, in _extract_dynamic_page
+    self.driver.get(url)
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2026-06-22 00:27:08,189 | WARNING | NewsScraper | Failed to extract content from https://rajbhavan-maharashtra.gov.in/09-12-2025-%E0%A4%B8%E0%A4%B9%E0%A4%9C-%E0%A4%B5-%E0%A4%B8%E0%A5%8B%E0%A4%AA%E0%A5%8D%E0%A4%AF%E0%A4%BE-%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A5%87%E0%A4%A4-%E0%A4%B8%E0%A4%82%E0%A4%B5%E0%A4%BF%E0%A4%A7/
+2026-06-22 00:27:08,189 | INFO | NewsScraper | Processing URL: https://timesofindia.indiatimes.com/city/nagpur/vidarbha-statehood-central-to-bjps-agenda-bawankule/articleshow/125845492.cms
+2026-06-22 00:27:08,602 | ERROR | NewsScraper | Unexpected error in dynamic scrape for https://timesofindia.indiatimes.com/city/nagpur/vidarbha-statehood-central-to-bjps-agenda-bawankule/articleshow/125845492.cms: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/modules/news_scraper.py", line 190, in _extract_dynamic_page
+    self.driver.get(url)
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2026-06-22 00:27:08,603 | WARNING | NewsScraper | Failed to extract content from https://timesofindia.indiatimes.com/city/nagpur/vidarbha-statehood-central-to-bjps-agenda-bawankule/articleshow/125845492.cms
+2026-06-22 00:27:08,603 | INFO | NewsScraper | Processing URL: https://marathi.abplive.com/news/maharashtra/chandrashekhar-bawankule-vidarbha-news-we-are-working-on-a-separate-vidarbha-our-stance-remains-the-same-chandrashekhar-bawankule-gave-clarification-1403440
+2026-06-22 00:27:09,647 | WARNING | NewsScraper | Static scrape failed for https://marathi.abplive.com/news/maharashtra/chandrashekhar-bawankule-vidarbha-news-we-are-working-on-a-separate-vidarbha-our-stance-remains-the-same-chandrashekhar-bawankule-gave-clarification-1403440: HTTPSConnectionPool(host='marathi.abplive.com', port=443): Read timed out. (read timeout=1)
+2026-06-22 00:27:09,648 | ERROR | NewsScraper | Unexpected error in dynamic scrape for https://marathi.abplive.com/news/maharashtra/chandrashekhar-bawankule-vidarbha-news-we-are-working-on-a-separate-vidarbha-our-stance-remains-the-same-chandrashekhar-bawankule-gave-clarification-1403440: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/modules/news_scraper.py", line 190, in _extract_dynamic_page
+    self.driver.get(url)
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2026-06-22 00:27:09,648 | WARNING | NewsScraper | Failed to extract content from https://marathi.abplive.com/news/maharashtra/chandrashekhar-bawankule-vidarbha-news-we-are-working-on-a-separate-vidarbha-our-stance-remains-the-same-chandrashekhar-bawankule-gave-clarification-1403440
+2026-06-22 00:27:09,648 | INFO | NewsScraper | Processing URL: https://marathi.abplive.com/news/politics/kirit-somaiyya-clearly-stated-that-bjp-leader-cannot-forgive-me-uddhav-thackeray-meeting-loksabha-2019-1403586
+2026-06-22 00:27:10,116 | INFO | NewsScraper | Article extracted successfully for https://marathi.abplive.com/news/politics/kirit-somaiyya-clearly-stated-that-bjp-leader-cannot-forgive-me-uddhav-thackeray-meeting-loksabha-2019-1403586
+2026-06-22 00:27:10,116 | INFO | NewsScraper | Processing URL: https://www.loksatta.com/maharashtra/maharashtra-political-top-5-stories-eknath-shinde-devendra-fadnavis-aaditya-thackeray-tukaram-mundhe-krishna-khopde-manoj-jarange-dhananjay-munde-main-top-gkt-96-5559177/
+2026-06-22 00:27:11,042 | INFO | NewsScraper | Article extracted successfully for https://www.loksatta.com/maharashtra/maharashtra-political-top-5-stories-eknath-shinde-devendra-fadnavis-aaditya-thackeray-tukaram-mundhe-krishna-khopde-manoj-jarange-dhananjay-munde-main-top-gkt-96-5559177/
+2026-06-22 00:27:11,043 | INFO | NewsScraper | Processing URL: https://marathi.abplive.com/news/politics/ambadas-danve-tweeted-video-of-shiv-sena-shinde-faction-mla-with-bundles-of-money-question-to-cm-devendra-fadnavis-maharashtra-politics-1403497
+2026-06-22 00:27:11,522 | INFO | NewsScraper | Article extracted successfully for https://marathi.abplive.com/news/politics/ambadas-danve-tweeted-video-of-shiv-sena-shinde-faction-mla-with-bundles-of-money-question-to-cm-devendra-fadnavis-maharashtra-politics-1403497
+2026-06-22 00:27:11,523 | INFO | NewsScraper | Processing URL: https://indianexpress.com/article/cities/mumbai/state-okays-revised-alignment-of-204-km-nagpur-chandrapur-expressway-10411657/
+2026-06-22 00:27:12,414 | INFO | NewsScraper | Article extracted successfully for https://indianexpress.com/article/cities/mumbai/state-okays-revised-alignment-of-204-km-nagpur-chandrapur-expressway-10411657/
+2026-06-22 00:27:12,414 | INFO | NewsScraper | Processing URL: https://timesofindia.indiatimes.com/city/nagpur/govt-plans-mcoca-like-crackdown-on-gutka-networks-admits-weak-law-letting-offenders-walk-free/articleshow/125863300.cms
+2026-06-22 00:27:12,735 | INFO | NewsScraper | No mention of Devendra Fadnavis in https://timesofindia.indiatimes.com/city/nagpur/govt-plans-mcoca-like-crackdown-on-gutka-networks-admits-weak-law-letting-offenders-walk-free/articleshow/125863300.cms
+2026-06-22 00:27:12,736 | INFO | NewsScraper | Processing URL: https://timesofindia.indiatimes.com/city/nagpur/sainik-welfare-office-plans-to-tap-defence-companies-for-armed-forces-flag-day-fund/articleshow/125845421.cms
+2026-06-22 00:27:13,246 | ERROR | NewsScraper | Unexpected error in dynamic scrape for https://timesofindia.indiatimes.com/city/nagpur/sainik-welfare-office-plans-to-tap-defence-companies-for-armed-forces-flag-day-fund/articleshow/125845421.cms: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/modules/news_scraper.py", line 190, in _extract_dynamic_page
+    self.driver.get(url)
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2026-06-22 00:27:13,246 | WARNING | NewsScraper | Failed to extract content from https://timesofindia.indiatimes.com/city/nagpur/sainik-welfare-office-plans-to-tap-defence-companies-for-armed-forces-flag-day-fund/articleshow/125845421.cms
+2026-06-22 00:27:13,247 | INFO | NewsScraper | Processing URL: https://www.freepressjournal.in/viral/watch-pigeon-enters-bengaluruvadodara-indigo-flight-creates-chaos-video-goes-viral-amid-ongoing-crisis
+2026-06-22 00:27:13,414 | INFO | NewsScraper | No mention of Devendra Fadnavis in https://www.freepressjournal.in/viral/watch-pigeon-enters-bengaluruvadodara-indigo-flight-creates-chaos-video-goes-viral-amid-ongoing-crisis
+2026-06-22 00:27:13,415 | INFO | NewsScraper | Processing URL: https://www.abplive.com/states/maharashtra/maharashtra-assembly-session-ias-officer-tukaram-mundhe-debate-on-misconduct-allegations-3055863
+2026-06-22 00:27:14,477 | WARNING | NewsScraper | Static scrape failed for https://www.abplive.com/states/maharashtra/maharashtra-assembly-session-ias-officer-tukaram-mundhe-debate-on-misconduct-allegations-3055863: HTTPSConnectionPool(host='www.abplive.com', port=443): Read timed out. (read timeout=1)
+2026-06-22 00:27:14,478 | ERROR | NewsScraper | Unexpected error in dynamic scrape for https://www.abplive.com/states/maharashtra/maharashtra-assembly-session-ias-officer-tukaram-mundhe-debate-on-misconduct-allegations-3055863: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/modules/news_scraper.py", line 190, in _extract_dynamic_page
+    self.driver.get(url)
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2026-06-22 00:27:14,478 | WARNING | NewsScraper | Failed to extract content from https://www.abplive.com/states/maharashtra/maharashtra-assembly-session-ias-officer-tukaram-mundhe-debate-on-misconduct-allegations-3055863
+2026-06-22 00:27:14,478 | INFO | NewsScraper | Processing URL: https://www.tv9marathi.com/politics/uddhav-thackeray-shivsena-mla-bhaskar-jadhav-speak-on-leader-of-opposition-post-aaditya-thackeray-maharashtra-assembly-winter-session-2025-1553809.html
+2026-06-22 00:27:14,632 | INFO | NewsScraper | Article extracted successfully for https://www.tv9marathi.com/politics/uddhav-thackeray-shivsena-mla-bhaskar-jadhav-speak-on-leader-of-opposition-post-aaditya-thackeray-maharashtra-assembly-winter-session-2025-1553809.html
+2026-06-22 00:27:14,632 | INFO | NewsScraper | Processing URL: https://www.business-standard.com/india-news/supreme-court-concern-blos-threatened-sir-process-west-bengal-ec-125120900521_1.html
+2026-06-22 00:27:14,703 | WARNING | NewsScraper | Static scrape failed for https://www.business-standard.com/india-news/supreme-court-concern-blos-threatened-sir-process-west-bengal-ec-125120900521_1.html: 403 Client Error: Forbidden for url: https://www.business-standard.com/india-news/supreme-court-concern-blos-threatened-sir-process-west-bengal-ec-125120900521_1.html
+2026-06-22 00:27:14,704 | ERROR | NewsScraper | Unexpected error in dynamic scrape for https://www.business-standard.com/india-news/supreme-court-concern-blos-threatened-sir-process-west-bengal-ec-125120900521_1.html: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/modules/news_scraper.py", line 190, in _extract_dynamic_page
+    self.driver.get(url)
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2026-06-22 00:27:14,705 | WARNING | NewsScraper | Failed to extract content from https://www.business-standard.com/india-news/supreme-court-concern-blos-threatened-sir-process-west-bengal-ec-125120900521_1.html
+2026-06-22 00:27:14,705 | INFO | NewsScraper | Processing URL: https://www.tv9marathi.com/maharashtra/manoj-jarange-patil-give-warning-to-cm-fadnavis-and-ajit-pawar-says-if-they-support-dhananjay-munde-the-will-lose-election-1554132.html
+2026-06-22 00:27:16,419 | INFO | NewsScraper | Article extracted successfully for https://www.tv9marathi.com/maharashtra/manoj-jarange-patil-give-warning-to-cm-fadnavis-and-ajit-pawar-says-if-they-support-dhananjay-munde-the-will-lose-election-1554132.html
+2026-06-22 00:27:16,420 | INFO | NewsScraper | Processing URL: https://www.mumbaitak.in/political-news/story/tanaji-mutkule-and-santosh-bangar-together-sensational-accusations-were-made-against-each-other-a-few-days-ago-maharashtra-politics-marathi-news-3219684-2025-12-09
+2026-06-22 00:27:17,644 | WARNING | NewsScraper | Static scrape failed for https://www.mumbaitak.in/political-news/story/tanaji-mutkule-and-santosh-bangar-together-sensational-accusations-were-made-against-each-other-a-few-days-ago-maharashtra-politics-marathi-news-3219684-2025-12-09: HTTPSConnectionPool(host='www.mumbaitak.in', port=443): Read timed out. (read timeout=1)
+2026-06-22 00:27:17,644 | ERROR | NewsScraper | Unexpected error in dynamic scrape for https://www.mumbaitak.in/political-news/story/tanaji-mutkule-and-santosh-bangar-together-sensational-accusations-were-made-against-each-other-a-few-days-ago-maharashtra-politics-marathi-news-3219684-2025-12-09: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/modules/news_scraper.py", line 190, in _extract_dynamic_page
+    self.driver.get(url)
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2026-06-22 00:27:17,644 | WARNING | NewsScraper | Failed to extract content from https://www.mumbaitak.in/political-news/story/tanaji-mutkule-and-santosh-bangar-together-sensational-accusations-were-made-against-each-other-a-few-days-ago-maharashtra-politics-marathi-news-3219684-2025-12-09
+2026-06-22 00:27:17,644 | INFO | NewsScraper | Processing URL: https://www.tv9marathi.com/maharashtra/barshi-agricultural-market-committee-results-announced-ex-mla-rajendra-raut-panel-won-1554235.html
+2026-06-22 00:27:20,177 | INFO | NewsScraper | Article extracted successfully for https://www.tv9marathi.com/maharashtra/barshi-agricultural-market-committee-results-announced-ex-mla-rajendra-raut-panel-won-1554235.html
+2026-06-22 00:27:20,177 | INFO | NewsScraper | Processing URL: https://www.loksatta.com/maharashtra/maharashtra-assembly-winter-session-2025-huge-supplementary-demands-vsd-99-5559769/
+2026-06-22 00:27:21,247 | WARNING | NewsScraper | Static scrape failed for https://www.loksatta.com/maharashtra/maharashtra-assembly-winter-session-2025-huge-supplementary-demands-vsd-99-5559769/: HTTPSConnectionPool(host='www.loksatta.com', port=443): Read timed out. (read timeout=1)
+2026-06-22 00:27:21,247 | ERROR | NewsScraper | Unexpected error in dynamic scrape for https://www.loksatta.com/maharashtra/maharashtra-assembly-winter-session-2025-huge-supplementary-demands-vsd-99-5559769/: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/modules/news_scraper.py", line 190, in _extract_dynamic_page
+    self.driver.get(url)
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2026-06-22 00:27:21,247 | WARNING | NewsScraper | Failed to extract content from https://www.loksatta.com/maharashtra/maharashtra-assembly-winter-session-2025-huge-supplementary-demands-vsd-99-5559769/
+2026-06-22 00:27:21,247 | INFO | NewsScraper | Processing URL: https://timesofindia.indiatimes.com/city/kolhapur/shinde-revolt-brought-bjp-back-to-power-shambhuraj-desai/articleshow/125819342.cms
+2026-06-22 00:27:21,613 | ERROR | NewsScraper | Unexpected error in dynamic scrape for https://timesofindia.indiatimes.com/city/kolhapur/shinde-revolt-brought-bjp-back-to-power-shambhuraj-desai/articleshow/125819342.cms: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/modules/news_scraper.py", line 190, in _extract_dynamic_page
+    self.driver.get(url)
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2026-06-22 00:27:21,613 | WARNING | NewsScraper | Failed to extract content from https://timesofindia.indiatimes.com/city/kolhapur/shinde-revolt-brought-bjp-back-to-power-shambhuraj-desai/articleshow/125819342.cms
+2026-06-22 00:27:21,613 | INFO | NewsScraper | Processing URL: https://www.loksatta.com/politics/maharashtra-government-made-provision-of-rs-500-crore-for-farmers-in-supplementary-demand-print-politics-news-zws-70-5558792/
+2026-06-22 00:27:22,047 | INFO | NewsScraper | Article extracted successfully for https://www.loksatta.com/politics/maharashtra-government-made-provision-of-rs-500-crore-for-farmers-in-supplementary-demand-print-politics-news-zws-70-5558792/
+2026-06-22 00:27:22,048 | INFO | NewsScraper | Processing URL: https://www.loksatta.com/maharashtra/maharashtra-cabinet-approves-balirajas-shet-panand-road-scheme-for-farmers-zws-70-5558043/
+2026-06-22 00:27:22,448 | INFO | NewsScraper | Article extracted successfully for https://www.loksatta.com/maharashtra/maharashtra-cabinet-approves-balirajas-shet-panand-road-scheme-for-farmers-zws-70-5558043/
+2026-06-22 00:27:22,448 | INFO | NewsScraper | Processing URL: https://hellokrushi.com/baliraja-shet-raste-panand-yojana-approved-by-govt/
+2026-06-22 00:27:23,068 | INFO | NewsScraper | Article extracted successfully for https://hellokrushi.com/baliraja-shet-raste-panand-yojana-approved-by-govt/
+2026-06-22 00:27:23,068 | INFO | NewsScraper | Processing URL: https://www.moneycontrol.com/news/india/aaditya-thackeray-s-big-claim-amid-tensions-between-bjp-shinde-sena-22-mlas-growing-close-to-cm-13715691.html
+2026-06-22 00:27:23,824 | INFO | NewsScraper | Article extracted successfully for https://www.moneycontrol.com/news/india/aaditya-thackeray-s-big-claim-amid-tensions-between-bjp-shinde-sena-22-mlas-growing-close-to-cm-13715691.html
+2026-06-22 00:27:23,824 | INFO | NewsScraper | Processing URL: https://timesofindia.indiatimes.com/city/nagpur/maharashtra-assembly-session-opposition-leader-post-oppositions-internal-matter-says-shiv-sena-mla-uday-samant/articleshow/125827574.cms
+2026-06-22 00:27:24,134 | INFO | NewsScraper | No mention of Devendra Fadnavis in https://timesofindia.indiatimes.com/city/nagpur/maharashtra-assembly-session-opposition-leader-post-oppositions-internal-matter-says-shiv-sena-mla-uday-samant/articleshow/125827574.cms
+2026-06-22 00:27:24,135 | INFO | NewsScraper | Processing URL: https://www.navakal.in/maharashtra/dr-baba-adhav-death-95-hamal-panchayat-tribute-maharashtra/
+2026-06-22 00:27:25,667 | WARNING | NewsScraper | Static scrape failed for https://www.navakal.in/maharashtra/dr-baba-adhav-death-95-hamal-panchayat-tribute-maharashtra/: HTTPSConnectionPool(host='www.navakal.in', port=443): Read timed out. (read timeout=1)
+2026-06-22 00:27:25,667 | ERROR | NewsScraper | Unexpected error in dynamic scrape for https://www.navakal.in/maharashtra/dr-baba-adhav-death-95-hamal-panchayat-tribute-maharashtra/: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/modules/news_scraper.py", line 190, in _extract_dynamic_page
+    self.driver.get(url)
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2026-06-22 00:27:25,667 | WARNING | NewsScraper | Failed to extract content from https://www.navakal.in/maharashtra/dr-baba-adhav-death-95-hamal-panchayat-tribute-maharashtra/
+2026-06-22 00:27:25,667 | INFO | NewsScraper | Processing URL: https://indianexpress.com/article/cities/mumbai/bmc-floats-tender-construction-of-new-water-supply-dam-10411619/
+2026-06-22 00:27:26,760 | INFO | NewsScraper | Article extracted successfully for https://indianexpress.com/article/cities/mumbai/bmc-floats-tender-construction-of-new-water-supply-dam-10411619/
+2026-06-22 00:27:26,760 | INFO | NewsScraper | Processing URL: https://www.thehindu.com/news/national/renowned-socialist-leader-baba-adhav-95-passes-away/article70373873.ece
+2026-06-22 00:27:27,716 | INFO | NewsScraper | Article extracted successfully for https://www.thehindu.com/news/national/renowned-socialist-leader-baba-adhav-95-passes-away/article70373873.ece
+2026-06-22 00:27:27,716 | INFO | NewsScraper | Processing URL: https://www.freepressjournal.in/pune/purandar-airport-pune-district-collector-jitendra-dudi-meets-farmers-assures-positive-action-on-compensation-demands
+2026-06-22 00:27:28,029 | INFO | NewsScraper | Article extracted successfully for https://www.freepressjournal.in/pune/purandar-airport-pune-district-collector-jitendra-dudi-meets-farmers-assures-positive-action-on-compensation-demands
+2026-06-22 00:27:28,029 | INFO | NewsScraper | Processing URL: https://www.loksatta.com/nagpur/devendra-fadnavis-criticizes-uddhav-thackeray-private-jet-travel-chitra-wagh-deletes-post-immediately-rds-00-5560924/
+2026-06-22 00:27:28,438 | INFO | NewsScraper | Article extracted successfully for https://www.loksatta.com/nagpur/devendra-fadnavis-criticizes-uddhav-thackeray-private-jet-travel-chitra-wagh-deletes-post-immediately-rds-00-5560924/
+2026-06-22 00:27:28,438 | INFO | NewsScraper | Processing URL: https://newsonair.gov.in/winter-session-of-maharashtra-legislature-to-begin-today-in-nagpur/
+2026-06-22 00:27:30,020 | INFO | NewsScraper | No mention of Devendra Fadnavis in https://newsonair.gov.in/winter-session-of-maharashtra-legislature-to-begin-today-in-nagpur/
+2026-06-22 00:27:30,020 | INFO | NewsScraper | Processing URL: https://www.mahamtb.com/Encyc/2025/12/9/approval-for-revised-design-of-nagpur-to-chandrapur-expressway-.html
+2026-06-22 00:27:30,335 | INFO | NewsScraper | No mention of Devendra Fadnavis in https://www.mahamtb.com/Encyc/2025/12/9/approval-for-revised-design-of-nagpur-to-chandrapur-expressway-.html
+2026-06-22 00:27:30,335 | INFO | NewsScraper | Processing URL: https://timesofindia.indiatimes.com/city/nagpur/gadkaris-mega-plan-700cr-agri-college-mihan-to-airport-flyover-rebuilding-nu/articleshow/125821444.cms
+2026-06-22 00:27:30,767 | ERROR | NewsScraper | Unexpected error in dynamic scrape for https://timesofindia.indiatimes.com/city/nagpur/gadkaris-mega-plan-700cr-agri-college-mihan-to-airport-flyover-rebuilding-nu/articleshow/125821444.cms: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/modules/news_scraper.py", line 190, in _extract_dynamic_page
+    self.driver.get(url)
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2026-06-22 00:27:30,767 | WARNING | NewsScraper | Failed to extract content from https://timesofindia.indiatimes.com/city/nagpur/gadkaris-mega-plan-700cr-agri-college-mihan-to-airport-flyover-rebuilding-nu/articleshow/125821444.cms
+2026-06-22 00:27:30,768 | INFO | NewsScraper | Processing URL: https://www.punekarnews.in/pune-district-collector-holds-positive-talks-with-farmers-affected-by-purandar-airport-project/
+2026-06-22 00:27:30,856 | WARNING | NewsScraper | Static scrape failed for https://www.punekarnews.in/pune-district-collector-holds-positive-talks-with-farmers-affected-by-purandar-airport-project/: 403 Client Error: Forbidden for url: https://www.punekarnews.in/pune-district-collector-holds-positive-talks-with-farmers-affected-by-purandar-airport-project/
+2026-06-22 00:27:30,857 | ERROR | NewsScraper | Unexpected error in dynamic scrape for https://www.punekarnews.in/pune-district-collector-holds-positive-talks-with-farmers-affected-by-purandar-airport-project/: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/modules/news_scraper.py", line 190, in _extract_dynamic_page
+    self.driver.get(url)
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2026-06-22 00:27:30,857 | WARNING | NewsScraper | Failed to extract content from https://www.punekarnews.in/pune-district-collector-holds-positive-talks-with-farmers-affected-by-purandar-airport-project/
+2026-06-22 00:27:30,857 | INFO | NewsScraper | Processing URL: https://trak.in/stories/pune-to-bengaluru-in-7-hours-with-new-6-lane-greenfield-expressway/
+2026-06-22 00:27:31,937 | WARNING | NewsScraper | Static scrape failed for https://trak.in/stories/pune-to-bengaluru-in-7-hours-with-new-6-lane-greenfield-expressway/: HTTPSConnectionPool(host='trak.in', port=443): Read timed out. (read timeout=1)
+2026-06-22 00:27:31,938 | ERROR | NewsScraper | Unexpected error in dynamic scrape for https://trak.in/stories/pune-to-bengaluru-in-7-hours-with-new-6-lane-greenfield-expressway/: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/modules/news_scraper.py", line 190, in _extract_dynamic_page
+    self.driver.get(url)
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2026-06-22 00:27:31,938 | WARNING | NewsScraper | Failed to extract content from https://trak.in/stories/pune-to-bengaluru-in-7-hours-with-new-6-lane-greenfield-expressway/
+2026-06-22 00:27:31,938 | INFO | NewsScraper | Processing URL: https://www.freepressjournal.in/bhopal/mp-news-17k-schools-never-inspected-in-eight-months
+2026-06-22 00:27:32,117 | INFO | NewsScraper | No mention of Devendra Fadnavis in https://www.freepressjournal.in/bhopal/mp-news-17k-schools-never-inspected-in-eight-months
+2026-06-22 00:27:32,118 | INFO | NewsScraper | Processing URL: https://b2b.economictimes.indiatimes.com/news/maharashtra/maharashtra-cabinet-approves-scheme-to-build-motorable-farm-to-field-roads/125831367
+2026-06-22 00:27:33,042 | INFO | NewsScraper | No mention of Devendra Fadnavis in https://b2b.economictimes.indiatimes.com/news/maharashtra/maharashtra-cabinet-approves-scheme-to-build-motorable-farm-to-field-roads/125831367
+2026-06-22 00:27:33,042 | INFO | NewsScraper | Processing URL: https://www.freepressjournal.in/mumbai/maharashtra-cabinet-approves-all-weather-farm-road-scheme-for-rural-connectivity
+2026-06-22 00:27:33,217 | INFO | NewsScraper | Article extracted successfully for https://www.freepressjournal.in/mumbai/maharashtra-cabinet-approves-all-weather-farm-road-scheme-for-rural-connectivity
+2026-06-22 00:27:33,217 | INFO | NewsScraper | Processing URL: https://www.bbc.com/marathi/articles/crrkj92rdexo
+2026-06-22 00:27:34,268 | WARNING | NewsScraper | Static scrape failed for https://www.bbc.com/marathi/articles/crrkj92rdexo: HTTPSConnectionPool(host='www.bbc.com', port=443): Read timed out. (read timeout=1)
+2026-06-22 00:27:34,269 | ERROR | NewsScraper | Unexpected error in dynamic scrape for https://www.bbc.com/marathi/articles/crrkj92rdexo: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/modules/news_scraper.py", line 190, in _extract_dynamic_page
+    self.driver.get(url)
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2026-06-22 00:27:34,269 | WARNING | NewsScraper | Failed to extract content from https://www.bbc.com/marathi/articles/crrkj92rdexo
+2026-06-22 00:27:34,269 | INFO | NewsScraper | Processing URL: https://www.business-standard.com/india-news/pm-modi-expresses-grief-over-demise-of-renowned-social-activist-baba-adhav-125120900024_1.html
+2026-06-22 00:27:34,343 | WARNING | NewsScraper | Static scrape failed for https://www.business-standard.com/india-news/pm-modi-expresses-grief-over-demise-of-renowned-social-activist-baba-adhav-125120900024_1.html: 403 Client Error: Forbidden for url: https://www.business-standard.com/india-news/pm-modi-expresses-grief-over-demise-of-renowned-social-activist-baba-adhav-125120900024_1.html
+2026-06-22 00:27:34,343 | ERROR | NewsScraper | Unexpected error in dynamic scrape for https://www.business-standard.com/india-news/pm-modi-expresses-grief-over-demise-of-renowned-social-activist-baba-adhav-125120900024_1.html: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/modules/news_scraper.py", line 190, in _extract_dynamic_page
+    self.driver.get(url)
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2026-06-22 00:27:34,344 | WARNING | NewsScraper | Failed to extract content from https://www.business-standard.com/india-news/pm-modi-expresses-grief-over-demise-of-renowned-social-activist-baba-adhav-125120900024_1.html
+2026-06-22 00:27:34,344 | INFO | NewsScraper | Processing URL: https://agrowon.esakal.com/agro-special/the-problem-of-farmers-will-be-solved-chief-minister-baliraja-shet-panand-road-scheme-approved-by-the-state-government-rat16
+2026-06-22 00:27:34,653 | INFO | NewsScraper | No mention of Devendra Fadnavis in https://agrowon.esakal.com/agro-special/the-problem-of-farmers-will-be-solved-chief-minister-baliraja-shet-panand-road-scheme-approved-by-the-state-government-rat16
+2026-06-22 00:27:34,654 | INFO | NewsScraper | Processing URL: https://indianexpress.com/article/cities/mumbai/rising-fiscal-deficit-maharashtra-presents-highest-supplementary-demands-10408984/
+2026-06-22 00:27:35,664 | INFO | NewsScraper | Article extracted successfully for https://indianexpress.com/article/cities/mumbai/rising-fiscal-deficit-maharashtra-presents-highest-supplementary-demands-10408984/
+2026-06-22 00:27:35,664 | INFO | NewsScraper | Processing URL: https://www.gktoday.in/maharashtra-sets-world-record-in-solar-pump-deployment/
+2026-06-22 00:27:36,484 | INFO | NewsScraper | Article extracted successfully for https://www.gktoday.in/maharashtra-sets-world-record-in-solar-pump-deployment/
+2026-06-22 00:27:36,484 | INFO | NewsScraper | Processing URL: https://currentaffairs.adda247.com/maharashtra-sets-guinness-world-record-for-solar-pump-deployment-in-agriculture/
+2026-06-22 00:27:36,598 | WARNING | NewsScraper | Static scrape failed for https://currentaffairs.adda247.com/maharashtra-sets-guinness-world-record-for-solar-pump-deployment-in-agriculture/: 403 Client Error: Forbidden for url: https://currentaffairs.adda247.com/maharashtra-sets-guinness-world-record-for-solar-pump-deployment-in-agriculture/
+2026-06-22 00:27:36,599 | ERROR | NewsScraper | Unexpected error in dynamic scrape for https://currentaffairs.adda247.com/maharashtra-sets-guinness-world-record-for-solar-pump-deployment-in-agriculture/: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/modules/news_scraper.py", line 190, in _extract_dynamic_page
+    self.driver.get(url)
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2026-06-22 00:27:36,600 | WARNING | NewsScraper | Failed to extract content from https://currentaffairs.adda247.com/maharashtra-sets-guinness-world-record-for-solar-pump-deployment-in-agriculture/
+2026-06-22 00:27:36,600 | INFO | NewsScraper | Processing URL: https://marathi.abplive.com/news/politics/manoj-jarange-patil-slams-dhananjay-munde-accusing-assassination-plan-warns-devendra-fadnavis-1403410
+2026-06-22 00:27:37,245 | INFO | NewsScraper | Article extracted successfully for https://marathi.abplive.com/news/politics/manoj-jarange-patil-slams-dhananjay-munde-accusing-assassination-plan-warns-devendra-fadnavis-1403410
+2026-06-22 00:27:37,245 | INFO | NewsScraper | Processing URL: https://marathi.ndtv.com/maharashtra/tukaram-mundhe-suspension-demand-bjp-mla-krishna-khopde-alleges-threats-over-exposure-of-corruption-cm-devendra-fadnavis-assures-action-in-assembly-9780411
+2026-06-22 00:27:37,375 | WARNING | NewsScraper | Static scrape failed for https://marathi.ndtv.com/maharashtra/tukaram-mundhe-suspension-demand-bjp-mla-krishna-khopde-alleges-threats-over-exposure-of-corruption-cm-devendra-fadnavis-assures-action-in-assembly-9780411: 403 Client Error: Forbidden for url: https://marathi.ndtv.com/maharashtra/tukaram-mundhe-suspension-demand-bjp-mla-krishna-khopde-alleges-threats-over-exposure-of-corruption-cm-devendra-fadnavis-assures-action-in-assembly-9780411
+2026-06-22 00:27:37,375 | ERROR | NewsScraper | Unexpected error in dynamic scrape for https://marathi.ndtv.com/maharashtra/tukaram-mundhe-suspension-demand-bjp-mla-krishna-khopde-alleges-threats-over-exposure-of-corruption-cm-devendra-fadnavis-assures-action-in-assembly-9780411: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/modules/news_scraper.py", line 190, in _extract_dynamic_page
+    self.driver.get(url)
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2026-06-22 00:27:37,376 | WARNING | NewsScraper | Failed to extract content from https://marathi.ndtv.com/maharashtra/tukaram-mundhe-suspension-demand-bjp-mla-krishna-khopde-alleges-threats-over-exposure-of-corruption-cm-devendra-fadnavis-assures-action-in-assembly-9780411
+2026-06-22 00:27:37,376 | INFO | NewsScraper | Processing URL: https://www.etvbharat.com/mr/state/implement-abcd-reservation-sub-categorization-urgently-bjp-mla-amit-gorkhes-demand-in-the-winter-session-nagpur-maharashtra-news-mhs25120902529
+2026-06-22 00:27:38,294 | INFO | NewsScraper | Article extracted successfully for https://www.etvbharat.com/mr/state/implement-abcd-reservation-sub-categorization-urgently-bjp-mla-amit-gorkhes-demand-in-the-winter-session-nagpur-maharashtra-news-mhs25120902529
+2026-06-22 00:27:38,294 | INFO | NewsScraper | Processing URL: https://www.loksatta.com/nagpur/maharashtra-arya-vaishya-community-demands-accountability-for-delay-in-10-crore-fund-promised-by-bjp-government-rds-00-5560365/
+2026-06-22 00:27:39,348 | WARNING | NewsScraper | Static scrape failed for https://www.loksatta.com/nagpur/maharashtra-arya-vaishya-community-demands-accountability-for-delay-in-10-crore-fund-promised-by-bjp-government-rds-00-5560365/: HTTPSConnectionPool(host='www.loksatta.com', port=443): Read timed out. (read timeout=1)
+2026-06-22 00:27:39,348 | ERROR | NewsScraper | Unexpected error in dynamic scrape for https://www.loksatta.com/nagpur/maharashtra-arya-vaishya-community-demands-accountability-for-delay-in-10-crore-fund-promised-by-bjp-government-rds-00-5560365/: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/modules/news_scraper.py", line 190, in _extract_dynamic_page
+    self.driver.get(url)
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2026-06-22 00:27:39,348 | WARNING | NewsScraper | Failed to extract content from https://www.loksatta.com/nagpur/maharashtra-arya-vaishya-community-demands-accountability-for-delay-in-10-crore-fund-promised-by-bjp-government-rds-00-5560365/
+2026-06-22 00:27:39,348 | INFO | NewsScraper | Processing URL: https://timesofindia.indiatimes.com/city/pune/purandar-landowners-seek-compensation-at-par-with-pune-ring-road-palkhi-mahamarg-projects/articleshow/125846624.cms
+2026-06-22 00:27:39,703 | ERROR | NewsScraper | Unexpected error in dynamic scrape for https://timesofindia.indiatimes.com/city/pune/purandar-landowners-seek-compensation-at-par-with-pune-ring-road-palkhi-mahamarg-projects/articleshow/125846624.cms: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/modules/news_scraper.py", line 190, in _extract_dynamic_page
+    self.driver.get(url)
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2026-06-22 00:27:39,704 | WARNING | NewsScraper | Failed to extract content from https://timesofindia.indiatimes.com/city/pune/purandar-landowners-seek-compensation-at-par-with-pune-ring-road-palkhi-mahamarg-projects/articleshow/125846624.cms
+2026-06-22 00:27:39,704 | INFO | NewsScraper | Processing URL: https://www.financialexpress.com/india-news/maharashtra-cabinet-nod-for-statewide-farm-to-field-road-connectivity-scheme/4069546/
+2026-06-22 00:27:39,841 | WARNING | NewsScraper | Static scrape failed for https://www.financialexpress.com/india-news/maharashtra-cabinet-nod-for-statewide-farm-to-field-road-connectivity-scheme/4069546/: 403 Client Error: Forbidden for url: https://www.financialexpress.com/india-news/maharashtra-cabinet-nod-for-statewide-farm-to-field-road-connectivity-scheme/4069546/
+2026-06-22 00:27:39,842 | ERROR | NewsScraper | Unexpected error in dynamic scrape for https://www.financialexpress.com/india-news/maharashtra-cabinet-nod-for-statewide-farm-to-field-road-connectivity-scheme/4069546/: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/modules/news_scraper.py", line 190, in _extract_dynamic_page
+    self.driver.get(url)
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2026-06-22 00:27:39,843 | WARNING | NewsScraper | Failed to extract content from https://www.financialexpress.com/india-news/maharashtra-cabinet-nod-for-statewide-farm-to-field-road-connectivity-scheme/4069546/
+2026-06-22 00:27:39,843 | INFO | NewsScraper | Processing URL: https://government.economictimes.indiatimes.com/news/policy/maharashtra-sets-world-record-with-largest-solar-pump-installation-rollout/125828468
+2026-06-22 00:27:39,944 | WARNING | NewsScraper | Static scrape failed for https://government.economictimes.indiatimes.com/news/policy/maharashtra-sets-world-record-with-largest-solar-pump-installation-rollout/125828468: 403 Client Error: Forbidden for url: https://government.economictimes.indiatimes.com/news/policy/maharashtra-sets-world-record-with-largest-solar-pump-installation-rollout/125828468
+2026-06-22 00:27:39,945 | ERROR | NewsScraper | Unexpected error in dynamic scrape for https://government.economictimes.indiatimes.com/news/policy/maharashtra-sets-world-record-with-largest-solar-pump-installation-rollout/125828468: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/modules/news_scraper.py", line 190, in _extract_dynamic_page
+    self.driver.get(url)
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2026-06-22 00:27:39,945 | WARNING | NewsScraper | Failed to extract content from https://government.economictimes.indiatimes.com/news/policy/maharashtra-sets-world-record-with-largest-solar-pump-installation-rollout/125828468
+2026-06-22 00:27:39,945 | INFO | NewsScraper | Processing URL: https://www.freepressjournal.in/india/rules-should-improve-system-but-not-to-harass-people-pm-modi-amid-indigo-crisis
+2026-06-22 00:27:40,332 | INFO | NewsScraper | No mention of Devendra Fadnavis in https://www.freepressjournal.in/india/rules-should-improve-system-but-not-to-harass-people-pm-modi-amid-indigo-crisis
+2026-06-22 00:27:40,332 | INFO | NewsScraper | Processing URL: https://www.freepressjournal.in/pune/pune-54-posts-sanctioned-for-new-district-sessions-court-in-pimpri-chinchwad
+2026-06-22 00:27:40,684 | INFO | NewsScraper | Article extracted successfully for https://www.freepressjournal.in/pune/pune-54-posts-sanctioned-for-new-district-sessions-court-in-pimpri-chinchwad
+2026-06-22 00:27:40,684 | INFO | NewsScraper | Processing URL: https://www.freepressjournal.in/uttar-pradesh/uttar-pradesh-govt-promotes-4-ias-officers-to-principal-secretary-rank-20-from-2010-batch-cleared-for-secretary-post
+2026-06-22 00:27:41,000 | INFO | NewsScraper | No mention of Devendra Fadnavis in https://www.freepressjournal.in/uttar-pradesh/uttar-pradesh-govt-promotes-4-ias-officers-to-principal-secretary-rank-20-from-2010-batch-cleared-for-secretary-post
+2026-06-22 00:27:41,001 | INFO | NewsScraper | Processing URL: https://www.mahamtb.com/Encyc/2025/12/9/a-grand-statue-of-chhatrapati-shivaji-maharaj-will-be-erected-at-csmt-chief-ministers-announcement-chhatrapati.html
+2026-06-22 00:27:41,264 | INFO | NewsScraper | No mention of Devendra Fadnavis in https://www.mahamtb.com/Encyc/2025/12/9/a-grand-statue-of-chhatrapati-shivaji-maharaj-will-be-erected-at-csmt-chief-ministers-announcement-chhatrapati.html
+2026-06-22 00:27:41,265 | INFO | NewsScraper | Processing URL: https://www.indiatoday.in/india/story/bjp-leaders-luxury-charter-flight-sparks-maharashtra-political-row-indigo-flight-disruptions-2832898-2025-12-08
+2026-06-22 00:27:42,924 | INFO | NewsScraper | Article extracted successfully for https://www.indiatoday.in/india/story/bjp-leaders-luxury-charter-flight-sparks-maharashtra-political-row-indigo-flight-disruptions-2832898-2025-12-08
+2026-06-22 00:27:42,925 | INFO | NewsScraper | Processing URL: https://www.loksatta.com/nashik/central-railway-announced-mumbai-nagpur-pune-amravati-special-trains-for-winter-holidays-passengers-extra-services-rds-00-5560923/
+2026-06-22 00:27:43,808 | INFO | NewsScraper | No mention of Devendra Fadnavis in https://www.loksatta.com/nashik/central-railway-announced-mumbai-nagpur-pune-amravati-special-trains-for-winter-holidays-passengers-extra-services-rds-00-5560923/
+2026-06-22 00:27:43,809 | INFO | NewsScraper | Processing URL: https://www.freepressjournal.in/mumbai/dharavi-schools-chess-championship-2025-to-bring-over-200-students-together-r-praggnanandhaa-to-inspire-young-players
+2026-06-22 00:27:44,064 | INFO | NewsScraper | No mention of Devendra Fadnavis in https://www.freepressjournal.in/mumbai/dharavi-schools-chess-championship-2025-to-bring-over-200-students-together-r-praggnanandhaa-to-inspire-young-players
+2026-06-22 00:27:44,065 | INFO | NewsScraper | Processing URL: https://www.freepressjournal.in/infographics/indore-news-criminal-cases-to-be-register-for-using-chinese-manjha
+2026-06-22 00:27:44,430 | INFO | NewsScraper | No mention of Devendra Fadnavis in https://www.freepressjournal.in/infographics/indore-news-criminal-cases-to-be-register-for-using-chinese-manjha
+2026-06-22 00:27:44,431 | INFO | NewsScraper | Processing URL: https://smestreet.in/sectors/cisco-announces-new-tech-and-skilling-initiatives-across-maharashtra-10894719
+2026-06-22 00:27:44,780 | INFO | NewsScraper | Article extracted successfully for https://smestreet.in/sectors/cisco-announces-new-tech-and-skilling-initiatives-across-maharashtra-10894719
+2026-06-22 00:27:44,781 | INFO | NewsScraper | Processing URL: https://www.fortuneindia.com/business-news/cisco-to-train-100000-maharashtra-students-as-mumbai-joins-global-40-communities-program/128637
+2026-06-22 00:27:45,195 | INFO | NewsScraper | Article extracted successfully for https://www.fortuneindia.com/business-news/cisco-to-train-100000-maharashtra-students-as-mumbai-joins-global-40-communities-program/128637
+2026-06-22 00:27:45,196 | INFO | NewsScraper | Processing URL: https://swarajyamag.com/infrastructure/maharashtra-clears-revised-design-of-208-km-nagpurchandrapur-expressway
+2026-06-22 00:27:45,464 | INFO | NewsScraper | Article extracted successfully for https://swarajyamag.com/infrastructure/maharashtra-clears-revised-design-of-208-km-nagpurchandrapur-expressway
+2026-06-22 00:27:45,464 | INFO | NewsScraper | Processing URL: https://www.freepressjournal.in/mumbai/mumbai-news-juhu-residents-threaten-to-boycott-bmc-polls-over-stalled-redevelopment-as-defence-rule-blocks-high-rise-construction
+2026-06-22 00:27:45,763 | INFO | NewsScraper | No mention of Devendra Fadnavis in https://www.freepressjournal.in/mumbai/mumbai-news-juhu-residents-threaten-to-boycott-bmc-polls-over-stalled-redevelopment-as-defence-rule-blocks-high-rise-construction
+2026-06-22 00:27:45,763 | INFO | NewsScraper | Processing URL: https://www.loksatta.com/maharashtra/credit-society-established-for-the-beneficiaries-of-maharashtra-government-ladki-bahin-yojana-scheme-zws-70-5561531/
+2026-06-22 00:27:46,825 | WARNING | NewsScraper | Static scrape failed for https://www.loksatta.com/maharashtra/credit-society-established-for-the-beneficiaries-of-maharashtra-government-ladki-bahin-yojana-scheme-zws-70-5561531/: HTTPSConnectionPool(host='www.loksatta.com', port=443): Read timed out. (read timeout=1)
+2026-06-22 00:27:46,825 | ERROR | NewsScraper | Unexpected error in dynamic scrape for https://www.loksatta.com/maharashtra/credit-society-established-for-the-beneficiaries-of-maharashtra-government-ladki-bahin-yojana-scheme-zws-70-5561531/: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/modules/news_scraper.py", line 190, in _extract_dynamic_page
+    self.driver.get(url)
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2026-06-22 00:27:46,825 | WARNING | NewsScraper | Failed to extract content from https://www.loksatta.com/maharashtra/credit-society-established-for-the-beneficiaries-of-maharashtra-government-ladki-bahin-yojana-scheme-zws-70-5561531/
+2026-06-22 00:27:46,825 | INFO | NewsScraper | Processing URL: https://navbharattimes.indiatimes.com/metro/mumbai/politics/ladki-bahin-yojana-two-months-installment-before-maharashtra-municipal-corporation-election/articleshow/125823969.cms
+2026-06-22 00:27:47,875 | INFO | NewsScraper | No mention of Devendra Fadnavis in https://navbharattimes.indiatimes.com/metro/mumbai/politics/ladki-bahin-yojana-two-months-installment-before-maharashtra-municipal-corporation-election/articleshow/125823969.cms
+2026-06-22 00:27:47,876 | INFO | NewsScraper | Processing URL: https://www.freepressjournal.in/mumbai/maharashtra-govt-moves-to-ease-compliance-rules-for-small-businesses
+2026-06-22 00:27:48,202 | INFO | NewsScraper | No mention of Devendra Fadnavis in https://www.freepressjournal.in/mumbai/maharashtra-govt-moves-to-ease-compliance-rules-for-small-businesses
+2026-06-22 00:27:48,202 | INFO | NewsScraper | Processing URL: https://www.freepressjournal.in/bhopal/mp-news-mountaineer-bhavna-dehariya-to-receive-vikram-award-as-high-court-lifts-stay
+2026-06-22 00:27:48,463 | INFO | NewsScraper | No mention of Devendra Fadnavis in https://www.freepressjournal.in/bhopal/mp-news-mountaineer-bhavna-dehariya-to-receive-vikram-award-as-high-court-lifts-stay
+2026-06-22 00:27:48,463 | INFO | NewsScraper | Processing URL: https://www.freepressjournal.in/mumbai/mumbai-weather-update-for-dec-9-2025-city-wakes-up-to-sunny-skies-with-thin-layer-of-smog-aqi-improves-marginally-from-unhealthy-to-poor-at-139
+2026-06-22 00:27:48,796 | INFO | NewsScraper | No mention of Devendra Fadnavis in https://www.freepressjournal.in/mumbai/mumbai-weather-update-for-dec-9-2025-city-wakes-up-to-sunny-skies-with-thin-layer-of-smog-aqi-improves-marginally-from-unhealthy-to-poor-at-139
+2026-06-22 00:27:48,796 | INFO | NewsScraper | Processing URL: https://www.thenational.com.pg/maru-says-indian-state-interested-in-png-lng/
+2026-06-22 00:27:49,147 | WARNING | NewsScraper | Static scrape failed for https://www.thenational.com.pg/maru-says-indian-state-interested-in-png-lng/: 403 Client Error: Forbidden for url: https://www.thenational.com.pg/maru-says-indian-state-interested-in-png-lng/
+2026-06-22 00:27:49,148 | ERROR | NewsScraper | Unexpected error in dynamic scrape for https://www.thenational.com.pg/maru-says-indian-state-interested-in-png-lng/: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/modules/news_scraper.py", line 190, in _extract_dynamic_page
+    self.driver.get(url)
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2026-06-22 00:27:49,149 | WARNING | NewsScraper | Failed to extract content from https://www.thenational.com.pg/maru-says-indian-state-interested-in-png-lng/
+2026-06-22 00:27:49,149 | INFO | NewsScraper | Processing URL: https://m.economictimes.com/industry/cons-products/electronics/starlink-india-prices-unveiled-how-much-musks-broadband-will-cost-and-what-users-get/articleshow/125831490.cms
+2026-06-22 00:27:49,812 | INFO | NewsScraper | No mention of Devendra Fadnavis in https://m.economictimes.com/industry/cons-products/electronics/starlink-india-prices-unveiled-how-much-musks-broadband-will-cost-and-what-users-get/articleshow/125831490.cms
+2026-06-22 00:27:49,812 | INFO | NewsScraper | Processing URL: https://www.saurenergy.com/solar-energy-news/maharashtra-sets-world-record-for-solar-pump-installations-in-a-month-10892132
+2026-06-22 00:27:50,934 | WARNING | NewsScraper | Static scrape failed for https://www.saurenergy.com/solar-energy-news/maharashtra-sets-world-record-for-solar-pump-installations-in-a-month-10892132: HTTPSConnectionPool(host='www.saurenergy.com', port=443): Read timed out. (read timeout=1)
+2026-06-22 00:27:50,934 | ERROR | NewsScraper | Unexpected error in dynamic scrape for https://www.saurenergy.com/solar-energy-news/maharashtra-sets-world-record-for-solar-pump-installations-in-a-month-10892132: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/modules/news_scraper.py", line 190, in _extract_dynamic_page
+    self.driver.get(url)
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2026-06-22 00:27:50,934 | WARNING | NewsScraper | Failed to extract content from https://www.saurenergy.com/solar-energy-news/maharashtra-sets-world-record-for-solar-pump-installations-in-a-month-10892132
+2026-06-22 00:27:50,934 | INFO | NewsScraper | Processing URL: https://www.freepressjournal.in/mumbai/maharashtra-govt-probes-719-employees-over-fake-disability-certificates-strict-action-promised
+2026-06-22 00:27:51,092 | INFO | NewsScraper | No mention of Devendra Fadnavis in https://www.freepressjournal.in/mumbai/maharashtra-govt-probes-719-employees-over-fake-disability-certificates-strict-action-promised
+2026-06-22 00:27:51,092 | INFO | NewsScraper | Processing URL: https://timesofindia.indiatimes.com/city/mumbai/ready-for-1-week-new-kem-burns-ward-waits-for-cm/articleshow/125842816.cms
+2026-06-22 00:27:51,462 | INFO | NewsScraper | No mention of Devendra Fadnavis in https://timesofindia.indiatimes.com/city/mumbai/ready-for-1-week-new-kem-burns-ward-waits-for-cm/articleshow/125842816.cms
+2026-06-22 00:27:51,463 | INFO | NewsScraper | Processing URL: https://indianexpress.com/article/cities/pune/veteran-socialist-leader-baba-adhav-dies-10410053/
+2026-06-22 00:27:52,382 | INFO | NewsScraper | Article extracted successfully for https://indianexpress.com/article/cities/pune/veteran-socialist-leader-baba-adhav-dies-10410053/
+2026-06-22 00:27:52,383 | INFO | NewsScraper | Processing URL: https://timesofindia.indiatimes.com/city/mumbai/senior-advocate-milind-sathe-to-be-new-advocate-general-of-maharashtra/articleshow/125819179.cms
+2026-06-22 00:27:52,619 | INFO | NewsScraper | No mention of Devendra Fadnavis in https://timesofindia.indiatimes.com/city/mumbai/senior-advocate-milind-sathe-to-be-new-advocate-general-of-maharashtra/articleshow/125819179.cms
+2026-06-22 00:27:52,619 | INFO | NewsScraper | Saving results.
+2026-06-22 00:27:52,620 | INFO | NewsScraper | Saving extracted data to Word document: extracted_links_Devendra Fadnavis_News_Content.docx
+2026-06-22 00:27:52,839 | INFO | NewsScraper | Saving 94 failed links to Excel: extracted_links_Devendra Fadnavis_failed_links.xlsx
+2026-06-22 00:27:52,848 | INFO | NewsScraper | Scraping process completed successfully.
+2026-06-22 00:27:52,848 | INFO | CoreRouter | News Word document saved at: /home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/Output/Devendra Fadnavis/extracted_links_Devendra Fadnavis_News_Content.docx
+2026-06-22 00:27:52,848 | WARNING | CoreRouter | Failed news links saved at: /home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/Output/Devendra Fadnavis/extracted_links_Devendra Fadnavis_failed_links.xlsx
+2026-06-22 00:27:52,848 | INFO | CoreRouter | 3. Chunking started...
+2026-06-22 00:27:52,848 | INFO | CoreRouter | File size: 137.69 KB
+2026-06-22 00:27:52,848 | INFO | CoreRouter | No chunking required.
+2026-06-22 00:27:52,848 | INFO | CoreRouter | 4. Facebook posts scraping started...
+2026-06-22 00:27:52,848 | INFO | CoreRouter | Processing Facebook posts from nan...
+2026-06-22 00:27:52,848 | INFO | FacebookDocs | Processing Facebook posts from nan | From: 2025-12-08 00:00:00 To: 2025-12-09 00:00:00
+2026-06-22 00:27:53,125 | ERROR | Main | Error while processing Devendra Fadnavis: User was not found or authentication token is not valid
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/main.py", line 79, in <module>
+    router.process_news()
+  File "/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/core_router.py", line 118, in process_news
+    fb_posts = self.facebook_doc.collect_fb_posts(self.link_extraction.facebook_excel_file_path,self.link_extraction.start_date,self.link_extraction.end_date)
+  File "/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/modules/facebook_docs.py", line 43, in collect_fb_posts
+    run = self.client.actor("KoJrdxJCTtpon81KY").call(run_input=run_input)
+  File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/apify_client/_logging.py", line 86, in wrapper
+    return fun(resource_client, *args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/apify_client/clients/resource_clients/actor.py", line 367, in call
+    started_run = self.start(
+  File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/apify_client/_logging.py", line 86, in wrapper
+    return fun(resource_client, *args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/apify_client/clients/resource_clients/actor.py", line 306, in start
+    response = self.http_client.call(
+  File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/apify_client/_http_client.py", line 213, in call
+    return retry_with_exp_backoff(
+  File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/apify_client/_utils.py", line 175, in retry_with_exp_backoff
+    return func(stop_retrying, attempt)
+  File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/apify_client/_http_client.py", line 211, in _make_request
+    raise ApifyApiError(response, attempt, method=method)
+apify_client.errors.ApifyApiError: User was not found or authentication token is not valid
+2026-06-22 00:27:53,126 | INFO | Main | Media monitoring script finished.

@@ -36156,3 +36156,549 @@ Traceback (most recent call last):
     raise ApifyApiError(response, attempt, method=method)
 apify_client.errors.ApifyApiError: User was not found or authentication token is not valid
 2026-11-02 02:14:45,486 | INFO | Main | Media monitoring script finished.
+2026-11-09 01:51:40,040 | INFO | Main | Media monitoring script started.
+2026-11-09 01:51:40,148 | INFO | Main | Processing started for leader: Devendra Fadnavis | From: 2025-12-08 00:00:00 To: 2025-12-09 00:00:00 with 
+2026-11-09 01:51:40,148 | INFO | Link_extraction | Initialized Link_extraction for leader: Devendra Fadnavis, from 2025-12-08 00:00:00 to 2025-12-09 00:00:00
+2026-11-09 01:51:40,148 | INFO | NewsScraper | Initializing NewsScraper.
+2026-11-09 01:51:40,148 | INFO | NewsScraper | Reading Excel file: /home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/Input/Names_variations.xlsx, Sheet: Devendra Fadnavis
+2026-11-09 01:51:40,157 | INFO | NewsScraper | Extracted 12 English and 12 Marathi names from 'Devendra Fadnavis'
+2026-11-09 01:51:40,194 | INFO | CoreRouter | 1. Link Extraction started...
+2026-11-09 01:51:40,194 | INFO | Link_extraction | Starting fetch_links() process
+2026-11-09 01:51:40,289 | INFO | Link_extraction | Extracted 240 keywords from sheet 'Devendra Fadnavis'
+2026-11-09 01:51:40,368 | INFO | WDM | ====== WebDriver manager ======
+2026-11-09 01:51:40,442 | INFO | WDM | Get LATEST chromedriver version for google-chrome
+2026-11-09 01:51:40,494 | INFO | WDM | There is no [linux64] chromedriver "156.0.8078.80" for browser google-chrome "156.0.8078" in cache
+2026-11-09 01:51:40,526 | INFO | WDM | There is no [linux64] chromedriver "156.0.8078.80" for browser google-chrome "156.0.8078" in cache
+2026-11-09 01:51:40,526 | INFO | WDM | Get LATEST chromedriver version for google-chrome
+2026-11-09 01:51:40,677 | INFO | WDM | WebDriver version 156.0.8078.80 selected
+2026-11-09 01:51:40,685 | INFO | WDM | Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/156.0.8078.80/linux64/chromedriver-linux64.zip
+2026-11-09 01:51:40,685 | INFO | WDM | About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/156.0.8078.80/linux64/chromedriver-linux64.zip
+2026-11-09 01:51:40,785 | INFO | WDM | Driver downloading response is 200
+2026-11-09 01:51:41,032 | INFO | WDM | Driver has been saved in cache [/home/runner/.wdm/drivers/chromedriver/linux64/156.0.8078.80]
+2026-11-09 01:51:46,448 | INFO | Link_extraction | WebDriver initialized successfully
+2026-11-09 01:51:46,449 | INFO | Link_extraction | Searching for: Devendra Fadnavis (30 pages)
+2026-11-09 01:51:54,904 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis' after page 1.
+2026-11-09 01:51:54,905 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस (30 pages)
+2026-11-09 01:52:02,668 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस' after page 1.
+2026-11-09 01:52:02,668 | INFO | Link_extraction | Searching for: Devendra Fadnavis news (30 pages)
+2026-11-09 01:52:10,371 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis news' after page 1.
+2026-11-09 01:52:10,372 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस समाचार (30 pages)
+2026-11-09 01:52:18,144 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस समाचार' after page 1.
+2026-11-09 01:52:18,144 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस बातम्या (30 pages)
+2026-11-09 01:52:25,901 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस बातम्या' after page 1.
+2026-11-09 01:52:25,901 | INFO | Link_extraction | Searching for: Devendra Fadnavis latest news (30 pages)
+2026-11-09 01:52:33,572 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis latest news' after page 1.
+2026-11-09 01:52:33,572 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस ताजा समाचार (30 pages)
+2026-11-09 01:52:41,294 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस ताजा समाचार' after page 1.
+2026-11-09 01:52:41,295 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस नवीन बातम्या (30 pages)
+2026-11-09 01:52:49,057 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस नवीन बातम्या' after page 1.
+2026-11-09 01:52:49,058 | INFO | Link_extraction | Searching for: Devendra Fadnavis Chief Minister news (30 pages)
+2026-11-09 01:52:56,826 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis Chief Minister news' after page 1.
+2026-11-09 01:52:56,826 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस मुख्यमंत्री समाचार (30 pages)
+2026-11-09 01:53:04,453 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस मुख्यमंत्री समाचार' after page 1.
+2026-11-09 01:53:04,453 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस मुख्यमंत्री बातम्या (30 pages)
+2026-11-09 01:53:12,039 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस मुख्यमंत्री बातम्या' after page 1.
+2026-11-09 01:53:12,039 | INFO | Link_extraction | Searching for: Devendra Fadnavis BJP news (30 pages)
+2026-11-09 01:53:19,567 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis BJP news' after page 1.
+2026-11-09 01:53:19,567 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस भाजपा समाचार (30 pages)
+2026-11-09 01:53:27,157 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस भाजपा समाचार' after page 1.
+2026-11-09 01:53:27,157 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस भाजप बातम्या (30 pages)
+2026-11-09 01:53:34,671 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस भाजप बातम्या' after page 1.
+2026-11-09 01:53:34,671 | INFO | Link_extraction | Searching for: Devendra Fadnavis politics news (30 pages)
+2026-11-09 01:53:42,240 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis politics news' after page 1.
+2026-11-09 01:53:42,240 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस राजनीति समाचार (30 pages)
+2026-11-09 01:53:49,877 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस राजनीति समाचार' after page 1.
+2026-11-09 01:53:49,877 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस राजकीय बातम्या (30 pages)
+2026-11-09 01:53:57,453 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस राजकीय बातम्या' after page 1.
+2026-11-09 01:53:57,453 | INFO | Link_extraction | Searching for: Devendra Fadnavis Nagpur news (30 pages)
+2026-11-09 01:54:05,005 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis Nagpur news' after page 1.
+2026-11-09 01:54:05,005 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस नागपुर समाचार (30 pages)
+2026-11-09 01:54:12,619 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस नागपुर समाचार' after page 1.
+2026-11-09 01:54:12,619 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस नागपूर बातम्या (30 pages)
+2026-11-09 01:54:20,405 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस नागपूर बातम्या' after page 1.
+2026-11-09 01:54:20,405 | INFO | Link_extraction | Searching for: Devendra Fadnavis speech (30 pages)
+2026-11-09 01:54:28,036 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis speech' after page 1.
+2026-11-09 01:54:28,036 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस भाषण (30 pages)
+2026-11-09 01:54:35,557 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस भाषण' after page 1.
+2026-11-09 01:54:35,557 | INFO | Link_extraction | Searching for: Devendra Fadnavis reaction (30 pages)
+2026-11-09 01:54:43,137 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis reaction' after page 1.
+2026-11-09 01:54:43,137 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस प्रतिक्रिया (30 pages)
+2026-11-09 01:54:50,928 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस प्रतिक्रिया' after page 1.
+2026-11-09 01:54:50,929 | INFO | Link_extraction | Searching for: Devendra Fadnavis opposition (30 pages)
+2026-11-09 01:54:58,702 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis opposition' after page 1.
+2026-11-09 01:54:58,702 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस विपक्ष (30 pages)
+2026-11-09 01:55:06,248 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस विपक्ष' after page 1.
+2026-11-09 01:55:06,248 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस विरोधक (30 pages)
+2026-11-09 01:55:14,039 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस विरोधक' after page 1.
+2026-11-09 01:55:14,039 | INFO | Link_extraction | Searching for: Devendra Fadnavis election (30 pages)
+2026-11-09 01:55:21,598 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis election' after page 1.
+2026-11-09 01:55:21,598 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस चुनाव (30 pages)
+2026-11-09 01:55:29,340 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस चुनाव' after page 1.
+2026-11-09 01:55:29,341 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस निवडणूक (30 pages)
+2026-11-09 01:55:36,914 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस निवडणूक' after page 1.
+2026-11-09 01:55:36,914 | INFO | Link_extraction | Searching for: Devendra Fadnavis campaign (30 pages)
+2026-11-09 01:55:44,484 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis campaign' after page 1.
+2026-11-09 01:55:44,485 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस प्रचार (30 pages)
+2026-11-09 01:55:52,221 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस प्रचार' after page 1.
+2026-11-09 01:55:52,221 | INFO | Link_extraction | Searching for: Devendra Fadnavis rally (30 pages)
+2026-11-09 01:55:59,972 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis rally' after page 1.
+2026-11-09 01:55:59,973 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस सभा (30 pages)
+2026-11-09 01:56:07,744 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस सभा' after page 1.
+2026-11-09 01:56:07,745 | INFO | Link_extraction | Searching for: Devendra Fadnavis political decision (30 pages)
+2026-11-09 01:56:15,413 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis political decision' after page 1.
+2026-11-09 01:56:15,413 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस राजनीतिक निर्णय (30 pages)
+2026-11-09 01:56:23,185 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस राजनीतिक निर्णय' after page 1.
+2026-11-09 01:56:23,185 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस राजकीय निर्णय (30 pages)
+2026-11-09 01:56:30,716 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस राजकीय निर्णय' after page 1.
+2026-11-09 01:56:30,716 | INFO | Link_extraction | Searching for: Devendra Fadnavis Shinde faction (30 pages)
+2026-11-09 01:56:38,409 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis Shinde faction' after page 1.
+2026-11-09 01:56:38,410 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस शिंदे गट (30 pages)
+2026-11-09 01:56:46,107 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस शिंदे गट' after page 1.
+2026-11-09 01:56:46,107 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस शिंदे समूह (30 pages)
+2026-11-09 01:56:53,630 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस शिंदे समूह' after page 1.
+2026-11-09 01:56:53,630 | INFO | Link_extraction | Searching for: Devendra Fadnavis Uddhav Thackeray (30 pages)
+2026-11-09 01:57:01,268 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis Uddhav Thackeray' after page 1.
+2026-11-09 01:57:01,269 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस उद्धव ठाकरे (30 pages)
+2026-11-09 01:57:09,027 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस उद्धव ठाकरे' after page 1.
+2026-11-09 01:57:09,027 | INFO | Link_extraction | Searching for: Devendra Fadnavis Legislative Council (30 pages)
+2026-11-09 01:57:16,703 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis Legislative Council' after page 1.
+2026-11-09 01:57:16,703 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस विधानपरिषद (30 pages)
+2026-11-09 01:57:24,385 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस विधानपरिषद' after page 1.
+2026-11-09 01:57:24,385 | INFO | Link_extraction | Searching for: Devendra Fadnavis press conference (30 pages)
+2026-11-09 01:57:32,009 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis press conference' after page 1.
+2026-11-09 01:57:32,009 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस पत्रकार परिषद (30 pages)
+2026-11-09 01:57:39,540 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस पत्रकार परिषद' after page 1.
+2026-11-09 01:57:39,540 | INFO | Link_extraction | Searching for: Devendra Fadnavis government (30 pages)
+2026-11-09 01:57:47,301 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis government' after page 1.
+2026-11-09 01:57:47,302 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस सरकार (30 pages)
+2026-11-09 01:57:54,936 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस सरकार' after page 1.
+2026-11-09 01:57:54,936 | INFO | Link_extraction | Searching for: Devendra Fadnavis new project (30 pages)
+2026-11-09 01:58:02,660 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis new project' after page 1.
+2026-11-09 01:58:02,660 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस नवा प्रकल्प (30 pages)
+2026-11-09 01:58:10,347 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस नवा प्रकल्प' after page 1.
+2026-11-09 01:58:10,347 | INFO | Link_extraction | Searching for: Devendra Fadnavis statement (30 pages)
+2026-11-09 01:58:18,163 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis statement' after page 1.
+2026-11-09 01:58:18,163 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस बयान (30 pages)
+2026-11-09 01:58:25,758 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस बयान' after page 1.
+2026-11-09 01:58:25,758 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस विधान (30 pages)
+2026-11-09 01:58:33,455 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस विधान' after page 1.
+2026-11-09 01:58:33,455 | INFO | Link_extraction | Searching for: Devendra Fadnavis politics (30 pages)
+2026-11-09 01:58:41,271 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis politics' after page 1.
+2026-11-09 01:58:41,271 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस राजनीति (30 pages)
+2026-11-09 01:58:48,866 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस राजनीति' after page 1.
+2026-11-09 01:58:48,867 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस राजकारण (30 pages)
+2026-11-09 01:58:56,537 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस राजकारण' after page 1.
+2026-11-09 01:58:56,537 | INFO | Link_extraction | Searching for: Devendra Fadnavis Maharashtra election (30 pages)
+2026-11-09 01:59:04,223 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis Maharashtra election' after page 1.
+2026-11-09 01:59:04,223 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस महाराष्ट्र चुनाव (30 pages)
+2026-11-09 01:59:11,969 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस महाराष्ट्र चुनाव' after page 1.
+2026-11-09 01:59:11,969 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस महाराष्ट्र निवडणूक (30 pages)
+2026-11-09 01:59:19,690 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस महाराष्ट्र निवडणूक' after page 1.
+2026-11-09 01:59:19,690 | INFO | Link_extraction | Searching for: Devendra Fadnavis opposition statement (30 pages)
+2026-11-09 01:59:27,413 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis opposition statement' after page 1.
+2026-11-09 01:59:27,413 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस विपक्ष पर बयान (30 pages)
+2026-11-09 01:59:35,055 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस विपक्ष पर बयान' after page 1.
+2026-11-09 01:59:35,055 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस विरोधकांवरील विधान (30 pages)
+2026-11-09 01:59:42,662 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस विरोधकांवरील विधान' after page 1.
+2026-11-09 01:59:42,662 | INFO | Link_extraction | Searching for: Devendra Fadnavis new scheme (30 pages)
+2026-11-09 01:59:50,228 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis new scheme' after page 1.
+2026-11-09 01:59:50,228 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस नई योजना (30 pages)
+2026-11-09 01:59:57,743 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस नई योजना' after page 1.
+2026-11-09 01:59:57,743 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस नवीन योजना (30 pages)
+2026-11-09 02:00:05,529 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस नवीन योजना' after page 1.
+2026-11-09 02:00:05,529 | INFO | Link_extraction | Searching for: Devendra Fadnavis government scheme (30 pages)
+2026-11-09 02:00:13,296 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis government scheme' after page 1.
+2026-11-09 02:00:13,296 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस सरकारी योजना (30 pages)
+2026-11-09 02:00:21,063 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस सरकारी योजना' after page 1.
+2026-11-09 02:00:21,063 | INFO | Link_extraction | Searching for: Devendra Fadnavis Shinde government (30 pages)
+2026-11-09 02:00:28,602 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis Shinde government' after page 1.
+2026-11-09 02:00:28,602 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस शिंदे सरकार (30 pages)
+2026-11-09 02:00:36,397 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस शिंदे सरकार' after page 1.
+2026-11-09 02:00:36,397 | INFO | Link_extraction | Searching for: Devendra Fadnavis public rally (30 pages)
+2026-11-09 02:00:43,987 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis public rally' after page 1.
+2026-11-09 02:00:43,987 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस सार्वजनिक सभा (30 pages)
+2026-11-09 02:00:51,697 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस सार्वजनिक सभा' after page 1.
+2026-11-09 02:00:51,697 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस जाहीर सभा (30 pages)
+2026-11-09 02:00:59,434 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस जाहीर सभा' after page 1.
+2026-11-09 02:00:59,434 | INFO | Link_extraction | Searching for: Devendra Fadnavis Maharashtra BJP (30 pages)
+2026-11-09 02:01:07,178 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis Maharashtra BJP' after page 1.
+2026-11-09 02:01:07,178 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस महाराष्ट्र भाजपा (30 pages)
+2026-11-09 02:01:14,772 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस महाराष्ट्र भाजपा' after page 1.
+2026-11-09 02:01:14,772 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस महाराष्ट्र भाजप (30 pages)
+2026-11-09 02:01:22,437 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस महाराष्ट्र भाजप' after page 1.
+2026-11-09 02:01:22,437 | INFO | Link_extraction | Searching for: Devendra Fadnavis vs Uddhav Thackeray (30 pages)
+2026-11-09 02:01:30,009 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis vs Uddhav Thackeray' after page 1.
+2026-11-09 02:01:30,009 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस बनाम उद्धव ठाकरे (30 pages)
+2026-11-09 02:01:37,618 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस बनाम उद्धव ठाकरे' after page 1.
+2026-11-09 02:01:37,619 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस विरुद्ध उद्धव ठाकरे (30 pages)
+2026-11-09 02:01:45,175 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस विरुद्ध उद्धव ठाकरे' after page 1.
+2026-11-09 02:01:45,175 | INFO | Link_extraction | Searching for: Devendra Fadnavis alliance with Shinde (30 pages)
+2026-11-09 02:01:52,690 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis alliance with Shinde' after page 1.
+2026-11-09 02:01:52,690 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस का शिंदे के साथ गठबंधन (30 pages)
+2026-11-09 02:02:00,447 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस का शिंदे के साथ गठबंधन' after page 1.
+2026-11-09 02:02:00,447 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस शिंदे युती (30 pages)
+2026-11-09 02:02:08,108 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस शिंदे युती' after page 1.
+2026-11-09 02:02:08,109 | INFO | Link_extraction | Searching for: Devendra Fadnavis speech highlights (30 pages)
+2026-11-09 02:02:15,630 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis speech highlights' after page 1.
+2026-11-09 02:02:15,630 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस भाषण की मुख्य बातें (30 pages)
+2026-11-09 02:02:23,308 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस भाषण की मुख्य बातें' after page 1.
+2026-11-09 02:02:23,308 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस भाषणातील ठळक मुद्दे (30 pages)
+2026-11-09 02:02:31,108 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस भाषणातील ठळक मुद्दे' after page 1.
+2026-11-09 02:02:31,109 | INFO | Link_extraction | Searching for: Devendra Fadnavis development project (30 pages)
+2026-11-09 02:02:38,664 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis development project' after page 1.
+2026-11-09 02:02:38,665 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस विकास प्रकल्प (30 pages)
+2026-11-09 02:02:46,249 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस विकास प्रकल्प' after page 1.
+2026-11-09 02:02:46,249 | INFO | Link_extraction | Searching for: Devendra Fadnavis infrastructure policy (30 pages)
+2026-11-09 02:02:53,940 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis infrastructure policy' after page 1.
+2026-11-09 02:02:53,940 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस बुनियादी ढांचा नीति (30 pages)
+2026-11-09 02:03:01,642 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस बुनियादी ढांचा नीति' after page 1.
+2026-11-09 02:03:01,642 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस पायाभूत सुविधा धोरण (30 pages)
+2026-11-09 02:03:09,397 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस पायाभूत सुविधा धोरण' after page 1.
+2026-11-09 02:03:09,397 | INFO | Link_extraction | Searching for: Devendra Fadnavis central government coordination (30 pages)
+2026-11-09 02:03:17,059 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis central government coordination' after page 1.
+2026-11-09 02:03:17,059 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस केंद्र सरकार समन्वय (30 pages)
+2026-11-09 02:03:24,740 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस केंद्र सरकार समन्वय' after page 1.
+2026-11-09 02:03:24,740 | INFO | Link_extraction | Searching for: Devendra Fadnavis Modi government (30 pages)
+2026-11-09 02:03:32,531 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis Modi government' after page 1.
+2026-11-09 02:03:32,531 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस मोदी सरकार (30 pages)
+2026-11-09 02:03:40,075 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस मोदी सरकार' after page 1.
+2026-11-09 02:03:40,075 | INFO | Link_extraction | Searching for: Devendra Fadnavis controversy (30 pages)
+2026-11-09 02:03:47,617 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis controversy' after page 1.
+2026-11-09 02:03:47,617 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस विवाद (30 pages)
+2026-11-09 02:03:55,395 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस विवाद' after page 1.
+2026-11-09 02:03:55,395 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस वाद (30 pages)
+2026-11-09 02:04:02,962 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस वाद' after page 1.
+2026-11-09 02:04:02,963 | INFO | Link_extraction | Searching for: Devendra Fadnavis Nagpur Pune Vande Bharat 2025 (30 pages)
+2026-11-09 02:04:10,710 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis Nagpur Pune Vande Bharat 2025' after page 1.
+2026-11-09 02:04:10,710 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस नागपुर पुणे वंदे भारत 2025 (30 pages)
+2026-11-09 02:04:18,298 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस नागपुर पुणे वंदे भारत 2025' after page 1.
+2026-11-09 02:04:18,298 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस नागपूर पुणे वंदे भारत 2025 (30 pages)
+2026-11-09 02:04:25,916 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस नागपूर पुणे वंदे भारत 2025' after page 1.
+2026-11-09 02:04:25,916 | INFO | Link_extraction | Searching for: Devendra Fadnavis Dharavi redevelopment 2025 (30 pages)
+2026-11-09 02:04:33,439 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis Dharavi redevelopment 2025' after page 1.
+2026-11-09 02:04:33,439 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस धारावी पुनर्विकास 2025 (30 pages)
+2026-11-09 02:04:40,950 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस धारावी पुनर्विकास 2025' after page 1.
+2026-11-09 02:04:40,950 | INFO | Link_extraction | Searching for: Devendra Fadnavis solar power push 2025 (30 pages)
+2026-11-09 02:04:48,649 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis solar power push 2025' after page 1.
+2026-11-09 02:04:48,649 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस सोलर पावर प्रोत्साहन 2025 (30 pages)
+2026-11-09 02:04:56,210 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस सोलर पावर प्रोत्साहन 2025' after page 1.
+2026-11-09 02:04:56,210 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस सौर ऊर्जा प्रोत्साहन 2025 (30 pages)
+2026-11-09 02:05:03,861 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस सौर ऊर्जा प्रोत्साहन 2025' after page 1.
+2026-11-09 02:05:03,862 | INFO | Link_extraction | Searching for: Devendra Fadnavis Garud Drishti project 2025 (30 pages)
+2026-11-09 02:05:11,588 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis Garud Drishti project 2025' after page 1.
+2026-11-09 02:05:11,588 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस गरुड दृष्टी प्रकल्प 2025 (30 pages)
+2026-11-09 02:05:19,178 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस गरुड दृष्टी प्रकल्प 2025' after page 1.
+2026-11-09 02:05:19,178 | INFO | Link_extraction | Searching for: Devendra Fadnavis Raksha Bandhan Ladki Bahin 2025 (30 pages)
+2026-11-09 02:05:26,812 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis Raksha Bandhan Ladki Bahin 2025' after page 1.
+2026-11-09 02:05:26,812 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस रक्षाबंधन लाडकी बहिण 2025 (30 pages)
+2026-11-09 02:05:34,509 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस रक्षाबंधन लाडकी बहिण 2025' after page 1.
+2026-11-09 02:05:34,509 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस रक्षाबंधन लाडकी बहीण 2025 (30 pages)
+2026-11-09 02:05:42,094 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस रक्षाबंधन लाडकी बहीण 2025' after page 1.
+2026-11-09 02:05:42,094 | INFO | Link_extraction | Searching for: Devendra Fadnavis vote rigging controversy 2025 (30 pages)
+2026-11-09 02:05:49,887 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis vote rigging controversy 2025' after page 1.
+2026-11-09 02:05:49,888 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस मतदान खरेदी विवाद 2025 (30 pages)
+2026-11-09 02:05:57,457 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस मतदान खरेदी विवाद 2025' after page 1.
+2026-11-09 02:05:57,457 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस मतदान खरेदी वाद 2025 (30 pages)
+2026-11-09 02:06:05,243 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस मतदान खरेदी वाद 2025' after page 1.
+2026-11-09 02:06:05,244 | INFO | Link_extraction | Searching for: Devendra Fadnavis Sharad Pawar remarks (30 pages)
+2026-11-09 02:06:12,868 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis Sharad Pawar remarks' after page 1.
+2026-11-09 02:06:12,868 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस शरद पवार टिप्पणी (30 pages)
+2026-11-09 02:06:20,478 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस शरद पवार टिप्पणी' after page 1.
+2026-11-09 02:06:20,478 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस शरद पवार टीका (30 pages)
+2026-11-09 02:06:28,108 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस शरद पवार टीका' after page 1.
+2026-11-09 02:06:28,108 | INFO | Link_extraction | Searching for: Devendra Fadnavis OBC speech 2025 (30 pages)
+2026-11-09 02:06:35,655 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis OBC speech 2025' after page 1.
+2026-11-09 02:06:35,655 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस ओबीसी भाषण 2025 (30 pages)
+2026-11-09 02:06:43,183 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस ओबीसी भाषण 2025' after page 1.
+2026-11-09 02:06:43,183 | INFO | Link_extraction | Searching for: Devendra Fadnavis cyber security initiative (30 pages)
+2026-11-09 02:06:50,801 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis cyber security initiative' after page 1.
+2026-11-09 02:06:50,801 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस सायबर सुरक्षा पहल (30 pages)
+2026-11-09 02:06:58,407 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस सायबर सुरक्षा पहल' after page 1.
+2026-11-09 02:06:58,407 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस सायबर सुरक्षा उपक्रम (30 pages)
+2026-11-09 02:07:06,065 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस सायबर सुरक्षा उपक्रम' after page 1.
+2026-11-09 02:07:06,065 | INFO | Link_extraction | Searching for: Devendra Fadnavis Nitin Gadkari meeting (30 pages)
+2026-11-09 02:07:13,896 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis Nitin Gadkari meeting' after page 1.
+2026-11-09 02:07:13,896 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस नितिन गडकरी मुलाकात (30 pages)
+2026-11-09 02:07:21,661 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस नितिन गडकरी मुलाकात' after page 1.
+2026-11-09 02:07:21,661 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस नितिन गडकरी भेट (30 pages)
+2026-11-09 02:07:29,203 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस नितिन गडकरी भेट' after page 1.
+2026-11-09 02:07:29,203 | INFO | Link_extraction | Searching for: Devendra Fadnavis Chief Minister tenure 2022-present (30 pages)
+2026-11-09 02:07:36,914 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis Chief Minister tenure 2022-present' after page 1.
+2026-11-09 02:07:36,914 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस मुख्यमंत्री कार्यकाल 2022-वर्तमान (30 pages)
+2026-11-09 02:07:44,690 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस मुख्यमंत्री कार्यकाल 2022-वर्तमान' after page 1.
+2026-11-09 02:07:44,690 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस मुख्यमंत्री कार्यकाळ 2022-वर्तमान (30 pages)
+2026-11-09 02:07:52,418 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस मुख्यमंत्री कार्यकाळ 2022-वर्तमान' after page 1.
+2026-11-09 02:07:52,418 | INFO | Link_extraction | Searching for: Devendra Fadnavis role in Mahayuti alliance (30 pages)
+2026-11-09 02:08:00,077 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis role in Mahayuti alliance' after page 1.
+2026-11-09 02:08:00,078 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस महायुति गठबंधन भूमिका (30 pages)
+2026-11-09 02:08:07,865 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस महायुति गठबंधन भूमिका' after page 1.
+2026-11-09 02:08:07,865 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस महायुति आघाडी भूमिका (30 pages)
+2026-11-09 02:08:15,409 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस महायुति आघाडी भूमिका' after page 1.
+2026-11-09 02:08:15,409 | INFO | Link_extraction | Searching for: Devendra Fadnavis Nagpur South West constituency (30 pages)
+2026-11-09 02:08:23,027 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis Nagpur South West constituency' after page 1.
+2026-11-09 02:08:23,027 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस नागपुर साउथ वेस्ट निर्वाचन क्षेत्र (30 pages)
+2026-11-09 02:08:30,559 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस नागपुर साउथ वेस्ट निर्वाचन क्षेत्र' after page 1.
+2026-11-09 02:08:30,559 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस नागपूर साउथ वेस्ट मतदारसंघ (30 pages)
+2026-11-09 02:08:38,334 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस नागपूर साउथ वेस्ट मतदारसंघ' after page 1.
+2026-11-09 02:08:38,334 | INFO | Link_extraction | Searching for: Devendra Fadnavis BJP Maharashtra leadership (30 pages)
+2026-11-09 02:08:45,849 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis BJP Maharashtra leadership' after page 1.
+2026-11-09 02:08:45,849 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस भाजपा महाराष्ट्र नेतृत्व (30 pages)
+2026-11-09 02:08:53,424 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस भाजपा महाराष्ट्र नेतृत्व' after page 1.
+2026-11-09 02:08:53,424 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस भाजप महाराष्ट्र नेतृत्व (30 pages)
+2026-11-09 02:09:00,935 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस भाजप महाराष्ट्र नेतृत्व' after page 1.
+2026-11-09 02:09:00,935 | INFO | Link_extraction | Searching for: Devendra Fadnavis infrastructure policies Maharashtra (30 pages)
+2026-11-09 02:09:08,499 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis infrastructure policies Maharashtra' after page 1.
+2026-11-09 02:09:08,499 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस महाराष्ट्र बुनियादी ढांचा नीतियां (30 pages)
+2026-11-09 02:09:16,139 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस महाराष्ट्र बुनियादी ढांचा नीतियां' after page 1.
+2026-11-09 02:09:16,140 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस महाराष्ट्र पायाभूत सुविधा धोरणे (30 pages)
+2026-11-09 02:09:23,864 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस महाराष्ट्र पायाभूत सुविधा धोरणे' after page 1.
+2026-11-09 02:09:23,864 | INFO | Link_extraction | Searching for: Devendra Fadnavis vote rigging allegations 2025 (30 pages)
+2026-11-09 02:09:31,390 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis vote rigging allegations 2025' after page 1.
+2026-11-09 02:09:31,390 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस मतदान खरेदी आरोप 2025 (30 pages)
+2026-11-09 02:09:39,059 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस मतदान खरेदी आरोप 2025' after page 1.
+2026-11-09 02:09:39,059 | INFO | Link_extraction | Searching for: Devendra Fadnavis Mahayuti alliance strategy (30 pages)
+2026-11-09 02:09:46,744 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis Mahayuti alliance strategy' after page 1.
+2026-11-09 02:09:46,744 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस महायुति गठबंधन रणनीति (30 pages)
+2026-11-09 02:09:54,475 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस महायुति गठबंधन रणनीति' after page 1.
+2026-11-09 02:09:54,475 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस महायुति आघाडी रणनीती (30 pages)
+2026-11-09 02:10:02,228 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस महायुति आघाडी रणनीती' after page 1.
+2026-11-09 02:10:02,228 | INFO | Link_extraction | Searching for: Devendra Fadnavis drought management Maharashtra (30 pages)
+2026-11-09 02:10:09,978 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis drought management Maharashtra' after page 1.
+2026-11-09 02:10:09,978 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस महाराष्ट्र सूखा प्रबंधन (30 pages)
+2026-11-09 02:10:17,520 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस महाराष्ट्र सूखा प्रबंधन' after page 1.
+2026-11-09 02:10:17,520 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस महाराष्ट्र दुष्काळ व्यवस्थापन (30 pages)
+2026-11-09 02:10:25,234 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस महाराष्ट्र दुष्काळ व्यवस्थापन' after page 1.
+2026-11-09 02:10:25,235 | INFO | Link_extraction | Searching for: Devendra Fadnavis RSS and ABVP background (30 pages)
+2026-11-09 02:10:32,799 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis RSS and ABVP background' after page 1.
+2026-11-09 02:10:32,799 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस आरएसएस और एबीवीपी पृष्ठभूमि (30 pages)
+2026-11-09 02:10:40,396 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस आरएसएस और एबीवीपी पृष्ठभूमि' after page 1.
+2026-11-09 02:10:40,396 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस आरएसएस आणि एबीव्हीपी पार्श्वभूमी (30 pages)
+2026-11-09 02:10:47,947 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस आरएसएस आणि एबीव्हीपी पार्श्वभूमी' after page 1.
+2026-11-09 02:10:47,947 | INFO | Link_extraction | Searching for: Devendra Fadnavis Home Ministry portfolio 2025 (30 pages)
+2026-11-09 02:10:55,621 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis Home Ministry portfolio 2025' after page 1.
+2026-11-09 02:10:55,621 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस गृह मंत्रालय पोर्टफोलियो 2025 (30 pages)
+2026-11-09 02:11:03,360 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस गृह मंत्रालय पोर्टफोलियो 2025' after page 1.
+2026-11-09 02:11:03,360 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस गृह खाते पोर्टफोलियो 2025 (30 pages)
+2026-11-09 02:11:10,990 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस गृह खाते पोर्टफोलियो 2025' after page 1.
+2026-11-09 02:11:10,990 | INFO | Link_extraction | Searching for: Devendra Fadnavis Mumbai (30 pages)
+2026-11-09 02:11:18,803 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis Mumbai' after page 1.
+2026-11-09 02:11:18,803 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस मुंबई (30 pages)
+2026-11-09 02:11:26,460 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस मुंबई' after page 1.
+2026-11-09 02:11:26,460 | INFO | Link_extraction | Searching for: Devendra Fadnavis this week events 2025 (30 pages)
+2026-11-09 02:11:34,099 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis this week events 2025' after page 1.
+2026-11-09 02:11:34,099 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस इस सप्ताह की घटनाएं 2025 (30 pages)
+2026-11-09 02:11:41,746 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस इस सप्ताह की घटनाएं 2025' after page 1.
+2026-11-09 02:11:41,746 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस या आठवड्याचे कार्यक्रम 2025 (30 pages)
+2026-11-09 02:11:49,529 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस या आठवड्याचे कार्यक्रम 2025' after page 1.
+2026-11-09 02:11:49,529 | INFO | Link_extraction | Searching for: Devendra Fadnavis Latur visit 2025 (30 pages)
+2026-11-09 02:11:57,167 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis Latur visit 2025' after page 1.
+2026-11-09 02:11:57,168 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस लातूर दौरा 2025 (30 pages)
+2026-11-09 02:12:04,983 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस लातूर दौरा 2025' after page 1.
+2026-11-09 02:12:04,983 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस लातूर भेट 2025 (30 pages)
+2026-11-09 02:12:12,701 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस लातूर भेट 2025' after page 1.
+2026-11-09 02:12:12,701 | INFO | Link_extraction | Searching for: Devendra Fadnavis environmental initiative 2025 (30 pages)
+2026-11-09 02:12:20,506 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis environmental initiative 2025' after page 1.
+2026-11-09 02:12:20,507 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस पर्यावरण पहल 2025 (30 pages)
+2026-11-09 02:12:28,227 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस पर्यावरण पहल 2025' after page 1.
+2026-11-09 02:12:28,227 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस पर्यावरण उपक्रम 2025 (30 pages)
+2026-11-09 02:12:36,016 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस पर्यावरण उपक्रम 2025' after page 1.
+2026-11-09 02:12:36,016 | INFO | Link_extraction | Searching for: Devendra Fadnavis Ladki Bahin scheme 2025 (30 pages)
+2026-11-09 02:12:43,824 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis Ladki Bahin scheme 2025' after page 1.
+2026-11-09 02:12:43,824 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस लाडकी बहिण योजना 2025 (30 pages)
+2026-11-09 02:12:51,425 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस लाडकी बहिण योजना 2025' after page 1.
+2026-11-09 02:12:51,425 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस लाडकी बहीण योजना 2025 (30 pages)
+2026-11-09 02:12:59,040 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस लाडकी बहीण योजना 2025' after page 1.
+2026-11-09 02:12:59,040 | INFO | Link_extraction | Searching for: Devendra Fadnavis Sharad Pawar controversy 2025 (30 pages)
+2026-11-09 02:13:06,632 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis Sharad Pawar controversy 2025' after page 1.
+2026-11-09 02:13:06,632 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस शरद पवार विवाद 2025 (30 pages)
+2026-11-09 02:13:14,391 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस शरद पवार विवाद 2025' after page 1.
+2026-11-09 02:13:14,391 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस शरद पवार वाद 2025 (30 pages)
+2026-11-09 02:13:21,898 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस शरद पवार वाद 2025' after page 1.
+2026-11-09 02:13:21,898 | INFO | Link_extraction | Searching for: Devendra Fadnavis political activities August 2025 (30 pages)
+2026-11-09 02:13:29,605 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis political activities August 2025' after page 1.
+2026-11-09 02:13:29,605 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस अगस्त 2025 राजनीतिक गतिविधियां (30 pages)
+2026-11-09 02:13:37,159 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस अगस्त 2025 राजनीतिक गतिविधियां' after page 1.
+2026-11-09 02:13:37,159 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस ऑगस्ट 2025 राजकीय हालचाली (30 pages)
+2026-11-09 02:13:44,806 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस ऑगस्ट 2025 राजकीय हालचाली' after page 1.
+2026-11-09 02:13:44,806 | INFO | Link_extraction | Searching for: Devendra Fadnavis public engagements 2025 (30 pages)
+2026-11-09 02:13:52,610 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis public engagements 2025' after page 1.
+2026-11-09 02:13:52,610 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस सार्वजनिक सहभाग 2025 (30 pages)
+2026-11-09 02:14:00,380 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस सार्वजनिक सहभाग 2025' after page 1.
+2026-11-09 02:14:00,380 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस जनसंपर्क 2025 (30 pages)
+2026-11-09 02:14:07,979 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस जनसंपर्क 2025' after page 1.
+2026-11-09 02:14:07,979 | INFO | Link_extraction | Searching for: Devendra Fadnavis Maharashtra governance 2025 (30 pages)
+2026-11-09 02:14:15,703 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis Maharashtra governance 2025' after page 1.
+2026-11-09 02:14:15,703 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस महाराष्ट्र शासन 2025 (30 pages)
+2026-11-09 02:14:23,213 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस महाराष्ट्र शासन 2025' after page 1.
+2026-11-09 02:14:23,213 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस महाराष्ट्र प्रशासन 2025 (30 pages)
+2026-11-09 02:14:30,774 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस महाराष्ट्र प्रशासन 2025' after page 1.
+2026-11-09 02:14:30,774 | INFO | Link_extraction | Searching for: Devendra Fadnavis policy decisions 2025 (30 pages)
+2026-11-09 02:14:38,552 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis policy decisions 2025' after page 1.
+2026-11-09 02:14:38,552 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस नीति निर्णय 2025 (30 pages)
+2026-11-09 02:14:46,158 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस नीति निर्णय 2025' after page 1.
+2026-11-09 02:14:46,159 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस धोरण निर्णय 2025 (30 pages)
+2026-11-09 02:14:53,877 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस धोरण निर्णय 2025' after page 1.
+2026-11-09 02:14:53,877 | INFO | Link_extraction | Searching for: Devendra Fadnavis rural development initiatives (30 pages)
+2026-11-09 02:15:01,564 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis rural development initiatives' after page 1.
+2026-11-09 02:15:01,564 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस ग्रामीण विकास पहल (30 pages)
+2026-11-09 02:15:09,247 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस ग्रामीण विकास पहल' after page 1.
+2026-11-09 02:15:09,248 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस ग्रामीण विकास उपक्रम (30 pages)
+2026-11-09 02:15:16,920 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस ग्रामीण विकास उपक्रम' after page 1.
+2026-11-09 02:15:16,920 | INFO | Link_extraction | Searching for: Devendra Fadnavis urban infrastructure projects (30 pages)
+2026-11-09 02:15:24,542 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis urban infrastructure projects' after page 1.
+2026-11-09 02:15:24,542 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस शहरी बुनियादी ढांचा परियोजनाएं (30 pages)
+2026-11-09 02:15:32,287 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस शहरी बुनियादी ढांचा परियोजनाएं' after page 1.
+2026-11-09 02:15:32,287 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस शहरी पायाभूत प्रकल्प (30 pages)
+2026-11-09 02:15:40,013 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस शहरी पायाभूत प्रकल्प' after page 1.
+2026-11-09 02:15:40,013 | INFO | Link_extraction | Searching for: Devendra Fadnavis economic policies Maharashtra (30 pages)
+2026-11-09 02:15:47,678 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis economic policies Maharashtra' after page 1.
+2026-11-09 02:15:47,679 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस महाराष्ट्र आर्थिक नीतियां (30 pages)
+2026-11-09 02:15:55,271 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस महाराष्ट्र आर्थिक नीतियां' after page 1.
+2026-11-09 02:15:55,271 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस महाराष्ट्र आर्थिक धोरणे (30 pages)
+2026-11-09 02:16:03,001 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस महाराष्ट्र आर्थिक धोरणे' after page 1.
+2026-11-09 02:16:03,001 | INFO | Link_extraction | Searching for: Devendra Fadnavis social welfare schemes 2025 (30 pages)
+2026-11-09 02:16:10,782 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis social welfare schemes 2025' after page 1.
+2026-11-09 02:16:10,783 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस सामाजिक कल्याण योजनाएं 2025 (30 pages)
+2026-11-09 02:16:18,393 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस सामाजिक कल्याण योजनाएं 2025' after page 1.
+2026-11-09 02:16:18,393 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस सामाजिक कल्याण योजना 2025 (30 pages)
+2026-11-09 02:16:26,014 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस सामाजिक कल्याण योजना 2025' after page 1.
+2026-11-09 02:16:26,014 | INFO | Link_extraction | Searching for: Devendra Fadnavis Yavatmal visit September 2025   (30 pages)
+2026-11-09 02:16:33,620 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis Yavatmal visit September 2025  ' after page 1.
+2026-11-09 02:16:33,620 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस यवतमाळ भेट सप्टेंबर २०२५   (30 pages)
+2026-11-09 02:16:41,353 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस यवतमाळ भेट सप्टेंबर २०२५  ' after page 1.
+2026-11-09 02:16:41,353 | INFO | Link_extraction | Searching for: Devendra Fadnavis Aadi Karmayogi Abhiyan news   (30 pages)
+2026-11-09 02:16:48,871 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis Aadi Karmayogi Abhiyan news  ' after page 1.
+2026-11-09 02:16:48,871 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस आदि कर्मयोगी अभियान समाचार   (30 pages)
+2026-11-09 02:16:56,613 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस आदि कर्मयोगी अभियान समाचार  ' after page 1.
+2026-11-09 02:16:56,613 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस आदि कर्मयोगी अभियान बातम्या   (30 pages)
+2026-11-09 02:17:04,380 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस आदि कर्मयोगी अभियान बातम्या  ' after page 1.
+2026-11-09 02:17:04,380 | INFO | Link_extraction | Searching for: Devendra Fadnavis Iowa MoU latest   (30 pages)
+2026-11-09 02:17:11,962 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis Iowa MoU latest  ' after page 1.
+2026-11-09 02:17:11,963 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस आयोवा एमओयू ताजा समाचार   (30 pages)
+2026-11-09 02:17:19,557 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस आयोवा एमओयू ताजा समाचार  ' after page 1.
+2026-11-09 02:17:19,557 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस आयोवा एमओयू नवीन बातम्या   (30 pages)
+2026-11-09 02:17:27,228 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस आयोवा एमओयू नवीन बातम्या  ' after page 1.
+2026-11-09 02:17:27,229 | INFO | Link_extraction | Searching for: Devendra Fadnavis Tata Technologies agreement   (30 pages)
+2026-11-09 02:17:34,913 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis Tata Technologies agreement  ' after page 1.
+2026-11-09 02:17:34,913 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस टाटा टेक्नॉलॉजीज करार   (30 pages)
+2026-11-09 02:17:42,666 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस टाटा टेक्नॉलॉजीज करार  ' after page 1.
+2026-11-09 02:17:42,666 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस टाटा टेक्नॉलॉजीज करार बातम्या   (30 pages)
+2026-11-09 02:17:50,423 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस टाटा टेक्नॉलॉजीज करार बातम्या  ' after page 1.
+2026-11-09 02:17:50,423 | INFO | Link_extraction | Searching for: Devendra Fadnavis tribal welfare schemes September 2025   (30 pages)
+2026-11-09 02:17:58,029 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis tribal welfare schemes September 2025  ' after page 1.
+2026-11-09 02:17:58,029 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस आदिवासी कल्याण योजना सप्टेंबर २०२५   (30 pages)
+2026-11-09 02:18:05,693 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस आदिवासी कल्याण योजना सप्टेंबर २०२५  ' after page 1.
+2026-11-09 02:18:05,694 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस आदिवासी कल्याण योजना बातम्या   (30 pages)
+2026-11-09 02:18:13,222 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस आदिवासी कल्याण योजना बातम्या  ' after page 1.
+2026-11-09 02:18:13,222 | INFO | Link_extraction | Searching for: Devendra Fadnavis solar projects Vidarbha   (30 pages)
+2026-11-09 02:18:20,803 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis solar projects Vidarbha  ' after page 1.
+2026-11-09 02:18:20,803 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस सौर प्रकल्प विदर्भ   (30 pages)
+2026-11-09 02:18:28,426 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस सौर प्रकल्प विदर्भ  ' after page 1.
+2026-11-09 02:18:28,426 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस सौर प्रकल्प विदर्भ बातम्या   (30 pages)
+2026-11-09 02:18:35,953 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस सौर प्रकल्प विदर्भ बातम्या  ' after page 1.
+2026-11-09 02:18:35,953 | INFO | Link_extraction | Searching for: Devendra Fadnavis farmer relief heavy rainfall   (30 pages)
+2026-11-09 02:18:43,512 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis farmer relief heavy rainfall  ' after page 1.
+2026-11-09 02:18:43,512 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस शेतकरी मदत अतिवृष्टी   (30 pages)
+2026-11-09 02:18:51,153 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस शेतकरी मदत अतिवृष्टी  ' after page 1.
+2026-11-09 02:18:51,153 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस शेतकरी मदत अतिवृष्टी बातम्या   (30 pages)
+2026-11-09 02:18:58,795 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस शेतकरी मदत अतिवृष्टी बातम्या  ' after page 1.
+2026-11-09 02:18:58,795 | INFO | Link_extraction | Searching for: Devendra Fadnavis STRIDE 2025 speech   (30 pages)
+2026-11-09 02:19:06,548 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis STRIDE 2025 speech  ' after page 1.
+2026-11-09 02:19:06,548 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस स्ट्राईड २०२५ भाषण   (30 pages)
+2026-11-09 02:19:14,350 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस स्ट्राईड २०२५ भाषण  ' after page 1.
+2026-11-09 02:19:14,351 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस स्ट्राईड २०२५ भाषण बातम्या   (30 pages)
+2026-11-09 02:19:22,076 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस स्ट्राईड २०२५ भाषण बातम्या  ' after page 1.
+2026-11-09 02:19:22,076 | INFO | Link_extraction | Searching for: Devendra Fadnavis Sanjay Raut comments September 2025   (30 pages)
+2026-11-09 02:19:29,616 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis Sanjay Raut comments September 2025  ' after page 1.
+2026-11-09 02:19:29,616 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस संजय राऊत टिप्पण्या सप्टेंबर २०२५   (30 pages)
+2026-11-09 02:19:37,132 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस संजय राऊत टिप्पण्या सप्टेंबर २०२५  ' after page 1.
+2026-11-09 02:19:37,133 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस संजय राऊत टिप्पण्या बातम्या   (30 pages)
+2026-11-09 02:19:44,874 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस संजय राऊत टिप्पण्या बातम्या  ' after page 1.
+2026-11-09 02:19:44,875 | INFO | Link_extraction | Searching for: Devendra Fadnavis book release Jawaharlal Darda   (30 pages)
+2026-11-09 02:19:52,439 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis book release Jawaharlal Darda  ' after page 1.
+2026-11-09 02:19:52,439 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस पुस्तक प्रकाशन जवाहरलाल दर्डा   (30 pages)
+2026-11-09 02:20:00,049 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस पुस्तक प्रकाशन जवाहरलाल दर्डा  ' after page 1.
+2026-11-09 02:20:00,049 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस पुस्तक प्रकाशन जवाहरलाल दर्डा बातम्या   (30 pages)
+2026-11-09 02:20:07,622 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस पुस्तक प्रकाशन जवाहरलाल दर्डा बातम्या  ' after page 1.
+2026-11-09 02:20:07,622 | INFO | Link_extraction | Searching for: Devendra Fadnavis development works inauguration Yavatmal   (30 pages)
+2026-11-09 02:20:15,204 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis development works inauguration Yavatmal  ' after page 1.
+2026-11-09 02:20:15,204 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस विकास कामे उद्घाटन यवतमाळ   (30 pages)
+2026-11-09 02:20:22,848 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस विकास कामे उद्घाटन यवतमाळ  ' after page 1.
+2026-11-09 02:20:22,848 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस विकास कामे उद्घाटन यवतमाळ बातम्या   (30 pages)
+2026-11-09 02:20:30,376 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस विकास कामे उद्घाटन यवतमाळ बातम्या  ' after page 1.
+2026-11-09 02:20:30,377 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस बातम्या मागील आठवडा  (30 pages)
+2026-11-09 02:20:37,939 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस बातम्या मागील आठवडा ' after page 1.
+2026-11-09 02:20:37,939 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस महाराष्ट्र अपडेट्स मागील आठवडा (30 pages)
+2026-11-09 02:20:45,649 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस महाराष्ट्र अपडेट्स मागील आठवडा' after page 1.
+2026-11-09 02:20:45,649 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस ताज्या अपडेट्स ७ दिवस (30 pages)
+2026-11-09 02:20:53,362 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस ताज्या अपडेट्स ७ दिवस' after page 1.
+2026-11-09 02:20:53,363 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस राजकीय बातम्या मागील आठवडा (30 pages)
+2026-11-09 02:21:01,009 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस राजकीय बातम्या मागील आठवडा' after page 1.
+2026-11-09 02:21:01,009 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस सध्याच्या बातम्या (30 pages)
+2026-11-09 02:21:08,730 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस सध्याच्या बातम्या' after page 1.
+2026-11-09 02:21:08,730 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस सरकारच्या बातम्या गेल्या ७ दिवस (30 pages)
+2026-11-09 02:21:16,455 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस सरकारच्या बातम्या गेल्या ७ दिवस' after page 1.
+2026-11-09 02:21:16,455 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस news (30 pages)
+2026-11-09 02:21:24,230 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस news' after page 1.
+2026-11-09 02:21:24,230 | INFO | Link_extraction | Searching for: देवेंद्र फडणवीस latest news (30 pages)
+2026-11-09 02:21:31,795 | WARNING | Link_extraction | No more pages available for 'देवेंद्र फडणवीस latest news' after page 1.
+2026-11-09 02:21:31,795 | INFO | Link_extraction | Searching for: Devendra Fadnavis news past week (30 pages)
+2026-11-09 02:21:39,323 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis news past week' after page 1.
+2026-11-09 02:21:39,323 | INFO | Link_extraction | Searching for: Devendra Fadnavis recent news (30 pages)
+2026-11-09 02:21:46,838 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis recent news' after page 1.
+2026-11-09 02:21:46,838 | INFO | Link_extraction | Searching for: Devendra Fadnavis Maharashtra updates last week (30 pages)
+2026-11-09 02:21:54,434 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis Maharashtra updates last week' after page 1.
+2026-11-09 02:21:54,434 | INFO | Link_extraction | Searching for: Devendra Fadnavis latest updates 7 days (30 pages)
+2026-11-09 02:22:02,180 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis latest updates 7 days' after page 1.
+2026-11-09 02:22:02,180 | INFO | Link_extraction | Searching for: Devendra Fadnavis political news last week (30 pages)
+2026-11-09 02:22:09,875 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis political news last week' after page 1.
+2026-11-09 02:22:09,876 | INFO | Link_extraction | Searching for: Devendra Fadnavis current news (30 pages)
+2026-11-09 02:22:17,462 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis current news' after page 1.
+2026-11-09 02:22:17,462 | INFO | Link_extraction | Searching for: Devendra Fadnavis government news past 7 days (30 pages)
+2026-11-09 02:22:25,219 | WARNING | Link_extraction | No more pages available for 'Devendra Fadnavis government news past 7 days' after page 1.
+2026-11-09 02:22:25,406 | INFO | Link_extraction | Browser session closed
+2026-11-09 02:22:25,408 | INFO | Link_extraction | Filtered 0 rows down to 0 unique entries
+2026-11-09 02:22:25,415 | INFO | Link_extraction | Total links extracted: 0
+2026-11-09 02:22:25,415 | INFO | Link_extraction | Data saved to '/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/Output/Devendra Fadnavis/extracted_links.xlsx'
+2026-11-09 02:22:25,416 | INFO | Link_extraction | Link extraction completed and saved successfully
+2026-11-09 02:22:25,416 | INFO | CoreRouter | 2. News Extraction started...
+2026-11-09 02:22:25,416 | INFO | NewsScraper | Starting news scraping process.
+2026-11-09 02:22:25,420 | INFO | NewsScraper | Loaded 0 links from /home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/Output/Devendra Fadnavis/extracted_links.xlsx
+2026-11-09 02:22:25,420 | INFO | WDM | ====== WebDriver manager ======
+2026-11-09 02:22:25,452 | INFO | WDM | Driver [/home/runner/.wdm/drivers/chromedriver/linux64/156.0.8078.80/chromedriver-linux64/chromedriver] found in cache by browser version
+2026-11-09 02:22:25,718 | INFO | Link_extraction | WebDriver initialized successfully
+2026-11-09 02:22:25,719 | INFO | NewsScraper | Leader available in Name Variations, Cosidering it as Leader Specific Report....
+2026-11-09 02:22:25,786 | INFO | NewsScraper | Saving results.
+2026-11-09 02:22:25,786 | INFO | NewsScraper | Saving extracted data to Word document: extracted_links_Devendra Fadnavis_News_Content.docx
+2026-11-09 02:22:25,801 | INFO | NewsScraper | Scraping process completed successfully.
+2026-11-09 02:22:25,802 | INFO | CoreRouter | News Word document saved at: /home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/Output/Devendra Fadnavis/extracted_links_Devendra Fadnavis_News_Content.docx
+2026-11-09 02:22:25,802 | INFO | CoreRouter | 3. Chunking started...
+2026-11-09 02:22:25,802 | INFO | CoreRouter | File size: 35.71 KB
+2026-11-09 02:22:25,802 | INFO | CoreRouter | No chunking required.
+2026-11-09 02:22:25,802 | INFO | CoreRouter | 4. Facebook posts scraping started...
+2026-11-09 02:22:25,802 | INFO | CoreRouter | Processing Facebook posts from nan...
+2026-11-09 02:22:25,802 | INFO | FacebookDocs | Processing Facebook posts from nan | From: 2025-12-08 00:00:00 To: 2025-12-09 00:00:00
+2026-11-09 02:22:26,009 | ERROR | Main | Error while processing Devendra Fadnavis: User was not found or authentication token is not valid
+Traceback (most recent call last):
+  File "/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/main.py", line 79, in <module>
+    router.process_news()
+  File "/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/core_router.py", line 118, in process_news
+    fb_posts = self.facebook_doc.collect_fb_posts(self.link_extraction.facebook_excel_file_path,self.link_extraction.start_date,self.link_extraction.end_date)
+  File "/home/runner/work/Media-Monitoring-Pipeline/Media-Monitoring-Pipeline/modules/facebook_docs.py", line 43, in collect_fb_posts
+    run = self.client.actor("KoJrdxJCTtpon81KY").call(run_input=run_input)
+  File "/opt/hostedtoolcache/Python/3.10.22/x64/lib/python3.10/site-packages/apify_client/_logging.py", line 86, in wrapper
+    return fun(resource_client, *args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.10.22/x64/lib/python3.10/site-packages/apify_client/clients/resource_clients/actor.py", line 367, in call
+    started_run = self.start(
+  File "/opt/hostedtoolcache/Python/3.10.22/x64/lib/python3.10/site-packages/apify_client/_logging.py", line 86, in wrapper
+    return fun(resource_client, *args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.10.22/x64/lib/python3.10/site-packages/apify_client/clients/resource_clients/actor.py", line 306, in start
+    response = self.http_client.call(
+  File "/opt/hostedtoolcache/Python/3.10.22/x64/lib/python3.10/site-packages/apify_client/_http_client.py", line 213, in call
+    return retry_with_exp_backoff(
+  File "/opt/hostedtoolcache/Python/3.10.22/x64/lib/python3.10/site-packages/apify_client/_utils.py", line 175, in retry_with_exp_backoff
+    return func(stop_retrying, attempt)
+  File "/opt/hostedtoolcache/Python/3.10.22/x64/lib/python3.10/site-packages/apify_client/_http_client.py", line 211, in _make_request
+    raise ApifyApiError(response, attempt, method=method)
+apify_client.errors.ApifyApiError: User was not found or authentication token is not valid
+2026-11-09 02:22:26,009 | INFO | Main | Media monitoring script finished.
